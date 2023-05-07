@@ -1,0 +1,5 @@
+S = input()
+O = input()
+P = input()
+Return = (S+" "+P+" "+O+".") 
+print(Return)
