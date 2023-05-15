@@ -1,0 +1,6 @@
+c = input()
+print(c)
+print(c*2)
+print(c+" "+c)
+print("2"+c)
+print("["+c+"]")

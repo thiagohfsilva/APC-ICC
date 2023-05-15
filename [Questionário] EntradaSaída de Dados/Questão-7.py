@@ -1,0 +1,7 @@
+p = int(input())
+s = int(input())
+print(f"I1 = {p}, I2 = {s}")
+print(f"I1 = {p:<10d}, I2 = {s}")
+print(f"I1 = {p}, I2 = {s:>5d}")
+print(f"I1 = {p:<10d}, I2 = {s:04d}")
+print(f"I1 = {p:06d}, I2 = {s:04d}")

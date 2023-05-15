@@ -1,0 +1,5 @@
+saborA,saborB,saborC = input().split(" ")
+coberturaA,coberturaB = input().split(",")
+calda = input()
+print(f"Sorvete de {saborA}, {saborB} e {saborC} com coberturas de {coberturaA} e {coberturaB} e calda de {calda}!")
+print("Não esqueça a banana!")
