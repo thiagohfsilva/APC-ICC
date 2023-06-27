@@ -16,7 +16,7 @@ Para usar este repositório, siga estas etapas:
 
 1. Clone este repositório em sua máquina local usando o seguinte comando:
 
-git clone https://github.com/thiagohfsilva/APC-ICC
+**git clone https://github.com/thiagohfsilva/APC-ICC**
 
 
 2. Navegue até a pasta relevante (Algoritmos ou Introdução à Ciência da Computação) e escolha o exercício que deseja trabalhar.
