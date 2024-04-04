@@ -1,0 +1,47 @@
+Questão 10
+Correto
+Atingiu 1,00 de 1,00
+
+Troca de Esmeraldas
+
+Menescraft é um popular jogo virtual de exploração e aventura. Nele seu objetivo é coletar recursos das mais diversas raridades para
+posterior comercialização com os aldeões encontrados pelo mapa. No entanto, o sistema de trocas e vendas deste jogo é bastante
+desenvolvido de modo que até mesmo os aldeões controlados pelo computador não aceitarão trocas injustas, onde seja cobrado um
+valor exorbitante. Sabendo disso, imagine que em uma jogatina você foi capaz de reunir uma determinada quantidade de minérios de
+ferro, ouro, pó vermelho e diamantes. Ao pesquisar profundamente nos fóruns online você descobriu que o valor justo de uma remessa
+de minérios é calculada da seguinte forma:
+
+e Paracada minério de ferro o valor da remessa é acrescido em uma esmeralda.
+«e Paracada minério de ouro o valor da remessa é duplicado.
+
+e Paracada pó vermelho o valor da remessa é acrescido em duas esmeraldas.
+
+e Paracada diamante o valor da remessa é quadruplicado.
+
+É garantido que sempre haverá ao menos uma unidade de cada minério e que as quantidades encontradas de cada minério sempre
+serão números inteiros positivos. Desta forma, o valor da remessa é sempre em número de esmeraldas. Como apresentado, ferro e pó
+vermelho fornecem ao jogador o número inicial de esmeraldas.
+
+A Entrada consiste de:
+e 4inteiros F,O, Pe D que representam respectivamente as quantidades de minério de ferro, ouro, pó vermelho e diamantes
+encontrados.
+
+A Saída deve apresentar:
+e Ovalor total em esmeraldas que deverá ser cobrado pela remessa de minérios, considerando o cálculo para um preço justo.
+
+Observações:
+e Não é necessário validar se os valores de entrada estão dentro dos intervalos definidos.
+
+Descrição dos Exemplos:
+
+e No primeiro exemplo, cada minério foi encontrado exatamente uma única vez. Um minério de ferro gerou o acréscimo do preço
+total em uma esmeralda, assim como um minério de pó vermelho gerou um acréscimo de duas esmeraldas, totalizando 3
+esmeraldas. O valor foi então duplicado, pois havia exatamente um minério de ouro, tornando-se 6 esmeraldas e por fim foi
+quadruplicado pois havia um diamante. Finalmente o preço total da remessa foi de 24 esmeraldas.
+
+* Nosegundo exemplo, foram encontrados 3 minérios de ferro, tornando o preço inicial 3 esmeraldas. Além disso, foram encontrados
+3 minérios de pó vermelho e como cada um equivale a duas esmeraldas, o preço total considerando apenas ferro e pó vermelho era
+de 9 esmeraldas. No entanto, foram encontrados 7 minérios de ouro, o que fez com que o preço fosse multiplicado 7*2 vezes, ou
+seja, 14 vezes. Além disso haviam 3 diamantes, fazendo com que o preço fosse multiplicado 3*4 vezes, ou seja, 12
+vezes. Multiplicando as 9 esmeraldas iniciais por 14 e depois por 12 encontramos o valor total de 1512 esmeraldas.
+

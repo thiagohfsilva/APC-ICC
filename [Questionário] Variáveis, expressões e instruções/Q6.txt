@@ -1,0 +1,28 @@
+Questão 6
+Correto
+Atingiu 1,00 de 1,00
+
+Debugando - Gramática
+
+Dado o seguinte programa copie-o no IDE Python para depurá-lo até funcionar corretamente:
+
+S = input ()
+O = input ()
+P = input ()
+
+return = (p + (0 +85 ))
+print (Return)
+
+A Entrada consiste de:
+
+e Entrada 1 - umastring com o sujeito da oração
+e Entrada 2 - umastring com o objeto da oração
+e Entrada 3 - uma string com o verbo da oração
+
+ASaída deve apresentar:
+e Umaoração em língua portuguesa na ordem direta.
+
+Observações:
+e Não é necessário validar se os valores de entrada estão dentro dos intervalos definidos.
+e Procure por erros de sintaxe e de semântica.
+

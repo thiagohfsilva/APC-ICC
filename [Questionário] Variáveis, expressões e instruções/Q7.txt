@@ -1,0 +1,32 @@
+Questão 7
+Correto
+Atingiu 1,00 de 1,00
+
+Média Ponderada
+
+Elabore um programa que lê três notas de um aluno e o peso de cada nota e apresenta a média final deste aluno
+
+A Entrada consiste de:
+s umalinha contendo três números do tipo floats n1, n2 e n3, que representam as notas de um aluno.
+e Asegunda inha da entrada contém números três inteiros p1, p2 e p3, que representam os pesos de cada nota.
+
+ASaída deve apresentar:
+* Umalinha com a média ponderada do aluno, com seis casas decimais.
+
+Observações:
+s Não é necessário validar se os valores de entrada estão dentro dos tipos e intervalos definidos.
+
+Descrição dos Exemplos:
+
+* Noterceiro exemplo, a nota 9.1 tem peso 1, a nota 5.1 tem peso 2 e a nota 5.1 tem peso 3. Então a média ponderada resultante é
+5.766667.
+
+Dica:
+
+e Para ler mais de um valor por linha use a função split(), como mostrado a seguir, para ler 2 ou mais valores em uma mesma linha:
+
+x,y z = input().split()
+
+Para quem quiser se aprofundar no funcionamento da função split() consulte a documentação de Python 3.x, em particular procure
+pelos métodos da classe str.
+

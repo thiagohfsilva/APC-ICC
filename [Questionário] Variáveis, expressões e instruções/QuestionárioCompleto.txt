@@ -1,0 +1,1116 @@
+Iniciado em
+Estado
+
+Concluída em
+Tempo empregado
+Avaliar
+
+quinta-feira, 4 mai. 20283, 21:11
+Finalizada
+
+domingo, 7 mai. 2023, 16:48
+
+2 dias 19 horas
+
+10,00 de um máximo de 10,00(100%)
+Questão 1
+Correto
+Atingiu 1,00 de 1,00
+
+NN
+
+Escreva um programa que recebe um número inteiro de dois dígitos e retorne esse número multiplicado por 100 mais ele mesmo, isto
+é, um inteiro de quatro dígitos.
+
+A Entrada consiste de:
+* Umnúmero inteiro x, tal que 10 < x < 99
+
+ASaída deve apresentar:
+* Umnúmero inteiro y, tal que 1010 < w < 9999
+
+Observações:
+e Não é necessário validar se os valores de entrada são do tipo definido.
+
+Descrição dos Exemplos:
+* No primeiro exemplo a entrada é o número 51. Multiplicando este número uma vez por 100 e somando ele ao resultado da
+multiplicação a saída é 5151.
+
+For example:
+
+Input | Result
+
+51 5151
+14 1414
+33 3333
+
+Answer: (penalty regime: 0,0, 10, 20, ... %)
+
+1 |numero = int(input())
+2 |print(numero*101)
+3
+
+a
+
+Input | Expected | Got
+
+4. [51 5151 515114
+
+4 (14 | 1414 1414 | 44 o
+4
+Input | Expected | Got
+
+/ 33 3333 3333 [14
+4 96 9696 9696 | 4
+/ 20 2020 2020 4
+73 7373 737314
+
+Passou em todos os teste!
+
+Para resolver esta questão você pode utilizar operações com strings.
+
+[correto |
+
+Notas para este envio: 1,00/1,00.
+Questão 2
+Correto
+Atingiu 1,00 de 1,00
+
+Bolos
+
+Drikinha gosta de bolos de vários sabores. Uma vez por semana ela vai em uma padaria perto de casa e pede x pedaços de bolo de
+algum sabor, o pedaço de bolo tem o valor fixo de 3.25 reais, independentemente do sabor. Escreva um programa que recebe o sabor
+do bolo e a quantidade de pedaços que Drikinha irá comprar e retorne a frase do atendente: "Foram x pedaços de bolo de s, então fica
+z reais" Onde g é a quantidade de pedaços, s o sabor do bolo e z o total da compra de Drikinha em reais. Imprima o valor da compra
+com apenas duas casas após a vírgula.
+
+A Entrada consiste de:
+e Umastring e um número inteiro positivo, representando o sabor do bolo e quantidade de pedaços respectivamente.
+
+A Saída deve apresentar:
+* Umastring, como especificado no enunciado.
+
+Observações:
+e Não é necessário validar se os valores de entrada são do tipo definido.
+e Seatente ao formato dos valores da saída especificados no enunciado.
+
+Descrição dos Exemplos:
+* No primeiro exemplo, o sabor do bolo escolhido foi baunilha e a quantidade de pedaços é 5, dessa forma a saída é "Foram 5 pedaços
+de bolo de baunilha, então fica 16.25 reais",
+
+Dica:
+e Paraler mais de um valor por linha use a função split(), como mostrado a seguir, para ler 2 ou mais valores em uma mesma linha:
+
+x,y2Z= inputQ.split()
+
+Para quem quiser se aprofundar no funcionamento da função split() consulte a documentação de Python 3.x, em particular procure
+pelos métodos da classe str.
+
+For example:
+
+Input Result
+baunilha 5 | Foram 5 pedaços de bolo de baunilha, então fica 16.25 reais
+morango 7 Foram 7 pedaços de bolo de morango, então fica 22.75 reais
+
+passas 4 Foram 4 pedaços de bolo de passas, então fica 13.00 reais
+
+Answer: (penalty regime: 0,0, 10, 20, ... %)
+
+sabor,qgt = input().split()
+
+qt = int(qt)
+
+total = qt*3.25
+
+print(f"Foram (qt) pedaços de bolo de (sabor), então fica (total:.2f) reais")
+
+vB uw nha
+Input Expected
+
+baunilha Foram 5 pedaços de bolo
+
+5 então fica 16.25 reais
+
+morango 7 |Foram 7 pedaços de bolo
+fica 22.75 reais
+
+passas 4 Foram 4 pedaços de bolo
+fica 13.00 reais
+
+merengue Foram 2 pedaços de bolo
+
+2 então fica 6.50 reais
+
+limão 2 Foram 2 pedaços de bolo
+fica 6.50 reais
+
+abacaxi 6 | Foram 6 pedaços de bolo
+
+fica 19.50 reais
+
+Passou em todos os teste!
+
+de
+
+de
+
+de
+
+de
+
+de
+
+de
+
+baunilha,
+morango, então
+passas, então
+merengue,
+
+então
+
+limão,
+
+abacaxi, então
+
+Got
+
+Foram 5 pedaços
+então fica 16.25
+
+Foram 7 pedaços
+
+fica 22.75 reais
+
+Foram 4 pedaços
+
+fica 13.00 reais
+
+Foram 2 pedaços
+
+então fica 6.50
+
+Foram 2 pedaços
+fica 6.50 reais
+
+Foram 6 pedaços
+fica 19.50 reais
+
+de bolo
+
+reais
+
+de bolo
+
+de bolo
+
+de bolo
+
+reais
+
+de bolo
+
+de bolo
+
+Para resolver esta questão, atente para o uso das diferentes formas de formatação da função print().
+
+[correto |
+
+Notas para este envio: 1,00/1,00.
+
+de
+
+de
+
+de
+
+de
+
+de
+
+de
+
+baunilha,
+morango, então
+passas, então
+merengue,
+
+então
+
+limão,
+
+abacaxi, então
+Questão 3
+Correto
+Atingiu 1,00 de 1,00
+
+Expres(u)s(ujão
+
+Susu terminou sua tarefa de matemática e para revisar mais um pouco o conteúdo ela resolveu aplicar vários números em uma expressão
+
+numérica que ela mesma criou: para cada número x, primeiro multiplica-se x por 2, desse resultado subtrai-se 5 e por último acrescenta-se 2”.
+
+Escreva um programa que recebe um inteiro x, o aplica na expressão de Susu e retorna o resultado.
+
+A Entrada consiste de:
+* x, um número inteiro positivo.
+
+ASaída deve apresentar:
+* Um número inteiro, o resultado da expressão numérica.
+
+Observações:
+e Não é necessário validar se os valores de entrada são do tipo definido.
+
+Descrição dos Exemplos:
+e No primeiro exemplo, como x = 7, multiplicamos o sete por dois, em seguida subtrai-se cinco desse resultado e por último
+adiciona-se 27.14 — 5 + 128 = 137.
+
+For example:
+
+Input | Result
+
+7 137
+15 32793
+1 -1
+
+Answer: (penalty regime: 0,0, 10, 20, ... %)
+
+1 |x = int(input())
+2 |y =2*x - 5 +2**x
+3 |print(y)
+4
+L
+Input | Expected Got
+LA 7 137 137 LÁ
+
+15 | 32793 32793 id PA É 4
+Input | Expected Got
+
+“1 -1 -1 4
+93 9 9 ÁV
+/ 20 1048611 1048611 É
+4 130 1073741879 | 1073741879 | 4
+
+Passou em todos os teste!
+
+Para resolver esta questão, utilize as operações apresentadas pelo livro na ordem que o enunciado especifica.
+
+[correto |
+
+Notas para este envio: 1,00/1,00.
+
+Questão 4
+Correto
+Atingiu 1,00 de 1,00
+
+Onomatopeia Estendida
+
+Cebolinha e Cascão acabaram de ler todos os gibis da Turma da Mônica. Como eles não tem mais nada pra fazer, já que a Mônica viajou,
+decidiram fazer uma brincadeira: os dois procuraram todas as onomatopeias dos gibis e formam novas a partir de três existentes. Para
+formar uma nova onomatopeia eles juntam a primeira string com três ocorrências da segunda e duas da terceira. Escreva um programa
+que dadas três onomatopeias, crie uma nova seguindo a lógica dos amigos do Bairro do Limoeiro.
+
+A Entrada consiste de:
+e Trêsstrings, as três onomatopéias.
+
+ASaída deve apresentar:
+e Umastring representando a onomatopeia estendida.
+
+Observações:
+e Não é necessário validar se os valores de entrada são do tipo definido.
+
+Descrição dos Exemplos:
+e No primeiro exemplo, as três onomatopeias são "boom", "zap" e "bang", concatenando a primeira com três ocorrências da segunda e
+duas da terceira o resultado é "boomzapzapzapbangbang”.
+
+Dica:
+
+e Paraler mais de um valor por linha use a função split(), como mostrado a seguir, para ler 2 ou mais valores em uma mesma linha:
+
+x,y z = input()split()
+
+Para quem quiser se aprofundar no funcionamento da função split() consulte a documentação de Python 3.x, em particular procure
+pelos métodos da classe str.
+
+For example:
+
+Input Result
+
+boom zap bang | boomzapzapzapbangbang
+wow boom pow | wowboomboomboompowpow
+
+zap wham bang | zapwhamwhamwhambangbang
+
+Answer: (penalty regime: 0,0, 10, 20, ... %)
+
+1 |p,s,t =input().split()
+2 |print(p+s*3+t*2)
+Input Expected Got
+
+boom zap bang boomzapzapzapbangbang boomzapzapzapbangbang
+wow boom pow wowboomboomboompowpow wowboomboomboompowpow
+zap wham bang zapwhamwhamwhambangbang zapwhamwhamwhambangbang
+
+pow crash coops |powcrashcrashcrashoocopsoocops | powcrashcrashcrashoocopsooops
+
+chak splash zap | chaksplashsplashsplashzapzap  chaksplashsplashsplashzapzap
+
+XIX LL 4<|<
+
+smack poof bang | smackpoofpoofpocofbangbang smackpoofpoofpoofbangbang
+
+Passou em todos os teste! 4
+
+Para resolver esta questão, atente para o uso das diferentes formas de formatação da função print().
+
+[Correto |
+
+Notas para este envio: 1,00/1,00.
+
+<IXLA4A|<
+Questão 5
+Correto
+Atingiu 1,00 de 1,00
+
+Depurando um programa Python
+
+O CodeRunner é um sistema para avaliação automática de programas de computador. A proposta é simples, cada questão apresenta
+um contexto e descreve um problema, e você deve prover como resposta um trecho de código que resolva este problema. A avaliação
+também é simples, o sistema fornece informações (dados de entrada) ao seu programa e compara o resultado obtido (dados de saída)
+com o resultado esperado (gabarito). Se forem iguais, você acertou a questão.
+
+Por exemplo, suponha que o problema seja: "Dado dois números inteiros de entrada que são a base e a altura de um triângulo, mostre o
+valor da área com duas casas decimais." Um código que resolve esse problema é mostrado abaixo. No entanto, ele tem erros de sintaxe e
+de semântica.
+
+base = input ()
+altura = input()
+
+base = int (Base)
+
+area = (base * altura)
+print (£f'(area:.3f)")
+
+Verifique a solução apresentada e o corrija. Seu trabalho é consertar o programa,
+
+A Entrada consiste de:
+e Duas linhas, cada uma contendo um número inteiro positivo.
+
+ASaída deve apresentar:
+* Umalinha com a área de triângulo com duas casas decimais.
+
+Observações:
+e Não énecessário validar se os valores de entrada estão dentro dos intervalos definidos.
+
+Descrição dos Exemplos:
+e Osexemplos são autoexplicativos. Dada a entrada basta aplicar na equação.
+
+For example:
+
+Input | Result
+
+0 0.00
+o)
+2 3.00
+3
+4 10.00
+5
+
+Answer: (penalty regime: 0,0, 10, 20, ... %)
+
+RESET ANSWER
+
+1 |base = input()
+
+2 laltura = input()
+
+3 |base = int(base)
+
+4 [altura = int(altura)
+
+5 |area = (base * altura)/2
+6 |print(f' (area:.2f)')
+Input Expected Got
+
+0 0.00
+0
+
+/|2 3.00
+3
+
+fia 10.00
+5
+
+4 (10 10.00
+
+2
+
+/|5 17.50
+7
+
+4/16 27.00
+9
+
+0.00
+
+10.00
+
+10.00
+
+17.50
+
+27.00
+
+Passou em todos os teste! 4
+
+Notas para este envio: 1,00/1,00.
+Questão 6
+Correto
+Atingiu 1,00 de 1,00
+
+Debugando - Gramática
+
+Dado o seguinte programa copie-o no IDE Python para depurá-lo até funcionar corretamente:
+
+S = input ()
+O = input ()
+P = input ()
+
+return = (p + (0 +85 ))
+print (Return)
+
+A Entrada consiste de:
+
+e Entrada 1 - umastring com o sujeito da oração
+e Entrada 2 - umastring com o objeto da oração
+e Entrada 3 - uma string com o verbo da oração
+
+ASaída deve apresentar:
+e Umaoração em língua portuguesa na ordem direta.
+
+Observações:
+e Não é necessário validar se os valores de entrada estão dentro dos intervalos definidos.
+e Procure por erros de sintaxe e de semântica.
+
+For example:
+
+Input Result
+
+Maria Maria ama João.
+João
+
+ama
+
+João João ama Maria.
+Maria
+ama
+
+Hoje Hoje é domingo.
+domingo
+é
+
+Answer: (penalty regime: 0,0, 10, 20, ... %)
+
+RESET ANSWER
+
+HRealize as alterações necessárias no código apresentado.
+S = input()
+
+O = input()
+
+P = input()
+
+Return = (S+" "4+P+" “40+"."S
+
+print(Return)
+
+ou AuwmnN aa
+Input
+
+Expected
+
+Got
+
+4 |Maria
+João
+
+ama
+
+Maria ama João.
+
+Maria ama João.
+
+4 | João
+Maria
+
+ama
+
+João ama Maria.
+
+João ama Maria.
+
+4 |Hoje
+domingo
+é
+
+Hoje é domingo.
+
+Hoje é domingo.
+
+4 | Sabiá
+
+ave
+
+Sabiá é ave.
+
+Sabiá é ave.
+
+4 Aves
+penas
+tem
+
+Aves tem penas.
+
+Aves tem penas.
+
+4 | Sabia
+penas
+tem
+
+Sabia tem penas.
+
+Sabia tem penas.
+
+Passou em todos os teste! 4?
+
+Para resolver esta questão copie o código Python no IDE e tente executar.
+
+Ele vai dar um erro de sintaxe. Leia o erro de sintaxe e corrija-o.
+
+Faça isto até o código não ter mais erros de sintaxe.
+
+Não tendo mais erros de sintaxe, o código será executado pelo interpretador Python até o fim e apresentará a saída.
+
+Verifique se a saída está correta. Se a saída estiver errada, leia atentamente o programa procurando por erros semânticos (lógicos).
+
+Corrija os erros semânticos (lógicos) do programa.
+
+Notas para este envio: 1,00/1,00.
+Questão 7
+Correto
+Atingiu 1,00 de 1,00
+
+Média Ponderada
+
+Elabore um programa que lê três notas de um aluno e o peso de cada nota e apresenta a média final deste aluno
+
+A Entrada consiste de:
+s umalinha contendo três números do tipo floats n1, n2 e n3, que representam as notas de um aluno.
+e Asegunda inha da entrada contém números três inteiros p1, p2 e p3, que representam os pesos de cada nota.
+
+ASaída deve apresentar:
+* Umalinha com a média ponderada do aluno, com seis casas decimais.
+
+Observações:
+s Não é necessário validar se os valores de entrada estão dentro dos tipos e intervalos definidos.
+
+Descrição dos Exemplos:
+
+* Noterceiro exemplo, a nota 9.1 tem peso 1, a nota 5.1 tem peso 2 e a nota 5.1 tem peso 3. Então a média ponderada resultante é
+5.766667.
+
+Dica:
+
+e Para ler mais de um valor por linha use a função split(), como mostrado a seguir, para ler 2 ou mais valores em uma mesma linha:
+
+x,y z = input().split()
+
+Para quem quiser se aprofundar no funcionamento da função split() consulte a documentação de Python 3.x, em particular procure
+pelos métodos da classe str.
+
+For example:
+
+Input Result
+
+10 10 10 10.000000
+111
+
+9.000000
+
+9.1 5.1 5.1/5.766667
+123
+
+Answer: (penalty regime: 0,0, 10, 20, ... %)
+
+ni,n2,n3 = input().split()
+
+pi,p2,p3 = input().split()
+
+ni,n2,n3 = float(n1),float(n2),float(n3)
+p1,p2,p3 = int(p1),int(p2),int(p3)
+media = (n1*p1+n2*p2+n3*p3)/(p1+p2+p3)
+print(f" (media: .6f)")
+
+o uoBuwm
+Input Expected Got
+
+4 (10 10 10 10.000000 | 10.000000 | 4º
+111
+
+4 1999 9.000000 9.000000 LÁ
+123
+
+4 9.1 5.1 5.1 | 5.766667 5.766667 LÁ
+
+4 (4.0 4.4 7.05 |5.910000 5.910000 ÉY/
+113
+
+4 |687 893 254 | 668.943574 668.943574 | 4
+997 153 126
+
+4 |2210 6.800000 6.800000 LÁ
+113
+
+Passou em todos os teste! 4
+
+Para resolver esta questão procure entender o que é uma média ponderada e crie a expressão matemática correspondente
+considerando 3 números.
+
+Utilize f-strings na função print() para formatar a saída que deve ter 6 casas decimais na parte fracionária.
+
+Além disso, se tiver problemas com a precisão da saída, lembre-se que os pesos são variáveis do tipo inteiro e as notas do tipo float, o
+que pode infuenciar na precisão da resposta.
+
+Notas para este envio: 1,00/1,00.
+Questão 8
+Correto
+Atingiu 1,00 de 1,00
+
+Mônica em: criando sequências
+
+Quando está no tédio, Mônica gosta de criar sequências de letras. Mas ela não faz isso de uma maneira aleatória, segue todo um
+raciocínio para inventar uma sequência e em seguida, ela a escreve em seu caderninho vermelho.
+
+A fórmula de Mônica para criar uma sequência consiste em alguns elementos: três números inteiros a, b e c, todos maiores que zero e
+duas sequências p1 e p2 que já existem (podendo ou não ser de autoria da Mônica). Com todos os elementos, a Mônica cria a
+sequência da seguinte maneira:
+
+1. Repete a sequência "p1" a + b vezes;
+
+2. Repete a sequência "p2" b + c vezes;
+
+3. Concatena o resultado do primeiro passo com o resultado do segundo passo;
+4. Repete o resultado do terceiro passo a + c vezes.
+
+Mônica gostaria de automatizar esse processo elaborando um programa com toda a lógica que ela desenvolveu, mas como o PC dela
+foi pro conserto, ela não pode fazer. Você poderia fazer esse favor a ela?
+
+A Entrada consiste de:
+e Três números inteiros positivos.
+e Duasstrings, uma em cada linha, como apresentado nos exemplos.
+
+ASaída deve apresentar:
+* Umastring, representando a sequência criada por Mônica.
+
+Observações:
+e Não énecessário validar se os valores de entrada estão dentro dos intervalos definidos.
+e Seatente aos parênteses.
+
+Descrição dos Exemplos:
+
+* No primeiro exemplo, temos a = 1,b = 3ec = 1, a primeira sequência "kj" e a segunda "yyu" são repetidas 4 vezes (at+be brc
+respectivamente). A concatenação das duas é "kikijkjkiyyuyyuyyuyyu", que repetida duas vezes se torna
+"kikikikiyyuyyuyyuyyukjkjkikiyyuyyuyyuyyu".
+
+e Nosegundo exemplo, a primeira sequência é repetida 2 vezes (a+b), e a segunda, 4 (b+c). Após a concatenação no passo três a
+sequência resultante repetida a+c vezes é
+"wdvwdvdadadadadadadadawdvwdvdadadadadadadadawdvwdvdadadadadadadadawdvwdvdadadadadadadada".
+
+For example:
+
+Input Result
+
+1 kjkjkjkjyyuyyuyyuyyuk)kjkikjyyuyyuyyuyyu
+3
+
+1
+
+k5
+
+yyu
+
+1 wdvwdvdadadadadadadadawdvwdvdadadadadadadadawdvwdvdadadadadadadad.
+1
+
+3
+
+wav
+
+dada
+
+1 trntrnkjkjkjkjyyuyyuyyuyyukjk)kjkjyyuyyuyyuyyukjkjkjkjyyuyyuyyuyy
+
+trn
+kjkjkjkjyyuyyuyyuyyukjkjkjkjyyuyyuyyuyyu
+
+is
+Answer: (penalty regime: 0,0, 10, 20, ... %)
+
+Co “ava lwanãar
+
+int(input())
+int(input())
+int(input())
+
+pi = input()
+
+p2 = input()
+
+grupo = pi*(a+b)+ p2*(b+c)
+frase = grupo*(a+c)
+print(frase)
+
+no u
+nom
+
+Input
+
+kj
+vyu
+
+wdv
+dada
+
+1
+1
+1
+trn
+
+kjkjkjkjyyuyyuyyuyyukjkjkjkjyyuyyuyyuyyu
+
+fffxcvxcvfffxcvxcvfffxcvxcyv
+
+nm
+
+pip
+pop
+
+Expected
+
+kjkjkjkjyyuyyuyyuyyukj)k5kjkjyyuyyuyyuyya
+wdvwdvdadadadadadadadawdvwdvdadadadadadadadawdvwdvdadadadad
+trntrnkjkjkjkjyyuyyuyyuyyukjkjkikjyyuyyuyyuyyuk)kjkikjyyuyy
+fffxcvxcvfffxcvxcviffxcvxcv
+kkkkkkkkkkkbbbbbbbbbbkkkkkkkkkkkbbbbbbbbbbkkkkkkkkkkkbbbblbl
+
+Effxcvxcvfffxcvxcvfffxcvxcvfffxcvxcvfffxcvxcvfffxcvxcvfffxc
+
+pippippippippippippippippippippippippippippoppoppoppoppoppo
+
+is
+Input Expected
+
+ja njnjnjnjnjnjnjnjnjnjnjytrytrytrytrytrytrytrytrnjnjnjnjnjnjn
+
+nj
+
+ytr
+
+LÁ 3 tytytytytytylteltelteltelteltetytytytytytyltelteltelteltelt
+
+ty
+lte
+
+1 monicamonicamonicamonicaoioioiocioimonicamonicamonicamonicao
+3
+2
+monica
+
+oi
+
+Passou em todos os teste! 4
+
+Para resolver essa questão utilize as operações com strings vistas em aula, se atentando a ordem de cada operação descrita no
+
+enunciado.
+
+[Correto |
+
+Notas para este envio: 1,00/1,00.
+Questão 9
+Correto
+Atingiu 1,00 de 1,00
+
+Textões
+
+Malu utiliza uma rede social muito famosa, conhecida por permitir que você se expresse sobre os mais diversos e importantes temas da
+atualidade, perpetuando sempre questionamentos relevantes. Essa rede social, no entanto, preza pela objetividade acima de tudo, e
+desde sua fundação tem o histórico de permitir apenas uma quantidade limitada de caracteres por postagem, para que as pessoas não
+gastem tempo demais lendo sobre apenas um assunto.
+
+Alguns usuários, no entanto, arrumaram um método sorrateiro para poder escrever longos e tediosos textos e assim ocupar o tempo
+de todos os usuários da rede.
+
+Para salvar a todos deste destino terrível, você tem a missão de criar uma ferramenta capaz de detectar os chamados "textões" da internet.
+Considere que um adulto médio consegue ler aproximadamente de 1200 a 1550 caracteres por minuto.
+
+Dada uma postagem qualquer, calcule o tempo necessário para que um adulto médio consiga ler todo seu conteúdo. Mostre em duas linhas
+diferentes o pior tempo estimado e o melhor tempo estimado (em minutos), com uma precisão de 3 casas decimais.
+
+A Entrada consiste de:
+e Umastring$S contendo todo o texto da postagem.
+
+ASaída deve apresentar:
+
+e Na primeira linha, o pior tempo de leitura estimado em minutos sob a seguinte formatação: "Pior dos casos: PC", onde PC é um
+número real (de ponto decimal) que representa o pior tempo estimado com três casas decimais de precisão.
+
+e Nasegunda linha, o melhor tempo de leitura estimado em minutos sob a seguinte formatação: "Melhor dos casos: MC ", onde MC é
+um número real que representa o melhor tempo estimado com três casas decimais de precisão.
+
+Observações:
+e Não énecessário validar se os valores de entrada estão dentro dos intervalos definidos.
+* Espaços em brancos são lidos como caracteres normais.
+
+Descrição dos Exemplos:
+e No primeiro exemplo, a quantidade de caracteres total da string é igual a 728. No pior dos casos o usuário demora 0,607 minutos
+pra ler. No melhor dos casos, ele demora 0,470 minutos.
+
+Dica:
+
+e Umaforma eficiente de contar a quantidade total de caracteres em uma string é utilizar a função len(), que para o caso de strings
+retorna sua quantidade total de caracteres.
+
+Por exemplo: len('batata' retorna o valor inteiro 6.
+
+Essa função possui uma variedade de usos, então acostume-se a utiliza-la quando necessário!
+
+For example:
+Input Result
+A nível organizacional, o novo modelo estrutural aqui preconizado deve passar por modificações Pior
+independentemente da gestão inovadora da qual fazemos parte. Percebemos, cada vez mais, que o dos
+consenso sobre a necessidade de qualificação facilita a criação do retorno esperado a longo casos:
+prazo. Assim mesmo, a competitividade nas transações comerciais exige a precisão e a definição do | 0.607
+orçamento setorial. Acima de tudo, é fundamental ressaltar que a adoção de políticas Melhor
+descentralizadoras oferece uma interessante oportunidade para verificação de alternativas às dos
+soluções ortodoxas. O cuidado em identificar pontos críticos na crescente influência da mídia casos:
+promove a alavancagem das condições financeiras e administrativas exigidas. 0.470
+
+is
+Input Result
+
+Considerando que temos bons administradores de rede, o consenso sobre a utilização da orientação | Pior
+
+a objeto possibilita uma melhor disponibilidade dos índices pretendidos. Ainda assim, existem dos
+dúvidas a respeito de como a utilização de SSL nas transações comerciais cumpre um papel casos:
+essencial na implantação dos requisitos mínimos de hardware exigidos. É importante questionar o 1.194
+quanto a adoção de políticas de segurança da informação inviabiliza a implantação do impacto de Melhor
+uma parada total. No mundo atual, a consolidação das infraestruturas facilita a criação das ACLs dos
+
+de segurança impostas pelo firewall. Do mesmo modo, a utilização de recursos de hardware casos:
+dedicados causa uma diminuição do throughput do levantamento das variáveis envolvidas. A 0.925
+
+implantação, na prática, prova que a necessidade de cumprimento dos SLAs previamente acordados
+afeta positivamente o correto provisionamento das formas de ação. Pensando mais a longo prazo, a
+constante divulgação das informações acarreta um processo de reformulação e modernização das
+novas tendencias em TI. Por conseguinte, a implementação do código exige o upgrade e a
+atualização das janelas de tempo disponíveis. Evidentemente, o comprometimento entre as equipes
+de implantação faz parte de um processo de gerenciamento de memória avançado da rede privada. Não
+obstante, a preocupação com a TI verde deve passar por alterações no escopo de todos os recursos
+funcionais envolvidos.
+
+Desta maneira, a expansão das metas para meu mandato agrega valor ao estabelecimento dos modos de | Pior
+
+operação convencionais. No governo atual, a complexidade dos estudos efetuados estimula a dos
+padronização das diretrizes de desenvolvimento para o futuro. O empenho em analisar o surgimento casos:
+do emprego exige a precisão e a definição dos métodos utilizados na avaliação de resultados. Não 1.892
+
+obstante, a constante divulgação das informações garante a contribuição de um grupo importante na | Melhor
+
+determinação das condições políticas e governamentais exigidas. Do mesmo modo, o novo modelo de dos
+política aqui preconizado apresenta tendências no sentido de aprovar a manutenção dos casos:
+conhecimentos estratégicos para atingir a excelência. Por outro lado, a consulta aos diversos 1.465
+
+militantes aponta para a melhoria dos relacionamentos verticais entre executivo e legislativo.
+Neste sentido, a estrutura atual de poder facilita a criação do sistema de formação de empregos
+que corresponde às necessidades. Todas estas questões, devidamente ponderadas, levantam dúvidas
+sobre se a percepção das dificuldades obstaculiza a apreciação da importância do investimento em
+saúde, educação e segurança. Podemos já vislumbrar o modo pelo qual a contínua implementação de
+obras afeta positivamente a correta previsão dos índices pretendidos. No entanto, não podemos
+esquecer que o início da atividade geral de formação de atitudes cumpre um papel essencial na
+formulação de alternativas às soluções ortodoxas. Assim mesmo, o acompanhamento das vontades do
+povo prepara-nos para enfrentar situações atípicas decorrentes das formas de ação. Ainda assim,
+existem dúvidas a respeito de como o entendimento das metas propostas é uma das consequências das
+direções preferenciais no sentido político. Por conseguinte, a determinação clara de objetivos
+ainda não demonstrou convincentemente que vai participar na mudança dos níveis de motivação da
+sociedade, OQ que temos que ter sempre em mente é que a hegemonia do ambiente político representa
+uma abertura para a melhoria do sistema de participação geral. As minhas experiências acumuladas
+no meio político demonstram que a necessidade de renovação no cenário político acarreta um
+processo de reformulação e modernização de todos os recursos públicos envolvidos.
+
+Answer: (penalty regime: 0,0, 10, 20, ... %)
+
+texto = input()
+
+tamanho = len(texto)
+
+pior = tamanho/1200
+
+melhor = tamanho/1558
+
+print(f'''Pior dos casos: (pior:.3f)
+Melhor dos casos: (melhor:.3f)'"')
+
+JovRwmnNHR
+Input
+
+LA A nível organizacional, o novo modelo estrutural aqui preconizado deve passar por modificações inde
+
+LÁ Considerando que temos bons administradores de rede, o consenso sobre a utilização da orientação a «
+
+4 | Desta maneira, a expansão das metas para meu mandato agrega valor ao estabelecimento dos modos de opt
+
+4 | mgkpaadmkbahomingomjcpibgpcbglkcalahejgllolckcbimagpjedififfjiaedkeikafhkkgbkenmfgamimnnkififbinmledh)
+
+4 | iomnniormimmciocoinicoimiiocnocrocnooicrmrmonocricmrminimcioincrcinocnromioinooiiromncmiionooimoonmmc
+
+4 | 11000111100100010111011010101100010111001100011101100010101101110110100000011010101000001011100011011
+
+Passou em todos os teste! 4
+
+Utilize a função len() para contar a quantidade de caracteres e calcule o pior e melhor tempo.
+
+[correto |
+
+Notas para este envio: 1,00/1,00.
+Questão 10
+Correto
+Atingiu 1,00 de 1,00
+
+Troca de Esmeraldas
+
+Menescraft é um popular jogo virtual de exploração e aventura. Nele seu objetivo é coletar recursos das mais diversas raridades para
+posterior comercialização com os aldeões encontrados pelo mapa. No entanto, o sistema de trocas e vendas deste jogo é bastante
+desenvolvido de modo que até mesmo os aldeões controlados pelo computador não aceitarão trocas injustas, onde seja cobrado um
+valor exorbitante. Sabendo disso, imagine que em uma jogatina você foi capaz de reunir uma determinada quantidade de minérios de
+ferro, ouro, pó vermelho e diamantes. Ao pesquisar profundamente nos fóruns online você descobriu que o valor justo de uma remessa
+de minérios é calculada da seguinte forma:
+
+e Paracada minério de ferro o valor da remessa é acrescido em uma esmeralda.
+«e Paracada minério de ouro o valor da remessa é duplicado.
+
+e Paracada pó vermelho o valor da remessa é acrescido em duas esmeraldas.
+
+e Paracada diamante o valor da remessa é quadruplicado.
+
+É garantido que sempre haverá ao menos uma unidade de cada minério e que as quantidades encontradas de cada minério sempre
+serão números inteiros positivos. Desta forma, o valor da remessa é sempre em número de esmeraldas. Como apresentado, ferro e pó
+vermelho fornecem ao jogador o número inicial de esmeraldas.
+
+A Entrada consiste de:
+e 4inteiros F,O, Pe D que representam respectivamente as quantidades de minério de ferro, ouro, pó vermelho e diamantes
+encontrados.
+
+A Saída deve apresentar:
+e Ovalor total em esmeraldas que deverá ser cobrado pela remessa de minérios, considerando o cálculo para um preço justo.
+
+Observações:
+e Não é necessário validar se os valores de entrada estão dentro dos intervalos definidos.
+
+Descrição dos Exemplos:
+
+e No primeiro exemplo, cada minério foi encontrado exatamente uma única vez. Um minério de ferro gerou o acréscimo do preço
+total em uma esmeralda, assim como um minério de pó vermelho gerou um acréscimo de duas esmeraldas, totalizando 3
+esmeraldas. O valor foi então duplicado, pois havia exatamente um minério de ouro, tornando-se 6 esmeraldas e por fim foi
+quadruplicado pois havia um diamante. Finalmente o preço total da remessa foi de 24 esmeraldas.
+
+* Nosegundo exemplo, foram encontrados 3 minérios de ferro, tornando o preço inicial 3 esmeraldas. Além disso, foram encontrados
+3 minérios de pó vermelho e como cada um equivale a duas esmeraldas, o preço total considerando apenas ferro e pó vermelho era
+de 9 esmeraldas. No entanto, foram encontrados 7 minérios de ouro, o que fez com que o preço fosse multiplicado 7*2 vezes, ou
+seja, 14 vezes. Além disso haviam 3 diamantes, fazendo com que o preço fosse multiplicado 3*4 vezes, ou seja, 12
+vezes. Multiplicando as 9 esmeraldas iniciais por 14 e depois por 12 encontramos o valor total de 1512 esmeraldas.
+
+For example:
+
+Input | Result
+
+1 24
+1
+
+1
+
+1
+
+3 1512
+7
+
+3
+
+3
+
+4 576
+6
+
+4
+
+1
+Answer: (penalty regime: 0,0, 10, 20, ... %)
+
+1 |ferro = int(input())
+ouro = int(input())
+po = int(input())
+diamante = int(input())
+
+preco = preco + 1*ferro
+
+3
+4
+5
+6 |preco = 8
+7
+8 |preco = preco + 2*po
+
+9 |preco = preco*2*(ouro) mm Falha aqui
+19 |preco = precot4*(diamante) HH Falha aqui
+11
+
+12 |print(preco)
+
+Input Expected Got
+1 24 24 +
+1
+1
+1
+913 1512 1512 14
+7
+3
+3
+DARE 576 576 14
+6
+4
+1
+DARE 1200 1200 14
+5
+3
+3
+/|/3 784 782 14
+7
+2
+2
+4 16 1728 1728 4
+9
+3
+2
+
+Passou em todos os teste! 4
+
+Para resolver essa questão é necessário atentar-se tanto ao que deve ser somado e o que deve ser multiplicado quanto à ordem em
+que estas operações precisam ser feitas.
+
+Tente testar o programa passo a passo para entender exatamente o que está sendo feito.
+
+É possível utilizar parênteses para determinar a ordem de precedência das operações, forçando o trecho a ser avaliado primeiro.
+
+Por exemplo 3*2+1 = 7, porém 3*(2+1) = 9.
+
+Notas para este envio: 1,00/1,00.
+

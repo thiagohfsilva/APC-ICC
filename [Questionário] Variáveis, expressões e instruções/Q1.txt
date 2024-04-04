@@ -1,0 +1,22 @@
+Questão 1
+Correto
+Atingiu 1,00 de 1,00
+
+NN
+
+Escreva um programa que recebe um número inteiro de dois dígitos e retorne esse número multiplicado por 100 mais ele mesmo, isto
+é, um inteiro de quatro dígitos.
+
+A Entrada consiste de:
+* Umnúmero inteiro x, tal que 10 menor que x menor que 99
+
+ASaída deve apresentar:
+* Umnúmero inteiro y, tal que 1010 menor que w menor que 9999
+
+Observações:
+e Não é necessário validar se os valores de entrada são do tipo definido.
+
+Descrição dos Exemplos:
+* No primeiro exemplo a entrada é o número 51. Multiplicando este número uma vez por 100 e somando ele ao resultado da
+multiplicação a saída é 5151.
+
