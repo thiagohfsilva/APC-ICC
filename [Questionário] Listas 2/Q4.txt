@@ -1,0 +1,45 @@
+Questão 4
+
+Não respondido
+
+Atingiu 0,00 de 2,50
+
+Agradando os Comerciantes
+
+Ao fazer compras, Heverton tem a mania de sempre comprar um produto em cada mercearia da pequena cidade onde mora para
+agradar os comerciantes. Cada mercearia é enumerada por um número inteiro de 1 a N. Heverton possui inicialmente M mangos. Ele
+sempre começa suas compras pela mercearia 1 e, após comprar o produto mais barato, vai até a mercearia 2, compra o produto mais
+barato e assim sucessivamente. Os comerciantes da pequena cidade não vendem fiado e, por isso, só é possível comprar um produto se
+ele possui mangos suficientes para isso.
+
+Caso ele passe por todas as mercearias e ainda existir dinheiro disponível, Heverton recomeça o processo de compras pela mercearia 1
+novamente e continua até não possuir mais dinheiro disponível para comprar um produto. Heverton quer comprar no mínimo K
+produtos de cada mercearia considerando que ele possui M mangos. Será que isso é possível?
+
+A Entrada consiste de:
+
+e Aprimeira linha da entrada contém três números inteiros separados por espaço VN, Me K
+(1menor queNmenor que1000,1menor queMmenor que 105), 1menor que K menor que 100, indicando a quantidade de mercearias, o valor inicial em mangos de Heverton e
+a quantidade mínima de produtos que ele quer comprar em cada mercearia, respectivamente. A segunda linha contém N inteiros
+separados por espaço q1, G2, :, qn (1 menor que q; menor que 100) indicando a quantidade de produtos existentes na i-ésima mercearia. As
+próximas N linhas descrevem os produtos da mercearia. Na j-ésima linha, existem q inteiros separados por espaço
+01,023: 109,» emquea; (1 menor quea, menor que 10º) indica o preço do i-ésimo produto, sendo que cada produto é único (i.e. não existem
+repetições desse produto).
+
+A Saída deve apresentar:
+
+« Imprima "Sim" (sem aspas duplas) caso seja possível comprar pelo menos K produtos de cada mercearia da pequena cidade a partir
+dos M mangos iniciais de Heverton. Caso contrário, imprima "Nao" (sem aspas duplas).
+
+Observações:
+e Não é necessário validar se os valores de entrada são do tipo definido.
+
+Descrição dos Exemplos:
+
+e No primeiro exemplo, Heverton compra uma única vez (K = 1) os produtos 3 e 1 de cada mercearia, não excedendo os 25 mangos
+que ele possui.
+
+e Nosegundo exemplo, Heverton compra os produtos 2, 5 e 1 (das mercearias 1, 2 e 3), que possuem valores 3,1e 1,
+respectivamente, ficando com 5 mangos. Na próxima rodada de compras, seriam necessários 14 mangos para compras os produtos
+4,1e 3 que possuem valores 6, 3 e 5, respectivamente.
+

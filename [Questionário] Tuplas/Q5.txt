@@ -1,0 +1,33 @@
+Questão 5
+Correto
+Atingiu 2,00 de 2,00
+
+Stock market
+
+Um bloco de ações pode ser definido como um conjunto de informações a respeito de ações ou títulos. As informações são
+normalmente a data de compra, o preço de compra, o número de ações compradas e o símbolo da ação. Podemos registrar essas
+informações em uma lista de tuplas para cada bloco de ações e fazer uma série de operações simples nos blocos. Implemente a função
+stockmarket que recebe uma lista de tuplas de ações e retorna o valor total das ações sumarizadas por data na ordem fornecida em
+
+um dicionário.
+
+Entrada
+Não há entrada de dados, o teste chama a função stockmarket para uma lista de tuplas de ações.
+
+Saída
+
+Não há saída explícita: o teste apresenta o dicionário sumarizado do valor da ações por data resultante da chamada da função
+automaticamente.
+
+Observação
+
+* No primeiro caso de teste, foram realizadas compras nos dias 24, 25, 26 e 27 de outubro. Portanto, o dicionário de saída contém 4
+entradas, cada uma para cada data, armazenadas como chaves. No dia 24 de outubro foram compradas 25 ações por 43.50 cada o
+que deu um total de 1087.5 em valores gastos com a compra.
+
+e Submeta somente o que foi solicitado.
+
+Particularidade do Tópico
+Atenção, a criação de uma função com o nome determinado pelo enunciado é fundamental para a prática do aluno e o Moodle irá
+descontar pontos, caso a criação não tenha sido feita corretamente (sendo case-sensitive o nome da função).
+

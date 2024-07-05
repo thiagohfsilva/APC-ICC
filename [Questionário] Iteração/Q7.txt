@@ -1,0 +1,22 @@
+Questão 7
+Correto
+Atingiu 1,00 de 1,00
+
+Divisíveis por 3e 7
+
+Dado um número N inteiro e positivo, faça um programa que imprima todos os números de 0 a N, incluindo o 0e o N que são
+divisíveis por 3 e 7.
+
+A Entrada consiste de:
+¢ Deum unico caractere N inteiro positivo.
+
+ASaída deve apresentar:
+e Todos os números de Oa N, incluindo o0 eo N que são divisíveis por 3 e 7, em uma única linha. Os números devem estar separados
+por espaços em branco.
+
+Observações:
+e Não é necessário validar se os valores de entrada são do tipo definido.
+
+Descrição dos Exemplos:
+* Os exemplos são autoexplicativos.
+

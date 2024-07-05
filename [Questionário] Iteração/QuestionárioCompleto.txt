@@ -1,0 +1,3371 @@
+Iniciado em
+Estado
+
+Concluída em
+Tempo empregado
+Avaliar
+
+quinta-feira, 25 mai. 2023, 20:08
+Finalizada
+
+domingo, 28 mai. 2023, 21:46
+
+3 dias 1 hora
+
+10,00 de um máximo de 10,00(100%)
+Questão 1
+Correto
+Atingiu 1,00 de 1,00
+
+Onde está o fim?
+
+Você recebeu uma lista com todos os colaboradores de uma empresa. A lista contém o nome do colaborador, um por linha. Você não
+sabe o tamanho da lista, mas sabe que ela acaba quando aparece no lugar do nome a palavra "Fim".
+
+Elabore um programa que conte a quantidade de colaboradores da empresa.
+
+A Entrada consiste de:
+* um número indefinido de linhas que termina com uma linha com a palavra "Fim";
+e cada linha contém a string do nome do colaborador.
+
+A Saída deve apresentar:
+* Um número inteiro que é a quantidade de funcionários.
+
+Observações:
+e Não é necessário validar se os valores de entrada são do tipo definido.
+
+Descrição dos Exemplos:
+e Osexemplos são autoexplicativos.
+
+For example:
+Input Result
+Maria 2
+José
+Fim
+Fim 0
+Ana Maria 6
+
+José Maria
+Mario Carlos
+Carlos André
+Patrícia Márcia
+Igor Igor
+
+Fim
+
+Answer: (penalty regime: 0,0, 10, 20, ... %)
+
+1 |cont = 0
+
+2 |texto = ""
+
+3 v|while texto != "Fim":
+4 texto = input()
+5 cont = cont +1
+6 |print(cont-1)
+
+7
+
+8
+Input Expected | Got
+
+VY Maria 2 2 4
+José
+Fim
+/ =| Fim 0 0 LÁ
+4 | Ana Maria 6 6 Vv
+
+José Maria
+Mario Carlos
+Carlos André
+Patricia Marcia
+Igor Igor
+
+Fim
+
+4 | ENZO GABRIEL 10 10.4
+JOÃO MIGUEL
+MARIA EDUARDA
+PEDRO HENRIQUE
+MARIA CLARA
+MARIA CECÍLIA
+MARIA JULIA
+MARIA LUIZA
+ANA CLARA
+MARIA ALICE
+
+/ 1111 11 1 1 LÁ
+Fim
+
+Passou em todos os teste! 4
+
+Para resolver esta questão, use uma variável no papel de contador para contar a quantidade de colaboradores. A variável com o papel
+de contador normalmente é inicializado com o valor zero. Dentro do loop while a variável contador é incrementado de uma unidade
+toda vez que precisa contabilizar mais um contador.
+
+Notas para este envio: 1,00/1,00.
+Questão 2
+Correto
+Atingiu 1,00 de 1,00
+
+A empresa Satisfação Garantida paga bons salários?
+
+Você recebeu uma lista com todos os colaboradores de uma empresa. A lista contém o nome do colaborador e o seu salário base em
+reais, separados por uma vírgula, um por linha. Você não sabe o tamanho da lista, mas sabe que ela acaba quando aparece no lugar do
+nome a palavra "Fim". Te perguntaram se a empresa paga bons salários. Para responder a esta pergunta você resolveu calcular o salário
+médio que a empresa paga.
+
+Elabore um programa que calcule o salário médio da empresa.
+
+A Entrada consiste de:
+
+e De umnúmero indefinido de linhas que termina com uma linha com a palavra "Fim" e um salário qualquer.
+
+e Cada linha contém a string do nome do colaborador, seguido do seu salário em ponto flutuante com duas casas decimais.
+e Onomeeo salário estão separados por vírgulas e não por espaços em branco.
+
+ASaída deve apresentar:
+* Um número ponto flutuante com duas casas decimais que é a média salarial da empresa.
+
+Observações:
+e Não é necessário validar se os valores de entrada são do tipo definido.
+e No método split() use o parâmetro end =”,” para que use a "" como separador.
+
+Descrição dos Exemplos:
+* Os exemplos são autoexplicativos.
+e Os exemplos fazem parte do enunciado.
+
+For example:
+Input Result
+Maria,1.00 1.50
+José,2.00
+Fim,0.00
+Fim, 0.00 0.00
+Ana Maria,1456.36 1515.61
+
+José Maria, 1356.76
+Mario Carlos, 1234.56
+Carlos André,1276.87
+Patrícia Marcia, 2657.98
+Igor Igor,1111.11
+Fim,1.00
+
+Answer: (penalty regime: 0,0, 10, 20, ... %)
+
+1 |cont = @
+
+2 |salario_acumulado = 80.0
+
+3 |texto = ""
+
+4v|while texto != "Fim":
+
+5 texto, salario = input().split(",")
+
+6 salario = float(salario)
+
+7x if texto != "Fim":
+
+8 salario_acumulado = salario_acumulado + salario
+9 cont = cont + 1
+
+10 v/if cont-1 == @:
+
+11 print("@.00")
+
+12 vjelse:
+
+13 print(f"{salario_acumulado/(cont-1):.2f}")
+14
+
+15
+
+Input Expected | Got
+
+4 |Maria,1.00 1.50 1.50 LÁ
+José,2.00
+Fim,0.00
+4 |Fim,0.00 0.00 0.00 v
+4 Ana Maria, 1456.36 1515.61 1515.61 Vv
+
+José Maria,1356.76
+Mario Carlos,1234.56
+Carlos André, 1276.87
+Patricia Marcia, 2657.98 £
+Igor Igor,1111.11
+Fim,1.00
+
+VW | ENZO GABRIEL, 16672.00 11066.10 | 11066.10 |W
+JOÃO MIGUEL, 15082.00
+MARIA EDUARDA, 12063.00
+PEDRO HENRIQUE, 11103.00
+MARIA CLARA, 10751.00
+MARIA CECÍLIA, 9570.00
+MARIA JULIA, 9448.00
+MARIA LUIZA, 9132.00
+ANA CLARA, 8452.00
+MARIA ALICE, 8388.00
+Fim, 0.00
+
+4 | abe, 5454.21 232211.43 | 232211.43 VW
+ghh, 56654.45
+fdf,5465.00
+fsf,5454.45
+rer, 5646.21
+rte, 56465.89
+reser, 897987.65
+poi, 68787.55
+rrter, 987987 .44
+Fim, 89789798,54
+
+YW |11 11 11,11.11 11.11 11.11 v
+Fim,11.11
+
+Passou em todos os teste! 4
+
+Para resolver esta questão, use uma variável no papel de contador para contar a quantidade de colaboradores. A variável com o papel
+de contador normalmente é inicializado com o valor zero. Dentro do loop while a variável contador é incrementado de uma unidade
+toda vez que precisa contabilizar mais um contador.
+
+Use uma outra variáve] com o papel de acumulador. Esta variável] é normalmente inicializada com zero e vai totalizando os salários à
+medida que os colaboradores são lidos.
+
+Cuidado que a relação de colaboradores pode estar vazia. Neste caso o contador vale zero e não faz sentido calcular a média salarial.
+Se tentar dividir o total pago de salários pelo total de colaboradores vai dar erro de divisão por zero. Preste atenção para estes casos
+
+de exceção em seu programa de computador.
+
+Notas para este envio: 1,00/1,00.
+Questão 3
+Correto
+Atingiu 1,00 de 1,00
+
+Qual o maior salário?
+
+Você recebeu uma lista com todos os colaboradores de uma empresa. A lista contém o nome do colaborador e o seu salário base em
+reais, separados por uma vírgula, um por linha. Você não sabe o tamanho da lista, mas sabe que ela acaba quando aparece no lugar do
+nome a palavra "Fim". Te perguntaram qual maior salário na empresa.
+
+Elabore um programa que ache e imprima o maior salário da empresa. Não precisa usar listas ou dicionários para fazer esta questão.
+
+A Entrada consiste de:
+
+* De umnúmero indefinido de linhas que termina com uma linha com a palavra "Fim" e um salário qualquer.
+
+e Cadalinha contém a string do nome do colaborador, seguido do seu salário, que é maior que zero, em ponto flutuante com duas
+casas decimais.
+
+e Onomeeo salário estão separados por vírgulas e não por espaços em branco.
+
+ASaída deve apresentar:
+© Ovalor do maior salário ou a string "Não tem", caso não haja o maior salário.
+
+Observações:
+e Não é necessário validar se os valores de entrada são do tipo definido.
+
+e No método split() use o parâmetro sep =”, ” para que use a "" como separador.
+
+Descrição dos Exemplos:
+* Os exemplos são autoexplicativos.
+e Os exemplos fazem parte do enunciado.
+
+For example:
+
+Input Result
+Maria,1.00 2.00
+José,2.00
+
+Fim,0.00
+
+Fim,0.00 Não tem
+Ana Maria,1456.36 2657.98
+
+José Maria, 1356.76
+Mario Carlos, 1234.56
+Carlos André,1276.87
+Patrícia Marcia, 2657.98
+Igor Igor,1111.11
+Fim,1.00
+
+Answer: (penalty regime: 0,0, 10, 20, ... %)
+
+1 |cont = @
+
+2 |texto = ""
+
+3 |maior_salario = 0.8
+
+4v|while texto != "Fim":
+
+5 texto,salario = input().split(",")
+6 salario = float(salario)
+
+7x if salario > maior salario:
+
+By if texto != "Fim":
+
+9 maior_salario = salario
+10 cont = cont + 1
+
+11 v/if cont-1 == 0:
+
+12 print("Não tem")
+
+13 vjelse:
+
+14 print(f"(maior salario:.2f)")
+
+Input Expected | Got
+
+4 |Maria,1.00 2.00 2.00 v
+José,2.00
+Fim,0.00
+VY =| Fim,0.00 Não tem Não tem va
+4 Ana Maria, 1456.36 2657.98 2657.98 Vv
+
+José Maria,1356.76
+Mario Carlos,1234.56
+Carlos André, 1276.87
+Patricia Marcia, 2657.98
+Igor Igor,1111.11
+Fim,1.00
+
+4 | ENZO GABRIEL, 16672.00 16672.00 | 16672.00 |W
+JOÃO MIGUEL, 15082.00
+MARIA EDUARDA, 12063.00
+PEDRO HENRIQUE, 11103.00
+MARIA CLARA, 10751.00
+MARIA CECÍLIA, 9570.00
+MARIA JULIA, 9448.00
+MARIA LUIZA, 9132.00
+ANA CLARA, 8452.00
+MARIA ALICE, 8388.00
+Fim, 0.00
+
+4 | abe, 5454.21 987987.44 | 987987.44 Wf
+
+ghh, 56654.45
+
+fdf,5465.00
+
+fsf,5454.45
+
+rer, 5646.21
+
+rte, 56465.89
+
+reser, 897987.65
+
+poi, 68787.55
+
+rrter, 987987 .44
+
+Fim, 89789798,54
+
+YW |11 11 11,11.11 11.11 11.11 v
+Fim,11.11
+
+Passou em todos os teste! 4
+
+Para resolver esta questão, use uma variável no papel de armazenador do maior valos de salário. Toda vez que encontrar um salário
+maior, esta variável deve ser atualizada. Pense com qual valor esta variável deve ser inicializada. E se fosse para descobrir o menor
+salário? Como você inicializaria esta variável?
+
+[correto |
+
+Notas para este envio: 1,00/1,00.
+Questão 4
+Correto
+Atingiu 1,00 de 1,00
+
+Quem recebe o menor salário?
+
+Você recebeu uma lista com todos os colaboradores de uma empresa. A lista contém o nome do colaborador e o seu salário base em
+reais, separados por uma vírgula, um por linha. Você não sabe o tamanho da lista, mas sabe que ela acaba quando aparece no lugar do
+nome a palavra "Fim". Te perguntaram quem recebe o menor salário na empresa.
+
+Elabore um programa que ache e imprima o nome de quem recebe o menor salário da empresa. Não precisa usar listas ou dicionários
+para fazer esta questão.
+
+A Entrada consiste de:
+
+e De umnúmero indefinido de linhas que termina com uma linha com a palavra "Fim" e um salário qualquer.
+
+e Cadalinha contém a string do nome do colaborador, seguido do seu salário em ponto flutuante com duas casas decimais.
+e Ovalor do salário é maior do que R$ 0.00 e menor do que R$ 1000000000,00.
+
+* Onomeeo salário estão separados por vírgulas e não por espaços em branco.
+
+ASaída deve apresentar:
+e Onome da pessoa que tem o menor salário ou a string "Não tem”, caso não haja o menor salário.
+
+Observações:
+
+e Não há pessoas com salários iguais.
+
+* Não é necessário validar se os valores de entrada são do tipo definido.
+
+e No método split() use o parâmetro end =”,” para que use a "' como separador.
+e Para este problema, supor que não existem dois salários iguais.
+
+Descrição dos Exemplos:
+* Osexemplos são autoexplicativos.
+e Os exemplos fazem parte do enunciado.
+
+For example:
+
+Input Result
+Maria,1.00 Maria
+José,2.00
+
+Fim,0.00
+
+Fim,0.00 Não tem
+Ana Maria, 1456.36 Igor Igor
+
+José Maria,1356.76
+Mario Carlos,1234.56
+Carlos André,1276.87
+Patrícia Márcia,2657.98
+Igor Igor,1111.11
+Fim,1.00
+
+Answer: (penalty regime: 0,0, 10, 20, ... %)
+
+1 |texto = ""
+2 |menor salario = 1000000000.0
+3 |nome menor salario = "Não tem"
+
+4v|while texto [= "Fim":
+
+5 texto, salario = input().split(",")
+6 salario = float(salario)
+
+7x if salario < menor salario:
+
+8y if texto I= "Fim":
+
+9 menor_salario = salario
+18 nome menor salario = texto
+
+11 |print(nome menor salario)
+12
+
+Input Expected Got
+
+4 |Maria,1.00 Maria Maria LÁ
+José,2.00
+Fim,0.00
+4 | Fim,0.00 Não tem Não tem É
+WY | Ana Maria,1456.36 Igor Igor Igor Igor ~v
+
+José Maria,1356.76
+Mario Carlos,1234.56
+Carlos André,1276.87
+Patricia Marcia,2657.98
+Igor Igor,1111.11
+Fim,1.00
+
+WY | ENZO GABRIEL, 16672.00 MARIA ALICE | MARIA ALICE | W
+JOAO MIGUEL, 15082.00
+MARIA EDUARDA, 12063.00
+PEDRO HENRIQUE, 11103.00
+MARIA CLARA, 10751.00
+MARIA CECÍLIA, 9570.00
+MARIA JULIA, 9448.00
+MARIA LUIZA, 9132.00
+ANA CLARA, 8452.00
+MARIA ALICE, 8388.00
+Fim, 0.00
+
+4 | abc, 5454.21 abe abc A
+
+ghh, 56654.45
+
+fdf, 5465.00
+
+fsf,5454.45
+
+rer,5646.21
+
+rte,56465.89
+
+reser, 897987.65
+
+poi, 68787.55
+
+rrter, 987987. 44
+
+Fim, 89789798 .54
+
+¥Y (11/11 11,11.11 11 1111 11 11 11 v
+Fim,11.11
+
+Passou em todos os teste! 4
+
+Para resolver esta questão, use uma variável no papel de armazenador do maior valos de salário. Toda vez que encontrar um salário
+maior, esta variável deve ser atualizada. Pense com qual valor esta variável deve ser inicializada. E se fosse para descobrir o menor
+salário? Como você inicializaria esta variável?
+
+[correto |
+
+Notas para este envio: 1,00/1,00.
+Questão 5
+Correto
+Atingiu 1,00 de 1,00
+
+Relatório da situação salarial da empresa
+
+Você recebeu uma lista com todos os colaboradores de uma empresa. A lista contém o nome do colaborador e o seu salário base em
+reais, separados por uma vírgula, um por linha. A lista tem um tamanho dado N.
+
+Elabore um programa que imprima um relatório com a média salarial da empresa, o nome do colaborador com o maior salário e o seu
+salário, o nome do colaborador com o menor salário e o seu salário. Não usar listas ou dicionários para fazer esta questão.
+
+A Entrada consiste de:
+
+e Deumnúmero inteiro WN na primeira linha, o número de colaboradores na empresa.
+
+e Niinhas contendo uma string com o nome do colaborador, seguido do seu salário em ponto flutuante com duas casas decimais.
+e Ovalor do salário é maior do que R$ 0.00 e menor do que R$ 1000000000,00.
+
+e Onomeeo salário estão separados por vírgulas e não por espaços em branco.
+
+ASaída deve apresentar:
+
+* Ovalor da média salarial da empresa na primeira linha, com duas casas decimais;
+o Senão houver média imprimir "Não tem média”.
+
+e Nasegunda linha o nome do colaborador com maior salário e o seu salário;
+
+e Naterceira linha o nome do colaborador com menor salário e o seu salário;
+
+e caso não haja o maior ou menor salário, imprimir a string "Não tem”.
+
+Observações:
+e Não é necessário validar se os valores de entrada são do tipo definido.
+e Nométodo split() use o parâmetro end =”, ” para que use a "" como separador.
+
+e Para este problema, supor que não existem dois salários iguais.
+
+Descrição dos Exemplos:
+e Os exemplos são autoexplicativos.
+e Os exemplos fazem parte do enunciado.
+
+For example:
+Input Result
+2 1.50
+Maria,1.00 José 2.00
+José,2.00 Maria 1.00
+0 Não tem média
+Não tem
+Não tem
+6 1515.61
+Ana Maria, 1456.36 Patrícia Márcia 2657.98
+José Maria, 1356.76 Igor Igor 1111.11
+
+Mario Carlos,1234.56
+Carlos André, 1276.87
+Patrícia Márcia,2657.98
+Igor Igor,1111.11
+
+Answer: (penalty regime: 0,0, 10, 20, ... %)
+
+1 |n = int(input())
+
+soma salario = 0.0
+
+menor salario = 1600990000.00
+menor pessoa = ""
+
+maior salario = 0.8
+
+maior pessoa = ""
+v|for k in range(n):
+
+nome,salario = input().split(",")
+«alaria = flnat(calarin)
+
+oan au bWh
+Got
+
+1.50
+José 2.00
+Maria 1.00 vA
+
+Não tem média
+Não tem
+Não tem
+
+ep aaa Vau emas ey
+19 soma salario = soma salario + salario
+liv if salario < menor_salario:
+12 menor_salario = salario
+13 menor_pessoa = nome
+14v if salario > maior salario:
+15 maior salario = salario
+16 maior pessoa = nome
+17 v|if n == 0:
+18 print("Não tem médiainNão teminhNão tem")
+19 vjelse:
+28 media = soma_salario/n
+21 print (f"{media:.2F}")
+22 print(f"{maior_pessoa} (maior salario:.2f)")
+23 print(f"(menor pessoa) (menor salario: .2f}")
+24
+
+Input Expected
+4.12 1.50
+
+Maria,1.00 José 2.00
+
+José,2.00 Maria 1.00
+¥ 0 Não tem média
+
+Não tem
+Não tem
+
+4 |6 1515.61
+
+Ana Maria, 1456.36
+
+José Maria, 1356.76
+Mario Carlos, 1234.56
+Carlos André,1276.87
+Patricia Marcia, 2657.98
+
+Igor Igor,1111.11
+
+wv |10
+
+ENZO GABRIEL, 16672.00
+JOAO MIGUEL, 15082.00
+MARIA EDUARDA, 12063.00
+PEDRO HENRIQUE, 11103.00
+MARIA CLARA, 10751.00
+MARIA CECILIA, 9570.00
+MARIA JULIA, 9448.00
+MARIA LUIZA, 9132.00
+ANA CLARA, 8452.00
+MARIA ALICE, 8388.00
+
+19
+
+abc, 5454.21
+ghh, 56654.45
+fdf, 5465.00
+fsf,5454.45
+rer,5646.21
+rte, 56465.89
+reser, 897987.65
+poi, 68787.55
+rrter, 987987.44
+
+viii
+11 11 11,121.11
+
+Passou em todos os teste! ¥
+
+Patrícia Márcia 2657.98
+Igor Igor 1111.11
+
+11066.10
+ENZO GABRIEL 16672.00
+MARIA ALICE 8388.00
+
+232211.43
+rrter 987987.44
+abe 5454.21
+
+11.11
+11 11 11 11.11
+11 11 11 11.11
+
+1515.61 LÁ
+Patrícia Márcia 2657.98
+
+Igor Igor 1111.11
+
+11066.10
+ENZO GABRIEL 16672.00
+MARIA ALICE 8388.00
+
+232211.43
+rrter 987987.44
+abc 5454.21
+
+11.11
+11 11 11 11.11
+11 11 11 11.11
+
+Para resolver esta questão, use uma variável no papel de armazenador do maior valos de salário. Toda vez que encontrar um salário
+maior, esta variável deve ser atualizada. Pense com qual valor esta variável deve ser inicializada. E se fosse para descobrir o menor
+salário? Como você inicializaria esta variável?
+
+[Correto |
+
+Notas para este envio: 1,00/1,00.
+Questão 6
+Correto
+Atingiu 1,00 de 1,00
+
+Dêivis no show de rock
+
+Dêivis e seus amigos estão se preparando para o próximo show de rock: Black Sabbath. A banda virá pela segunda e última vez ao
+Brasil, em dezembro de 2016. A situação é a seguinte: nem todos os amigos possuem dinheiro o suficiente para comprar o ingresso,
+mas alguns amigos possuem mais dinheiro do que o necessário. Como Dêivis e seus amigos são muito unidos e acreditam que a coisa
+mais importante da vida é não perder um show de rock com a galera, eles decidiram juntar todo o dinheiro que têm para tentarem
+comprar ingressos para todos. Dêivis se encarregou de fazer as contas. Mas o Dêivis é o Dêivis... É claro que sobrou para você.
+
+Dada a quantidade de dinheiro de cada amigo e o valor i do ingresso, Déivis pediu a sua ajuda para calcular a parte inteira do dinheiro
+médio e determinar se todos poderão ir ao show.
+
+A Entrada consiste de:
+
+e Aprimeira linha da entrada contém dois inteiros: quantidade de amigos 1 < n < 10º e preço do ingresso 1 < à < 10º separados
+por espaço.
+
+e Cada uma das próximas n linhas contém um inteiro O < a; < 10º onde 1 <4 « n representa dinheiro do i-ésimo amigo.
+
+ASaída deve apresentar:
+
+e Aprimeira linha da saída deve conter a parte inteira do dinheiro médio para cada amigo, conforme os exemplos.
+
+* Asegunda linha deve conter a mensagem "o rock reinara mais uma vez" se houver dinheiro o suficiente para todos, ou a mensagem
+"rockeiros trabalhando ja" em caso contrário.
+
+Observações:
+e Não é necessário validar se os valores de entrada estão dentro dos intervalos e tipos definidos.
+
+Descrição dos Exemplos:
+
+* No primeiro exemplo, existem 6 amigos e o preço do ingresso é de 300 dinheiros. A média de dinheiro que eles possuem é 313
+dinheiros e este valor é suficiente para comprar 6 ingressos de 300 dinheiros cada.
+
+e Nosegundo exemplo, existem 3 amigos e o preço do ingresso é de 150 dinheiros. A média de dinheiro que eles possuem é 149
+dinheiros e este valor não é suficiente para comprar 3 ingressos de 150 dinheiros cada.
+
+For example:
+
+Input Result
+
+6 300 media: 313
+
+350 o rock reinara mais uma vez
+300
+
+300
+
+230
+
+400
+
+300
+
+3 150 media: 149
+
+150 rockeiros trabalhando ja
+150
+
+149
+
+10 469434735 | media: 469434735
+216843016 o rock reinara mais uma vez
+791925791
+
+470920555
+
+196410040
+
+832874523
+
+609597931
+
+531885954
+
+452627701
+
+215165839
+
+376096004
+Answer: (penalty regime: 0,0, 10, 20, ... %)
+
+1 |n,val ing = input().split()
+2 |n,val ing = int(n),int(val ing)
+3 |soma valor = 0
+4v|for k in range(n):
+5 dinheiro = int(input())
+6 soma valor = soma valor + dinheiro
+7 |print(f"media: {soma_valor//n}")
+8 v/if soma_valor//n >= val ing:
+9 print(f"o rock reinara mais uma vez")
+18 vjelse:
+11 print(f"rockeiros trabalhando ja")
+a
+Input Expected Got
+v € 300 media: 313 media: 313
+350 o rock reinara mais uma vez |o rock reinara mais uma vez
+300
+300
+230
+400
+300
+4 |3 150 media: 149 media: 149
+150 rockeiros trabalhando ja rockeiros trabalhando ja
+150
+149
+
+Input Expected Got
+
+10000 497627109 media: 497627110 media: 497627110 LA
+207958449 o rock reinara mais uma vez o rock reinara mais uma vez
+498336602
+877491172
+619261339
+467336849
+388227713
+208900211
+212678637
+601422386
+616472951
+540625614
+252370965
+765837253
+161645712
+116876707
+788511139
+830152314
+962435233
+957488050
+271835476
+88463000
+566841997
+671921901
+431370599
+820698049
+315954987
+15224511
+512387176
+167036811
+511646613
+858484421
+717190530
+55921241
+251778617
+130596417
+253420776
+515844463
+954584526
+121885291
+514349533
+736944959
+628940616
+190936556
+139156645
+113758935
+604049405
+873545871
+709575468
+751492725
+950496570
+772529322
+413898322
+134466440
+105420241
+757954558
+89361788
+651894698
+587499044
+514543389
+6066684
+400057885
+335680134
+786717499
+70014915
+107888965
+928416585
+98722217
+Input
+
+327453731
+268865650
+222028648
+825939129
+127812041
+466360453
+443972377
+796162044
+481788773
+90389530
+957798697
+988507036
+477336763
+447037197
+881474668
+469355445
+268422359
+631633323
+346773469
+470358814
+36566333
+523947783
+415512124
+195083452
+751840875
+401363699
+877464970
+27630582
+844995318
+777005613
+734832529
+857086749
+696850146
+144463556
+884495876
+57415713
+607530171
+270503406
+865915817
+824632185
+577396252
+466093443
+311551164
+526936689
+345093589
+557981813
+586908837
+599491726
+316303387
+323911690
+403364642
+475906883
+170735457
+410764268
+659971562
+565771870
+345200740
+206098801
+232926866
+1298069
+655514389
+496010683
+891860904
+875304821
+632685877
+468806563
+997490828
+236571387
+
+Expected
+
+Got
+Input
+
+304399442
+107986474
+537498905
+420070575
+669403970
+886364963
+772035612
+357829178
+873126571
+851390111
+752059891
+92932788
+
+581606546
+203035514
+196211229
+48235309
+
+604212895
+913391470
+353131134
+596401438
+177086917
+39946980
+
+144972840
+283324760
+465995597
+577144147
+445175128
+106648560
+200230106
+587174043
+447362393
+337101352
+352959940
+180403796
+11185629
+
+792073283
+936961451
+338334324
+345390682
+375420804
+505381579
+747493051
+658571472
+539060837
+550648746
+274428570
+635801217
+61478465
+
+196018425
+752439416
+81195694
+
+370170375
+540443545
+520978082
+612204829
+875422653
+451138090
+601335415
+889083099
+93791745
+
+126965040
+799207962
+48141574
+
+600951365
+903141600
+328415139
+77290250
+
+906523364
+
+Expected
+
+Got
+Input
+
+617497811
+740588109
+372459506
+324734334
+184831812
+610805709
+412728171
+240078820
+6662514
+41981053
+380456681
+855710422
+576292880
+661722039
+688834098
+699914828
+420052620
+615237191
+122596548
+520780920
+536377065
+878775333
+373159641
+289332478
+924744784
+980775566
+389229430
+391702730
+447318715
+438474271
+281616678
+550294575
+439839571
+809531205
+106814613
+756823631
+952317778
+81425821
+964727007
+323858213
+375360495
+673252734
+59953192
+77310707
+552257859
+316326248
+467332164
+323506282
+611458160
+423691290
+607293738
+144964166
+279655648
+306592929
+755413176
+401921997
+785424234
+840520198
+746086635
+99200367
+832653470
+511459272
+869412662
+694246739
+865518039
+89468144
+485371646
+198770815
+
+Expected
+
+Got
+Input
+
+308978470
+60791697
+617187913
+995651795
+831305258
+186141373
+731786940
+859107192
+202546985
+351172710
+351231325
+107258464
+106663326
+385314196
+508378163
+635525763
+475547705
+642692311
+210788951
+510999310
+337277023
+498077276
+137185834
+388606388
+652576678
+980777112
+530852861
+217436546
+841176388
+336653844
+338939996
+876876470
+255654646
+591880548
+303286251
+659649641
+65424122
+126665470
+813797546
+557495929
+755852730
+814007148
+269169695
+207583351
+425413273
+163656759
+211485470
+26214036
+649886339
+209648743
+110991241
+786326762
+983689152
+204746248
+177041708
+362299433
+40035935
+111014713
+137396227
+776888181
+381556610
+771142565
+978454700
+970161570
+137165738
+59043548
+589706158
+5296050
+
+Expected
+
+Got
+Input Expected Got
+
+619809322
+157203954
+470820987
+695855408
+895377640
+888710112
+555880157
+879357393
+642598203
+15425860
+743485780
+559259543
+716620863
+593471819
+611336255
+513854915
+302637236
+998463586
+161333746
+999164739
+89734831
+397408273
+975348298
+417882602
+547865386
+525040646
+648566168
+99035885
+783375974
+846359872
+661807849
+812638231
+541829242
+935204176
+546128764
+244115386
+683144788
+864322534
+460211402
+560237026
+74080122
+236406680
+397845732
+529752560
+856868573
+26704111
+397526011
+886982684
+280759134
+51842302
+675693418
+908652039
+628265053
+236582093
+892108490
+589632167
+417474252
+192330001
+851066515
+4750185
+56710092
+453250017
+108024312
+74723 ...snip... 55773381
+81612161
+191095257
+771060828
+384771433
+Input
+
+429740029
+14903273
+
+745341054
+104462815
+229553184
+364896703
+561478277
+852624703
+411529068
+727071226
+263243518
+888318739
+912150395
+479081273
+215289291
+559942024
+347734300
+455688379
+846436133
+699205820
+767084466
+700477930
+292915078
+483708018
+834873365
+672393024
+961206915
+413242912
+919168135
+75543306
+
+625560910
+522228287
+119771185
+51349986
+
+869376716
+832222978
+629120762
+408786807
+664162295
+169030852
+593680358
+405008190
+541529080
+128556757
+38938562
+
+627483091
+90491144
+
+504510634
+170426279
+65014729
+
+381099235
+837502259
+892770349
+320675640
+188883643
+760668226
+654377859
+201129849
+445306107
+994565206
+10129319
+
+636618180
+679650569
+304129360
+533140556
+963756613
+872560160
+813612229
+
+Expected
+
+Got
+Input
+
+286118012
+677433858
+659592788
+968663491
+123006122
+947356073
+884240307
+732199785
+687455528
+724974115
+126612931
+748285754
+96856351
+
+368784215
+443444023
+349592862
+876886935
+558586359
+417556136
+153753783
+863110893
+538123394
+544121754
+608141181
+883880627
+242317762
+900607713
+85532349
+
+940435519
+20496135
+
+659079035
+806194677
+620144086
+962467668
+543094836
+362858805
+666766335
+859848835
+353300182
+48824413
+
+359778505
+148481920
+716904602
+545294751
+893960827
+944824301
+945880219
+927890600
+854112776
+420112387
+516572708
+43784992
+
+705601657
+96877208
+
+404058340
+678387884
+50464643
+
+835174549
+93326110
+
+772046472
+270253823
+900658451
+358723801
+955841385
+280949120
+729563351
+970151080
+181854612
+
+Expected
+
+Got
+Input
+
+37493401
+671103855
+185586076
+510902942
+872645403
+575818042
+851772196
+603859051
+940255083
+215874215
+847656534
+3968596
+880145842
+891338898
+578659498
+141132095
+23809120
+894829916
+443345147
+136551983
+769065753
+144866950
+434901907
+504905864
+512756386
+934026558
+764610206
+449119828
+27713068
+624746698
+376908980
+469980951
+119251813
+838570192
+168608849
+330939078
+141339180
+922224556
+963394373
+732376005
+656470899
+669453190
+967980195
+90449534
+304587129
+222973489
+166718570
+323952573
+617466903
+963574233
+56936201
+913530622
+692986478
+532117489
+261568073
+860720935
+128382938
+225522957
+317869607
+29356335
+444858971
+459595807
+845805203
+928746955
+942446844
+337663955
+10988236
+465106859
+
+Expected
+
+Got
+Input
+
+125413896
+661345471
+820156824
+680341768
+437816887
+781544260
+215933648
+119992369
+475513329
+323362157
+602484193
+8052546
+453751611
+458143854
+753826139
+499762652
+860972301
+177171327
+499180547
+186574215
+983602332
+906731916
+17379999
+321564457
+954883101
+591232969
+202917363
+888941744
+561272219
+852800655
+36127695
+179974509
+593052963
+618505484
+748271815
+52214479
+99139303
+194458338
+678281918
+560217703
+176392979
+677239543
+495756632
+406366844
+806867935
+634072720
+608846813
+499547420
+483299966
+700660149
+742716118
+736876659
+568954480
+433138868
+64996700
+284521600
+782243900
+138849270
+300113271
+427221432
+847986170
+61099909
+817448961
+911947434
+574415057
+208468920
+828639751
+112290975
+
+Expected
+
+Got
+Input
+
+76077337
+
+395248325
+286015109
+183522069
+718214346
+687432856
+266040081
+980285354
+463964019
+350705783
+565093016
+695700652
+425641484
+38423486
+
+640917692
+964035943
+543548646
+540287803
+55033653
+
+811420443
+424415081
+412763127
+168548158
+919616030
+992470705
+510028413
+897536148
+822315096
+157481075
+592805254
+960100237
+611801160
+953556236
+459023726
+567859957
+931622817
+40291328
+
+828894395
+599085772
+716647310
+117961614
+280605537
+742251832
+697731381
+477265408
+74180061
+
+693778707
+441694769
+172846421
+604065801
+330687877
+263703591
+506227390
+230640248
+951500570
+862895688
+266766740
+563041531
+177849171
+597645643
+502485319
+26445338
+
+999492832
+814161838
+833697762
+258110467
+73128022
+
+444215652
+
+Expected
+
+Got
+Input
+
+501223623
+551624682
+442193533
+875372775
+612724801
+804792722
+678831313
+200744354
+424023479
+768240520
+670861240
+277148177
+868160367
+341993752
+536718944
+327414202
+68991338
+
+21063458
+
+944905962
+872821589
+602307430
+439845432
+740570949
+212849272
+40027750
+
+864039289
+17151502
+
+331586573
+918577465
+764918925
+923597646
+835909625
+662725469
+646491102
+982024654
+626205810
+563684811
+555870860
+770430110
+211853555
+490547398
+738417016
+766430054
+596511263
+243407766
+476080088
+515838116
+182505779
+820887836
+175503494
+337307653
+422966675
+338328099
+58484875
+
+997263362
+434055357
+276496607
+435933423
+212058400
+
+Expected
+
+Got
+Input Expected Got
+
+10000 497627111 media: 497627110 media: 497627110
+207958449 rockeiros trabalhando ja rockeiros trabalhando ja
+498336602
+877491172
+619261339
+467336849
+388227713
+208900211
+212678637
+601422386
+616472951
+540625614
+252370965
+765837253
+161645712
+116876707
+788511139
+830152314
+962435233
+957488050
+271835476
+88463000
+566841997
+671921901
+431370599
+820698049
+315954987
+15224511
+512387176
+167036811
+511646613
+858484421
+717190530
+55921241
+251778617
+130596417
+253420776
+515844463
+954584526
+121885291
+514349533
+736944959
+628940616
+190936556
+139156645
+113758935
+604049405
+873545871
+709575468
+751492725
+950496570
+772529322
+413898322
+134466440
+105420241
+757954558
+89361788
+651894698
+587499044
+514543389
+6066684
+400057885
+335680134
+786717499
+70014915
+107888965
+928416585
+98722217
+Input
+
+327453731
+268865650
+222028648
+825939129
+127812041
+466360453
+443972377
+796162044
+481788773
+90389530
+957798697
+988507036
+477336763
+447037197
+881474668
+469355445
+268422359
+631633323
+346773469
+470358814
+36566333
+523947783
+415512124
+195083452
+751840875
+401363699
+877464970
+27630582
+844995318
+777005613
+734832529
+857086749
+696850146
+144463556
+884495876
+57415713
+607530171
+270503406
+865915817
+824632185
+577396252
+466093443
+311551164
+526936689
+345093589
+557981813
+586908837
+599491726
+316303387
+323911690
+403364642
+475906883
+170735457
+410764268
+659971562
+565771870
+345200740
+206098801
+232926866
+1298069
+655514389
+496010683
+891860904
+875304821
+632685877
+468806563
+997490828
+236571387
+
+Expected
+
+Got
+Input
+
+304399442
+107986474
+537498905
+420070575
+669403970
+886364963
+772035612
+357829178
+873126571
+851390111
+752059891
+92932788
+
+581606546
+203035514
+196211229
+48235309
+
+604212895
+913391470
+353131134
+596401438
+177086917
+39946980
+
+144972840
+283324760
+465995597
+577144147
+445175128
+106648560
+200230106
+587174043
+447362393
+337101352
+352959940
+180403796
+11185629
+
+792073283
+936961451
+338334324
+345390682
+375420804
+505381579
+747493051
+658571472
+539060837
+550648746
+274428570
+635801217
+61478465
+
+196018425
+752439416
+81195694
+
+370170375
+540443545
+520978082
+612204829
+875422653
+451138090
+601335415
+889083099
+93791745
+
+126965040
+799207962
+48141574
+
+600951365
+903141600
+328415139
+77290250
+
+906523364
+
+Expected
+
+Got
+Input
+
+617497811
+740588109
+372459506
+324734334
+184831812
+610805709
+412728171
+240078820
+6662514
+41981053
+380456681
+855710422
+576292880
+661722039
+688834098
+699914828
+420052620
+615237191
+122596548
+520780920
+536377065
+878775333
+373159641
+289332478
+924744784
+980775566
+389229430
+391702730
+447318715
+438474271
+281616678
+550294575
+439839571
+809531205
+106814613
+756823631
+952317778
+81425821
+964727007
+323858213
+375360495
+673252734
+59953192
+77310707
+552257859
+316326248
+467332164
+323506282
+611458160
+423691290
+607293738
+144964166
+279655648
+306592929
+755413176
+401921997
+785424234
+840520198
+746086635
+99200367
+832653470
+511459272
+869412662
+694246739
+865518039
+89468144
+485371646
+198770815
+
+Expected
+
+Got
+Input
+
+308978470
+60791697
+617187913
+995651795
+831305258
+186141373
+731786940
+859107192
+202546985
+351172710
+351231325
+107258464
+106663326
+385314196
+508378163
+635525763
+475547705
+642692311
+210788951
+510999310
+337277023
+498077276
+137185834
+388606388
+652576678
+980777112
+530852861
+217436546
+841176388
+336653844
+338939996
+876876470
+255654646
+591880548
+303286251
+659649641
+65424122
+126665470
+813797546
+557495929
+755852730
+814007148
+269169695
+207583351
+425413273
+163656759
+211485470
+26214036
+649886339
+209648743
+110991241
+786326762
+983689152
+204746248
+177041708
+362299433
+40035935
+111014713
+137396227
+776888181
+381556610
+771142565
+978454700
+970161570
+137165738
+59043548
+589706158
+5296050
+
+Expected
+
+Got
+Input Expected Got
+
+619809322
+157203954
+470820987
+695855408
+895377640
+888710112
+555880157
+879357393
+642598203
+15425860
+743485780
+559259543
+716620863
+593471819
+611336255
+513854915
+302637236
+998463586
+161333746
+999164739
+89734831
+397408273
+975348298
+417882602
+547865386
+525040646
+648566168
+99035885
+783375974
+846359872
+661807849
+812638231
+541829242
+935204176
+546128764
+244115386
+683144788
+864322534
+460211402
+560237026
+74080122
+236406680
+397845732
+529752560
+856868573
+26704111
+397526011
+886982684
+280759134
+51842302
+675693418
+908652039
+628265053
+236582093
+892108490
+589632167
+417474252
+192330001
+851066515
+4750185
+56710092
+453250017
+108024312
+74723 ...snip... 55773381
+81612161
+191095257
+771060828
+384771433
+Input
+
+429740029
+14903273
+
+745341054
+104462815
+229553184
+364896703
+561478277
+852624703
+411529068
+727071226
+263243518
+888318739
+912150395
+479081273
+215289291
+559942024
+347734300
+455688379
+846436133
+699205820
+767084466
+700477930
+292915078
+483708018
+834873365
+672393024
+961206915
+413242912
+919168135
+75543306
+
+625560910
+522228287
+119771185
+51349986
+
+869376716
+832222978
+629120762
+408786807
+664162295
+169030852
+593680358
+405008190
+541529080
+128556757
+38938562
+
+627483091
+90491144
+
+504510634
+170426279
+65014729
+
+381099235
+837502259
+892770349
+320675640
+188883643
+760668226
+654377859
+201129849
+445306107
+994565206
+10129319
+
+636618180
+679650569
+304129360
+533140556
+963756613
+872560160
+813612229
+
+Expected
+
+Got
+Input
+
+286118012
+677433858
+659592788
+968663491
+123006122
+947356073
+884240307
+732199785
+687455528
+724974115
+126612931
+748285754
+96856351
+
+368784215
+443444023
+349592862
+876886935
+558586359
+417556136
+153753783
+863110893
+538123394
+544121754
+608141181
+883880627
+242317762
+900607713
+85532349
+
+940435519
+20496135
+
+659079035
+806194677
+620144086
+962467668
+543094836
+362858805
+666766335
+859848835
+353300182
+48824413
+
+359778505
+148481920
+716904602
+545294751
+893960827
+944824301
+945880219
+927890600
+854112776
+420112387
+516572708
+43784992
+
+705601657
+96877208
+
+404058340
+678387884
+50464643
+
+835174549
+93326110
+
+772046472
+270253823
+900658451
+358723801
+955841385
+280949120
+729563351
+970151080
+181854612
+
+Expected
+
+Got
+Input
+
+37493401
+671103855
+185586076
+510902942
+872645403
+575818042
+851772196
+603859051
+940255083
+215874215
+847656534
+3968596
+880145842
+891338898
+578659498
+141132095
+23809120
+894829916
+443345147
+136551983
+769065753
+144866950
+434901907
+504905864
+512756386
+934026558
+764610206
+449119828
+27713068
+624746698
+376908980
+469980951
+119251813
+838570192
+168608849
+330939078
+141339180
+922224556
+963394373
+732376005
+656470899
+669453190
+967980195
+90449534
+304587129
+222973489
+166718570
+323952573
+617466903
+963574233
+56936201
+913530622
+692986478
+532117489
+261568073
+860720935
+128382938
+225522957
+317869607
+29356335
+444858971
+459595807
+845805203
+928746955
+942446844
+337663955
+10988236
+465106859
+
+Expected
+
+Got
+Input
+
+125413896
+661345471
+820156824
+680341768
+437816887
+781544260
+215933648
+119992369
+475513329
+323362157
+602484193
+8052546
+453751611
+458143854
+753826139
+499762652
+860972301
+177171327
+499180547
+186574215
+983602332
+906731916
+17379999
+321564457
+954883101
+591232969
+202917363
+888941744
+561272219
+852800655
+36127695
+179974509
+593052963
+618505484
+748271815
+52214479
+99139303
+194458338
+678281918
+560217703
+176392979
+677239543
+495756632
+406366844
+806867935
+634072720
+608846813
+499547420
+483299966
+700660149
+742716118
+736876659
+568954480
+433138868
+64996700
+284521600
+782243900
+138849270
+300113271
+427221432
+847986170
+61099909
+817448961
+911947434
+574415057
+208468920
+828639751
+112290975
+
+Expected
+
+Got
+Input
+
+76077337
+
+395248325
+286015109
+183522069
+718214346
+687432856
+266040081
+980285354
+463964019
+350705783
+565093016
+695700652
+425641484
+38423486
+
+640917692
+964035943
+543548646
+540287803
+55033653
+
+811420443
+424415081
+412763127
+168548158
+919616030
+992470705
+510028413
+897536148
+822315096
+157481075
+592805254
+960100237
+611801160
+953556236
+459023726
+567859957
+931622817
+40291328
+
+828894395
+599085772
+716647310
+117961614
+280605537
+742251832
+697731381
+477265408
+74180061
+
+693778707
+441694769
+172846421
+604065801
+330687877
+263703591
+506227390
+230640248
+951500570
+862895688
+266766740
+563041531
+177849171
+597645643
+502485319
+26445338
+
+999492832
+814161838
+833697762
+258110467
+73128022
+
+444215652
+
+Expected
+
+Got
+Input
+
+501223623
+551624682
+442193533
+875372775
+612724801
+804792722
+678831313
+200744354
+424023479
+768240520
+670861240
+277148177
+868160367
+341993752
+536718944
+327414202
+68991338
+
+21063458
+
+944905962
+872821589
+602307430
+439845432
+740570949
+212849272
+40027750
+
+864039289
+17151502
+
+331586573
+918577465
+764918925
+923597646
+835909625
+662725469
+646491102
+982024654
+626205810
+563684811
+555870860
+770430110
+211853555
+490547398
+738417016
+766430054
+596511263
+243407766
+476080088
+515838116
+182505779
+820887836
+175503494
+337307653
+422966675
+338328099
+58484875
+
+997263362
+434055357
+276496607
+435933423
+212058400
+
+Expected
+
+Got
+Input Expected Got
+
+VY (10 469434735 media: 469434735 media: 469434735 <a
+216843016 o rock reinara mais uma vez o rock reinara mais uma vez
+791925791
+470920555
+196410040
+832874523
+609597931
+531885954
+452627701
+215165839
+376096004
+
+/ (10 441879940 media: 441879938 media: 441879938 É
+48556794 rockeiros trabalhando ja rockeiros trabalhando ja
+46635396
+830390199
+107298473
+867186862
+847936030
+921586117
+337289760
+390064781
+21854970
+
+Passou em todos os teste! 4
+
+Para resolver esta questão você pode criar um laço de repetição para iterar sobre os dinheiros dos amigos de Dêivis e ir somando os
+valores e ao final calcular a parte inteira da média aritmética. Compare com o valor do ingresso e avalie se é possível ir ao show.
+
+Notas para este envio: 1,00/1,00.
+Questão 7
+Correto
+Atingiu 1,00 de 1,00
+
+Divisíveis por 3e 7
+
+Dado um número N inteiro e positivo, faça um programa que imprima todos os números de 0 a N, incluindo o 0e o N que são
+divisíveis por 3 e 7.
+
+A Entrada consiste de:
+¢ Deum unico caractere N inteiro positivo.
+
+ASaída deve apresentar:
+e Todos os números de Oa N, incluindo o0 eo N que são divisíveis por 3 e 7, em uma única linha. Os números devem estar separados
+por espaços em branco.
+
+Observações:
+e Não é necessário validar se os valores de entrada são do tipo definido.
+
+Descrição dos Exemplos:
+* Os exemplos são autoexplicativos.
+
+For example:
+
+Input | Result
+
+30 021
+0 0
+21 021
+
+Answer: (penalty regime: 0,0, 10, 20, ... %)
+1 |n = int(input())
+
+2 |cont= 6
+
+3vlwhile cont <= n: #<- n+1/21 laços!
+4 print(cont,end=" "3
+
+5 cont = cont+21
+
+6
+
+7
+
+Input Expected Got
+4 | 30 0 21 0 21 v
+io 0 0 LÁ
+Input | Expected Got
+
+4 |1000 /0 21 42 63 84 105 126 147 168 189 210 231 252 |0 21 42 63 84 105 126 147 168 189 210 231 |W
+273 294 315 336 357 378 399 420 441 462 483 252 273 294 315 336 357 378 399 420 441
+504 525 546 567 588 609 630 651 672 693 714 462 483 504 525 546 567 588 609 630 651
+735 756 777 798 819 840 861 882 903 924 945 672 693 714 735 756 777 798 819 840 861
+966 987 882 903 924 945 966 987
+
+4 |250 0 21 42 63 84 105 126 147 168 189 210 231 0 21 42 63 84 105 126 147 168 189 210 231 |W
+
+SH |3737 | 0 21 42 63 84 105 126 147 168 189 210 231 252 |0 21 42 63 84 105 126 147 168 189 210 231 |W
+273 294 315 336 357 378 399 420 441 462 483 252 273 294 315 336 357 378 399 420 441
+504 525 546 567 588 609 630 651 672 693 714 462 483 504 525 546 567 588 609 630 651
+735 756 777 798 819 840 861 882 903 924 945 672 693 714 735 756 777 798 819 840 861
+966 987 1008 1029 1050 1071 1092 1113 1134 882 903 924 945 966 987 1008 1029 1050
+1155 1176 1197 1218 1239 1260 1281 1302 1323 1071 1092 1113 1134 1155 1176 1197 1218
+1344 1365 1386 1407 1428 1449 1470 1491 1512 1239 1260 1281 1302 1323 1344 1365 1386
+1533 1554 1575 1596 1617 1638 1659 1680 1701 1407 1428 1449 1470 1491 1512 1533 1554
+1722 1743 1764 1785 1806 1827 1848 1869 1890 1575 1596 1617 1638 1659 1680 1701 1722
+1911 1932 1953 1974 1995 2016 2037 2058 2079 1743 1764 1785 1806 1827 1848 1869 1890
+2100 2121 2142 2163 2184 2205 2226 2247 2268 1911 1932 1953 1974 1995 2016 2037 2058
+2289 2310 2331 2352 2373 2394 2415 2436 2457 2079 2100 2121 2142 2163 2184 2205 2226
+2478 2499 2520 2541 2562 2583 2604 2625 2646 2247 2268 2289 2310 2331 2352 2373 2394
+2667 2688 2709 2730 2751 2772 2793 2814 2835 2415 2436 2457 2478 2499 2520 2541 2562
+2856 2877 2898 2919 2940 2961 2982 3003 3024 2583 2604 2625 2646 2667 2688 2709 2730
+3045 3066 3087 3108 3129 3150 3171 3192 3213 2751 2772 2793 2814 2835 2856 2877 2898
+3234 3255 3276 3297 3318 3339 3360 3381 3402 2919 2940 2961 2982 3003 3024 3045 3066
+3423 3444 3465 3486 3507 3528 3549 3570 3591 3087 3108 3129 3150 3171 3192 3213 3234
+3612 3633 3654 3675 3696 3717 3255 3276 3297 3318 3339 3360 3381 3402
+
+3423 3444 3465 3486 3507 3528 3549 3570
+3591 3612 3633 3654 3675 3696 3717
+
+Passou em todos os teste! 4
+
+Para resolver esta questão, uso o parâmetro end="" da função print() para não pular linha ao imprimir cada número.
+
+[Correto |
+
+Notas para este envio: 1,00/1,00.
+Questão 8
+Correto
+Atingiu 1,00 de 1,00
+
+Crescimento Populacional
+
+Jordan quer resolver um problema muito interessante. Dadas as informações sobre o tamanho da população e a taxa de crescimento
+anual de duas cidades quaisquer (A e B), ele gostaria de saber quando a cidade menor (sempre é a cidade A) irá alcançar a cidade B em
+população (se é que vai alcançar). Sua tarefa é construir um programa que faça esses cálculos, porém, em alguns casos o tempo pode
+ser muito grande, e Jordan não se interessa em saber exatamente o tempo para estes casos.
+
+A Entrada consiste de:
+e Aentrada contém 4 valores: dois inteiros (100 < PA, PB < 1000000) indicando respectivamente a população de A e B, e dois
+valores (0.0 < 'T1,T2 < 100.0), indicando respectivamente, em percentual, o crescimento populacional de A e B.
+
+ASaída deve apresentar:
+
+e "Mais de um milenio.' se a quantidade de anos for superior a 1000, "Vai alcancar em X ano(s)”, onde X representa a quantidade de
+anos para a população de A alcançar o tamanho da população de B, ou "A nunca alcancara BJ, se a população nunca for alcançar a
+população de B.
+
+Observações:
+
+e Não é necessário validar se os valores de entrada estão dentro dos intervalos e tipos definidos.
+
+e A população é sempre um valor inteiro, portanto, um crescimento de 2.5% anual sobre uma população de 100 pessoas resultará em
+102 pessoas, e não 102.5 pessoas, enquanto um crescimento de 2.5% anual sobre uma população de 1000 pessoas resultará em
+1025. Para coletar a parte inteira de um número em ponto flutuante, considere a utilização da função int.
+
+Descrição dos Exemplos:
+
+e No primeiro exemplo, a população da cidade A é de 100 pessoas e a da cidade B é de 150 pessoas. A taxa de crescimento
+populacional da cidade 1 é de 1.0% ao ano e a população da cidade B não está crescendo. Então, em 50 anos o número da população
+da cidade A irá ultrapassar o da população da cidade B.
+
+e Nosegundo exemplo, a população da cidade A é de 90000 pessoas e a da cidade B é de 120000 pessoas. A taxa de crescimento
+populacional da cidade 1 é de 5.5% ao ano e a da população é de 3.5%. Então, em 16 anos o número da população da cidade A irá
+ultrapassar o da população da cidade B.
+
+For example:
+Input Result
+100 150 1,0 0 Vai alcancar em 50 ano(s).
+
+90000 120000 5.5 3.5 Vai alcancar em 16 ano(s).
+
+123 2000 2.0 3.0 A nunca alcancara B.
+
+Answer: (penalty regime: 0, 0, 10, 20, ... %)
+
+1 |pa,pb,t1,t2 = input().split()
+
+2 |pa,pb,t1,t2 = int(pa),int(pb),float(t1),float(t2)
+3vlif t2 >= tl:
+
+4 print("A nunca alcancara B.")
+
+5 vjelse:
+
+6y for i in range(1000):
+
+7v if pa>=pb:
+
+8 print(f"Vai alcancar em {i} ano(s).")
+9 break
+
+18 v if i == 999:
+
+11 print("Mais de um milenio.")
+
+12 pa = int(pa + pa*t1/100)
+
+13 pb = int(pb + pb*t2/100)
+
+14
+
+Input
+
+Expected
+
+Got
+
+100 150 1.0 0
+
+Vai alcancar em 50 ano(s).
+
+Vai alcancar em 50 ano(s).
+
+90000 120000 5.5 3.5
+
+Vai alcancar em 16 ano(s).
+
+Vai alcancar em 16 ano(s).
+
+123 2000 2.0 3.0
+
+A nunca alcancara B.
+
+A nunca alcancara B.
+
+100 100000 0 1
+
+A nunca alcancara B.
+
+A nunca alcancara B.
+
+100 100000 1 0
+
+Vai alcancar em 752 ano(s).
+
+Vai alcancar em 752 ano(s).
+
+IX << 4<|<
+
+100 100000 2 0
+
+Vai alcancar em 362 ano(s).
+
+Vai alcancar em 362 ano(s).
+
+IX <<<
+
+Passou em todos os teste! 4
+
+a
+
+Para resolver a questão verifique primeiro as condições em termos da taxas de crescimento informadas nas quais a população A nunca
+
+alcança a de B.
+
+Caso A vá em algum momento B, crie uma iteração onde cada iteração representa 1 ano e vocês realiza as atualizações e verificações
+
+necessárias.
+
+Notas para este envio: 1,00/1,00.
+Questão 9
+Correto
+Atingiu 1,00 de 1,00
+
+Fibonacci ||
+
+Na matemática, a Sequência de Fibonacci, é uma sequência de números inteiros, começando por 0, na qual, cada termo subsequente
+corresponde à soma dos dois anteriores. Os números de Fibonacci são, portanto, os números que compõem a seguinte sequência:
+
+0,1,1,2,3,5,8,13,21,34,55, 89, 144, 233, 377, 610, 987, 1597, 2584, ...
+
+Curioso com a Sequência de Fibonacci, onde cada termo subsequente corresponde à soma dos dois anteriores, e os dois primeiros
+valores da sequência são O e 1, dessa vez você resolveu imprimir todos os valores da sequência. Implemente uma função chamanda
+fibonacci que tem como parâmetro n e imprime os primeiros n-termos da sequência de fibonacci.
+
+A Entrada consiste de:
+e Afunção fibonacci recebe como parâmetro um único inteiro 1 < n < 30 que indica a quantidade de termos da sequência.
+
+ASaída deve apresentar:
+* Umalinha com todos os n termos da Sequência de Fibonacci, separados por espaços, conforme os exemplos.
+
+Observações:
+
+e Não é necessário validar se os valores de entrada estão dentro dos intervalos e tipos definidos.
+
+e Atenção, a criação de uma função com o nome determinado pelo enunciado é fundamental para a prática do aluno e o Moodle irá
+descontar pontos caso a criação não tenha sido feita corretamente (sendo case-sensitive o nome da função).
+
+* Submeta SOMENTE o que foi solicitado.
+
+Descrição dos Exemplos:
+
+e No primeiro exemplo, o argumento é 2. Então foi calculado o Fibonacci de O e de 1.
+e Nosegundo exemplo, o argumento é 1. Então foi calculado o Fibonacci de O.
+
+e Noterceiro exemplo, o argumento é 10. Então foi calculado o Fibonacci de O a 9.
+
+For example:
+
+Test Result
+fibonacci (2) 01
+fibonacci (1) 0
+
+fibonacci(l0) 011235 8 13 21 34
+
+Answer: (penalty regime: 0, 0, 10, 20, ... %)
+
+1v|def fibonacci(n):
+anteanterior = @
+anterior = 1
+, for k in range(n):
+print(anteanterior,end = " ')
+anteanterior,anterior = anterior, anterior + anteanterior
+
+On AU AWN
+Test Expected
+
+WY | fibonacci (2) 01
+
+VY |fibonacci(l) |0
+
+v fibonacci (10) |/01123 5 8 13 21 34
+
+4 | fibonacci(20) 011235 8 13 21 34
+610 987 1597 2584 4181
+
+Vv fibonacci (7) 0112358
+
+Vv fibonacci(21) |011235 8 13 21 34
+
+610 987 1597 2584 4181
+
+Passou em todos os teste! 4
+
+55 89 144 233 377
+
+55 89 144 233 377
+6765
+
+Got
+
+01
+377
+
+01
+377
+
+12
+
+12
+610
+
+12
+
+12
+610
+
+35813
+
+35813
+987 1597
+
+358
+
+35813
+987 1597
+
+21 34
+
+21 34 55 89 144 233
+2584 4181
+
+21 34 55 89 144 233
+2584 4181 6765
+
+Para resolver a questão, crie a função pedida que contém um laço de repetição para calcular o Fibonacci para cada número da
+sequência. Sugestão: Crie uma função específica para calcular o Fibonacci de um número.
+
+[correto |
+
+Notas para este envio: 1,00/1,00.
+
+4/4) 46) 6
+
+<
+
+<
+Questão 10
+Correto
+Atingiu 1,00 de 1,00
+
+Funções de Primos
+
+Um número primo é um número inteiro maior que 1 que é divisível apenas por 1 e por ele mesmo. Um número a é divisível por bse o
+resto da divisão de a por b é zero. Dessa forma implemente as funções chamadas (1) ehPrimo, que recebe um inteiro 1 < 2 < 10%e
+retorna se o valor é ou não primo, e (2) divisoresPrimos que recebe uminteirol < x < 10º eretornaa quantidade de divisores
+primos.
+
+A Entrada consiste de:
+e Afunção ehPrimo recebe como parâmetro um único inteiro 1 < x < 10º.
+* Afunção divisoresPrimos recebe como parâmetro um único inteiro 1 < a < 10º.
+
+ASaída deve apresentar:
+* Afunção ehPrimo retorna 1 caso x seja primo e O caso contrário.
+e Afunção divisoresPrimos retorna a quantidade de divisores primos do inteiro x recebido.
+
+Observações:
+
+« Não é necessário validar se os valores de entrada estão dentro dos intervalos e tipos definidos.
+
+e Atenção, a criação de uma função com o nome determinado pelo enunciado é fundamental para a prática do aluno e o Moodle irá
+descontar pontos caso a criação não tenha sido feita corretamente (sendo case-sensitive o nome da função).
+
+e Submeta SOMENTE o que foi solicitado.
+
+Descrição dos Exemplos:
+
+e No primeiro exemplo, a função ehprimo() é chamada diversas vezes. No caso do argumento 6 por exemplo, o retorno é O pois 6 não é
+primo. No caso do argumento 11 o retorno é 1 pois 11 é um número primo.
+
+e Nosegundo exemplo, a função divisoresPrimos() é chamada diversas vezes. No caso do argumento 6 por exemplo, o retorno é 2 pois
+os divisores de 6 que são primos são 2 e 3. No caso do argumento 30 o retorno é 3 pois os divisores de 30 que são primos são 2, 3,e
+5.
+
+For example:
+Test Result
+
+print (ehPrimo(3))
+
+print (ehPrimo (4))
+
+print (ehPrimo (5))
+
+print (ehPrimo (6))
+
+print (ehPrimo(7))
+
+print (ehPrimo (8) )
+
+print (ehPrimo (9))
+
+print (ehPrimo (10) )
+print (ehPrimo(11))
+print (ehPrimo (12) )
+print (ehPrimo (13) )
+print (ehPrimo (14) )
+print (ehPrimo (15) )
+print (ehPrimo (16) )
+print (ehPrimo (17) )
+print (ehPrimo (18) )
+print (ehPrimo (19) )
+print (ehPrimo (20) )
+print (ehPrimo (21) )
+print (ehPrimo (22) )
+print (ehPrimo (23) )
+print (ehPrimo (24) )
+print (ehPrimo (25) )
+print (ehPrimo (26))
+print (ehPrimo (27) )
+print (ehPrimo (28) )
+
+HoooooHoooHo Ho oO OoHotHoooHoHOoO nm
+
+print (ehPrimo (29))
+
+print (divisoresPrimos (4))
+
+print (divisoresPrimos (6))
+
+print (divisoresPrimos (8) )
+
+print (divisoresPrimos (9))
+
+print (divisoresPrimos (10) )
+print (divisoresPrimos (12) )}
+print (divisoresPrimos (14) )
+print (divisoresPrimos (15) )
+print (divisoresPrimos (16))
+print (divisoresPrimos (18) )
+print (divisoresPrimos (20) )
+print (divisoresPrimos (21) )
+print (divisoresPrimos (22) )
+print (divisoresPrimos (24) )
+print (divisoresPrimos (25) )
+print (divisoresPrimos (26) )
+print (divisoresPrimos (27) )}
+
+print (divisoresPrimos (28) )
+
+WNHPNPNYDNNNNHEPNNNNHEPHE NE
+
+print (divisoresPrimos (30) )
+
+print (divisoresPrimos (3) )
+
+print (divisoresPrimos (5))
+
+print (divisoresPrimos (7) )
+
+print (divisoresPrimos (11) )
+print (divisoresPrimos (13) )
+print (divisoresPrimos (17) )
+print (divisoresPrimos (19) )
+print (divisoresPrimos (23) )
+print (divisoresPrimos (29) )
+print (divisoresPrimos (31) )
+print (divisoresPrimos (37) )
+print (divisoresPrimos (41) )
+print (divisoresPrimos (43) }
+print (divisoresPrimos (47) )
+
+print (divisoresPrimos (53) )
+
+ooooococo ooccomlmlUcUDCcUOCUCUODCLcUOUCOUUCO
+
+print (divisoresPrimos (59) )
+
+Answer: (penalty regime: 0,0, 10, 20, ... %)
+1v| def ehPrimo(n):
+4 resp = 1
+3y for i in range(2,n):
+4v if nãi == 0:
+5 resp = 0
+6 break
+7 return resp
+8 v|def divisoresPrimos(n):
+9 cont = 8
+10 v for i in range(2,n):
+11v if nãi == 0:
+12 v if ehPrimo(i) == 1:
+13 cont = cont + 1
+14 return cont
+15
+Test Expected | Got
+
+4 =| print (ehPrimo (3))
+print (ehPrimo (4) )
+print (ehPrimo (5) )
+print (ehPrimo (6) )
+print (ehPrimo (7) )
+print (ehPrimo (8) )
+print (ehPrimo (9) )
+print (ehPrimo (10) )
+print (ehPrimo (11))
+print (ehPrimo (12))
+print (ehPrimo (13))
+print (ehPrimo (14))
+print (ehPrimo (15))
+print (ehPrimo (16))
+print (ehPrimo (17))
+print (ehPrimo (18))
+print (ehPrimo (19))
+print (ehPrimo (20))
+print (ehPrimo (21))
+print (ehPrimo (22))
+print (ehPrimo (23))
+print (ehPrimo (24) )
+print (ehPrimo (25) )
+print (ehPrimo (26) )
+print (ehPrimo (27) }
+print (ehPrimo (28) )
+
+HoooooHogooHoHoo o HoaoHoooHoHãom
+HooooorooororooorHorooorHoromn
+
+print (ehPrimo (29))
+Test Expected | Got
+
+print (divisoresPrimos (4))
+print (divisoresPrimos (6)
+print (divisoresPrimos (8))
+print (divisoresPrimos (9)
+print (divisoresPrimos (10))
+print (divisoresPrimos (12))
+print (divisoresPrimos (14))
+print (divisoresPrimos (15))
+print (divisoresPrimos (16))
+print (divisoresPrimos (18) )
+print (divisoresPrimos (20) )
+print (divisoresPrimos (21) }
+print (divisoresPrimos (22) )}
+print (divisoresPrimos (24) )}
+print (divisoresPrimos (25))
+print (divisoresPrimos (26) }
+print (divisoresPrimos (27) }
+print (divisoresPrimos (28) }
+
+WNREFENDENNNNNFNNNN HPP NE
+WNHRFNDPNYHNYS NN NFP NYDNNN RP HFN
+
+print (divisoresPrimos (30) )}
+
+print (divisoresPrimos (3) )
+
+print (divisoresPrimos (5) )
+
+print (divisoresPrimos (7) )
+
+print (divisoresPrimos (11) )
+print (divisoresPrimos (13) )
+print (divisoresPrimos (17) )
+print (divisoresPrimos (19) )
+print (divisoresPrimos (23) }
+print (divisoresPrimos (29) }
+print (divisoresPrimos (31) )
+print (divisoresPrimos (37) )}
+print (divisoresPrimos (41) )
+print (divisoresPrimos (43) }
+print (divisoresPrimos (47) }
+print (divisoresPrimos (53) )
+
+oo oo oc coco co OoOoOlUCUOCUcUOCCcUOULCOULUCO
+oooooooooooooooao
+
+print (divisoresPrimos (59))
+
+print (divisoresPrimos (30))
+print (divisoresPrimos (42))
+print (divisoresPrimos (60))
+print (divisoresPrimos (66))
+print (divisoresPrimos (70))
+print (divisoresPrimos (78))
+print (divisoresPrimos (84))
+
+to to Ww O ww Ww Ww
+WWW Www Ww Ww
+
+print (divisoresPrimos (90) }
+Test Expected | Got
+
+print (ehPrimo (30))
+print (ehPrimo (31))
+print (ehPrimo (32))
+print (ehPrimo (33))
+print (ehPrimo (34))
+print (ehPrimo (35))
+print (ehPrimo (36))
+print (ehPrimo (37))
+print (ehPrimo (38))
+print (ehPrimo (39))
+print (ehPrimo (40))
+print (ehPrimo (41))
+print (ehPrimo (42))
+print (ehPrimo (43))
+print (ehPrimo (44) )
+print (ehPrimo (45))
+print (ehPrimo (46))
+print (ehPrimo (47))
+print (ehPrimo (48))
+print (ehPrimo (49))
+print (ehPrimo (50))
+print (ehPrimo (51))
+print (ehPrimo (52))
+print (ehPrimo (53))
+print (ehPrimo (54))
+print (ehPrimo (55))
+print (ehPrimo (56))
+print (ehPrimo (57))
+print (ehPrimo (58))
+print (ehPrimo (59))
+print (ehPrimo (60))
+print (ehPrimo (61))
+print (ehPrimo (62))
+print (ehPrimo (63))
+print (ehPrimo (64))
+print (ehPrimo (65))
+print (ehPrimo (66))
+print (ehPrimo (67))
+print (ehPrimo (68))
+print (ehPrimo (69))
+print (ehPrimo (70))
+print (ehPrimo (71))
+print (ehPrimo (72))
+print (ehPrimo (73))
+print (ehPrimo (74))
+print (ehPrimo (75))
+print (ehPrimo (76))
+print (ehPrimo (77))
+print (ehPrimo (78))
+print (ehPrimo (79))
+print (ehPrimo (80))
+print (ehPrimo (81))
+print (ehPrimo (82))
+print (ehPrimo (83))
+print (ehPrimo (84))
+print (ehPrimo (85))
+print (ehPrimo (86))
+print (ehPrimo (87))
+print (ehPrimo (88))
+print (ehPrimo (89))
+print (ehPrimo (90))
+print (ehPrimo (91))
+print (ehPrimo (92))
+print (ehPrimo (93))
+print (ehPrimo (94))
+print (ehPrimo (95))
+print (ehPrimo (96))
+
+Hoooo ooo HoooooHogooHoo ooo HoHo gos oHogo oo oO HoHosSoooHosoo OooHoo o HoHoaooHoo o ooo
+HoooooooroooooroooroovoooororooorHooooororooooor-roooootHooorotHoooroooooHo
+
+print (ehPrimo (97))
+Test Expected | Got
+
+print (ehPrimo (98)) 0 0
+print (ehPrimo (99) ) is) 0
+
+4 | print (divisoresPrimos (210))
+print (divisoresPrimos (330) )
+print (divisoresPrimos (390))
+print (divisoresPrimos (420))
+print (divisoresPrimos (462))
+print (divisoresPrimos (510))
+print (divisoresPrimos (546))
+print (divisoresPrimos (570))
+print (divisoresPrimos (630))
+print (divisoresPrimos (660))
+print (divisoresPrimos (690))
+print (divisoresPrimos (714))
+print (divisoresPrimos (770))
+print (divisoresPrimos (780))
+print (divisoresPrimos (798))
+print (divisoresPrimos (840))
+print (divisoresPrimos (858))
+print (divisoresPrimos (870))
+print (divisoresPrimos (910))
+print (divisoresPrimos (924))
+print (divisoresPrimos (930))
+print (divisoresPrimos (966))
+
+Doo DR Pf Ph AR RD RD RD RD RD bP RD DD A
+PF PF SF FF SS a PF Fe RS SP a
+
+print (divisoresPrimos (990) )
+Passou em todos os teste! 4
+
+Para resolver a questão vocês precisa criar as duas funções conforme solicitado no enunciado. Na função ehPrimo() você pode criar um
+laço de repetição que verifica se o valor passado como argumento é divisível por todos os números até o número anterior a ele.
+Aqueles que não forem divisíveis por nenhum número até o anterior a ele, são números primos. No caso da função divisoresPrimos()
+você pode utilizar a mesma lógica e além de verificar se o valor passado como argumento é divisível por todos os números até
+imediatamente antes dele e além disso verificar se o número é primo também. Caso as duas condições sejam satisfeitas, esse número
+pode ser contabilizado.
+
+[correto]
+
+Notas para este envio: 1,00/1,00.
+

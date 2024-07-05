@@ -1,0 +1,25 @@
+Questão 5
+Correto
+Atingiu 1,00 de 1,00
+
+Números: algarismos e por extenso
+
+Marli precisa revisar um histórico de compras da sua loja. O problema é que várias das compras foram registradas com o valor escrito
+por extenso e ela quer padronizar isso deixando todos os valores numéricos em algarismos. Ajude Marli elaborando um programa que
+recebe algum campo do registro e transforma os números escritos por extenso em algarismos. É garantido que os números estão no
+intervalo [0,9] e sempre são apresentados em letras minúsculas.
+
+A Entrada consiste de:
+e Umastring de tamanho variável.
+
+ASaída deve apresentar:
+* Uma string representando a frase corrigida e um inteiro representando a quantidade de números escritos na frase, cada um em uma
+linha.
+
+Observações:
+e Não é necessário validar se os valores de entrada são do tipo definido.
+e Ummétodoespecificodotipo str podeser bastante útil!
+
+Descrição dos Exemplos:
+* No primeiro exemplo, foi feita uma substituição do número "quatro" por extenso para o algarismo "4".
+

@@ -1,0 +1,57 @@
+Questão 5
+Não respondido
+
+Não avaliada
+
+Grade Horária do LP
+
+O SIGAA é legal, mas poderia ser melhor! E se algumas funcionalidades fossem integradas? Poder gerenciar sua grade horária ou a
+alocação de salas tornariam a experiência com o sistema muito melhor. Capaz de atender esta demanda, o Prof Luís Paulo encomendou
+à turma de APC a implementação de um sistema conhecido como SAD (@) - Sistema de Apoio ao Discente, uma plataforma flexível que
+proverá soluções para todos!
+
+À primeira funcionalidade a ser criada é a de gerenciamento de grade horária, de modo que a matrícula no próximo semestre ocorra de
+forma mais fluida. Implemente as seguintes funcionalidades para os comandos indicados:
+
+* + COD DTH1 ... DTHn acrescenta a disciplina COD nos horários DTH,, DT Hs, ... DT H,. Há um espaço entre cada
+elemento do comando.
+
+¢ — COD DTHL ... DTHn retiraa disciplina COD dos horários DTH, DT Ho, ... DTH, Há um espaço entre cada elemento
+do comando.
+
+e 2 mostraagrade horária semanal.
+°® Hasta la vista, beibe! | interrompe a execução do programa.
+
+Todo cop temo formato XXX##HHY, onde XXX identifica a unidade responsável pela oferta, 44H o código da disciplina e Y a turma
+Departamento de Ciência da Computação. Cada turma é ofertada em horários específicos no formato DTH, onde D define o(s) dia(s)
+da semana, T'o turno e H a(s) hora(s) da(s) aula(s). Por exemplo, 35M12 são aulas as terças (3) e quintas (5), no período da manhã (
+M), nos horários 1 e 2. A UnB atua nos três turnos: matutino (M), vespertino (7) e noturno (N) - você pode ver mais detalhes no sitio
+da instituição.
+
+A exibição da grade deve seguir um formato específico de tabela, que apresenta todos os dias da semana, mas somente os horários com
+matricula registrada. As linhas horizontais são compostas pelo caractere' - '"asverticais pelo" | 'easinterseçõespelo' + ‘A
+primeira informação apresenta os dias úteis da semana, representados pelas siglas Seg, Ter, Qua, Qui, Sex e Sab, nesta ordem. As
+
+demais informações apresentam, cada uma, um dos horários previstos para aula. A primeira coluna apresenta a duração da aula, e as
+demais os códigos das disciplinas, se houver a matrícula nesse horário. Sempre há pelo menos um espaço entre os caracteres de linha
+vertical e o conteúdo.
+
+É garantido que o conjunto de instruções fornecidos é sintaticamente correto. Caso não seja possível atualizar a grade, apresente a
+mensagem: '!( instr )jonde instr éainstrução fornecida. Exemplos de atualizações não permitidas são a adição de
+disciplinas com choque de horário e a remoção de uma disciplina que não está na grade.
+
+Entrada
+
+A entrada consiste de uma quantidade indeterminada de instruções, dentre as 3 primeiras descritas acima, apresentadas uma por
+linha, seguidas da instrução de finalização do processamento.
+
+Saída
+
+A saída consiste na apresentação das informações, quando solicitadas/necessárias.
+
+Observações
+
+Nos turnos diurnos, cada horário H representa um crédito, ou seja, 55 minutos de aula (e consideram-se 10 minutos de intervalo a
+cada 2 horários) - são 5 horários possíveis de manhã e 6 a tarde. Já no noturno, cada crédito tem 50 minutos (também consideram-se
+10 minutos de intervalo a cada 2 horários) - são 4 horários possíveis.
+

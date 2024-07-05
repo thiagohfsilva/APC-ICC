@@ -1,0 +1,31 @@
+Questão 2
+Correto
+Atingiu 2,00 de 2,00
+
+Procura Reversa
+
+Um dos alunos de APC quer saber quais outros alunos tiveram a mesma nota do que ele. Por isso, pediu a sua ajuda para elaborar um
+programa que receba um inteiro “n” que é a quantidade de alunos na turma e das “n” linhas seguintes receba o nome do aluno com a
+sua nota separados por ”,“. O dicionário da turma é organizado da seguinte forma: a chave é o nome único do aluno e o valor
+correspondente é a nota. Caso existam alunos com a mesma nota do aluno, mostre o nome dos alunos separados por barra em ordem
+alfabética. Se não, apresente a seguinte mensagem: “Você foi o único aluno com essa nota”.
+
+Aentrada consiste de:
+
+e Uminteiron.
+
+* nstrings, contendo o nome e a nota dos receptivos alunos, separados por ".
+e Anotadoaluno.
+
+Asaída deve apresentar:
+* “Você foi o único aluno com essa nota? Se não houver ninguém com a mesma nota.
+* Caso contrário, os nomes dos alunos com a mesma nota serão separados por barra em ordem alfabética.
+
+Observações:
+e Você pode usar usar o método sorted.
+e Trate as notas como números reais.
+
+Descrição do exemplo 1:
+e No primeiro exemplo, o programa recebe a nota de dois alunos cujo somente o primeiro recebido possui a mesma nota presente na
+última linha da entrada. Nesse aspecto, o programa deve apresentar o nome do primeiro aluno.
+

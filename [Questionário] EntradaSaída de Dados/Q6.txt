@@ -1,0 +1,17 @@
+Questão 6
+Correto
+Atingiu 1,00 de 1,00
+
+Ponto flutuante
+Escreva um programa que receba um valor do tipo float e imprima três informações.
+
+Entrada
+Um valor do tipo float.
+
+Saída
+O número com 4 casas decimais, o número com 2 casas decimais e o número com O casas decimais. Cada uma dessas informações de
+saída deverá ser impressa em uma linha diferente.
+
+Observações
+Aformatação da saída é importante, saiba usar f-string. Para saber como formatar números, leia isto.
+

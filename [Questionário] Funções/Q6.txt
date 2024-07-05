@@ -1,0 +1,23 @@
+Questão 6
+Correto
+Atingiu 1,00 de 1,00
+
+Áreas
+
+Crie uma função chamada areas() que recebe 3 números inteiros (A, Be C' e calcula, em ordem:
+
+1. Aárea de um retângulo com lados A e B;
+2. Aárea de um triângulo com base B e altura C;
+3. Aárea de um trapézio de altura A, base menor B e base maior C.
+
+Apresente os valores ignorando a parte decimal.
+A Entrada consiste de:
+e Aentrada compreende os parâmetros da função areas(A, B, C) , que são três números inteiros, sendo C' maior que B.
+
+ASaída deve apresentar:
+e Três linhas apresentando os valores solicitados. Para ignorar a parte decimal, pode-se utilizar a função int().
+
+Dica:
+
+e Paraignorar a parte decimal, pode-se utilizar a função int() para mudar o tipo de ponto flutuante para inteiro.
+

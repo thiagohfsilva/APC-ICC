@@ -1,0 +1,29 @@
+Questão 4
+Correto
+Atingiu 2,00 de 2,00
+
+Diversão |
+
+Crie a função recursiva JaChegou que recebe dois parâmetros, sendo um inteiro 7 e uma cadeia de caracteres s. Enquanto n. O
+imprima a cadeia s e chame a função recursiva JaChegou com os parâmetros n — 1es.Cason = 0, não faça nada.
+
+A Entrada consiste de:
+e Nos parâmetros da função JaChegou que são um número inteiro n (2 menor que n menor que 100) e uma cadeia de caracteres s
+
+ASaída deve apresentar:
+e Acadeia s repetidas vezes.
+
+Observações:
+
+e Não é necessário validar se os valores de entrada estão dentro dos intervalos e tipos definidos.
+
+s Atenção, a criação de uma função com o nome determinado pelo enunciado é fundamental para a prática do aluno e o Moodle irá
+descontar pontos caso a criação não tenha sido feita corretamente (sendo case-sensitive o nome da função).
+
+* Submeta SOMENTE o que foi solicitado.
+
+e Agui uma inspiração para o problema.
+
+Descrição dos Exemplos:
+* No primeiro exemplo, a função recebe como parâmetros o número 5 e a string 'A gente ja chegou?' que é repetida 5 vezes.
+

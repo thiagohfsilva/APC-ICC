@@ -1,0 +1,28 @@
+Questão 3
+Correto
+Atingiu 1,00 de 1,00
+
+N-ésimo termo da PA
+
+Elabore umafunção n_termo() querecebe como parâmetros: io primeiro termo de uma progressão aritmética, r a razão dessa
+progressão aritmética e n seu número de termos e retorne o n-ésimo termo da PA.
+
+A Entrada consiste de:
+e Não hd entrada para essa questão, apenas os parâmetros da função n termo() ,L ren, três números inteiros.
+
+ASaída deve apresentar:
+e Não hásaída para essa questão, apenas é necessário que a função retorne o n-ésimo da progressão aritmética.
+
+Observações:
+e Não é necessário validar se os valores dos parâmetros são do tipo definido.
+
+Descrição dos Exemplos:
+
+* No primeiro exemplo, a razão 1 é somada a si mesma 98 vezes. Em seguida esse resultado é somado ao termo inicial 1, para obter o
+centésimo termo, resultando em 100.
+
+e Nosegundo exemplo, a razão -1 é somada a si mesma 98 vezes. Em seguida esse resultado é somado ao termo inicial 100, para obter
+o centésimo termo, resultando em 1.
+
+e Noterceiro exemplo, a razão é -5. Essa razão é somada ao termo inicial 5 para obter o segundo termo, resultando em 0.
+

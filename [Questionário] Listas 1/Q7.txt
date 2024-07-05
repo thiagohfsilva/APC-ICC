@@ -1,0 +1,25 @@
+Questão 7
+Correto
+Atingiu 1,00 de 1,00
+
+Escolinha do Professor Raimundo (Sujeito)
+
+O professor Raimundo, da Escolinha do Professor Raimundo, gosta de ser o sujeito dos seus exemplos quando está dando aula sobre
+verbos. O professor já possui todos os períodos sem o sujeito acrescentado. Cansado de fazer o processo manualmente, ele pediu a sua
+ajuda para inserir o nome dele no início de todos os períodos. Construa um código que ajude o professor a colocar o seu nome no início
+de cada período.
+
+A Entrada consiste de:
+es Número de periodos.
+e Períodos sem o sujeito (um em cada linha).
+
+A Saída deve apresentar:
+e Onome “Raimundo Nonato” seguido do período da oração.
+
+Observações:
+* Todas as sentenças começam com letra minúscula.
+
+Descrição do Exemplo 1:
+e Éinformado que serão 2 períodos de entrada na primeira linha. Em seguida, apresenta-se os períodos. Na saída, foi acrescentado o
+sujeito (Raimundo Nonato) ao início dos períodos, conforme apresentado na saída.
+

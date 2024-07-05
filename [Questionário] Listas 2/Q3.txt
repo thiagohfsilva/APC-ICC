@@ -1,0 +1,42 @@
+Questão 3
+Correto
+Atingiu 2,50 de 2,50
+
+Cavando Buracos
+
+Um terreno está sendo preparado para a construção de um edifício e que conterá diversos labirintos subterrâneos. O terreno pode ser
+visualizado como uma matriz AxxM, em que cada célula A; . corresponde a 100 mm. Para construir os labirintos, a equipe de
+engenharia está utilizando uma nova técnica, conhecida como "Trincheiras em Cruz”
+
+A técnica da cruz funciona da seguinte maneira: o engenheiro lança um projétilnaposição (x, y) (Lmenor que x menor que N),(1menor queymenor que M),que
+explode no solo, cavando um buraco de profundidade 1 nessa posição. Como efeito da explosão, todas as outras posições que estão na
+linha x e na coluna y são automaticamente cavadas também em profundidade de 1 unidade.
+
+O engenheiro fará o lançamento de Q projéteis, visando obter diversos tipos de labirintos e em diferentes profundidades. Sua tarefa
+consiste em determinar quantas posições do terreno possuirão a maior profundidade após o lançamento de todos os projéteis.
+
+A Entrada consiste de:
+
+* Aprimeira linha apresenta dois números inteiros separados por espaço Ne M (1 menor que N menor que 100,1 menor que M menor que 100). A segunda linha
+descreve um único inteiro Q (1 menor que Q menor que 100) indicando a quantidade de lançamento de projéteis realizado pelo engenheiro. Em
+seguida, existem @ linhas, em que cada uma apresenta dois números inteiros separados por espaço x, y
+(1 menor queemenor queN,Imenor queymenor que M) , indicando a posição de queda do projétil lançado pelo engenheiro.
+
+ASaída deve apresentar:
+e Imprima um único inteiro com a resposta para o problema: a quantidade de posições do terreno quen possuirão a maior
+profundidade após o lançamento dos Q projetéis.
+
+Observações:
+* Não é necessário validar se os valores de entrada são do tipo definido.
+
+Descrição dos Exemplos:
+e No primeiro exemplo, a ilustração a seguir mostra que após o lançamento dos projéteis, a profundidade máxima do terreno será
+igual a 2. Existem 3 células no terreno com profundidade 2.
+
+xix|x| |x|x|X
+X} |maior que|x|x]|x
+X X
+
+Terreno após o primeiro Terreno após o segundo
+projétil ser lançado em (1,2 projétil ser lançado em (2,2
+

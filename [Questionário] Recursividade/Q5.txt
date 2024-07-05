@@ -1,0 +1,41 @@
+Questão 5
+Correto
+Atingiu 1,00 de 1,00
+
+Fórmula 1
+
+Amilton é um excelente corredor de fórmula 1, grande parte do seu desempenho vem da alta tecnologia em seu carro. Uma tecnologia
+bastante usada é o controle de desgaste dos pneus.
+
+Em uma corrida, é de extrema importância trocar os pneus na hora certa e existem tipos de pneus diferentes que proporcionam uma
+quantidade diferente de voltas na pista.
+
+Escreva a função recursiva corrida em que cada execução representa uma volta no circuito.
+
+A Entrada consiste de:
+
+e Afunção receberá três inteiros; a, b, c maior que 1.a representa a quantidade de voltas que faltam para a corrida acabar, b representa e
+quantidade de voltas que faltam para os pneus desgastarem e c representa quantas voltas os pneus suportam.
+
+A Saída deve apresentar:
+
+e Casoo pneu desgaste durante a corrida, imprima a mensagem "Faltam x voltas, hora de trocar os pneus. sendo x a quantidade de
+voltas restantes.
+
+e Aotrocaro pneu, o seu tempo de desgaste é restabelecido.
+
+* Quando a quantidade de voltas chegar a O, a corrida chega ao fim aparecendo a mensagem "A corrida chegou ao fim",
+
+Observações:
+
+e Não é necessário validar se os valores de entrada estão dentro dos intervalos e tipos definidos.
+
+e Atenção, a criação de uma função com o nome determinado pelo enunciado é fundamental para a prática do aluno e o Moodle irá
+descontar pontos caso a criação não tenha sido feita corretamente (sendo case-sensitive o nome da função).
+
+e Submeta SOMENTE o que foi solicitado.
+
+Descrição dos Exemplos:
+* No primeiro exemplo, a corrida tem 30 voltas e o pneu só suporta 5, sendo necessário a troca a cada 5 voltas.
+e Nosegundo exemplo, a corrida tem apenas 8 voltas e os pneus suportam até 10 voltas, não tendo a necessidade de troca.
+

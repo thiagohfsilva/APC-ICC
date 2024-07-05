@@ -1,0 +1,1036 @@
+Iniciado em
+Estado
+
+Concluída em
+Tempo empregado
+Avaliar
+
+sábado, 3 jun. 2023, 21:35
+
+Finalizada
+
+domingo, 4 jun. 2023, 21:08
+
+23 horas 32 minutos
+
+10,00 de um máximo de 10,00(100%)
+Questão 1
+Correto
+Atingiu 1,00 de 1,00
+
+Verificando
+
+Escreva um programa que recebe uma string e verifica se ela contém uma vírgula. Caso tenha, imprima "passed", caso contrário
+imprima "failed",
+
+A Entrada consiste de:
+e Uma string de tamanho variável.
+
+A Saida deve apresentar:
+e Uma string como especificado no enunciado.
+
+Observações:
+e Não é necessário validar se os valores de entrada são do tipo definido.
+
+Descrição dos Exemplos:
+* No primeiro exemplo, como a string não possui vírgula a saída é "failed".
+¢ Nosegundo exemplo, como a string possui vírgula a saída é "passed".
+
+For example:
+Input Result
+gosto de pães e bolos failed
+
+você, eu e ele vamos ver aquele filme |passed
+
+não gosto tanto, mas tudo bem passed
+
+Answer: (penalty regime: 0,0, 10, 20, ... %)
+
+1 |texto = input()
+
+2 |resp = "failed"
+3v/if "," in texto:
+
+4 resp = "passed"
+5 |print(resp)
+
+6
+
+Input Expected Got
+
+WY | gosto de pães e bolos failed failed | VW
+
+WY |você, eu e ele vamos ver aquele filme | passed passed VW
+Input Expected | Got
+
+A não gosto tanto, mas tudo bem passed passed |W
+4 (nado sei o que dizer failed failed 4
+4 (me ajuda aí rapidão, por favor passed passed W
+WwW | acho que ela vem hoje failed failed | YW
+
+Passou em todos os teste! 4
+
+Para resolver esta questão, atente para o uso das diferentes formas de formatação da função print().
+
+[correto |
+
+Notas para este envio: 1,00/1,00.
+Questão 2
+Correto
+Atingiu 1,00 de 1,00
+
+Palavra nova
+
+Elabore um programa que recebe uma palavra e imprime uma palavra nova derivada desta, que é composta pelos dois primeiros
+caracteres da palavra de entrada com os dois últimos.
+
+A Entrada consiste de:
+e Uma string que contém quatro ou mais caracteres.
+
+A Saida deve apresentar:
+e Umastring representando a palavra nova.
+
+Observações:
+e Não é necessário validar se os valores de entrada são do tipo definido.
+
+Descrição dos Exemplos:
+e No primeiro exemplo, a palavra de entrada é "candy", utilizando os dois primeiros caracteres e os dois últimos a palavra formada é
+"cady”.
+
+For example:
+Input | Result
+candy | cady
+naevis |nais
+
+árvore | árre
+
+Answer: (penalty regime: 0,0, 10, 20, ... %)
+
+1 |texto = input()
+2 |resp = texto[@:2] + texto[-2:]
+3 |print(resp)
+
+Input | Expected | Got
+VY | candy | cady cady 4
+
+4 | naevis | nais nais | 4
+
+a
+Input | Expected Got
+
+VW | arvore | árre árre 4
+VY |timing|ting ting 4
+4 | sonho | soho soho |W
+VY | chão chão cnão | VW
+
+Passou em todos os teste! 4
+
+Para resolver esta questão você pode utilizar fatiamento.
+
+[correto |
+
+Notas para este envio: 1,00/1,00.
+Questão 3
+Correto
+Atingiu 1,00 de 1,00
+
+Números
+
+Elabore um programa que recebe uma string e retorna a quantidade de dígitos numéricos contidas nela.
+
+A Entrada consiste de:
+e Umastring de tamanho variável.
+
+A Saída deve apresentar:
+* Uminteiro, representando a quantidade de dígitos numéricos contidos na string.
+
+Observações:
+e Não é necessário validar se os valores de entrada são do tipo definido.
+
+Descrição dos Exemplos:
+e No primeiro exemplo, a string de entrada é "a promoção fez com que abaixasse de 19.90 para 6.99" e ela contém sete dígitos
+numéricos: 1,9,9,0,6,9e9.
+
+For example:
+
+Input Result
+a promoção fez com que abaixasse de 19.90 para 6.99 | 7
+não sei, só sei que foi assim uma vez 0
+
+meu doguinho sé tem 2 meses 1
+
+Answer: (penalty regime: 0, 0, 10, 20, ... %)
+
+1 |frase = input()
+
+2 |cont = 0
+
+3v|for letra in frase:
+
+4y if letra. isdigit():
+5 cont = cont + 1
+6 |print(cont)
+
+Input Expected | Got
+4 (a promoção fez com que abaixasse de 19.90 para 6.99 |7 7 a
+4 |não sei, só sei que foi assim uma vez 0 0 4
+4 (meu doguinho só tem 2 meses 1 1 LÁ
+VY |3x4 = 12 e 6+7 = 13 8 8 LÁ
+Input Expected | Got
+
+4 | tem um bolo quentinho ali que serve umas 10 pessoas |2 2 A
+
+4 |não sei a tabuada :3 me ensina! !!1!1!11 4 4 LÁ
+
+Passou em todos os teste! 4
+
+Para resolver esta questão, você precisa percorrer a string e utilizar verificações.
+
+[Correto |
+
+Notas para este envio: 1,00/1,00.
+Questão 4
+Correto
+Atingiu 1,00 de 1,00
+
+Strlilng
+
+Elabore um programa que recebe uma string e retorna os caracteres contidos nos índices ímpares dessa string, ignorando os espaços
+em branco. Mostre os caracteres um ao lado do outro numa mesma linha, sem espaços.
+
+A Entrada consiste de:
+e Uma string de tamanho variável.
+
+A Saida deve apresentar:
+e Uma string composta pelos caracteres contidos nos índices ímpares da string de entrada.
+
+Observações:
+e Não é necessário validar se os valores de entrada são do tipo definido.
+
+Descrição dos Exemplos:
+* No primeiro exemplo, os caracteres que se encontram nos índices ímpares são a, n, 0, c, d,u,c,e,0,1,a,s, t, r, e. Sendo assim a saída é
+"anocduceolastre”.
+
+For example:
+
+Input Result
+
+saindo cedo eu chego lá mais tarde | anocduceolastre
+pJupá é hpoprpa dpe jpapnptpapr Jáéhoradejantar
+
+sábado um dia de aventura aaouieaetr
+
+Answer: (penalty regime: 0,0, 10, 20, ... %)
+
+1 |frase = input()
+2v|for i in range(len(frase)):
+
+3, if (i%2== 1) and not(frase[i]== " "3:
+4 print(frase[i],end = "")
+4
+Input Ex ed Got
+4 | saindo cedo eu chego lá mais tarde anocduceolastre anocduceolastre vd
+
+4 |pJpá é hpoprpa dpe jpapnptpapr Jáéhoradejantar Jáéhoradejantar LA
+Input Expected Got
+
+sábado um dia de aventura áaouieaetr áaouieaetr
+im fearless mfals mfals
+
+avenida barramas numero 75 sul e sudeste |vndarmsnmr5slesdse | vndarmsnmr5slesdse
+
+Se Se SS
+
+uh uh uh uh uhhhhhhh 1 2 3 huhuhhhh123 huhuhhhh123
+
+Passou em todos os teste! 4
+
+Para resolver esta questão, se atente ao acesso de caracteres de uma string utilizando seu índice.
+
+[correto |
+
+Notas para este envio: 1,00/1,00.
+
+SS Sn eS
+Questão 5
+Correto
+Atingiu 1,00 de 1,00
+
+Números: algarismos e por extenso
+
+Marli precisa revisar um histórico de compras da sua loja. O problema é que várias das compras foram registradas com o valor escrito
+por extenso e ela quer padronizar isso deixando todos os valores numéricos em algarismos. Ajude Marli elaborando um programa que
+recebe algum campo do registro e transforma os números escritos por extenso em algarismos. É garantido que os números estão no
+intervalo [0,9] e sempre são apresentados em letras minúsculas.
+
+A Entrada consiste de:
+e Umastring de tamanho variável.
+
+ASaída deve apresentar:
+* Uma string representando a frase corrigida e um inteiro representando a quantidade de números escritos na frase, cada um em uma
+linha.
+
+Observações:
+e Não é necessário validar se os valores de entrada são do tipo definido.
+e Ummétodoespecificodotipo str podeser bastante útil!
+
+Descrição dos Exemplos:
+* No primeiro exemplo, foi feita uma substituição do número "quatro" por extenso para o algarismo "4".
+
+For example:
+
+Input Result
+
+categoria: quatro categoria: 4
+quantidade: três peças quantidade: 3 peças
+
+observações: adicionar mais um papel de presente no observações: adicionar mais 1 papel de presente no
+pacote. pacote.
+
+Answer: (penalty regime: 0,0, 10, 20, ... %)
+
+1 |texto = input()
+
+2 |texto = texto.replace("zero","B")
+3 |texto = texto.replace("um","1")
+
+4 |texto = texto.replace("dois","2")
+5 |texto = texto.replace("trés","3")
+6 |texto = texto.replace("quatro","4")
+7 |texto = texto.replace("cinco","5")
+8 |texto = texto.replace("seis","6")
+9 |texto = texto.replace("sete","7")
+10 |texto = texto.replace("oito","8")
+11 |texto = texto.replace("nove","9")
+12 |print(texto)
+<
+
+<
+
+Input
+categoria: quatro
+quantidade: três peças
+
+observações: adicionar mais um
+
+papel de presente no pacote.
+quantidade: sete peças
+quantidade de parcelas: cinco
+
+id do produto: zeroum
+
+Passou em todos os teste! 4
+
+Expected
+categoria: 4
+quantidade: 3 peças
+
+observações: adicionar mais 1
+
+papel de presente no pacote.
+quantidade: 7 peças
+
+quantidade de parcelas: 5
+
+id do produto: 01
+
+Got
+
+categoria: 4
+quantidade: 3 peças
+
+observações: adicionar mais 1
+
+papel de presente no pacote.
+quantidade: 7 peças
+quantidade de parcelas: 5
+
+id do produto: 01
+
+<
+
+<
+
+Para resolver esta questão, atente para o uso das funções (métodos) de strings. Considere que contamos coisas de formas diferentes
+(por exemplo, copos e garrafas)
+
+[Correto |
+
+Notas para este envio: 1,00/1,00.
+Questão 6
+Correto
+Atingiu 1,00 de 1,00
+
+Stop word
+
+Mei é viciada em twitter e de vez em quando gosta de fazer uns mistérios nas mensagens que deixa por lá, ela faz isso censurando uma
+palavra do texto utilizando um asterisco "*". Elabore um programa que recebe como entrada um tweet de Mei e a palavra a ser
+censurada, caso a palavra a ser censurada esteja no tweet, imprima-o com a censura, caso contrário imprima "tudo certo :)".
+
+A Entrada consiste de:
+* Uma string de tamanho variado representando um tweet de Mei e uma string sem espaços representando a palavra a ser censurada
+
+do tweet.
+
+ASaída deve apresentar:
+* Uma string de tamanho variado como especificado no enunciado.
+
+Observações:
+e Não é necessário validar se os valores de entrada são do tipo definido.
+
+Descrição dos Exemplos:
+
+e No primeiro exemplo, o tweet é "faz minha make" e a palavra a ser censurada é "minha", como ela consta no tweet a saída é "faz *
+make”,
+
+* Nosegundo exemplo, o tweet é "o céu ensolarado fará chover" e a palavra a ser censurada é "chuva", como ela não consta no tweet a
+saída é "tudo certo :)".
+
+For example:
+Input Result
+faz minha make faz * make
+minha
+o céu ensolarado fará chover tudo certo :)
+chuva
+
+abri minha mochila e tinha uma surpresa | abri minha * e tinha uma surpresa
+mochila
+
+Answer: (penalty regime: 0,0, 10, 20, ... %)
+
+1 |frase = input()
+2 |palavra = input()
+3vlif palavra in frase:
+
+4 frase = frase.replace(palavra,"*")
+5 print(frase)
+
+6vjelse:
+
+7 print("tudo certo :)")
+
+8
+Input Expected Got
+
+LÁ faz minha make faz * make faz * make
+minha
+
+Vv o céu ensolarado fará chover tudo certo :) tudo certo :)
+chuva
+
+WY |abri minha mochila e tinha uma abri minha * e tinha uma abri minha * e tinha uma
+surpresa surpresa surpresa
+mochila
+
+LA quero o meu com presunto, queijo e | tudo certo :) tudo certo :)
+atum
+cenoura
+
+Vv e tudo que ha de bom tudo certo :) tudo certo :)
+tempero
+
+WY | jack in the box jack in * box jack in * box
+the
+
+Passou em todos os teste! 4
+
+Para resolver esta questão, atente para o uso das diferentes formas de formatação da função print().
+
+Notas para este envio: 1,00/1,00.
+Questão 7
+Correto
+Atingiu 1,00 de 1,00
+
+Palíndromo
+
+lanerisson tem uma string s com apenas letras minúsculas de 'a' a 'z! Ele quer trocar exatamente um caractere de modo que a nova
+string seja um palíndromo.
+
+Um palíndromo é uma string que possui a mesma sequência de caracteres, tanto de frente para trás, como de trás para frente. Por
+n taaalt
+
+exemplo as strings "2", "aaa",
+palíndromos.
+
+aba" e "abccba" são palindromos, enquanto que as strings "codeforces", "realidade" e "ab" não são
+
+Entrada
+A primeira linha contém uma string s de até 100 caracteres.
+
+Saída
+Imprima "ON" (sem as aspas duplas) se lanerisson puder trocar exatamente um caractere para que a string resultante seja um
+palíndromo e "OFF" (sem as aspas duplas) caso contrário.
+
+Observações
+
+e No primeiro exemplo de teste, podemos trocar o segundo caractere 'b' por 'a' ou o quinto caractere 'a' por 'b';
+
+e Nosegundo exemplo de teste, seriam necessárias, no mínimo, duas trocas de caractere para obtermos um palíndromo;
+
+* Noterceiro exemplo de teste, apesar da string "glxlg" ser palindrome, podemos trocar o caractere do meio 'x' por qualquer outro,
+que assim podemos obter outra string palindrome.
+
+For example:
+
+Input | Result
+abccaa | ON
+abbcca | OFF
+
+glxlg | ON
+
+Answer: (penalty regime: 0,0, 10, 20, ... %)
+
+1 |palavra = input()
+
+2 |cont = 0
+
+3v|for i in range(len(palavra)):
+
+4y if palavra[i] != palavra[-1-i]:
+
+5 cont = cont+1
+
+6 |falha = cont//2
+
+7 vlif (falha == 1) or ((falha == @)and (len(palavra)%2==1)):
+
+8 print("ON")
+9vjelse:
+10 print ("OFF")
+
+Input Expected Got
+
+4 | abccaa | ON ON ¥
+
+<
+
+abbcca | OFF OFF W
+
+4 |glxlg | on on WV
+Input | Expected Got
+
+4 | fect OFF OFF |W
+4 |abeda | on oN |W
+4 |ukvciu | OFF OFF VW
+
+Passou em todos os teste! 4
+
+Para resolver o problema, é necessário encontrar o caractere do meio da string. Em seguida, deve comparar os caracteres, posição-a-
+posição, nos dois sentidos: do meio para o início e do meio para o final. Para cada comparação, deve-se contabilizar as posições em que
+os caracteres são diferentes. Depois de percorrer toda a string, geramos a resposta se houver exatamente uma "diferença de
+caracteres" e deve-se tratar o caso em que a string possui comprimento ímpar - podendo haver nenhuma ou duas diferenças de
+caracteres.
+
+Notas para este envio: 1,00/1,00.
+
+Questão 8
+Correto
+Atingiu 1,00 de 1,00
+
+Compressão de Strings
+
+Johnny é um cara legal que gostava de carros e brincar com algoritmos de compressão. Ele está trabalhando em um projeto no qual
+tem que lidar com cadeias de caracteres extremamente grandes. O maior problema de Johnny nesse trabalho é que essas strings são
+grandes demais para manipular diretamente, então ele precisa de uma representação alternativa (menor) para a mesma informação.
+Johnny pensou em usar uma técnica bem conhecida para comprimir as strings: trocar ocorrências consecutivas de um mesmo
+caractere por uma única ocorrência deste mesmo caractere, seguida da quantidade de ocorrências. Neste formato, todo caractere é
+seguido por um inteiro positivo. Essa compressão permitiu que ele comunicasse suas strings, mas ele não consegue processá-las
+corretamente e agora precisa da sua ajuda para revertê-las às suas formas originais.
+
+Entrada
+
+A entrada é composta de uma linha contendo um inteiro N (1 s Ns 50), seguida de N linhas distintas, cada uma com uma string
+codificada. É garantido que toda string tem pelo menos um caractere e está no formato comprimido, ou seja, é composto apenas por
+letras (maiúsculas) e dígitos.
+
+Saída
+Apresente as strings decodificadas, uma por linha.
+
+Observações
+
+* Nocaso de teste 1, devem ser decodificadas 4 strings. A primeira string tem 12 letras A, 2 letras Be 6 letras C, de forma que a string
+original é AAAAAAAAAAAABBCCCCCC. A segunda string tem 3 letras A, 6 letras B e 8 letras F, de forma que a string original é
+AAABBBBBBFFFFFFFF. A terceira string tem 16 letras A e 4 letras B, de forma que a string original é
+AAAAAAAAAAAAAAAABBBB. E a quarta string tem 5 letras G e 2 letras H, de forma que a string original é GGGGGHH.
+
+For example:
+
+Input Result
+
+4 AAAAAAAAAAAABBCCCCCC
+
+A12B2C6 AAABBBBBBFFFFFFFF
+
+A3B6F8 AAAAAAAAAAAAAAAABBBB
+
+A16B4 GGGGGHH
+
+G5H2
+
+2 XAAAAAAAAAADDDDDDDDDD
+
+X1A10D10 VVVVVVV VV VV VV VV VV VV
+
+v20
+
+5 AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBCCCCCCCCCCCCCCCCCCCCCCO
+A32B32C50A1V14G1B1 | EEEEEEEEEEEEEEEEEEEEEEEFEEEEEEGGGGGGGGGGGGGGGGGGGGGGGGCGGGGGGGEGGGGGGGGGGGGGGGGGGGGGEGEG
+E30690 DDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDD
+
+D34 FEFFEFFEFFETITITITITITITITITITTITITITITTITTITITTITITITITIT
+
+F9T45 KKKXXV
+
+K3X2V1
+
+Answer: (penalty regime: 0,0, 10, 20, ... %)
+
+1 |n = int(input())
+
+2+|for k in range(n):
+
+3 numstr="@'
+
+4 carac = '"'
+
+5 a = input()
+
+6y for letra in a:
+
+Tv if not(letra.isdigit()):
+
+8 print(carac*int(numstr),end ="")
+9 carac = letra
+
+16 numstr=""
+
+liv else:
+
+12 numstr= numstr + letra
+13 print (carac*int(numstr) }
+
+14
+
+15
+
+Input Expected
+
+ia AAAAAAAAAAAABBCCCCCC
+A12B2C6 AAABBBBBBFFFFFEFF
+A3B6F8 AAAAAAAAAAAAAAAABBBB
+Al6B4 GGGGGHH
+G5H2
+vo |2 XAAAAAAAAAADDDDDDDDDD
+X1A10D10 VVVVVVVVVVVVVVVVVV
+v20
+5 AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABBBBBBBBBBBBBEBBBBBBBBBBBBBBBBBBCCCCCCCCCCCCCCCCC
+A32B32C50A1V14G1B1 | EEEEEEEEEEEEEEEEEEEEEEEEEEEEEEGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGG
+E30690 DDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDD é
+D34 FRFFEFFEEITTITITITITTTTTITITTITIITIITITITTITTTTTTITITTT
+F9TAS KKKXXV
+K3X2V1
+oS (3 RRTTRRTTRRTT
+R2T2R2T2R2T2 PFFFFFFFFFFFFEFFFF FF FE FGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGG
+F23G34 HGBRR
+H1G1B1R2
+viii E
+El
+4 |10 A
+Al B
+Bl c
+ci D
+D1 E
+El Fr
+F1 G
+G1 H
+H1 I
+T1 J
+a1
+ia A
+Al
+
+Passou em todos os teste! #
+
+A questão pode ser resolvida percorrendo cada caractere da string e verificando se o caractere é número de duas formas: analisando
+os caracteres pelo seu código ASCII ou realizando a verificação automática através de funções built-in do Interpretador Python.
+
+[correto |
+
+Notas para este envio: 1,00/1,00.
+Questão 9
+Correto
+Atingiu 1,00 de 1,00
+
+Depurando strings 5
+
+Allen B. Downey em seu livro Pense em Python: Pense como um cientista da computação, fala da dificuldade em se testar programas.
+Em particular, sobre strings ele diz que:
+
+"As funções no Capitulo de Strings e Estudo de caso: jogos de palavras são relativamente fáceis para testar porque é possível verificar os
+resultados à mão. Ainda assim, pode ser difícil ou até impossível escolher um grupo de palavras que teste todos os erros possíveis."
+
+Dito isto, corrija o código da seguinte função que dado uma palavra retorna Verdadeiro se ela não possui a letra u e Falso se possuir a
+letra w.
+
+def não possui a letra ufpalavra):
+for letra in palavra:
+if not letra == u:
+return False
+
+return True
+
+Entrada:
+
+e Afunção não possui a letra u cujo parâmetro de entrada é uma string qualquer.
+
+Saída:
+
+e Asaída é True ou False.
+
+Descrição dos Exemplos:
+
+* Os exemplos são autoexplicativos.
+
+For example:
+Test Result
+print (não possui a letra u ("Universidade")) | False
+print (não possui a letra u("siúkânet")) False
+
+print (não possui a letra u("Baú")) False
+
+Answer: (penalty regime: 0,0, 10, 20, ... %)
+
+RESET ANSWER
+
+1v|def não possui a letra u(palavra):
+2, for letra in palavra:
+3v if(letra.lower() == "u") or (letra. lower() == "U") or (letra.lower() == "ú") or (letra. lower
+4 #print(letra.lower())
+return False
+return True
+
+Sow
+Test Expected Got
+
+4 print (não possui a letra u("Universidade")) | False False 4
+4 |print(não possui a letra u("siúkânet")) False False W
+A print (não possui a letra u("Baú")) False False VW
+4 |print(não possui a letra u("W")) False False | VW
+4 |print (ndo_possui_a_letra_u("Ursula") ) False False | 4
+¥Y | print (não possui a letra u('Latex')) True True A
+
+Passou em todos os teste! 4
+
+Use o debugger ou instrumente o seu código com prints e acompanhe linha a linha o que a função acima está fazendo. Assim você
+poderá verificar os erros de lógica da função, após corrigir eventuais erros de sintaxe, se houver.
+
+[Correto |
+
+Notas para este envio: 1,00/1,00.
+Questão 10
+Correto
+Atingiu 1,00 de 1,00
+
+Decifrando código alien
+
+Segundo o lendário cientista da computação Edsger W. Dijkstra:
+
+"Testar programas pode ser usado para mostrar a presença de bugs, mas nunca para mostrar a ausência deles! "
+
+Dito isto, deixe o código mais correto possível no seguinte programa que dado um código binário alien e o seu respectivo código unário
+
+alien o decifre para o código binário usando O's e 1's . Este programa em seguida lê n linhas ou com um número em decimal ou com o
+código binário alien. A cada entrada, o programa ou converte para o código binário alien ou converte para o decimal, respectivamente.
+def decimal2bin(n):
+code = bin(n)
+code = code[2:]
+code = code.zfill (8)
+
+return str (code)
+
+def reverse ls):
+rev = s[::-1]
+
+return rev
+
+def decodifica (codeBinario, codeUnario):
+decimal = len (codeUnario)
+if decimal % 2 == 0:
+zero=codeBinario [decimal-1]
+for i in codeBinario:
+if i != zero:
+um =i
+break
+else:
+um = codeBinario[decimal-1]
+for i in codeBinario:
+if i != um:
+zero = i
+break
+
+return zero, um
+
+def converteZalien(zero, um, code):
+decimal = int (code)
+binário = decimal2bin (decimal)
+alien = ""
+for i in binário:
+if i == "0":
+alien += zero
+elif i == "1":
+alien += um
+
+return alien
+
+def converte2decimal (zero, um, code):
+decimal = "0b"
+for i in code:
+if i == zero:
+decimal += "0"
+elif i == um:
+decimal += "1"
+
+return int(decimal, 2)
+
+def isBigEndian (códigoBinárioAlien, códigoUnárioAlien) :
+decimal = len (códigoUnárioAlien)
+if decimal % 2 == 0:
+zero = cédigoUnérioAlien [len (cédigoBinarioAlien)-1]
+for i in códigoUnárioAlien:
+if i != zero:
+um = i
+break
+else:
+um = códigoUnárioAlien[len (códigoBinárioAlien)-1
+for i in códigoUnárioAlien:
+if i != um:
+zero = à
+break
+binario = "0b"
+for i in códigoBinárioAlien:
+if i == zero:
+binario += "0"
+
+elif i == um:
+binario += "1"
+if int(binario, 2) != decimal:
+return True
+else:
+
+return False
+
+def BigEndian2LittleEndian (códigoBinárioAlien) :
+
+return reverse (códigoBinárioAlien)
+
+def LittleEndian2BigEndian(códigoBinárioAlien) :
+
+return reverse (códigoBinárioAlien)
+
+côdigoBinário, códigoUnário = input ().split()
+n = len(códigoUnário)
+bigEndian = isBigEndian (códigoBinário, códigoUnário)
+if bigEndian:
+códigoBinário = BigEndian2LittleEndian (códigoBinário)
+zero, um = decodifica (códigoBinário, códigoUnário)
+for i in range(n):
+code = input ()
+if code.isdigit():
+if bigEndian:
+print (LittleEndian2BigEndian(converte2alien(zero, um, code)))
+else:
+print (converte2alien(zero, um, code))
+else:
+if bigEndian:
+code = BigEndian2LittleEndian (code)
+print (converte2decimal (zero, um, code))
+else:
+
+print (converte2decimal (zero, um, code))
+
+Entrada:
+
+* Aprimeira linha contém um código binário alien de 8 bits e o seu respectivo código unário alien. Este valor inteiro n é a quantidade
+de linhas a serem lidas em seguida, n no intervalo fechado de 1a 15.
+e As linhas seguintes contém ou um número inteiro ou o código binário alien representando um número inteiro.
+
+Saída:
+
+* Um numero inteiro na base 10 ou em binário alienígena com 8 bits.
+
+Descrição dos Exemplos:
+
+e Osexemplos são autoexplicativos.
+
+Obs:
+
+* Considere que todas as entradas e saídas são para números inteiros entre 0 e 255.
+
+© Obit mais significativo pode estar mais à direita (denominado Little Endian) ou mais à esquerda (Big Endian) dependendo do povo
+alienígena.
+
+e Considere que o número inteiro da primeiro linha não é um palindromo na codificação binária.
+
+For example:
+Input Result
+FERRARA aka | 1
+FERE ARE
+2 3
+HEEERE TT Heard
+4 5
+HEE E+
+.- > eee -
+1 7
+
+SHEHEHEE & 5
+SaSdette
+Answer: (penalty regime: 0,0, 10, 20, ... %)
+
+RESET ANSWER
+
+1v|def decimal2bin(n):
+
+2 code = bin(n)
+
+3 code = code[2:]
+
+4 code = code.zfill(8)
+
+5 return str(code)
+
+6
+
+7 vldef reverse(s):
+
+8 rev = s[::-1]
+
+9 return rev
+
+18
+
+11 v| def decodifica(codeBinario, codeUnario): &funcão pincipal que decodifica.
+12 decimal = len(codeUnario)
+13¥ if decimal % 2 == @:
+
+14 zero = codeBinario[-1]
+159 for i in codeBinario:
+16v if i != zero:
+
+17 um = i
+
+18 break
+
+19% else:
+
+20 um = codeBinario[-1]
+21v for i in codeBinario:
+22 vw if à != um:
+
+23 zero = i
+
+24 break
+
+25 return zero, um
+
+26
+
+27 «| def converte2alien(zero, um, code):
+28 decimal = int(code)
+
+29 binário = decimal2bin(decimal)
+38 alien = ""
+
+31v for i in binário:
+
+32v if i == "9":
+
+33 alien += zero
+
+34v elif i == "1":
+
+35 alien += um
+
+36 return alien
+
+37
+
+38 v| def converte2decimal(zero, um, code):
+39 decimal = "@b"
+
+40» for i in code:
+
+41v if i == zero:
+
+42 decimal += "9"
+43, elif i == um:
+
+44 decimal += "1"
+
+45 return int(decimal, 2)
+
+46
+
+47w
+
+def isBigEndian(códigoBinárioAlien, cédigoUndrioAlien):
+
+48 decimal = len(códigoUnárioAlien)
+
+49, if decimal % 2 == 0:% par
+
+58 zero = códigoBinárioAlien[-1]
+
+51y for i in códigoBinárioAlien:
+
+52v if i != zero:
+
+a
+
+Input Expected Got
+
+DAME CACAÇA! ara | 7 1 v
+FREE HHEEEETE | HEE ERE TE
+2 3 3
+ARE FRRRRRRRO dEdRRriA
+4 5 5
+HE Bt
+
+v - > eee E -\v
+1 7 7
+
+SY | SHHTHEEE & 5 5 LÁ
+SSH
+
+Input Expected | Got
+
+4 | <<>> aaa 5 5 LÁ
+<><> 10 10
+><>< <><><><> | <><><><>
+85
+
+4 | aaabbbbb ppppppp abbbbbbb | abbbbbbb | 4
+1 aaabbbbb | aaabbbbb
+7 bbbabbbb | bbbabbbb
+8 aaaaaaaa | aaaaaaaa
+255 bbbbbbbb | bbbbbbbb
+0 bbbabbaa | bbbabbaa
+200 aaabbbaa | aaabbbaa
+199
+
+4 |aaabbbbb xxxxxxx 1 1 Vv
+abbbbbbb 7 7
+aaabbbbb 8 8
+bbbabbbb 255 255
+aaaaaaaa 0 0
+bbbbbbbb 200 200
+bbbabbaa 199 199
+aaabbbaa
+
+Passou em todos os teste! 4
+
+Use o debugger ou instrumente o seu código com prints e acompanhe linha a linha o que a função acima está fazendo. Assim você
+poderá verificar os erros de lógica da função, após corrigir eventuais erros de sintaxe, se houver.
+
+[correto |
+
+Notas para este envio: 1,00/1,00.

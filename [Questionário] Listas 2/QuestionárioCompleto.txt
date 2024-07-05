@@ -1,0 +1,1049 @@
+Iniciado em
+Estado
+
+Concluída em
+Tempo empregado
+Avaliar
+
+domingo, 25 jun. 2023, 17:18
+Finalizada
+
+domingo, 25 jun. 2023, 22:38
+
+5 horas 20 minutos
+
+5,00 de um máximo de 10,00(50%)
+Questão 1
+Correto
+Atingiu 1,25 de 1,25
+
+Decifrando Poneglifos
+
+É dito que um grande tesouro se encontra escondido em algum lugar dos mares do mundo. Para encontrar esse tesouro, é necessário
+decifrar uma série de blocos monolíticos chamados poneglifos que possuem marcações em sua face frontal, revelando uma mensagem
+que dá uma dica para encontrar o grande tesouro.
+
+Sua missão é analisar a mensagem contida em um dado poneglifo verificando os caracteres inscritos em sua face frontal e determinar
+se é possível decifrar seu conteúdo.
+
+Um poneglifo pode ser interpretado como uma matriz quadrada de dimensão NxN. Cada célula dessa matriz contém um caractere
+
+representando uma informação que pode ou não ser relevante. Caracteres de informação relevante são aqueles em que há um ‘X’
+maiúsculo, todos os demais caracteres não contém informação relevante.
+
+Para decifrar corretamente a dica contida no poneglifo é preciso verificar que os caracteres de informação relevante cruzam
+simultaneamente as diagonais principal e secundária da matriz, formando um grande 'X' e que aparecem somente ocupando essas
+posições. Caso seja possível decifrar um dado poneglifo, mostre a mensagem “O one piece eh real!”, caso contrário mostre a mensagem
+“Talvez o tesouro seja os amigos que fizemos no caminho”,
+
+A Entrada consiste de:
+e Emumalinha, um inteiro N (3<N'<10), representando o tamanho da matriz quadrada NxN.
+e Nas JN linhas seguintes, os N caracteres representando a informação contida naquela linha.
+
+ASaída deve apresentar:
+e Uma string mostrando a mensagem “O one piece eh real” caso seja possível decifrar o “poneglifo” ou “Talvez o tesouro seja os
+amigos que fizemos no caminho” caso contrário.
+
+Observações:
+e Não é necessário validar se os valores de entrada são do tipo definido.
+
+Descrição dos Exemplos:
+
+e No primeiro exemplo, a matriz dada é de dimensão 3 x 3 e verificando todas as suas posições é possível comprovar que as diagonais
+principal e secundária estão corretamente preenchidas com um 'X' e não há mais 'X' em outras posições, portanto a mensagem
+exibida é "O one piece eh real!"
+
+* Nosegundo exemplo, uma matriz de mesmas dimensões é dada, porém somente a diagonal principal está preenchida com 'X,
+portanto a mensagem exibida é "Talvez o tesouro seja os amigos que fizemos no caminho”.
+
+e Noterceiro exemplo, uma matriz de mesmas dimensões é dada e todas as posições exceto a posição do meio estão preenchidas por
+caracteres 'X: A posição do meio está preenchida por um caractere 'x' minúsculo. Tanto as diagonais não estão corretamente
+
+preenchidas como a quantidade de "X" maiúsculos é maior do que a permitida, portanto a mensagem exibida é "Talvez o tesouro
+seja os amigos que fizemos no caminho”.
+
+For example:
+
+Input | Result
+
+3 O one piece eh real!
+
+XOX
+
+Oxo
+
+XOX
+
+3 Talvez o tesouro seja os amigos que fizemos no caminho
+
+x00
+
+ie) o
+
+00X
+
+3 Talvez o tesouro seja os amigos que fizemos no caminho
+
+x Xx
+
+Xx kK
+
+XXX
+Answer: (penalty regime: 0,0, 10, 20, ... %) É 4
+
+1 v| def checkimput(n): *
+
+a fra o te en fe
+ay Tor K Ln rangeyn):
+
+3 linha = input().split()
+
+4 primeiro = k
+
+5 segundo = n-1 -k
+
+6v for m in range(n):
+
+7x if m in [primeiro, segundo]:
+8v if linha[m] == "Xx":
+9 continue
+
+18 v else:
+
+11 return False
+12v else:
+
+13 ¥ if linha[m] !=
+
+14 continue
+
+15 v else:
+
+16 return False
+17 return True
+
+18
+
+19 |n = int(input())
+
+20 v|if checkimput(n):
+
+21 print("O one piece eh real!")
+22 vjelse:
+
+23 print("Talvez o tesouro seja os amigos que fizemos no caminho”)
+
+a
+Input Expected Got
+oS |3 O one piece eh real! O one piece eh real!
+X OX
+oxo
+XOX
+Y (3 Talvez o tesouro seja os amigos que Talvez o tesouro seja os amigos que
+x00 fizemos no caminho fizemos no caminho
+oxo
+ox
+/ |3 Talvez o tesouro seja os amigos que Talvez o tesouro seja os amigos que
+XXX Fizemos no caminho fizemos no caminho
+X x X
+XXX
+4 O one piece eh real! O one piece eh real!
+X- - X
+— x xX —
+- XX -
+X- - X
+a Talvez o tesouro seja os amigos que Talvez o tesouro seja os amigos que
+X X X X | fizemos no caminho fizemos no caminho
+0000
+XX XX
+0000
+7 15 O one piece eh real! O one piece eh real!
+XABC
+XxX
+DX EX
+F
+GHXI
+J
+KXLX
+M
+X NOP
+x
+
+Passou em todos os teste! 4
+
+Para resolver essa questão é necessário iterar por cada uma das linhas da matriz, verificando se os caracteres de 'X' maiúsculo
+
+aparecem exclusivamente nas posições esperadas. Uma ideia é guardar dois valores booleanos inicialmente verdadeiros e verificar ao
+
+percorrer a matriz se ha caractéres diferentes nas posições de diagonal principal e secundária. Caso ambas variáveis permaneçam
+
+verdadeiras ao final da execução é sinal que as diagonais principal e secundária estão preenchidas corretamente. Para verificar se ce '
+
+*
+
+=
+aparecem somente nas posições adequadas é possível contar o valor total de X encontrados ao percorrer a matriz e comparar com a
+quantidade de 'X' que deveriam existir somente nas diagonais (um valor que pode ser calculado somente com o tamanho da matriz).
+
+Notas para este envio: 1,25/1,25.
+Questão 2
+Correto
+Atingiu 1,25 de 1,25
+
+Ordenando pelo n-ésimo termo
+
+Considere uma lista composta por 7 listas de inteiros de mesmo tamanho. Dado um indice ¢ que representa a posição de um elemento
+da lista de inteiros, ordene os elementos da lista com base no valor do elemento de índice £ da lista de inteiros. Caso os elementos de
+duas listas de inteiros na mesma posição tenham o mesmo valor, a lista de inteiros com a maior soma de todos os seus elementos deve
+ser considerada maior. É garantido que duas listas de inteiros não terão somas iguais.
+
+A Entrada consiste de:
+* Emuma linha, um número inteiro n que representa a quantidade total de listas de inteiros a serem ordenados.
+e Nalinha seguinte, um número inteiro t indicando o índice que deverá ser comparado para a ordenação das listas de inteiros.
+
+A Saída deve apresentar:
+e Asn linhas de inteiros ordenados pelo elemento de índice £ ou pela soma dos elementos da linha quando dois elementos
+comparados forem iguais.
+
+Observações:
+
+e Não é necessário validar se os valores de entrada são do tipo definido.
+
+e Agrdenação diz respeito à posição das listas de inteiros, e não aos inteiros dentro de cada lista. Não é necesário ordenar os
+elementos de cada linha mas sim reordenar as linhas para que fiquem em ordem crescente com base em seu elemento de índice É.
+
+Descrição dos Exemplos:
+* Os exemplos são autoexplicativos.
+
+For example:
+
+Input Result
+
+3 273
+
+1 182
+
+091 091
+
+182
+
+273
+
+3 001
+
+0 011
+
+021 021
+
+011
+
+001
+
+4 0123
+2 0821
+
+10987 110987
+0821 11 10 9 8
+11 1098
+0123
+
+Answer: (penalty regime: 0,0, 10, 20, ... %)
+
+1 |#bubble sort
+
+2 v|def soma(lista):
+
+3 soma = @
+
+4y for num in lista:
+
+5 soma += int(num)
+
+6 return soma
+
+7
+
+8 v|def comparador(num_a,num_b,t):
+
+9v if int(num a[t]) > int(num_b[t]) :
+10 return True
+
+11 v elif int(num a[t]) < int(num_b[t]):
+12 return False PS
+13v else:
+22 v
+
+if soma(num a) > soma(num b):
+return True
+
+else:
+return False
+
+def order(lista,t): g0(n) = nº2
+for i in range(len(lista)):
+for j in range(len(lista)-1):
+if comparador(lista[j],lista[j+1],t):
+lista[j],lista[j+1] = lista[j+1],lista[j]
+return lista
+def printmat(mat):
+for k in range(len(mat)):
+print (*mat[k])
+
+n = int(input())
+t = int(input())
+
+10987 110987 /10987
+0821 11 10 9 8/11 10 3 8
+11 10 9 8
+0123
+
+10
+
+10 0
+
+wow Oat n PWNDN SAO
+w nou hb wWNnNP wl
+wo Own FF WN DN CO
+wo nwonu BWNnNFe ~l
+
+10 0 10 0
+
+yO PF OWN WHA NO
+NY FO wor WwW Uw ® «I
+
+31 |mat =[]
+
+32 v|for i in range(n):
+
+33 mat += [input().split()]
+
+34
+
+35 |printmat(order(mat,t))
+
+36
+Input Expected Got
+
+¥ |3 273 273 LÁ
+1 182 182
+091 091 09
+182
+273
+
+13 001 001 v a
+0 0 1 011
+021 021 021
+011
+001
+
+fia 0123 0123 Vv
+2 0821 0821
+
+Input Expected | Got
+
+4 (13 602 602 v
+1 10 11 1011
+5132 5113 5113
+864 629 629
+10 10 9 44 6 44 6
+1011 1411 1411
+10 82 1242 12 42
+602 35 10 3510
+35 10 864 864
+629 10 8 2 10 8 2
+1242 10 10 9 10 10 9
+1411 12 11 9 12 11 9
+5 113 5 132 5 13 2
+12 11 9
+446
+
+4 16 210 210 4
+2 622 622
+006 323 323
+210 534 534
+622 464 464
+464 006 006
+534
+323
+
+Passou em todos os teste! 4?
+
+Para resolver essa questão é possível comparar todos os elementos um a um e analisar qual dos dois elementos possui o número maior
+em sua posição de índice £, realizando a troca quando necessário.
+
+[Correto |
+
+Notas para este envio: 1,25/1,25.
+Questão 3
+Correto
+Atingiu 2,50 de 2,50
+
+Cavando Buracos
+
+Um terreno está sendo preparado para a construção de um edifício e que conterá diversos labirintos subterrâneos. O terreno pode ser
+visualizado como uma matriz AxxM, em que cada célula A; . corresponde a 100 mm. Para construir os labirintos, a equipe de
+engenharia está utilizando uma nova técnica, conhecida como "Trincheiras em Cruz”
+
+A técnica da cruz funciona da seguinte maneira: o engenheiro lança um projétilnaposição (x, y) (L< x < N),(1<y< M),que
+explode no solo, cavando um buraco de profundidade 1 nessa posição. Como efeito da explosão, todas as outras posições que estão na
+linha x e na coluna y são automaticamente cavadas também em profundidade de 1 unidade.
+
+O engenheiro fará o lançamento de Q projéteis, visando obter diversos tipos de labirintos e em diferentes profundidades. Sua tarefa
+consiste em determinar quantas posições do terreno possuirão a maior profundidade após o lançamento de todos os projéteis.
+
+A Entrada consiste de:
+
+* Aprimeira linha apresenta dois números inteiros separados por espaço Ne M (1 < N < 100,1 < M < 100). A segunda linha
+descreve um único inteiro Q (1 < Q < 100) indicando a quantidade de lançamento de projéteis realizado pelo engenheiro. Em
+seguida, existem @ linhas, em que cada uma apresenta dois números inteiros separados por espaço x, y
+(1 <e<N,I<y< M) , indicando a posição de queda do projétil lançado pelo engenheiro.
+
+ASaída deve apresentar:
+e Imprima um único inteiro com a resposta para o problema: a quantidade de posições do terreno quen possuirão a maior
+profundidade após o lançamento dos Q projetéis.
+
+Observações:
+* Não é necessário validar se os valores de entrada são do tipo definido.
+
+Descrição dos Exemplos:
+e No primeiro exemplo, a ilustração a seguir mostra que após o lançamento dos projéteis, a profundidade máxima do terreno será
+igual a 2. Existem 3 células no terreno com profundidade 2.
+
+xix|x| |x|x|X
+X} |>|x|x]|x
+X X
+
+Terreno após o primeiro Terreno após o segundo
+projétil ser lançado em (1,2 projétil ser lançado em (2,2
+
+For example:
+
+Input | Result
+
+3 3
+
+NF DN Ww
+
+Oo NnNrPwu
+H
+Input | Result
+77/|4
+7
+11
+12
+23
+34
+45
+5 6
+12
+Answer: (penalty regime: 0,0, 10, 20, ... %)
+1 |linha,coluna = input().split()
+2 |linha,coluna = int(linha),int(coluna)
+3 |mat =[]
+4v|for i in range(linha):
+5 mat_linha =[]
+6v for j in range(coluna):
+7 mat_linha +=[@]
+8 Mat +=[mat_linha]
+9 |n = int(input())
+19 +|for 1 in range(n):
+11 x,y = input().split()
+12 x,y = int(x)-1,int(y)-1
+13v for m in range(linha):
+14 mat[m][y] += 1
+15 v for n in range(coluna):
+16 mat[x][n] += 1
+17 mat[x][y] -= 1
+18
+19 |#print(*mat)
+2@ |cont = @
+21 |maximo = @
+22 v|for i in range(linha):
+234 for j in range(coluna):
+244% if mat[i][j] > maximo:
+25 maximo = mat[i][j]
+26 cont = 1
+27 elif mat[i][j] == maximo:
+28 cont += 1
+29 v else:
+30 continue
+31 |print(cont)
+a
+Input Expected | Got
+4 (33 3 3 v
+2
+12
+22
+4 156 6 6 vo
+3
+11
+22
+5 6
+4179 4 4 É
+7
+11
+12
+23
+34
+45
+5 6
+12
+
+Input Expected | Got
+
+E O fi 1 |v
+
+H
+H
+
+MH HH N
+
+4 (10 10/2 2 v
+2
+
+35
+8 10
+
+Passou em todos os teste! 4
+
+Para resolver esta questão, atente para o uso das diferentes formas de formatação da função print().
+
+Notas para este envio: 2,50/2,50.
+Questão 4
+
+Não respondido
+
+Atingiu 0,00 de 2,50
+
+Agradando os Comerciantes
+
+Ao fazer compras, Heverton tem a mania de sempre comprar um produto em cada mercearia da pequena cidade onde mora para
+agradar os comerciantes. Cada mercearia é enumerada por um número inteiro de 1 a N. Heverton possui inicialmente M mangos. Ele
+sempre começa suas compras pela mercearia 1 e, após comprar o produto mais barato, vai até a mercearia 2, compra o produto mais
+barato e assim sucessivamente. Os comerciantes da pequena cidade não vendem fiado e, por isso, só é possível comprar um produto se
+ele possui mangos suficientes para isso.
+
+Caso ele passe por todas as mercearias e ainda existir dinheiro disponível, Heverton recomeça o processo de compras pela mercearia 1
+novamente e continua até não possuir mais dinheiro disponível para comprar um produto. Heverton quer comprar no mínimo K
+produtos de cada mercearia considerando que ele possui M mangos. Será que isso é possível?
+
+A Entrada consiste de:
+
+e Aprimeira linha da entrada contém três números inteiros separados por espaço VN, Me K
+(1<N<1000,1<M< 105), 1< K < 100, indicando a quantidade de mercearias, o valor inicial em mangos de Heverton e
+a quantidade mínima de produtos que ele quer comprar em cada mercearia, respectivamente. A segunda linha contém N inteiros
+separados por espaço q1, G2, :, qn (1 < q; < 100) indicando a quantidade de produtos existentes na i-ésima mercearia. As
+próximas N linhas descrevem os produtos da mercearia. Na j-ésima linha, existem q inteiros separados por espaço
+01,023: 109,» emquea; (1 <a, < 10º) indica o preço do i-ésimo produto, sendo que cada produto é único (i.e. não existem
+repetições desse produto).
+
+A Saída deve apresentar:
+
+« Imprima "Sim" (sem aspas duplas) caso seja possível comprar pelo menos K produtos de cada mercearia da pequena cidade a partir
+dos M mangos iniciais de Heverton. Caso contrário, imprima "Nao" (sem aspas duplas).
+
+Observações:
+e Não é necessário validar se os valores de entrada são do tipo definido.
+
+Descrição dos Exemplos:
+
+e No primeiro exemplo, Heverton compra uma única vez (K = 1) os produtos 3 e 1 de cada mercearia, não excedendo os 25 mangos
+que ele possui.
+
+e Nosegundo exemplo, Heverton compra os produtos 2, 5 e 1 (das mercearias 1, 2 e 3), que possuem valores 3,1e 1,
+respectivamente, ficando com 5 mangos. Na próxima rodada de compras, seriam necessários 14 mangos para compras os produtos
+4,1e 3 que possuem valores 6, 3 e 5, respectivamente.
+
+For example:
+
+Input Result
+
+251 Sim
+
+Pow DN
+MD wie
+
+10 2 Nao
+
+Ho sw
+w
+
+81 2 Nao
+
+oa Es ND ms
+Answer: (penalty regime: 0,0, 10, 20, ... %)
+
+1 |
+
+Para resolver esta questão, atente para o uso das diferentes formas de formatação da função print().
+
+Questão 5
+Não respondido
+
+Não avaliada
+
+Grade Horária do LP
+
+O SIGAA é legal, mas poderia ser melhor! E se algumas funcionalidades fossem integradas? Poder gerenciar sua grade horária ou a
+alocação de salas tornariam a experiência com o sistema muito melhor. Capaz de atender esta demanda, o Prof Luís Paulo encomendou
+à turma de APC a implementação de um sistema conhecido como SAD (@) - Sistema de Apoio ao Discente, uma plataforma flexível que
+proverá soluções para todos!
+
+À primeira funcionalidade a ser criada é a de gerenciamento de grade horária, de modo que a matrícula no próximo semestre ocorra de
+forma mais fluida. Implemente as seguintes funcionalidades para os comandos indicados:
+
+* + COD DTH1 ... DTHn acrescenta a disciplina COD nos horários DTH,, DT Hs, ... DT H,. Há um espaço entre cada
+elemento do comando.
+
+¢ — COD DTHL ... DTHn retiraa disciplina COD dos horários DTH, DT Ho, ... DTH, Há um espaço entre cada elemento
+do comando.
+
+e 2 mostraagrade horária semanal.
+°® Hasta la vista, beibe! | interrompe a execução do programa.
+
+Todo cop temo formato XXX##HHY, onde XXX identifica a unidade responsável pela oferta, 44H o código da disciplina e Y a turma
+Departamento de Ciência da Computação. Cada turma é ofertada em horários específicos no formato DTH, onde D define o(s) dia(s)
+da semana, T'o turno e H a(s) hora(s) da(s) aula(s). Por exemplo, 35M12 são aulas as terças (3) e quintas (5), no período da manhã (
+M), nos horários 1 e 2. A UnB atua nos três turnos: matutino (M), vespertino (7) e noturno (N) - você pode ver mais detalhes no sitio
+da instituição.
+
+A exibição da grade deve seguir um formato específico de tabela, que apresenta todos os dias da semana, mas somente os horários com
+matricula registrada. As linhas horizontais são compostas pelo caractere' - '"asverticais pelo" | 'easinterseçõespelo' + ‘A
+primeira informação apresenta os dias úteis da semana, representados pelas siglas Seg, Ter, Qua, Qui, Sex e Sab, nesta ordem. As
+
+demais informações apresentam, cada uma, um dos horários previstos para aula. A primeira coluna apresenta a duração da aula, e as
+demais os códigos das disciplinas, se houver a matrícula nesse horário. Sempre há pelo menos um espaço entre os caracteres de linha
+vertical e o conteúdo.
+
+É garantido que o conjunto de instruções fornecidos é sintaticamente correto. Caso não seja possível atualizar a grade, apresente a
+mensagem: '!( instr )jonde instr éainstrução fornecida. Exemplos de atualizações não permitidas são a adição de
+disciplinas com choque de horário e a remoção de uma disciplina que não está na grade.
+
+Entrada
+
+A entrada consiste de uma quantidade indeterminada de instruções, dentre as 3 primeiras descritas acima, apresentadas uma por
+linha, seguidas da instrução de finalização do processamento.
+
+Saída
+
+A saída consiste na apresentação das informações, quando solicitadas/necessárias.
+
+Observações
+
+Nos turnos diurnos, cada horário H representa um crédito, ou seja, 55 minutos de aula (e consideram-se 10 minutos de intervalo a
+cada 2 horários) - são 5 horários possíveis de manhã e 6 a tarde. Já no noturno, cada crédito tem 50 minutos (também consideram-se
+10 minutos de intervalo a cada 2 horários) - são 4 horários possíveis.
+
+For example:
+Input
+
++ CIC0004F 246T23
+?
+
+Hasta la vista, beibe!
+
++ CIC0136E 7N1234
+
++ CIC0116L 2M5 4M5 2T1
+471
+
+?
+
+Hasta la vista, beibe!
+
+=——+
+| 14:00 - 14:55
+
+=——+
+| 14:55 - 15:50
+
+=——+
+
+| 19:00 - 19:50
+CICO136E |
+4->>>0—00 000000 ——
+=——+
+
+| 19:50 - 20:40
+CICO136E |
+4-=00000 000000 ——
+=——+
+
+| 20:50 - 21:40
+CICO136E |
+4-=>>>——————————
+=——+
+
+| 21:40 - 22:30
+CICO136E |
+
+Ter
+
+Ter
+
+Sex
+Input
+
+CIC0004B
+ENM0133A
+IFD0171uJ
+IFDO173A
+MAT0025R
+IQD0125F
+IQD01263
+
+v++L+++H+ +
+
+235M12
+6M12
+35723
+4M34
+246T23
+35M34
+2M34
+
+Hasta la vista, beibe!
+
++ CICO099C
++ CICO169A
+- crcoo99c
+- CICOO99A
+- CICOO99C
++ CICO169A
++ CICO099A
+
+35T23
+35723
+35M23
+35723
+35723
+35T23
+24723
+
+Hasta la vista, beibe!
+
+Salata tan elated p==nan= non
+———+
+
+I | Seg
+
+|
+
+f======= nana nona p==== == ===
+==—+
+
+!(+ CICO169A 35T23)
+!(- CICO099C 35M23)
+!(- CICO099A 35723)
+
+4-—==="==0 === 00 —— 4-—=———————
+———+
+
+| | Seg
+
+I
+
+4-===0 0000000000 4====== 0000
+aot
+
+| 14:00 - 14:55 | CICO099A
+
+---+
+| 14:55 - 15:50 | CICO099A
+
+Ter
+
+Ter
+
+Sex
+
+Sex
+Input
+
+++
+
++
++
+?
+
+CIC0004E
+MATOO31A
+MATOO31A
+
+CICO004E
+MATOO31A
+crco0d4c
+
+246M34
+24M34
+24M34
+
+2M34 4M34 6M34
+24M3 24M4
+345N12
+
+Hasta la vista, beibe!
+
+?
+
+Hasta la vista, beibe!
+
+Answer:
+
+Result
+
+1! (+ MATOO31A 24M34)
+!(- MATOO31A 24M34)
+
+---+
+| 10:00 - 10:55
+
+| 10:55 - 11:50 | CICO004E
+
+a
+H
+Q
+i=]
+o
+i=)
+Hs
+H
+
+=——+
+| 10:00 - 10:55
+
+5
+Hg
+i=)
+i=)
+to
+pur
+na
+
+=——+
+| 10:55 - 11:50
+
+5
+H
+o
+o
+e
+pur
+»
+
+| 19:00 - 19:50 |
+
+| 19:50 - 20:40 |
+
+4+-—=—===0 === === —— 4-—=———————
+=——+
+
+| | Seg
+
+|
+
+4-—==="==0 === 00 —— 4-—=———————
+———+
+
+Ter
+
+Sex
+
+Sex
+
+Sex
+
+Inicialmente, é preciso definir como armazenar as informações, e construir uma solução ao redor disto. Considerando que o formato de
+apresentação das informações é em uma tabela, uma solução é que a grade horária seja uma lista de 15 linhas (uma para cada horário),
+onde cada linha é uma outra lista com 6 strings, um para cada dia da semana.
+
+O problema, portanto, torna-se como inserir/remover a disciplina em uma posição específica. O primeiro passo é transformar um
+horário em uma posição da grade: como a informação é dada no formato DT H, deve-se isolar cada um destes 3 componentes para
+avançar. Cada caractere em D é facilmente mapeado para um índice d na grade que corresponde ao dia da semana, já o indice h do
+horário específico precisa ser calculado utilizando as informações T e de cada horário em H. A ideia é iterar por cada combinação de
+valores d, A, sendo trivial atualizar a posição grade [h] [d]
+
+A dificuldade, então, torna-se obter o DT H da entrada. Novamente, começa-se isolando as informações da entrada, algo fácil se
+
+considerar 3 pedaços distintos: comando, código e sequência de horários DT H. É só repetir o processo descrito anteriormente para
+atualizar a grade para cada DT H fornecido na entrada.
+
+Um simples teste do comando define qual a ação a ser feita. Para adicionar a disciplina, basta atribuir o código a todas as posições
+listadas, tomando cuidado para só fazer isso se todas estas posições estiverem vazias. Para remover, basta atribuir um string vazio para
+cada posição listada, desde que todas elas tenham o valor da disciplina fornecida. Para mostrar a grade, basta alternar a saída de uma
+"linha" da tabela com uma linha da grade, devidamente formatadas. a
+
+Definido o procedimento de processar cada instrução possível, basta repeti-lo em um laço até que a condição de parada seja atingida,
+ou seja, até que a instrução dada seja a que determina o fim da repetição.
+
+Questão 6
+
+Não respondido
+
+Atingiu 0,00 de 1,25
+
+Redução de Dimensionalidade 1
+
+Uma maneira de se reduzir a dimensionalidade de matrizes preservando-se a informação existente consiste em uma subamostragem
+
+de seus elementos. Uma abordagem é o Max Pooling 2D, que recebe uma matriz Ayx m de entrada e um fator de redução f e gera uma
+
+nova matriz B de dimensões À x E. Nesse processo, a matriz 4 pode ser vista como diversas regiões disjuntas (que não se
+
+sobrepõem) f x f, em que em cada uma seleciona-se o maior elemento que será colocado em uma posição correspondente na matriz
+B.
+
+Por exemplo, a figura abaixo ilustra o processo de subamostragem Max Pooling 2D para f = 2, em que as diversas regiões 2 x 2 são
+
+demarcadas pelos quadrados pontilhados e a cor desse quadrado está associada com o respectivo elemento que é colocado na matriz
+B:
+
+y
+
+O|tm
+
+€o | 00
+
+bo]
+
+Sua tarefa consiste em desenvolver a subamostragem por Max Pooling 2D. Dada uma matriz N x M, deve-se gerar uma nova matriz
+
++ x * em que f é o fator de redução. Para propósitos de simplicidade, os casos de teste apenas consideram entradas em que Ne M
+
+são divisíveis por f.
+
+A Entrada consiste de:
+
+* Aprimeira linha da entrada contém três números inteiros separados por espaço NV, Me f(1< N,M <100,1<f<N,M).É
+garantido que N e M sejam divisíveis por f.
+
+* Emseguida, existem N linhas descrevendo a matriz de entrada. Cada linha contém M inteiros separados por espaço em branco, em
+que o elemento na i-ésima linha e j-ésima coluna é denotado por a; J (0 < a; is 10°).
+
+A Safda deve apresentar:
+
+e Amatriz + x © resultante do processo de redução de dimensionalidade. Os números inteiros devem estar separados por espaço
+
+f
+em branco e não deve-se colocar um espaço em branco após o elemento da última coluna.
+
+Observações:
+e Não é necessário validar se os valores de entrada são do tipo definido.
+
+Descrição dos Exemplos:
+e A figura no enunciado corresponde ao segundo exemplo de teste.
+
+For example:
+
+Input Result
+222 7
+
+35
+
+71
+
+SIM as
+OS to ida
+WY wor Td
+
+>
+3
+89101213
+1930121
+784329
+7489102
+64121328
+
+Input Result
+663 19 12
+123456 12 13
+
+Answer: (penalty regime: 0,0, 10, 20, ... %)
+
+1|
+
+Para resolver esta questão, atente para o uso das diferentes formas de formatação da função print().
+Questão 7
+
+Não respondido
+
+Atingiu 0,00 de 1,25
+
+Empresários
+
+A liga de futebol do Distrito Federal (DF) tem um registro composto por N jogadores e K equipes, que possuem diferentes tipos de
+jogadores. Nos bastidores dessa liga, sabe-se que existem M empresários. Para propósitos de simplicidade: cada jogador é enumerado
+por um inteiro de 1 a N; cada equipe é enumerada por um inteiro de 1 a K e; cada empresário é enumerado por um inteirode 1 a M.
+
+Os empresário são mal-intencionados e querem manipular os resultados dos jogos dessa liga. Um empresário tem potencial para
+manipular os jogos se ele agencia pelo menos um jogador em cada equipe da liga. Assim fica fácil comunicar com seus atletas
+agenciados e direcionar orientações sobre seus desempenho dentro de campo para fazer os resultados desejados.
+
+Uma investigação foi aberta pelo Ministério Público e você foi contratado para identificar os empresários que possuem potencial de
+manipulação de resultados na liga de futebol do DF. Para isso, você recebe uma lista de jogadores e as equipes que cada um deles
+defende na atual liga.
+
+A Entrada consiste de:
+
+e Aprimeira linha da entrada contém três números inteiros separados por espaço N, Me K
+(1 < N < 1000,1 < M < 50,1 < K < 200), representando a quantidade de jogadores, de empresários e de equipes,
+respectivamente. A segunda linha contém N inteiros separados por espaço ay, @2,°,@y (1 < a; < K) indicando o identificador
+da equipe defendida pelo i-ésimo atleta. A terceira linha contém M inteiros separados por espaço £1, Xo, *, \Xu (1 < L; < kK)
+representando a quantidade de atletas agenciados pelo $j$-ésimo empresário. As próximas M linhas descrevem os atletas
+agenciados por cada empresário. A j-ésima linha descreve x; inteiros separados por espaço 61, be,-, be, cada um representando os
+identificadores numéricos dos atletas agenciados pelo empresário 7.
+
+ASaída deve apresentar:
+
+e Imprima, de maneira crescente, os números dos empresários que possuem alto potencial de manipulação dos jogos da liga de
+futebol do DF. Caso não exista empresários mal intencionados, imprima "-1" (sem aspas duplas).
+
+Observações:
+e Não é necessário validar se os valores de entrada são do tipo definido.
+
+Descrição dos Exemplos:
+e No primeiro exemplo de testes, os empresários 1 e 2 agenciam jogadores de ambas equipes.
+
+e Nosegundo exemplo, o empresário 1 não agencia nenhum jogador do time 4. O empresário 2 não agencia qualquer jogador do time
+1. Por isso, a resposta é -1.
+
+For example:
+
+Input Result
+
+10 22 12
+1122112112
+
+55
+
+10 6471
+
+29538
+
+13 24 -1
+2423314231242
+
+5 8
+
+691 4 10
+
+28131253711
+
+15 45 1
+451432543315251
+6432
+
+861410157
+
+11 12 4 13
+
+315
+
+- =
+4
+Answer: (penalty regime: 0,0, 10, 20, ... %)
+
+1 |
+
+Para resolver esta questão, atente para o uso das diferentes formas de formatação da função print().
+

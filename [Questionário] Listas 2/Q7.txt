@@ -1,0 +1,44 @@
+Questão 7
+
+Não respondido
+
+Atingiu 0,00 de 1,25
+
+Empresários
+
+A liga de futebol do Distrito Federal (DF) tem um registro composto por N jogadores e K equipes, que possuem diferentes tipos de
+jogadores. Nos bastidores dessa liga, sabe-se que existem M empresários. Para propósitos de simplicidade: cada jogador é enumerado
+por um inteiro de 1 a N; cada equipe é enumerada por um inteiro de 1 a K e; cada empresário é enumerado por um inteirode 1 a M.
+
+Os empresário são mal-intencionados e querem manipular os resultados dos jogos dessa liga. Um empresário tem potencial para
+manipular os jogos se ele agencia pelo menos um jogador em cada equipe da liga. Assim fica fácil comunicar com seus atletas
+agenciados e direcionar orientações sobre seus desempenho dentro de campo para fazer os resultados desejados.
+
+Uma investigação foi aberta pelo Ministério Público e você foi contratado para identificar os empresários que possuem potencial de
+manipulação de resultados na liga de futebol do DF. Para isso, você recebe uma lista de jogadores e as equipes que cada um deles
+defende na atual liga.
+
+A Entrada consiste de:
+
+e Aprimeira linha da entrada contém três números inteiros separados por espaço N, Me K
+(1 menor que N menor que 1000,1 menor que M menor que 50,1 menor que K menor que 200), representando a quantidade de jogadores, de empresários e de equipes,
+respectivamente. A segunda linha contém N inteiros separados por espaço ay, @2,°,@y (1 menor que a; menor que K) indicando o identificador
+da equipe defendida pelo i-ésimo atleta. A terceira linha contém M inteiros separados por espaço £1, Xo, *, \Xu (1 menor que L; menor que kK)
+representando a quantidade de atletas agenciados pelo $j$-ésimo empresário. As próximas M linhas descrevem os atletas
+agenciados por cada empresário. A j-ésima linha descreve x; inteiros separados por espaço 61, be,-, be, cada um representando os
+identificadores numéricos dos atletas agenciados pelo empresário 7.
+
+ASaída deve apresentar:
+
+e Imprima, de maneira crescente, os números dos empresários que possuem alto potencial de manipulação dos jogos da liga de
+futebol do DF. Caso não exista empresários mal intencionados, imprima "-1" (sem aspas duplas).
+
+Observações:
+e Não é necessário validar se os valores de entrada são do tipo definido.
+
+Descrição dos Exemplos:
+e No primeiro exemplo de testes, os empresários 1 e 2 agenciam jogadores de ambas equipes.
+
+e Nosegundo exemplo, o empresário 1 não agencia nenhum jogador do time 4. O empresário 2 não agencia qualquer jogador do time
+1. Por isso, a resposta é -1.
+

@@ -1,0 +1,27 @@
+Questão 2
+Correto
+Atingiu 1,00 de 1,00
+
+Três Caracteres
+Escreva um programa que leia três caracteres e os apresente de diversas formas diferentes.
+
+Entrada
+A entrada consiste de três caracteres alfanuméricos (uma letra alfabeto latino, maiúscula ou minúscula, ou um dígito), um por linha.
+
+Saída
+A saída deve ser composta de 6 linhas, cada uma como apresentada a seguir.
+
+1. os caracteres lidos, juntos;
+
+2.somente o primeiro caractere lido;
+
+3. duas vezes o segundo caractere lido;
+
+4. três vezes o terceiro caractere, separados por um espaço;
+
+5.amensagem"X == x, Y == y, Z == 2" (onde x,y e z devem ser substituídos pelos caracteres lidos, na mesma ordem);
+6.amensagem"X != y, Y != x, Z == z" (onde x,y e z devem ser substituídos pelos caracteres lidos, na mesma ordem).
+
+Observações
+A formatação da saída é importante, saiba usar f-string.
+

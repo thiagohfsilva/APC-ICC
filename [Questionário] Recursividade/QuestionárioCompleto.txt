@@ -1,0 +1,4948 @@
+Iniciado em
+Estado
+
+Concluída em
+Tempo empregado
+Avaliar
+
+domingo, 9 jul. 2023, 09:02
+Finalizada
+
+domingo, 9 jul. 2023, 21:42
+
+12 horas 40 minutos
+
+10,00 de um máximo de 10,00(100%)
+Questão 1
+Correto
+Atingiu 1,00 de 1,00
+
+Termos da sequéncia
+
+Implemente uma função recursiva chamada imprimeTermos que receba um número inteiro n e imprima os termos da sequência
+n,;n—2,n—4,...,0,isto é os termos da sequência que começa pelo valor n e termina em 0, decrescendo de 2 em 2 valores.
+
+A Entrada consiste de:
+e Afunção recebe como parâmetro um único número inteiro n (2 < n < 10º).
+
+A Saída deve apresentar:
+© ostermos que compõem a sequência estabelecida, sendo que cada termo da sequência n, n — 2,n — 4,..., 0 deveser impresso
+em uma única linha.
+
+Observações:
+
+e Não é necessário validar se os valores de entrada estão dentro dos intervalos e tipos definidos.
+
+e Atenção, a criação de uma função com o nome determinado pelo enunciado é fundamental para a prática do aluno e o Moodle irá
+descontar pontos caso a criação não tenha sido feita corretamente (sendo case-sensitive o nome da função).
+
+* Submeta SOMENTE o que foi solicitado.
+
+Descrição dos Exemplos:
+* No primeiro exemplo, a função recebe como parâmetro o número e portanto imprime 8, depois 8-2=6, e na sequência, 4,2e 0
+
+For example:
+
+Test Result
+
+imprimeTermos (8)
+
+imprimeTermos (11) | 11
+
+imprimeTermos (15) | 15
+
+Answer: (penalty regime: 0,0, 10, 20, ... %)
+
+1 v| def imprimeTermos (n):
+2v if n == 0:
+
+3 print(n)
+
+4 return
+
+5v elif n==1:
+
+6 print(n)
+
+7 print(n-1)
+
+8 return
+
+9v else:
+
+10 print(n)
+
+11 imprimeTermos (n-2)
+12
+13
+Test Expected | Got
+¥Y | imprimeTermos (8) 8 8
+6 6
+4 4
+2 2 >:
+0 0
+¥Y | imprimeTermos (11) 11 11
+9 9
+7 7
+5 5
+3 3
+1 1
+0 0
+4 | imprimeTermos (15) 15 15
+13 13
+11 11
+9 9
+7 7
+5 5
+3 3
+1 1
+0 0
+
+v
+
+Test
+
+imprimeTermos (123)
+
+Expected Got
+
+123
+121
+119
+117
+115
+113
+111
+109
+107
+105
+103
+101
+99
+97
+95
+93
+91
+89
+87
+85
+83
+81
+79
+77
+75
+73
+qa
+69
+67
+65
+63
+61
+59
+57
+55
+53
+51
+49
+47
+45
+43
+41
+39
+37
+35
+33
+31
+29
+27
+25
+23
+21
+19
+17
+15
+13
+11
+9
+
+OrRPwWwWu ~
+
+123
+121
+119
+117
+115
+113
+111
+109
+107
+105
+103
+101
+99
+97
+95
+93
+91
+89
+87
+85
+83
+81
+79
+77
+75
+73
+71
+69
+67
+65
+63
+61
+59
+57
+55
+53
+51
+49
+47
+45
+43
+41
+39
+37
+35
+33
+31
+29
+27
+25
+23
+21
+19
+17
+15
+13
+1
+
+Swan
+v
+
+Test
+
+imprimeTermos (635)
+
+Expected Got
+
+635
+633
+631
+629
+627
+625
+623
+621
+619
+617
+615
+613
+611
+609
+607
+605
+603
+601
+599
+597
+595
+593
+591
+589
+587
+585
+583
+581
+579
+577
+575
+573
+571
+569
+567
+565
+563
+561
+559
+557
+555
+553
+551
+549
+547
+545
+543
+541
+539
+537
+535
+533
+531
+529
+527
+525
+523
+521
+519
+517
+515
+513
+511
+509
+507
+505
+503
+501
+
+635
+633
+631
+629
+627
+625
+623
+621
+619
+617
+615
+613
+611
+609
+607
+605
+603
+601
+599
+597
+595
+593
+591
+589
+587
+585
+583
+581
+579
+577
+575
+573
+571
+569
+567
+565
+563
+561
+559
+557
+555
+553
+551
+549
+547
+545
+543
+541
+539
+537
+535
+533
+531
+529
+527
+525
+523
+521
+519
+517
+515
+513
+511
+509
+507
+505
+503
+501
+Test
+
+Expected | Got
+
+499
+497
+495
+493
+491
+489
+487
+485
+483
+481
+479
+477
+475
+473
+471
+469
+467
+465
+463
+461
+459
+457
+455
+453
+451
+449
+447
+445
+443
+441
+439
+437
+435
+433
+431
+429
+427
+425
+423
+421
+419
+417
+415
+413
+411
+409
+407
+405
+403
+401
+399
+397
+395
+393
+391
+389
+387
+385
+383
+381
+379
+377
+375
+373
+371
+369
+367
+365
+
+499
+497
+495
+493
+491
+489
+487
+485
+483
+481
+479
+477
+475
+473
+471
+469
+467
+465
+463
+461
+459
+457
+455
+453
+451
+449
+447
+445
+443
+441
+439
+437
+435
+433
+431
+429
+427
+425
+423
+421
+419
+417
+415
+413
+411
+409
+407
+405
+403
+401
+399
+397
+395
+393
+391
+389
+387
+385
+383
+381
+379
+377
+375
+373
+371
+369
+367
+365
+Test
+
+Expected | Got
+
+363
+361
+359
+357
+355
+353
+351
+349
+347
+345
+343
+341
+339
+337
+335
+333
+331
+329
+327
+325
+323
+321
+319
+317
+315
+313
+311
+309
+307
+305
+303
+301
+299
+297
+295
+293
+291
+289
+287
+285
+283
+281
+279
+277
+275
+273
+271
+269
+267
+265
+263
+261
+259
+257
+255
+253
+251
+249
+247
+245
+243
+241
+239
+237
+235
+233
+231
+229
+
+363
+361
+359
+357
+355
+353
+351
+349
+347
+345
+343
+341
+339
+337
+335
+333
+331
+329
+327
+325
+323
+321
+319
+317
+315
+313
+311
+309
+307
+305
+303
+301
+299
+297
+295
+293
+291
+289
+287
+285
+283
+281
+279
+277
+275
+273
+271
+269
+267
+265
+263
+261
+259
+257
+255
+253
+251
+249
+247
+245
+243
+241
+239
+237
+235
+233
+231
+229
+Test
+
+Expected | Got
+
+227
+225
+223
+221
+219
+217
+215
+213
+211
+209
+207
+205
+203
+201
+199
+197
+195
+193
+191
+189
+187
+185
+183
+181
+179
+177
+175
+173
+171
+169
+167
+165
+163
+161
+159
+157
+155
+153
+151
+149
+147
+145
+143
+141
+139
+137
+135
+133
+131
+129
+127
+125
+123
+121
+119
+117
+115
+113
+111
+109
+107
+105
+103
+101
+99
+
+97
+
+95
+
+93
+
+227
+225
+223
+221
+219
+217
+215
+213
+211
+209
+207
+205
+203
+201
+199
+197
+195
+193
+191
+189
+187
+185
+183
+181
+179
+177
+175
+173
+171
+169
+167
+165
+163
+161
+159
+157
+155
+153
+151
+149
+147
+145
+143
+141
+139
+137
+135
+133
+131
+129
+127
+125
+123
+121
+119
+117
+115
+113
+111
+109
+107
+105
+103
+101
+99
+
+97
+
+95
+
+93
+Test Expected | Got
+91 91
+89 89
+87 87
+85 85
+83 83
+81 81
+79 79
+77 77
+75 75
+73 73
+71 71
+69 69
+67 67
+65 65
+63 63
+61 61
+59 59
+57 57
+55 55
+53 53
+51 51
+49 49
+47 47
+45 45
+43 43
+41 41
+39 39
+37 37
+35 35
+33 33
+31 31
+29 29
+27 27
+25 25
+23 23
+21 21
+19 19
+17 17
+15 15
+13 13
+11 11
+9 9
+7 7
+5 5
+3 3
+1 1
+0 0
+
+4 | imprimeTermos (2) 2 2 aS
+0
+
+Passou em todos os teste! ¥
+
+Para resolver a questão, você deve garantir dentro da função recursiva que esse inteiro seja maior do que zero para chamá-lo
+continuamente.
+
+Notas para este envio: 1,00/1,00.
+Questão 2
+Correto
+Atingiu 2,00 de 2,00
+
+Bomba relógio
+
+No treinamento do departamento de bombas da polícia, é preciso ser rápido para desarmar a bomba antes que ela exploda. Todos os
+policiais do setor possuem um tempo recorde em que eles conseguem desarmar a bomba, além disso cada bomba conta com um
+relógio regressivo que realiza a contagem de tempo que falta para a explosão. Porém, o programador do setor decidiu instalar travas
+de segurança nas bombas. De maneira que se o tempo recorde que o policial leva para desarmar uma bomba for maior que o tempo em
+que ela explode, a bomba é desativada automaticamente no último segundo antes de explodir. Caso o tempo recorde seja menor, o
+relógio segue com a contagem regressiva normalmente e portanto a bomba explode.
+
+Implemente um programa que simule um relógio regressivo e a cada segundo informe quanto tempo falta com a frase “ Atenção
+faltam n segundos...” Faltando apenas 5 segundos ele deve mostrar a mensagem: “Seu tempo está acabando”, no último segundo,
+caso a bomba seja desativada a frase a ser apresentada é “Bomba desativada automaticamente!” e se encerra a contagem regressiva,
+se não apresenta a frase “Seja rápido. Falta apenas 1 segundo” e antes de explodir, no segundo 0, a frase “Cabum!! Explodiu”.
+
+A Entrada consiste de:
+e Duas variáveis do tipo inteiro, uma variável N (0<=N<=100) que indica o tempo inicial do relógio e uma P (0<=P<=100) que indica o
+tempo recorde do policial.
+
+ASaída deve apresentar:
+e Acontagem regressiva e as frases, "Seu tempo está acabando" no 5 segundo, "Bomba desativada automaticamente!" para casos
+em que for desativada, "Seja rápido. Falta apenas 1 segundo" e "Cabum!! Diga adeus ao mundo" caso não seja desativada.
+
+Observações:
+e Não é necessário validar se os valores de entrada são do tipo definido.
+
+Descrição dos Exemplos:
+
+e No primeiro exemplo, mesmo com o tempo do policial sendo maior que o da bomba, ainda assim ela explode pelo tempo ser 0.
+
+e Nosegundo caso de teste vemos a contagem regressiva dos segundos e no 5 segundo a frase indicada. Como o tempo do policial é
+menor que o da bomba a trava de segurança não para a explosão e portanto a bomba explode.
+
+e Noterceiro caso de teste como o tempo do policial é maior que o da bomba, ela é desativada antes de explodir.
+
+For example:
+
+Input | Result
+
+0 Cabum!!!! Explodiu
+10
+Input | Result
+
+100 Atenção faltam 100 segundos...
+10 Atenção faltam 99 segundos...
+Atenção faltam 98 segundos...
+Atenção faltam 97 segundos...
+Atenção faltam 96 segundos...
+Atenção faltam 95 segundos...
+Atenção faltam 94 segundos...
+Atenção faltam 93 segundos...
+Atenção faltam 92 segundos...
+Atenção faltam 91 segundos...
+Atenção faltam 90 segundos...
+Atenção faltam 89 segundos...
+Atenção faltam 88 segundos...
+Atenção faltam 87 segundos...
+Atenção faltam 86 segundos...
+Atenção faltam 85 segundos...
+Atenção faltam 84 segundos...
+Atenção faltam 83 segundos...
+Atenção faltam 82 segundos...
+Atenção faltam 81 segundos...
+Atenção faltam 80 segundos...
+Atenção faltam 79 segundos...
+Atenção faltam 78 segundos...
+Atenção faltam 77 segundos...
+Atenção faltam 76 segundos...
+Atenção faltam 75 segundos...
+Atenção faltam 74 segundos...
+Atenção faltam 73 segundos...
+Atenção faltam 72 segundos...
+Atenção faltam 71 segundos...
+Atenção faltam 70 segundos...
+Atenção faltam 69 segundos...
+Atenção faltam 68 segundos...
+Atenção faltam 67 segundos...
+Atenção faltam 66 segundos...
+Atenção faltam 65 segundos...
+Atenção faltam 64 segundos...
+Atenção faltam 63 segundos...
+Atenção faltam 62 segundos...
+Atenção faltam 61 segundos...
+Atenção faltam 60 segundos...
+Atenção faltam 59 segundos...
+Atenção faltam 58 segundos...
+Atenção faltam 57 segundos...
+Atenção faltam 56 segundos...
+Atenção faltam 55 segundos...
+Atenção faltam 54 segundos...
+Atenção faltam 53 segundos...
+Atenção faltam 52 segundos...
+Atenção faltam 51 segundos...
+Atenção faltam 50 segundos...
+Atenção faltam 49 segundos...
+Atenção faltam 48 segundos...
+Atenção faltam 47 segundos...
+Atenção faltam 46 segundos...
+Atenção faltam 45 segundos...
+Atenção faltam 44 segundos...
+Atenção faltam 43 segundos...
+Atenção faltam 42 segundos...
+Atenção faltam 41 segundos...
+Atenção faltam 40 segundos...
+Atenção faltam 39 segundos...
+Atenção faltam 38 segundos...
+Atenção faltam 37 segundos...
+Atenção faltam 36 segundos...
+Atenção faltam 35 segundos...
+Atenção faltam 34 segundos...
+Atenção faltam 33 segundos...
+Input | Result
+
+Atenção faltam 32 segundos...
+Atenção faltam 31 segundos...
+Atenção faltam 30 segundos...
+Atenção faltam 29 segundos...
+Atenção faltam 28 segundos...
+Atenção faltam 27 segundos...
+Atenção faltam 26 segundos...
+Atenção faltam 25 segundos...
+Atenção faltam 24 segundos...
+Atenção faltam 23 segundos...
+Atenção faltam 22 segundos...
+Atenção faltam 21 segundos...
+Atenção faltam 20 segundos...
+Atenção faltam 19 segundos...
+Atenção faltam 18 segundos...
+Atenção faltam 17 segundos...
+Atenção faltam 16 segundos...
+Atenção faltam 15 segundos...
+Atenção faltam 14 segundos...
+Atenção faltam 13 segundos...
+Atenção faltam 12 segundos...
+Atenção faltam 11 segundos...
+Atenção faltam 10 segundos...
+Atenção faltam 9 segundos...
+Atenção faltam 8 segundos...
+Atenção faltam 7 segundos...
+Atenção faltam 6 segundos...
+Seu tempo está acabando!
+Atenção faltam 4 segundos...
+Atenção faltam 3 segundos...
+Atenção faltam 2 segundos...
+Seja rápido. Falta 1 segundo
+
+Cabum!!!! Explodiu
+10 Atenção faltam 10 segundos...
+30 Atenção faltam 9 segundos...
+
+Atenção faltam 8 segundos...
+Atenção faltam 7 segundos...
+Atenção faltam 6 segundos...
+
+Seu tempo está acabando!
+
+Atenção faltam 4 segundos...
+Atenção faltam 3 segundos...
+Atenção faltam 2 segundos...
+Bomba desativada automaticamente!
+
+Answer: (penalty regime: 0, 0, 10, 20, ... %)
+
+1 v|def bomb(time,explodir):
+
+2v if time == 1:
+
+3v if explodir:
+
+4 print("Seja rápido. Falta 1 segundo")
+5 bomb(time -1,explodir)
+
+6y else:
+
+7 print("Bomba desativada automaticamente!")
+8v elif time == @:
+
+9 print("Cabum!J1!! Explodiu")
+
+10 v elif time ==
+
+11 print("Seu tempo está acabando! ")
+
+12 bombítime -1,explodir)
+
+13v else:
+
+14 print(f"atenção faltam (time) segundos...")
+15 bomb(time -1,explodir)
+
+16
+
+17
+
+18 |N = int(input())
+
+19 |rec = int(input())
+
+28 |explodir = True if rec < N else False
+
+21 |bomb(N, explodir)
+
+22
+
+Input
+
+Expected
+
+Got
+
+Cabum! !!! Explodiu
+
+Cabum!!!! Explodiu
+
+Input | Expected Got
+
+4 100 Atenção faltam 100 segundos... Atenção faltam 100 segundos... Vv
+10 Atenção faltam 99 segundos... Atenção faltam 99 segundos...
+Atenção faltam 98 segundos... Atenção faltam 98 segundos...
+Atenção faltam 97 segundos... Atenção faltam 97 segundos...
+Atenção faltam 96 segundos... Atenção faltam 96 segundos...
+Atenção faltam 95 segundos... Atenção faltam 95 segundos...
+Atenção faltam 94 segundos... Atenção faltam 94 segundos...
+Atenção faltam 93 segundos... Atenção faltam 93 segundos...
+Atenção faltam 92 segundos... Atenção faltam 92 segundos...
+Atenção faltam 91 segundos... Atenção faltam 91 segundos...
+Atenção faltam 90 segundos... Atenção faltam 90 segundos...
+Atenção faltam 89 segundos... Atenção faltam 89 segundos...
+Atenção faltam 88 segundos... Atenção faltam 88 segundos...
+Atenção faltam 87 segundos... Atenção faltam 87 segundos...
+Atenção faltam 86 segundos... Atenção faltam 86 segundos...
+Atenção faltam 85 segundos... Atenção faltam 85 segundos...
+Atenção faltam 84 segundos... Atenção faltam 84 segundos...
+Atenção faltam 83 segundos... Atenção faltam 83 segundos...
+Atenção faltam 82 segundos... Atenção faltam 82 segundos...
+Atenção faltam 81 segundos... Atenção faltam 81 segundos...
+Atenção faltam 80 segundos... Atenção faltam 80 segundos...
+Atenção faltam 79 segundos... Atenção faltam 79 segundos...
+Atenção faltam 78 segundos... Atenção faltam 78 segundos...
+Atenção faltam 77 segundos... Atenção faltam 77 segundos...
+Atenção faltam 76 segundos... Atenção faltam 76 segundos...
+Atenção faltam 75 segundos... Atenção faltam 75 segundos...
+Atenção faltam 74 segundos... Atenção faltam 74 segundos...
+Atenção faltam 73 segundos... Atenção faltam 73 segundos...
+Atenção faltam 72 segundos... Atenção faltam 72 segundos...
+Atenção faltam 71 segundos... Atenção faltam 71 segundos...
+Atenção faltam 70 segundos... Atenção faltam 70 segundos...
+Atenção faltam 69 segundos... Atenção faltam 69 segundos...
+Atenção faltam 68 segundos... Atenção faltam 68 segundos...
+Atenção faltam 67 segundos... Atenção faltam 67 segundos...
+Atenção faltam 66 segundos... Atenção faltam 66 segundos...
+Atenção faltam 65 segundos... Atenção faltam 65 segundos...
+Atenção faltam 64 segundos... Atenção faltam 64 segundos...
+Atenção faltam 63 segundos... Atenção faltam 63 segundos...
+Atenção faltam 62 segundos... Atenção faltam 62 segundos...
+Atenção faltam 61 segundos... Atenção faltam 61 segundos...
+Atenção faltam 60 segundos... Atenção faltam 60 segundos...
+Atenção faltam 59 segundos... Atenção faltam 59 segundos...
+Atenção faltam 58 segundos... Atenção faltam 58 segundos...
+Atenção faltam 57 segundos... Atenção faltam 57 segundos...
+Atenção faltam 56 segundos... Atenção faltam 56 segundos...
+Atenção faltam 55 segundos... Atenção faltam 55 segundos...
+Atenção faltam 54 segundos... Atenção faltam 54 segundos...
+Atenção faltam 53 segundos... Atenção faltam 53 segundos...
+Atenção faltam 52 segundos... Atenção faltam 52 segundos...
+Atenção faltam 51 segundos... Atenção faltam 51 segundos...
+Atenção faltam 50 segundos... Atenção faltam 50 segundos...
+Atenção faltam 49 segundos... Atenção faltam 49 segundos...
+Atenção faltam 48 segundos... Atenção faltam 48 segundos...
+Atenção faltam 47 segundos... Atenção faltam 47 segundos...
+Atenção faltam 46 segundos... Atenção faltam 46 segundos...
+Atenção faltam 45 segundos... Atenção faltam 45 segundos...
+Atenção faltam 44 segundos... Atenção faltam 44 segundos...
+Atenção faltam 43 segundos... Atenção faltam 43 segundos...
+Atenção faltam 42 segundos... Atenção faltam 42 segundos...
+Atenção faltam 41 segundos... Atenção faltam 41 segundos...
+Atenção faltam 40 segundos... Atenção faltam 40 segundos...
+Atenção faltam 39 segundos... Atenção faltam 39 segundos...
+Atenção faltam 38 segundos... Atenção faltam 38 segundos...
+Atenção faltam 37 segundos... Atenção faltam 37 segundos...
+Atenção faltam 36 segundos... Atenção faltam 36 segundos...
+Atenção faltam 35 segundos... Atenção faltam 35 segundos...
+Atenção faltam 34 segundos... Atenção faltam 34 segundos...
+
+Atenção faltam 33 segundos... Atenção faltam 33 segundos...
+Input | Expected Got
+
+Atenção faltam 32 segundos... Atenção faltam 32 segundos...
+Atenção faltam 31 segundos... Atenção faltam 31 segundos...
+Atenção faltam 30 segundos... Atenção faltam 30 segundos...
+Atenção faltam 29 segundos... Atenção faltam 29 segundos...
+Atenção faltam 28 segundos... Atenção faltam 28 segundos...
+Atenção faltam 27 segundos... Atenção faltam 27 segundos...
+Atenção faltam 26 segundos... Atenção faltam 26 segundos...
+Atenção faltam 25 segundos... Atenção faltam 25 segundos...
+Atenção faltam 24 segundos... Atenção faltam 24 segundos...
+Atenção faltam 23 segundos... Atenção faltam 23 segundos...
+Atenção faltam 22 segundos... Atenção faltam 22 segundos...
+Atenção faltam 21 segundos... Atenção faltam 21 segundos...
+Atenção faltam 20 segundos... Atenção faltam 20 segundos...
+Atenção faltam 19 segundos... Atenção faltam 19 segundos...
+Atenção faltam 18 segundos... Atenção faltam 18 segundos...
+Atenção faltam 17 segundos... Atenção faltam 17 segundos...
+Atenção faltam 16 segundos... Atenção faltam 16 segundos...
+Atenção faltam 15 segundos... Atenção faltam 15 segundos...
+Atenção faltam 14 segundos... Atenção faltam 14 segundos...
+Atenção faltam 13 segundos... Atenção faltam 13 segundos...
+Atenção faltam 12 segundos... Atenção faltam 12 segundos...
+Atenção faltam 11 segundos... Atenção faltam 11 segundos...
+Atenção faltam 10 segundos... Atenção faltam 10 segundos...
+Atenção faltam 9 segundos... Atenção faltam 9 segundos...
+Atenção faltam 8 segundos... Atenção faltam 8 segundos...
+Atenção faltam 7 segundos... Atenção faltam 7 segundos...
+Atenção faltam 6 segundos... Atenção faltam 6 segundos...
+Seu tempo está acabando! Seu tempo está acabando!
+Atenção faltam 4 segundos... Atenção faltam 4 segundos...
+Atenção faltam 3 segundos... Atenção faltam 3 segundos...
+Atenção faltam 2 segundos... Atenção faltam 2 segundos...
+Seja rápido. Falta 1 segundo Seja rápido. Falta 1 segundo
+Cabum!!!! Explodiu Cabum!!!! Explodiu
+/ (10 Atenção faltam 10 segundos... Atenção faltam 10 segundos...
+30 Atenção faltam 9 segundos... Atenção faltam 9 segundos...
+Atenção faltam 8 segundos... Atenção faltam 8 segundos...
+Atenção faltam 7 segundos... Atenção faltam 7 segundos...
+Atenção faltam 6 segundos... Atenção faltam 6 segundos...
+Seu tempo está acabando! Seu tempo está acabando!
+Atenção faltam 4 segundos... Atenção faltam 4 segundos...
+Atenção faltam 3 segundos... Atenção faltam 3 segundos...
+Atenção faltam 2 segundos... Atenção faltam 2 segundos...
+
+Bomba desativada automaticamente! | Bomba desativada automaticamente!
+Input | Expected
+
+Y 25 Atenção faltam 25 segundos...
+25 Atenção faltam 24 segundos...
+Atenção faltam 23 segundos...
+Atenção faltam 22 segundos...
+Atenção faltam 21 segundos...
+Atenção faltam 20 segundos...
+Atenção faltam 19 segundos...
+Atenção faltam 18 segundos...
+Atenção faltam 17 segundos...
+Atenção faltam 16 segundos...
+Atenção faltam 15 segundos...
+Atenção faltam 14 segundos...
+Atenção faltam 13 segundos...
+Atenção faltam 12 segundos...
+Atenção faltam 11 segundos...
+Atenção faltam 10 segundos...
+Atenção faltam 9 segundos...
+Atenção faltam 8 segundos...
+Atenção faltam 7 segundos...
+Atenção faltam 6 segundos...
+Seu tempo está acabando!
+Atenção faltam 4 segundos...
+Atenção faltam 3 segundos...
+Atenção faltam 2 segundos...
+Bomba desativada automaticamente!
+
+¥ 0 Cabum!!!! Explodiu
+0
+LÁ 5 Seu tempo está acabando!
+5 Atenção faltam 4 segundos...
+
+Atenção faltam 3 segundos...
+Atenção faltam 2 segundos...
+Bomba desativada automaticamente!
+
+Passou em todos os teste! 4
+
+Got
+
+Atenção faltam 25 segundos... Vv
+Atenção faltam 24 segundos...
+Atenção faltam 23 segundos...
+Atenção faltam 22 segundos...
+Atenção faltam 21 segundos...
+Atenção faltam 20 segundos...
+Atenção faltam 19 segundos...
+Atenção faltam 18 segundos...
+Atenção faltam 17 segundos...
+Atenção faltam 16 segundos...
+Atenção faltam 15 segundos...
+Atenção faltam 14 segundos...
+Atenção faltam 13 segundos...
+Atenção faltam 12 segundos...
+Atenção faltam 11 segundos...
+Atenção faltam 10 segundos...
+Atenção faltam 9 segundos...
+Atenção faltam 8 segundos...
+Atenção faltam 7 segundos...
+Atenção faltam 6 segundos...
+Seu tempo está acabando!
+Atenção faltam 4 segundos...
+Atenção faltam 3 segundos...
+Atenção faltam 2 segundos...
+Bomba desativada automaticamente!
+
+Cabum!!!! Explodiu A
+
+Seu tempo está acabando! v
+Atenção faltam 4 segundos...
+
+Atenção faltam 3 segundos...
+
+Atenção faltam 2 segundos...
+
+Bomba desativada automaticamente!
+
+#Para resolver a questão é preciso fazer uso de função recursiva e validar antes se a bomba será desativada ou não.
+
+Notas para este envio: 2,00/2,00.
+Questão 3
+Correto
+Atingiu 1,00 de 1,00
+
+Complexo B
+
+Julie gosta de registrar seus hábitos, e agora ela tem um novo: seguindo a orientação de sua nutricionista, ela precisa tomar um
+pequeno comprimido de vitamina b todos os dias. Como ela quer acompanhar esse hábito e ver todos os dias quantos comprimidos
+restam no pote e quantos ela já consumiu, escreva uma função recursiva controle(n, c), que a cada dia mostra um aviso "Voce ja
+tomou c comprimidos, restam." e no caso de ser o último exiba a mensagem "Parabens Julie! Voce tomou todos os n comprimidos!"
+onde n é o número de comprimidos que tem em um pote cheio e c é a quantidade já consumida por Julie (na primeira chamada da
+função, c é necessariamente 0).
+
+A Entrada consiste de:
+e Nãoseaplica.
+
+A Saída deve apresentar:
+* nstrings, uma em cada linha, onde n é o número total de comprimidos.
+
+Observações:
+
+e Não é necessário validar se os valores de entrada estão dentro dos intervalos e tipos definidos.
+
+e Atenção, a criação de uma função com o nome determinado pelo enunciado é fundamental para a prática do aluno e o Moodle irá
+descontar pontos caso a criação não tenha sido feita corretamente (sendo case-sensitive o nome da função).
+
+* Submeta SOMENTE o que foi solicitado.
+
+e Afunção necessariamente recebe dois argumentos (número de comprimidos que tem em um pote e a quantidade de comprimidos
+que Julie já tomou), repare nos exemplos que a primeira chamada da função sempre passa O como o número de comprimidos que
+Julie já consumiu.
+
+Descrição dos Exemplos:
+¢ No primeiro exemplo, a quantidade total é 18 comprimidos, a string "Voce ja tomou c comprimidos, restam "aparece 17 vezes e
+por último, a string "Parabens Julie! Voce tomou todos os 18 comprimidos!" uma vez.
+
+For example:
+
+Test Result
+
+controle (18,0) | Voce ja tomou comprimidos, restam 17.
+
+Voce ja tomou comprimidos, restam 16.
+Voce ja tomou comprimidos, restam 15.
+Voce ja tomou comprimidos, restam 13.
+Voce ja tomou comprimidos, restam 12.
+
+Voce ja tomou
+
+1
+2
+3
+Voce ja tomou 4 comprimidos, restam 14.
+5
+6
+7 comprimidos, restam 11.
+8
+
+Voce ja tomou comprimidos, restam 10.
+Voce ja tomou 9 comprimidos, restam 9.
+Voce ja tomou 10 comprimidos, restam
+Voce ja tomou 11 comprimidos, restam
+
+Voce ja tomou 12 comprimidos, restam
+
+8
+7
+6
+Voce ja tomou 13 comprimidos, restam 5.
+Voce ja tomou 14 comprimidos, restam 4
+Voce ja tomou 15 comprimidos, restam 3
+Voce ja tomou 16 comprimidos, restam 2
+Voce ja tomou 17 comprimidos, restam 1.
+
+Parabens Julie! Voce tomou todos os 18 comprimidos!
+Test Result
+
+controle (7,0) Voce ja tomou comprimidos, restam
+
+Voce ja tomou comprimidos, restam
+Voce ja tomou
+
+Voce ja tomou
+
+1
+2
+
+Voce ja tomou 3 comprimidos, restam
+4
+5 comprimidos, restam
+6
+
+Voce ja tomou
+
+6.
+5.
+4.
+comprimidos, restam 3.
+2.
+comprimidos, restam 1.
+
+7
+
+Parabens Julie! Voce tomou todos os comprimidos!
+
+controle(21,0) | Voce ja tomou comprimidos, restam 20.
+
+Voce ja tomou comprimidos, restam 19.
+Voce ja tomou comprimidos, restam 18.
+Voce ja tomou comprimidos, restam 16.
+Voce ja tomou comprimidos, restam 15.
+
+Voce ja tomou
+
+1
+2
+3
+Voce ja tomou 4 comprimidos, restam 17.
+5
+6
+7 comprimidos, restam 14.
+8
+
+Voce ja tomou comprimidos, restam 13.
+Voce ja tomou 9 comprimidos, restam 12.
+Voce ja tomou 10 comprimidos, restam 11.
+Voce ja tomou 11 comprimidos, restam 10.
+Voce ja tomou 12 comprimidos, restam 9.
+Voce ja tomou 13 comprimidos, restam 8
+Voce ja tomou 14 comprimidos, restam 7
+Voce ja tomou 15 comprimidos, restam 6
+Voce ja tomou 16 comprimidos, restam 5.
+Voce ja tomou 17 comprimidos, restam 4
+Voce ja tomou 18 comprimidos, restam 3
+Voce ja tomou 19 comprimidos, restam 2.
+
+Voce ja tomou 20 comprimidos, restam 1.
+
+Parabens Julie! Voce tomou todos os 21 comprimidos!
+
+Answer: (penalty regime: 0,0, 10, 20, ... %)
+
+1 +|def controle(n,c):
+
+2v if c == @:
+
+3 controle(n-1,c+1)
+
+4v elif n == 0:
+
+5 print(f"Parabens Julie! Voce tomou todos os {c} comprimid
+6v else:
+
+7 print(f"Voce ja tomou {c} comprimidos, restam {n}.")
+
+8 controle(n-1,c+1)
+
+9
+
+10
+
+v
+
+v
+
+Test
+
+controle (18,0)
+
+controle (7,0)
+
+Expected
+
+Voce
+17.
+Voce
+16.
+Voce
+15.
+Voce
+14,
+Voce
+13.
+Voce
+12.
+Voce
+11.
+Voce
+10.
+Voce
+Voce
+8.
+Voce
+7.
+Voce
+6.
+Voce
+5.
+Voce
+4,
+Voce
+3.
+Voce
+2.
+Voce
+1.
+
+ja
+
+ja
+
+ja
+ja
+
+ja
+
+ja
+
+ja
+
+ja
+
+tomou
+
+tomou
+
+tomou
+
+tomou
+
+tomou
+
+tomou
+
+tomou
+
+tomou
+
+tomou
+tomou
+
+tomou
+
+tomou
+
+tomou
+
+tomou
+
+tomou
+
+tomou
+
+tomou
+
+1
+
+2
+
+3
+
+4
+
+5
+
+6
+
+7
+
+8
+
+9
+10
+
+11
+
+12
+
+13
+
+14
+
+15
+
+16
+
+17
+
+Parabens Julie!
+
+comprimidos!
+
+Voce
+Voce
+Voce
+Voce
+Voce
+Voce
+
+Parabens Julie
+
+ja
+ja
+ja
+ja
+ja
+ja
+
+tomou
+tomou
+tomou
+tomou
+tomou
+tomou
+
+comprimidos!
+
+1
+2
+3
+4
+5
+6
+!
+
+comprimidos,
+
+comprimidos,
+
+comprimidos,
+
+comprimidos,
+
+comprimidos,
+
+comprimidos,
+
+comprimidos,
+
+comprimidos,
+
+comprimidos,
+comprimidos,
+
+comprimidos,
+
+comprimidos,
+
+comprimidos,
+
+comprimidos,
+
+comprimidos,
+
+comprimidos,
+
+comprimidos,
+
+restam
+
+restam
+
+restam
+
+restam
+
+restam
+
+restam
+
+restam
+
+restam
+
+restam
+restam
+
+restam
+
+restam
+
+restam
+
+restam
+
+restam
+
+restam
+
+restam
+
+9.
+
+Voce tomou todos os 18
+
+comprimidos,
+comprimidos,
+comprimidos,
+comprimidos,
+comprimidos,
+
+comprimidos,
+
+restam
+restam
+restam
+
+restam
+
+restam 2.
+
+restam
+
+Voce tomou todos os 7
+
+Got
+
+Voce
+17.
+Voce
+16.
+Voce
+15.
+Voce
+14,
+Voce
+13,
+Voce
+12.
+Voce
+11.
+Voce
+10.
+Voce
+Voce
+8.
+Voce
+7.
+Voce
+6.
+Voce
+5.
+Voce
+4,
+Voce
+3.
+Voce
+2.
+Voce
+1.
+
+ja
+
+ja
+
+ja
+ja
+
+ja
+
+ja
+
+tomou
+
+tomou
+
+tomou
+
+tomou
+
+tomou
+
+tomou
+
+tomou
+
+tomou
+
+tomou
+tomou
+
+tomou
+
+tomou
+
+tomou
+
+tomou
+
+tomou
+
+tomou
+
+tomou
+
+2
+
+3
+
+5
+
+9
+10
+
+17
+
+Parabens Julie!
+
+comprimidos!
+
+Voce
+Voce
+Voce
+Voce
+Voce
+Voce
+
+Parabens Julie
+
+ja
+ja
+ja
+ja
+ja
+ja
+
+tomou
+tomou
+tomou
+tomou
+tomou
+tomou
+
+comprimidos!
+
+1
+2
+3
+4
+5
+6
+!
+
+comprimidos,
+
+comprimidos,
+
+comprimidos,
+
+comprimidos,
+
+comprimidos,
+
+comprimidos,
+
+comprimidos,
+
+comprimidos,
+
+comprimidos,
+comprimidos,
+
+comprimidos,
+
+comprimidos,
+
+comprimidos,
+
+comprimidos,
+
+comprimidos,
+
+comprimidos,
+
+comprimidos,
+
+restam
+
+restam
+
+restam
+
+restam
+
+restam
+
+restam
+
+restam
+
+restam
+
+restam
+
+9.
+
+restam
+
+restam
+
+restam
+
+restam
+
+restam
+
+restam
+
+restam
+
+restam
+
+Voce tomou todos os 18
+
+comprimidos,
+comprimidos,
+comprimidos,
+comprimidos,
+comprimidos,
+
+comprimidos,
+
+restam
+restam
+restam
+restam
+restam
+
+restam
+
+Voce tomou todos os
+Test Expected Got
+
+WY | controle(21,0) | Voce ja tomou 1 comprimidos, restam Voce ja tomou 1 comprimidos, restam
+20. 20.
+Voce ja tomou 2 comprimidos, restam Voce ja tomou 2 comprimidos, restam
+19. 19.
+Voce ja tomou 3 comprimidos, restam Voce ja tomou 3 comprimidos, restam
+18. 18,
+Voce ja tomou 4 comprimidos, restam Voce ja tomou 4 comprimidos, restam
+17. 17.
+Voce ja tomou 5 comprimidos, restam Voce ja tomou 5 comprimidos, restam
+16. 16.
+Voce ja tomou 6 comprimidos, restam Voce ja tomou 6 comprimidos, restam
+15. 15.
+Voce ja tomou 7 comprimidos, restam Voce ja tomou 7 comprimidos, restam
+14. 14.
+Voce ja tomou 8 comprimidos, restam Voce ja tomou 8 comprimidos, restam
+13. 13.
+Voce ja tomou 9 comprimidos, restam Voce ja tomou 9 comprimidos, restam
+12. 12.
+Voce ja tomou 10 comprimidos, restam Voce ja tomou 10 comprimidos, restam
+11. 11.
+Voce ja tomou 11 comprimidos, restam Voce ja tomou 11 comprimidos, restam
+10. 10.
+Voce ja tomou 12 comprimidos, restam Voce ja tomou 12 comprimidos, restam
+9. 9.
+Voce ja tomou 13 comprimidos, restam Voce ja tomou 13 comprimidos, restam
+8. 8.
+Voce ja tomou 14 comprimidos, restam Voce ja tomou 14 comprimidos, restam
+7. 7.
+Voce ja tomou 15 comprimidos, restam Voce ja tomou 15 comprimidos, restam
+6. 6.
+Voce ja tomou 16 comprimidos, restam Voce ja tomou 16 comprimidos, restam
+5. 5.
+Voce ja tomou 17 comprimidos, restam Voce ja tomou 17 comprimidos, restam
+4, 4,
+Voce ja tomou 18 comprimidos, restam Voce ja tomou 18 comprimidos, restam
+3. 3.
+Voce ja tomou 19 comprimidos, restam Voce ja tomou 19 comprimidos, restam
+2. 2.
+Voce ja tomou 20 comprimidos, restam Voce ja tomou 20 comprimidos, restam
+1. 1.
+
+Parabens Julie! Voce tomou todos os 21 | Parabens Julie! Voce tomou todos os 21
+
+comprimidos! comprimidos!
+Test Expected Got
+
+WY | controle(30,0) | Voce ja tomou 1 comprimidos, restam Voce ja tomou 1 comprimidos, restam
+29. 29.
+Voce ja tomou 2 comprimidos, restam Voce ja tomou 2 comprimidos, restam
+28. 28.
+Voce ja tomou 3 comprimidos, restam Voce ja tomou 3 comprimidos, restam
+27. 27.
+Voce ja tomou 4 comprimidos, restam Voce ja tomou 4 comprimidos, restam
+26. 26.
+Voce ja tomou 5 comprimidos, restam Voce ja tomou 5 comprimidos, restam
+25. 25.
+Voce ja tomou 6 comprimidos, restam Voce ja tomou 6 comprimidos, restam
+24. 24,
+Voce ja tomou 7 comprimidos, restam Voce ja tomou 7 comprimidos, restam
+23. 23.
+Voce ja tomou 8 comprimidos, restam Voce ja tomou 8 comprimidos, restam
+22. 22,
+Voce ja tomou 9 comprimidos, restam Voce ja tomou 9 comprimidos, restam
+21. 21.
+Voce ja tomou 10 comprimidos, restam Voce ja tomou 10 comprimidos, restam
+20. 20.
+Voce ja tomou 11 comprimidos, restam Voce ja tomou 11 comprimidos, restam
+19. 19.
+Voce ja tomou 12 comprimidos, restam Voce ja tomou 12 comprimidos, restam
+18. 18.
+Voce ja tomou 13 comprimidos, restam Voce ja tomou 13 comprimidos, restam
+17. 17.
+Voce ja tomou 14 comprimidos, restam Voce ja tomou 14 comprimidos, restam
+16. 16,
+Voce ja tomou 15 comprimidos, restam Voce ja tomou 15 comprimidos, restam
+15. 15.
+Voce ja tomou 16 comprimidos, restam Voce ja tomou 16 comprimidos, restam
+14. 14,
+Voce ja tomou 17 comprimidos, restam Voce ja tomou 17 comprimidos, restam
+13. 13.
+Voce ja tomou 18 comprimidos, restam Voce ja tomou 18 comprimidos, restam
+12. 12.
+Voce ja tomou 19 comprimidos, restam Voce ja tomou 19 comprimidos, restam
+11. 11.
+Voce ja tomou 20 comprimidos, restam Voce ja tomou 20 comprimidos, restam
+10. 10.
+Voce ja tomou 21 comprimidos, restam Voce ja tomou 21 comprimidos, restam
+9. 9.
+Voce ja tomou 22 comprimidos, restam Voce ja tomou 22 comprimidos, restam
+8. 8.
+Voce ja tomou 23 comprimidos, restam Voce ja tomou 23 comprimidos, restam
+7. 7.
+Voce ja tomou 24 comprimidos, restam Voce ja tomou 24 comprimidos, restam
+6. 6.
+Voce ja tomou 25 comprimidos, restam Voce ja tomou 25 comprimidos, restam
+5. 5.
+Voce ja tomou 26 comprimidos, restam Voce ja tomou 26 comprimidos, restam
+4. 4.
+Voce ja tomou 27 comprimidos, restam Voce ja tomou 27 comprimidos, restam
+3. 3.
+Voce ja tomou 28 comprimidos, restam Voce ja tomou 28 comprimidos, restam
+2. 2.
+Voce ja tomou 29 comprimidos, restam Voce ja tomou 29 comprimidos, restam
+1. 1.
+Parabens Julie! Voce tomou todos os 30 | Parabens Julie! Voce tomou todos os 30
+comprimidos! comprimidos!
+
+4 (controle (3,0) Voce ja tomou 1 comprimidos, restam 2. | Voce ja tomou 1 comprimidos, restam 2.
+
+Voce ja tomou 2 comprimidos, restam 1. | Voce ja tomou 2 comprimidos, restam 1.
+Parabens Julie! Voce tomou todos os 3 Parabens Julie! Voce tomou todos os 3
+comprimidos! comprimidos!
+Test Expected Got
+
+WY | controle(14,0) | Voce ja tomou 1 comprimidos, restam Voce ja tomou 1 comprimidos, restam LÁ
+13. 13.
+Voce ja tomou 2 comprimidos, restam Voce ja tomou 2 comprimidos, restam
+12. 12.
+Voce ja tomou 3 comprimidos, restam Voce ja tomou 3 comprimidos, restam
+11. 11,
+Voce ja tomou 4 comprimidos, restam Voce ja tomou 4 comprimidos, restam
+10. 10.
+
+Voce ja tomou comprimidos, restam 9. | Voce ja tomou comprimidos, restam
+
+Voce ja tomou comprimidos, restam 8. Voce ja tomou comprimidos, restam
+
+Voce ja tomou comprimidos, restam 6. | Voce ja tomou
+
+5 5 9
+6 6 8
+Voce ja tomou 7 comprimidos, restam 7. | Voce ja tomou 7 comprimidos, restam 7.
+8 8 comprimidos, restam 6
+9 9 5
+1
+
+Voce ja tomou comprimidos, restam 5. | Voce ja tomou comprimidos, restam 5.
+Voce ja tomou 10 comprimidos, restam Voce ja tomou 10 comprimidos, restam
+4. 4.
+
+Voce ja tomou 11 comprimidos, restam Voce ja tomou 11 comprimidos, restam
+3. 3.
+
+Voce ja tomou 12 comprimidos, restam Voce ja tomou 12 comprimidos, restam
+2. 2.
+
+Voce ja tomou 13 comprimidos, restam Voce ja tomou 13 comprimidos, restam
+1. 1.
+
+Parabens Julie! Voce tomou todos os 14 | Parabens Julie! Voce tomou todos os 14
+comprimidos! comprimidos!
+
+Passou em todos os teste! 4
+
+Para resolver essa questão você precisa implementar uma função recursiva (entregue apenas a função) que verifique o valor de
+comprimidos atual, além disso é necessário usar uma variável para contar a quantidade de comprimidos que Julie já tomou (observe os
+exemplos).
+
+[Correto |
+
+Notas para este envio: 1,00/1,00.
+Questão 4
+Correto
+Atingiu 2,00 de 2,00
+
+Diversão |
+
+Crie a função recursiva JaChegou que recebe dois parâmetros, sendo um inteiro 7 e uma cadeia de caracteres s. Enquanto n. O
+imprima a cadeia s e chame a função recursiva JaChegou com os parâmetros n — 1es.Cason = 0, não faça nada.
+
+A Entrada consiste de:
+e Nos parâmetros da função JaChegou que são um número inteiro n (2 < n < 100) e uma cadeia de caracteres s
+
+ASaída deve apresentar:
+e Acadeia s repetidas vezes.
+
+Observações:
+
+e Não é necessário validar se os valores de entrada estão dentro dos intervalos e tipos definidos.
+
+s Atenção, a criação de uma função com o nome determinado pelo enunciado é fundamental para a prática do aluno e o Moodle irá
+descontar pontos caso a criação não tenha sido feita corretamente (sendo case-sensitive o nome da função).
+
+* Submeta SOMENTE o que foi solicitado.
+
+e Agui uma inspiração para o problema.
+
+Descrição dos Exemplos:
+* No primeiro exemplo, a função recebe como parâmetros o número 5 e a string 'A gente ja chegou?' que é repetida 5 vezes.
+
+For example:
+
+Test Result
+
+JaChegou (5, 'A gente ja chegou?!) gente ja chegou?
+gente ja chegou?
+gente ja chegou?
+
+gente ja chegou?
+
+> PP Pp Pb
+
+gente ja chegou?
+
+JaChegou (2, 'APC eh melhor que ISC?') APC eh melhor que ISC?
+APC eh melhor que ISC?
+
+JaChegou (7, 'XD orz \o/ OwO') XD orz \o/ OwO
+XD orz \o/ OwO
+XD orz \o/ OwO
+XD orz \o/ Owo
+XD orz \o/ OwO
+XD orz \o/ OwO
+XD orz \o/ OwO
+
+Answer: (penalty regime: 0,0, 10, 20, ... %)
+1v|def JaChegou(n, text):
+
+2, if n ==0:
+3 return
+4y else:
+
+print (text)
+JaChegou(n-1, text)
+
+co" au
+Test
+
+JaChegou (5,
+
+JaChegou (2,
+
+JaChegou (7,
+
+'A gente ja chegou?')
+
+"APC eh melhor que ISC?')
+
+"XD orz \o/ Ow0O!)
+
+Expected
+
+A gente
+A gente
+A gente
+A gente
+A gente
+
+APC eh
+APC eh
+
+XD orz
+XD orz
+XD orz
+XD orz
+XD orz
+XD orz
+
+XD orz
+
+ja
+ja
+ja
+ja
+ja
+
+melhor que ISC?
+melhor que ISC?
+
+\o/
+\o/
+\o/
+\o/
+\o/
+\o/
+\o/
+
+chegou?
+chegou?
+chegou?
+chegou?
+chegou?
+
+OQwO
+OwO
+Owo
+Owo
+OwO
+OwO
+OwO
+
+Got
+
+A gente
+A gente
+A gente
+A gente
+A gente
+
+APC eh
+APC eh
+
+XD orz
+XD orz
+XD orz
+XD orz
+XD orz
+XD orz
+
+XD orz
+
+ja
+ja
+ja
+ja
+ja
+
+melhor que ISC?
+melhor que ISC?
+
+\o/
+\o/
+\o/
+\o/
+\o/
+\o/
+\o/
+
+chegou?
+chegou?
+chegou?
+chegou?
+chegou?
+
+OwO
+OwO
+OwO
+OwO
+OwO
+OwO
+OwO
+v
+
+Test
+
+JaChegou(100, ‘quando os calouros do
+ead vao tomar trote')
+
+Expected
+
+quando os
+vao tomar
+quando os
+vao tomar
+quando os
+vao tomar
+quando os
+vao tomar
+quando os
+vao tomar
+quando os
+vao tomar
+quando os
+vao tomar
+quando os
+vao tomar
+quando os
+vao tomar
+quando os
+vao tomar
+quando os
+vao tomar
+quando os
+vao tomar
+quando os
+vao tomar
+quando os
+vao tomar
+quando os
+vao tomar
+quando os
+vao tomar
+quando os
+vao tomar
+quando os
+vao tomar
+quando os
+vao tomar
+quando os
+vao tomar
+quando os
+vao tomar
+quando os
+vao tomar
+quando os
+vao tomar
+quando os
+vao tomar
+quando os
+vao tomar
+quando os
+vao tomar
+quando os
+vao tomar
+quando os
+vao tomar
+quando os
+vao tomar
+quando os
+vao tomar
+quando os
+vao tomar
+quando os
+vao tomar
+quando os
+vao tomar
+quando os
+
+vao tomar
+
+calouros
+trote
+calouros
+trote
+calouros
+trote
+calouros
+trote
+calouros
+trote
+calouros
+trote
+calouros
+trote
+calouros
+trote
+calouros
+trote
+calouros
+trote
+calouros
+trote
+calouros
+trote
+calouros
+trote
+calouros
+trote
+calouros
+trote
+calouros
+trote
+calouros
+trote
+calouros
+trote
+calouros
+trote
+calouros
+trote
+calouros
+trote
+calouros
+trote
+calouros
+trote
+calouros
+trote
+calouros
+trote
+calouros
+trote
+calouros
+trote
+calouros
+trote
+calouros
+trote
+calouros
+trote
+calouros
+trote
+calouros
+trote
+calouros
+trote
+calouros
+trote
+
+do
+
+do
+
+do
+
+do
+
+do
+
+do
+
+do
+
+do
+
+do
+
+do
+
+do
+
+do
+
+do
+
+do
+
+do
+
+do
+
+do
+
+do
+
+do
+
+do
+
+do
+
+do
+
+do
+
+do
+
+do
+
+do
+
+do
+
+do
+
+do
+
+do
+
+do
+
+do
+
+do
+
+do
+
+ead
+
+ead
+
+ead
+
+ead
+
+ead
+
+ead
+
+ead
+
+ead
+
+ead
+
+ead
+
+ead
+
+ead
+
+ead
+
+ead
+
+ead
+
+ead
+
+ead
+
+ead
+
+ead
+
+ead
+
+ead
+
+ead
+
+ead
+
+ead
+
+ead
+
+ead
+
+ead
+
+ead
+
+ead
+
+ead
+
+ead
+
+ead
+
+ead
+
+ead
+
+Got
+
+quando os
+vao tomar
+quando os
+vao tomar
+quando os
+vao tomar
+quando os
+vao tomar
+quando os
+vao tomar
+quando os
+vao tomar
+quando os
+vao tomar
+quando os
+vao tomar
+quando os
+vao tomar
+quando os
+vao tomar
+quando os
+vao tomar
+quando os
+vao tomar
+quando os
+vao tomar
+quando os
+vao tomar
+quando os
+vao tomar
+quando os
+vao tomar
+quando os
+vao tomar
+quando os
+vao tomar
+quando os
+vao tomar
+quando os
+vao tomar
+quando os
+vao tomar
+quando os
+vao tomar
+quando os
+vao tomar
+quando os
+vao tomar
+quando os
+vao tomar
+quando os
+vao tomar
+quando os
+vao tomar
+quando os
+vao tomar
+quando os
+vao tomar
+quando os
+vao tomar
+quando os
+vao tomar
+quando os
+vao tomar
+quando os
+vao tomar
+quando os
+
+vao tomar
+
+calouros
+trote
+calouros
+trote
+calouros
+trote
+calouros
+trote
+calouros
+trote
+calouros
+trote
+calouros
+trote
+calouros
+trote
+calouros
+trote
+calouros
+trote
+calouros
+trote
+calouros
+trote
+calouros
+trote
+calouros
+trote
+calouros
+trote
+calouros
+trote
+calouros
+trote
+calouros
+trote
+calouros
+trote
+calouros
+trote
+calouros
+trote
+calouros
+trote
+calouros
+trote
+calouros
+trote
+calouros
+trote
+calouros
+trote
+calouros
+trote
+calouros
+trote
+calouros
+trote
+calouros
+trote
+calouros
+trote
+calouros
+trote
+calouros
+trote
+calouros
+trote
+
+do
+
+do
+
+do
+
+do
+
+do
+
+do
+
+do
+
+do
+
+do
+
+do
+
+do
+
+do
+
+do
+
+do
+
+do
+
+do
+
+do
+
+do
+
+do
+
+do
+
+do
+
+do
+
+do
+
+do
+
+do
+
+do
+
+do
+
+do
+
+do
+
+do
+
+do
+
+do
+
+do
+
+do
+
+ead
+
+ead
+
+ead
+
+ead
+
+ead
+
+ead
+
+ead
+
+ead
+
+ead
+
+ead
+
+ead
+
+ead
+
+ead
+
+ead
+
+ead
+
+ead
+
+ead
+
+ead
+
+ead
+
+ead
+
+ead
+
+ead
+
+ead
+
+ead
+
+ead
+
+ead
+
+ead
+
+ead
+
+ead
+
+ead
+
+ead
+
+ead
+
+ead
+
+ead
+Test
+
+Expected
+
+quando os
+vao tomar
+quando os
+vao tomar
+quando os
+vao tomar
+quando os
+vao tomar
+quando os
+vao tomar
+quando os
+vao tomar
+quando os
+vao tomar
+quando os
+vao tomar
+quando os
+vao tomar
+quando os
+vao tomar
+quando os
+vao tomar
+quando os
+vao tomar
+quando os
+vao tomar
+quando os
+vao tomar
+quando os
+vao tomar
+quando os
+vao tomar
+quando os
+vao tomar
+quando os
+vao tomar
+quando os
+vao tomar
+quando os
+vao tomar
+quando os
+vao tomar
+quando os
+vao tomar
+quando os
+vao tomar
+quando os
+vao tomar
+quando os
+vao tomar
+quando os
+vao tomar
+quando os
+vao tomar
+quando os
+vao tomar
+quando os
+vao tomar
+quando os
+vao tomar
+quando os
+vao tomar
+quando os
+vao tomar
+quando os
+vao tomar
+quando os
+
+vao tomar
+
+calouros
+trote
+calouros
+trote
+calouros
+trote
+calouros
+trote
+calouros
+trote
+calouros
+trote
+calouros
+trote
+calouros
+trote
+calouros
+trote
+calouros
+trote
+calouros
+trote
+calouros
+trote
+calouros
+trote
+calouros
+trote
+calouros
+trote
+calouros
+trote
+calouros
+trote
+calouros
+trote
+calouros
+trote
+calouros
+trote
+calouros
+trote
+calouros
+trote
+calouros
+trote
+calouros
+trote
+calouros
+trote
+calouros
+trote
+calouros
+trote
+calouros
+trote
+calouros
+trote
+calouros
+trote
+calouros
+trote
+calouros
+trote
+calouros
+trote
+calouros
+trote
+
+do
+
+do
+
+do
+
+do
+
+do
+
+do
+
+do
+
+do
+
+do
+
+do
+
+do
+
+do
+
+do
+
+do
+
+do
+
+do
+
+do
+
+do
+
+do
+
+do
+
+do
+
+do
+
+do
+
+do
+
+do
+
+do
+
+do
+
+do
+
+do
+
+do
+
+do
+
+do
+
+do
+
+do
+
+ead
+
+ead
+
+ead
+
+ead
+
+ead
+
+ead
+
+ead
+
+ead
+
+ead
+
+ead
+
+ead
+
+ead
+
+ead
+
+ead
+
+ead
+
+ead
+
+ead
+
+ead
+
+ead
+
+ead
+
+ead
+
+ead
+
+ead
+
+ead
+
+ead
+
+ead
+
+ead
+
+ead
+
+ead
+
+ead
+
+ead
+
+ead
+
+ead
+
+ead
+
+Got
+
+quando os
+vao tomar
+quando os
+vao tomar
+quando os
+vao tomar
+quando os
+vao tomar
+quando os
+vao tomar
+quando os
+vao tomar
+quando os
+vao tomar
+quando os
+vao tomar
+quando os
+vao tomar
+quando os
+vao tomar
+quando os
+vao tomar
+quando os
+vao tomar
+quando os
+vao tomar
+quando os
+vao tomar
+quando os
+vao tomar
+quando os
+vao tomar
+quando os
+vao tomar
+quando os
+vao tomar
+quando os
+vao tomar
+quando os
+vao tomar
+quando os
+vao tomar
+quando os
+vao tomar
+quando os
+vao tomar
+quando os
+vao tomar
+quando os
+vao tomar
+quando os
+vao tomar
+quando os
+vao tomar
+quando os
+vao tomar
+quando os
+vao tomar
+quando os
+vao tomar
+quando os
+vao tomar
+quando os
+vao tomar
+quando os
+vao tomar
+quando os
+
+vao tomar
+
+calouros
+trote
+calouros
+trote
+calouros
+trote
+calouros
+trote
+calouros
+trote
+calouros
+trote
+calouros
+trote
+calouros
+trote
+calouros
+trote
+calouros
+trote
+calouros
+trote
+calouros
+trote
+calouros
+trote
+calouros
+trote
+calouros
+trote
+calouros
+trote
+calouros
+trote
+calouros
+trote
+calouros
+trote
+calouros
+trote
+calouros
+trote
+calouros
+trote
+calouros
+trote
+calouros
+trote
+calouros
+trote
+calouros
+trote
+calouros
+trote
+calouros
+trote
+calouros
+trote
+calouros
+trote
+calouros
+trote
+calouros
+trote
+calouros
+trote
+calouros
+trote
+
+do
+
+do
+
+do
+
+do
+
+do
+
+do
+
+do
+
+do
+
+do
+
+do
+
+do
+
+do
+
+do
+
+do
+
+do
+
+do
+
+do
+
+do
+
+do
+
+do
+
+do
+
+do
+
+do
+
+do
+
+do
+
+do
+
+do
+
+do
+
+do
+
+do
+
+do
+
+do
+
+do
+
+do
+
+ead
+
+ead
+
+ead
+
+ead
+
+ead
+
+ead
+
+ead
+
+ead
+
+ead
+
+ead
+
+ead
+
+ead
+
+ead
+
+ead
+
+ead
+
+ead
+
+ead
+
+ead
+
+ead
+
+ead
+
+ead
+
+ead
+
+ead
+
+ead
+
+ead
+
+ead
+
+ead
+
+ead
+
+ead
+
+ead
+
+ead
+
+ead
+
+ead
+
+ead
+Test
+
+Expected
+
+quando os
+vao tomar
+quando os
+vao tomar
+quando os
+vao tomar
+quando os
+vao tomar
+quando os
+vao tomar
+quando os
+vao tomar
+quando os
+vao tomar
+quando os
+vao tomar
+quando os
+vao tomar
+quando os
+vao tomar
+quando os
+vao tomar
+quando os
+vao tomar
+quando os
+vao tomar
+quando os
+vao tomar
+quando os
+vao tomar
+quando os
+vao tomar
+quando os
+vao tomar
+quando os
+vao tomar
+quando os
+vao tomar
+quando os
+vao tomar
+quando os
+vao tomar
+quando os
+vao tomar
+quando os
+vao tomar
+quando os
+vao tomar
+quando os
+vao tomar
+quando os
+vao tomar
+quando os
+vao tomar
+quando os
+vao tomar
+quando os
+vao tomar
+quando os
+vao tomar
+quando os
+vao tomar
+quando os
+
+vao tomar
+
+calouros
+trote
+calouros
+trote
+calouros
+trote
+calouros
+trote
+calouros
+trote
+calouros
+trote
+calouros
+trote
+calouros
+trote
+calouros
+trote
+calouros
+trote
+calouros
+trote
+calouros
+trote
+calouros
+trote
+calouros
+trote
+calouros
+trote
+calouros
+trote
+calouros
+trote
+calouros
+trote
+calouros
+trote
+calouros
+trote
+calouros
+trote
+calouros
+trote
+calouros
+trote
+calouros
+trote
+calouros
+trote
+calouros
+trote
+calouros
+trote
+calouros
+trote
+calouros
+trote
+calouros
+trote
+calouros
+trote
+calouros
+trote
+
+do
+
+do
+
+do
+
+do
+
+do
+
+do
+
+do
+
+do
+
+do
+
+do
+
+do
+
+do
+
+do
+
+do
+
+do
+
+do
+
+do
+
+do
+
+do
+
+do
+
+do
+
+do
+
+do
+
+do
+
+do
+
+do
+
+do
+
+do
+
+do
+
+do
+
+do
+
+do
+
+ead
+
+ead
+
+ead
+
+ead
+
+ead
+
+ead
+
+ead
+
+ead
+
+ead
+
+ead
+
+ead
+
+ead
+
+ead
+
+ead
+
+ead
+
+ead
+
+ead
+
+ead
+
+ead
+
+ead
+
+ead
+
+ead
+
+ead
+
+ead
+
+ead
+
+ead
+
+ead
+
+ead
+
+ead
+
+ead
+
+ead
+
+ead
+
+Got
+
+quando os
+vao tomar
+quando os
+vao tomar
+quando os
+vao tomar
+quando os
+vao tomar
+quando os
+vao tomar
+quando os
+vao tomar
+quando os
+vao tomar
+quando os
+vao tomar
+quando os
+vao tomar
+quando os
+vao tomar
+quando os
+vao tomar
+quando os
+vao tomar
+quando os
+vao tomar
+quando os
+vao tomar
+quando os
+vao tomar
+quando os
+vao tomar
+quando os
+vao tomar
+quando os
+vao tomar
+quando os
+vao tomar
+quando os
+vao tomar
+quando os
+vao tomar
+quando os
+vao tomar
+quando os
+vao tomar
+quando os
+vao tomar
+quando os
+vao tomar
+quando os
+vao tomar
+quando os
+vao tomar
+quando os
+vao tomar
+quando os
+vao tomar
+quando os
+vao tomar
+quando os
+vao tomar
+quando os
+
+vao tomar
+
+calouros
+trote
+calouros
+trote
+calouros
+trote
+calouros
+trote
+calouros
+trote
+calouros
+trote
+calouros
+trote
+calouros
+trote
+calouros
+trote
+calouros
+trote
+calouros
+trote
+calouros
+trote
+calouros
+trote
+calouros
+trote
+calouros
+trote
+calouros
+trote
+calouros
+trote
+calouros
+trote
+calouros
+trote
+calouros
+trote
+calouros
+trote
+calouros
+trote
+calouros
+trote
+calouros
+trote
+calouros
+trote
+calouros
+trote
+calouros
+trote
+calouros
+trote
+calouros
+trote
+calouros
+trote
+calouros
+trote
+calouros
+trote
+
+do
+
+do
+
+do
+
+do
+
+do
+
+do
+
+do
+
+do
+
+do
+
+do
+
+do
+
+do
+
+do
+
+do
+
+do
+
+do
+
+do
+
+do
+
+do
+
+do
+
+do
+
+do
+
+do
+
+do
+
+do
+
+do
+
+do
+
+do
+
+do
+
+do
+
+do
+
+do
+
+ead
+
+ead
+
+ead
+
+ead
+
+ead
+
+ead
+
+ead
+
+ead
+
+ead
+
+ead
+
+ead
+
+ead
+
+ead
+
+ead
+
+ead
+
+ead
+
+ead
+
+ead
+
+ead
+
+ead
+
+ead
+
+ead
+
+ead
+
+ead
+
+ead
+
+ead
+
+ead
+
+ead
+
+ead
+
+ead
+
+ead
+
+ead
+v
+
+Test
+
+JaChegou (32,
+
+‘wait, what")
+
+Expected
+
+wait,
+wait,
+wait,
+wait,
+wait,
+wait,
+wait,
+wait,
+wait,
+wait,
+wait,
+wait,
+wait,
+wait,
+wait,
+wait,
+wait,
+wait,
+wait,
+wait,
+wait,
+wait,
+wait,
+wait,
+wait,
+wait,
+wait,
+wait,
+wait,
+wait,
+wait,
+
+wait,
+
+what
+what
+what
+what
+what
+what
+what
+what
+what
+what
+what
+what
+what
+what
+what
+what
+what
+what
+what
+what
+what
+what
+what
+what
+what
+what
+what
+what
+what
+what
+what
+what
+
+Got
+
+wait,
+wait,
+wait,
+wait,
+wait,
+wait,
+wait,
+wait,
+wait,
+wait,
+wait,
+wait,
+wait,
+wait,
+wait,
+wait,
+wait,
+wait,
+wait,
+wait,
+wait,
+wait,
+wait,
+wait,
+wait,
+wait,
+wait,
+wait,
+wait,
+wait,
+wait,
+
+wait,
+
+what
+what
+what
+what
+what
+what.
+what
+what
+what
+what
+what
+what
+what
+what
+what
+what
+what
+what
+what
+what
+what
+what
+what
+what
+what
+what
+what
+what
+what
+what
+what
+what
+v
+
+Test
+
+JaChegou (78,
+revisando esse problema")
+
+‘Ola pessoa que esta
+
+Expected
+
+Ola pessoa que
+revisando esse
+Ola pessoa que
+revisando esse
+Ola pessoa que
+revisando esse
+Ola pessoa que
+revisando esse
+ola pessoa que
+revisando esse
+ola pessoa que
+revisando esse
+Ola pessoa que
+revisando esse
+ola pessoa que
+revisando esse
+Ola pessoa que
+revisando esse
+ola pessoa que
+revisando esse
+Ola pessoa que
+revisando esse
+Ola pessoa que
+revisando esse
+ola pessoa que
+revisando esse
+Ola pessoa que
+revisando esse
+Ola pessoa que
+revisando esse
+Ola pessoa que
+revisando esse
+Ola pessoa que
+revisando esse
+ola pessoa que
+revisando esse
+Ola pessoa que
+revisando esse
+Ola pessoa que
+revisando esse
+ola pessoa que
+revisando esse
+Ola pessoa que
+revisando esse
+ola pessoa que
+revisando esse
+Ola pessoa que
+revisando esse
+Ola pessoa que
+revisando esse
+ola pessoa que
+revisando esse
+Ola pessoa que
+revisando esse
+Ola pessoa que
+revisando esse
+ola pessoa que
+revisando esse
+Ola pessoa que
+revisando esse
+ola pessoa que
+revisando esse
+Ola pessoa que
+revisando esse
+Ola pessoa que
+revisando esse
+Ola pessoa que
+
+revisando esse
+
+esta
+problema
+esta
+problema
+esta
+problema
+esta
+problema
+esta
+problema
+esta
+problema
+esta
+problema
+esta
+problema
+esta
+problema
+esta
+problema
+esta
+problema
+esta
+problema
+esta
+problema
+esta
+problema
+esta
+problema
+esta
+problema
+esta
+problema
+esta
+problema
+esta
+problema
+esta
+problema
+esta
+problema
+esta
+problema
+esta
+problema
+esta
+problema
+esta
+problema
+esta
+problema
+esta
+problema
+esta
+problema
+esta
+problema
+esta
+problema
+esta
+problema
+esta
+problema
+esta
+problema
+esta
+problema
+
+Got
+
+Ola pessoa que
+revisando esse
+Ola pessoa que
+revisando esse
+Ola pessoa que
+revisando esse
+Ola pessoa que
+revisando esse
+Ola pessoa que
+revisando esse
+Ola pessoa que
+revisando esse
+Ola pessoa que
+revisando esse
+Ola pessoa que
+revisando esse
+Ola pessoa que
+revisando esse
+Ola pessoa que
+revisando esse
+Ola pessoa que
+revisando esse
+Ola pessoa que
+revisando esse
+Ola pessoa que
+revisando esse
+Ola pessoa que
+revisando esse
+Ola pessoa que
+revisando esse
+Ola pessoa que
+revisando esse
+Ola pessoa que
+revisando esse
+Ola pessoa que
+revisando esse
+Ola pessoa que
+revisando esse
+Ola pessoa que
+revisando esse
+Ola pessoa que
+revisando esse
+Ola pessoa que
+revisando esse
+Ola pessoa que
+revisando esse
+Ola pessoa que
+revisando esse
+Ola pessoa que
+revisando esse
+Ola pessoa que
+revisando esse
+Ola pessoa que
+revisando esse
+Ola pessoa que
+revisando esse
+ola pessoa que
+revisando esse
+Ola pessoa que
+revisando esse
+ola pessoa que
+revisando esse
+Ola pessoa que
+revisando esse
+Ola pessoa que
+revisando esse
+Ola pessoa que
+
+revisando esse
+
+esta
+problema
+esta
+problema
+esta
+problema
+esta
+problema
+esta
+problema
+esta
+problema
+esta
+problema
+esta
+problema
+esta
+problema
+esta
+problema
+esta
+problema
+esta
+problema
+esta
+problema
+esta
+problema
+esta
+problema
+esta
+problema
+esta
+problema
+esta
+problema
+esta
+problema
+esta
+problema
+esta
+problema
+esta
+problema
+esta
+problema
+esta
+problema
+esta
+problema
+esta
+problema
+esta
+problema
+esta
+problema
+esta
+problema
+esta
+problema
+esta
+problema
+esta
+problema
+esta
+problema
+esta
+problema
+Test
+
+Expected
+Ola pessoa que
+
+revisando esse
+Ola pessoa que
+revisando esse
+ola pessoa que
+revisando esse
+Ola pessoa que
+revisando esse
+Ola pessoa que
+revisando esse
+Ola pessoa que
+revisando esse
+Ola pessoa que
+revisando esse
+Ola pessoa que
+revisando esse
+Ola pessoa que
+revisando esse
+Ola pessoa que
+revisando esse
+ola pessoa que
+revisando esse
+Ola pessoa que
+revisando esse
+ola pessoa que
+revisando esse
+Ola pessoa que
+revisando esse
+Ola pessoa que
+revisando esse
+Ola pessoa que
+revisando esse
+Ola pessoa que
+revisando esse
+Ola pessoa que
+revisando esse
+Ola pessoa que
+revisando esse
+Ola pessoa que
+revisando esse
+ola pessoa que
+revisando esse
+Ola pessoa que
+revisando esse
+ola pessoa que
+revisando esse
+ola pessoa que
+revisando esse
+Ola pessoa que
+revisando esse
+ola pessoa que
+revisando esse
+Ola pessoa que
+revisando esse
+Ola pessoa que
+revisando esse
+ola pessoa que
+revisando esse
+Ola pessoa que
+revisando esse
+ola pessoa que
+revisando esse
+Ola pessoa que
+revisando esse
+Ola pessoa que
+revisando esse
+ola pessoa que
+
+revisando esse
+
+esta
+problema
+esta
+problema
+esta
+problema
+esta
+problema
+esta
+problema
+esta
+problema
+esta
+problema
+esta
+problema
+esta
+problema
+esta
+problema
+esta
+problema
+esta
+problema
+esta
+problema
+esta
+problema
+esta
+problema
+esta
+problema
+esta
+problema
+esta
+problema
+esta
+problema
+esta
+problema
+esta
+problema
+esta
+problema
+esta
+problema
+esta
+problema
+esta
+problema
+esta
+problema
+esta
+problema
+esta
+problema
+esta
+problema
+esta
+problema
+esta
+problema
+esta
+problema
+esta
+problema
+esta
+problema
+
+Got
+
+Ola pessoa que
+revisando esse
+Ola pessoa que
+revisando esse
+ola pessoa que
+revisando esse
+Ola pessoa que
+revisando esse
+ola pessoa que
+revisando esse
+Ola pessoa que
+revisando esse
+Ola pessoa que
+revisando esse
+ola pessoa que
+revisando esse
+Ola pessoa que
+revisando esse
+Ola pessoa que
+revisando esse
+Ola pessoa que
+revisando esse
+Ola pessoa que
+revisando esse
+Ola pessoa que
+revisando esse
+Ola pessoa que
+revisando esse
+Ola pessoa que
+revisando esse
+Ola pessoa que
+revisando esse
+Ola pessoa que
+revisando esse
+Ola pessoa que
+revisando esse
+Ola pessoa que
+revisando esse
+Ola pessoa que
+revisando esse
+Ola pessoa que
+revisando esse
+Ola pessoa que
+revisando esse
+Ola pessoa que
+revisando esse
+Ola pessoa que
+revisando esse
+Ola pessoa que
+revisando esse
+Ola pessoa que
+revisando esse
+Ola pessoa que
+revisando esse
+Ola pessoa que
+revisando esse
+Ola pessoa que
+revisando esse
+Ola pessoa que
+revisando esse
+Ola pessoa que
+revisando esse
+Ola pessoa que
+revisando esse
+Ola pessoa que
+revisando esse
+Ola pessoa que
+
+revisando esse
+
+esta
+problema
+esta
+problema
+esta
+problema
+esta
+problema
+esta
+problema
+esta
+problema
+esta
+problema
+esta
+problema
+esta
+problema
+esta
+problema
+esta
+problema
+esta
+problema
+esta
+problema
+esta
+problema
+esta
+problema
+esta
+problema
+esta
+problema
+esta
+problema
+esta
+problema
+esta
+problema
+esta
+problema
+esta
+problema
+esta
+problema
+esta
+problema
+esta
+problema
+esta
+problema
+esta
+problema
+esta
+problema
+esta
+problema
+esta
+problema
+esta
+problema
+esta
+problema
+esta
+problema
+esta
+problema
+Test Expected Got
+Ola pessoa que esta Ola pessoa que esta
+revisando esse problema revisando esse problema
+Ola pessoa que esta Ola pessoa que esta
+revisando esse problema revisando esse problema
+Ola pessoa que esta Ola pessoa que esta
+revisando esse problema revisando esse problema
+Ola pessoa que esta Ola pessoa que esta
+revisando esse problema revisando esse problema
+ola pessoa que esta ola pessoa que esta
+revisando esse problema revisando esse problema
+Ola pessoa que esta Ola pessoa que esta
+revisando esse problema revisando esse problema
+Ola pessoa que esta Ola pessoa que esta
+revisando esse problema revisando esse problema
+Ola pessoa que esta ola pessoa que esta
+revisando esse problema revisando esse problema
+Ola pessoa que esta Ola pessoa que esta
+revisando esse problema revisando esse problema
+Ola pessoa que esta Ola pessoa que esta
+revisando esse problema revisando esse problema
+
+Passou em todos os teste! 4
+
+Para resolver a questão, deve-se implementar a função recursiva recebendo os argumentos e imprimindo a cadeia enquanto n. £ 0.
+
+[correto |
+
+Notas para este envio: 2,00/2,00.
+Questão 5
+Correto
+Atingiu 1,00 de 1,00
+
+Fórmula 1
+
+Amilton é um excelente corredor de fórmula 1, grande parte do seu desempenho vem da alta tecnologia em seu carro. Uma tecnologia
+bastante usada é o controle de desgaste dos pneus.
+
+Em uma corrida, é de extrema importância trocar os pneus na hora certa e existem tipos de pneus diferentes que proporcionam uma
+quantidade diferente de voltas na pista.
+
+Escreva a função recursiva corrida em que cada execução representa uma volta no circuito.
+
+A Entrada consiste de:
+
+e Afunção receberá três inteiros; a, b, c > 1.a representa a quantidade de voltas que faltam para a corrida acabar, b representa e
+quantidade de voltas que faltam para os pneus desgastarem e c representa quantas voltas os pneus suportam.
+
+A Saída deve apresentar:
+
+e Casoo pneu desgaste durante a corrida, imprima a mensagem "Faltam x voltas, hora de trocar os pneus. sendo x a quantidade de
+voltas restantes.
+
+e Aotrocaro pneu, o seu tempo de desgaste é restabelecido.
+
+* Quando a quantidade de voltas chegar a O, a corrida chega ao fim aparecendo a mensagem "A corrida chegou ao fim",
+
+Observações:
+
+e Não é necessário validar se os valores de entrada estão dentro dos intervalos e tipos definidos.
+
+e Atenção, a criação de uma função com o nome determinado pelo enunciado é fundamental para a prática do aluno e o Moodle irá
+descontar pontos caso a criação não tenha sido feita corretamente (sendo case-sensitive o nome da função).
+
+e Submeta SOMENTE o que foi solicitado.
+
+Descrição dos Exemplos:
+* No primeiro exemplo, a corrida tem 30 voltas e o pneu só suporta 5, sendo necessário a troca a cada 5 voltas.
+e Nosegundo exemplo, a corrida tem apenas 8 voltas e os pneus suportam até 10 voltas, não tendo a necessidade de troca.
+
+For example:
+Test Result
+corrida(30,5,5) Faltam 25 voltas, hora de trocar os pneus.
+
+Faltam 20 voltas, hora de trocar os pneus.
+Faltam 15 voltas, hora de trocar os pneus.
+Faltam 10 voltas, hora de trocar os pneus.
+Faltam 5 voltas, hora de trocar os pneus.
+
+A corrida chegou ao fim.
+corrida(8,10,10) |A corrida chegou ao fim.
+
+corrida(10,8,8) Faltam 2 voltas, hora de trocar os pneus.
+A corrida chegou ao fim.
+
+Answer: (penalty regime: 0,0, 10, 20, ... %)
+
+1v|def corrida(n,np,p):
+
+2v if n <= @:
+
+3 print("A corrida chegou ao fim.")
+
+4 return
+
+5v else:
+
+6y if n-np > @:
+
+7 print(f"Faltam {n-np} voltas, hora de trocar os pneus
+8 corrida(n-np,p,p)
+
+9
+
+19
+Test Expected Got
+v corrida (30,5,5) Faltam 25 voltas, hora de trocar os Faltam 25 voltas, hora de trocar os v
+pneus. pneus.
+Faltam 20 voltas, hora de trocar os Faltam 20 voltas, hora de trocar os
+pneus. pneus.
+Faltam 15 voltas, hora de trocar os Faltam 15 voltas, hora de trocar os
+pneus. pneus. Y
+Faltam 10 voltas, hora de trocar os Faltam 10 voltas, hora de trocar os
+pneus. pneus.
+Faltam 5 voltas, hora de trocar os Faltam 5 voltas, hora de trocar os
+pneus. pneus.
+A corrida chegou ao fim. A corrida chegou ao fim.
+A corrida (8,10,10) | A corrida chegou ao fim. A corrida chegou ao fim. A
+A corrida (10,8,8) Faltam 2 voltas, hora de trocar os Faltam 2 voltas, hora de trocar os vo
+pneus. pneus.
+A corrida chegou ao fim. A corrida chegou ao fim.
+Vv corrida (10,3, 4) Faltam 7 voltas, hora de trocar os Faltam 7 voltas, hora de trocar os v
+pneus. pneus.
+Faltam 3 voltas, hora de trocar os Faltam 3 voltas, hora de trocar os
+pneus. pneus.
+A corrida chegou ao fim. A corrida chegou ao fim.
+A corrida (4,10,3) A corrida chegou ao fim. A corrida chegou ao fim. LA
+VY | corrida(4,4,4) A corrida chegou ao fim. A corrida chegou ao fim. <a
+
+Passou em todos os teste! 4
+
+Para resolver a questão, implemente a função recursiva e vá atualizado os valores de a, b. c é sempre utilizado para repor a quantidade
+de voltas que os pneus suportam.
+
+[correto |
+
+Notas para este envio: 1,00/1,00.
+Questão 6
+Correto
+Atingiu 1,00 de 1,00
+
+Recursão e Condição Simples 1
+Crie um programa que chama uma função de nome simples, que lê uma string a digitada pelo usuário.
+
+Se a string a for "repete", é impressa a mensagem "Olá! Vamos repetir!" e é feita uma chamada recursiva para a função simples.
+
+A Entrada consiste de:
+* aque é umastring
+
+ASaída deve apresentar:
+e Amensagem "Olá! Vamos repetir!" que é repetida a cada vez que é digitado "repete.
+
+Observações:
+e Não é necessário validar se os valores de entrada estão dentro dos intervalos e tipos definidos.
+
+Descrição dos Exemplos:
+¢ No primeiro exemplo, foi digitado "rep", resultando em nenhuma impressão.
+
+e Nosegundo exemplo, foi digitado "repete" "repete" e "acabou", resultando em duas impressões.
+e Noterceiro exemplo, foi digitado "repete" e "fim", resultando em uma impressão.
+
+For example:
+Input | Result
+rep
+
+repete | Olá! Vamos repetir!
+repete 014! Vamos repetir!
+acabou
+
+repete | Olá! Vamos repetir!
+fim
+
+Answer: (penalty regime: 0, 0, 10, 20, ... %)
+1v|def simples():
+
+2 texto = input()
+
+3, if texto == “repete”:
+
+4 print("0la! Vamos repetir!")
+5 simples()
+
+6 |simples()
+
+7
+Input | Expected Got
+4 | rep v
+
+4 | repete | 014! Vamos repetir! | 014! Vamos repetir! W
+repete | Olá! Vamos repetir! | Olá! Vamos repetir!
+acabou
+
+VW | repete | Olá! Vamos repetir! | Olá! vamos repetir! | 4
+fim
+
+VY | repeta Vv
+
+4 | repete | Olá! Vamos repetir! | Olá! Vamos repetir! | 4
+repete 014! Vamos repetir! 014! Vamos repetir!
+repete | Olá! Vamos repetir! | Olá! Vamos repetir!
+oi
+
+SY | 5342 Vv
+
+Passou em todos os teste! ¥
+
+Para resolver esta questão, atente para onde o código de input deve ser posicionado.
+
+[correto |
+
+Notas para este envio: 1,00/1,00.
+Questão 7
+Correto
+Atingiu 2,00 de 2,00
+
+Triângulo Recursivo v1
+
+Implemente uma função chamada triangulo que recebe dois parâmetros \(x\) e \(size\). A função deve imprimir um triângulo,
+composto por caracteres '+' (sem aspas simples), com base de tamanho size) e deslocado de \(x\) espaços para a direita.
+
+A Entrada consiste de:
+e Afunção possui dois parâmetros \{x\) e \(size\). \(x\) é um valor inteiro e \(size\) é um inteiro ímpar VAgeg 34.
+
+ASaída deve apresentar:
+e Otriângulo deve ser impresso utilizando o caractere '+' (sem aspas simples), conforme os exemplos.
+
+Observações:
+
+¢ Não é necessário validar se os valores de entrada estão dentro dos intervalos e tipos definidos.
+
+e Atenção, a criação de uma função com o nome determinado pelo enunciado é fundamental para a prática do aluno e o Moodle irá
+descontar pontos caso a criação não tenha sido feita corretamente (sendo case-sensitive o nome da função).
+
+* Submeta SOMENTE o que foi solicitado.
+
+Descrição dos Exemplos:
+e No primeiro exemplo, o deslocamento é O e a base do triângulo é 5. Portando basta iniciar a base na posição O.
+* Nosegundo exemplo, o deslocamento é 3 e a base do triângulo é 7. Portando a impressão da base começa deslocado de 3 posições.
+
+For example:
+Test Result
+triangulo(0, 5) +
++++
++++
+triangulo(3, 7) +
+++
+++
+tttt+t+
+triangulo(6, 5) +
+triangulo(6, 5) +++
+++
++
++++
++++
+
+Answer: (penalty regime: 0,0, 10, 20, ... %)
+
+1+|def triangulo(x, size):
+
+2v if size ==
+
+3 print(" "*x +"+")
+
+4v else:
+
+5 triangulo(x+1, size-2)
+
+6 print(" "*x +"+"*size)
+Test Expected Got
+triangulo (0, + +
+5) +++ +++
+HH +4444
+triangulo (3, + +
+7) +++ +++
+++ +++
+HH HH
+triangulo (6, + +
+5) ++ +44
+triangulo (6, +4444 +4444
+5) + +
+++ +44
++++++ +++++
+triangulo(3, + +
+21) +++ ++
+HH +4444
+t444444+ +
+AAA ++ +++
+++ FR +
+++ ++
+HH HH
+Da a a FERRARA ++
+FA +
+
+FR
+
+RR
+
+triangulo(25,
+3)
+
++++
+
++++
+
+Test Expected Got
+
+4 |triangulo(50,
+
+49) + +
++++ +++
+++ +++
+++ +4t4t+++
+AHHH HAHAHAHA
+++ ++
+++ +
+++ ++
+++ ++
+RPE + ERRA ++
+RR + ETR
++ ++
+RR ETR +
+++ RAR +
+RA RAR +
+RR E a A SR DADA SA O AR A O ETE
+PRA RR
+RR + RR +
+RR + RR +
+RR RR +
+RR PR +
+RA ++ RR +
+Do oa o Sa DA O A Ra Ra O OR A A EE EET ET Et EET ERRAR +
+RR RR +
+
+ERR RR ++
+
+Passou em todos os teste! 4
+
+Para resolver a questão, observe o padrão para a quantidade de '+' que é diminuído a partir da base do triângulo, em cada linha
+seguinte. A ordem dos códigos de impressão e da chamada recursiva devem ser bem pensados.
+
+[correto |
+
+Notas para este envio: 2,00/2,00.

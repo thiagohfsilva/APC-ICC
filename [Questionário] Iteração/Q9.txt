@@ -1,0 +1,37 @@
+Questão 9
+Correto
+Atingiu 1,00 de 1,00
+
+Fibonacci ||
+
+Na matemática, a Sequência de Fibonacci, é uma sequência de números inteiros, começando por 0, na qual, cada termo subsequente
+corresponde à soma dos dois anteriores. Os números de Fibonacci são, portanto, os números que compõem a seguinte sequência:
+
+0,1,1,2,3,5,8,13,21,34,55, 89, 144, 233, 377, 610, 987, 1597, 2584, ...
+
+Curioso com a Sequência de Fibonacci, onde cada termo subsequente corresponde à soma dos dois anteriores, e os dois primeiros
+valores da sequência são O e 1, dessa vez você resolveu imprimir todos os valores da sequência. Implemente uma função chamanda
+fibonacci que tem como parâmetro n e imprime os primeiros n-termos da sequência de fibonacci.
+
+A Entrada consiste de:
+e Afunção fibonacci recebe como parâmetro um único inteiro 1 menor que n menor que 30 que indica a quantidade de termos da sequência.
+
+ASaída deve apresentar:
+* Umalinha com todos os n termos da Sequência de Fibonacci, separados por espaços, conforme os exemplos.
+
+Observações:
+
+e Não é necessário validar se os valores de entrada estão dentro dos intervalos e tipos definidos.
+
+e Atenção, a criação de uma função com o nome determinado pelo enunciado é fundamental para a prática do aluno e o Moodle irá
+descontar pontos caso a criação não tenha sido feita corretamente (sendo case-sensitive o nome da função).
+
+* Submeta SOMENTE o que foi solicitado.
+
+Descrição dos Exemplos:
+
+e No primeiro exemplo, o argumento é 2. Então foi calculado o Fibonacci de O e de 1.
+e Nosegundo exemplo, o argumento é 1. Então foi calculado o Fibonacci de O.
+
+e Noterceiro exemplo, o argumento é 10. Então foi calculado o Fibonacci de O a 9.
+

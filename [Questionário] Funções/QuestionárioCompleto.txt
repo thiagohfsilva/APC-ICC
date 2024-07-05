@@ -1,0 +1,1186 @@
+Iniciado em
+Estado
+
+Concluída em
+Tempo empregado
+Avaliar
+
+sexta-feira, 12 mai. 2023, 19:53
+Finalizada
+
+domingo, 14 mai. 2023, 18:30
+
+1 dia22 horas
+
+10,00 de um máximo de 10,00(100%)
+Questão 1
+Correto
+
+Atingiu 1,00 de 1,00
+
+Termémetro
+
+Pedrinho está estudando sobre temperatura e precisa converter vários valores de temperatura entre as diversas unidades. Para
+facilitar, Pedrinho pediu ajuda para você, de forma a pular todo esse trabalho chato e extenso de conversão.
+
+Dada uma temperatura T, em graus Celsius, crie uma função fahrenheit querecebe uma temperatura em Celsius, calcula e
+apresenta a temperatura correspondente em graus Fahrenheit; e uma função kelvin |, que faz o mesmo para escala Kelvin.
+
+Entrada
+Não há entrada de dados explícita. As funções são chamadas automaticamente pelo sistema.
+Saída
+
+Cada função deve apresentar o valor da temperatura, em uma linha, com precisão de 2 casas decimais.
+Observações:
+
+e Atente para tipo de variável utilizado. Cálculos devem ser feitos com variáveis int ou float, já a impressão por meio do print, deve
+ser feito com string.
+e Paracorreção correta, devem ser definidas duas funções, uma para cada conversão.
+
+Descrição dos Exemplos:
+
+e No primeiro exemplo, a temperatura é de 32°C, que representa 89,6°F ou 305,15 K. O cálculo foi feito utilizando a conversão
+padrão entre temperaturas:
+
+1. fahrenheit = 1,8 * celsius + 32
+2. kelvin = celsius + 273,15
+
+For example:
+
+Test Result
+
+fahrenheit (32) Fahrenheit: 89.60
+
+kelvin (32) Kelvin: 305.15
+fahrenheit (0) Fahrenheit: 32.00
+kelvin (0) Kelvin: 273.15
+
+fahrenheit (100) | Fahrenheit: 212.00
+kelvin (100) Kelvin: 373.15
+
+Answer: (penalty regime: 0,0, 10, 20, ... %)
+1v|def fahrenheit(T):
+
+2 F=1.8* +32
+
+3 print(f"Fahrenheit: {F:.2f}")
+4
+
+5v|def kelvin(T):
+
+6 K = T+273.15
+
+7 print(f"Kelvin: {K:.2f}")
+
+8
+Test Expected Got
+
+4 | fahrenheit (32) Fahrenheit: 89.60 Fahrenheit: 89.60 4
+
+kelvin(32) Kelvin: 305.15 Kelvin: 305.15
+WY | fahrenheit (0) Fahrenheit: 32.00 Fahrenheit: 32.00 A
+kelvint(t0) Kelvin: 273.15 Kelvin: 273.15
+
+4 | fahrenheit (100) Fahrenheit: 212.00 | Fahrenheit: 212.00 VW
+kelvin (100) Kelvin: 373.15 Kelvin: 373.15
+
+4 | fahrenheit (55) Fahrenheit: 131.00 | Fahrenheit: 131.00 W
+kelvin(55) Kelvin: 328.15 Kelvin: 328.15
+
+4 | fahrenheit (70) Fahrenheit: 158.00 | Fahrenheit: 158.00 | 4
+kelvin(70) Kelvin: 343.15 Kelvin: 343.15
+
+Vv fahrenheit (1200) Fahrenheit: 2192.00) Fahrenheit: 2192.00 4
+kelvin (1200) Kelvin: 1473.15 Kelvin: 1473.15
+
+Passou em todos os teste! 4
+
+Para resolver a questão, basta interpretar a questão, seguir a fórmula de conversão, apresentada no exemplo e utilizar a função print
+da forma correta.
+
+» Show/hide question author's solution (Python3)
+
+Notas para este envio: 1,00/1,00.
+Questão 2
+Correto
+Atingiu 1,00 de 1,00
+
+Mensagem com estilo
+
+Camila gosta de ficar até tarde conversando com seus amigos. Mas, de vez em quando, Camila acaba ignorada no seu grupo de
+mensagens. Ajude ela a criar mensagens que chamem mais atenção.
+
+Crie uma função chamada estilo() que receba um símbolo, um número e uma mensagem. O texto final deve ser a mensagem original,
+rodeada pela esquerda e pela direita com o símbolo, repetido um respectivo número de vezes.
+
+A Entrada consiste de:
+e Chamada das duas funções, estilo(S, N, M), com parâmetros S, string com um símbolo único, N, número inteiro e M, string com
+a mensagem inicial.
+
+A Saída deve apresentar:
+* Umalinha com a mensagem final de Camila.
+
+Descrição dos Exemplos:
+e Osímbolo "!" foi repetido 10 vezes, antes e depois da mensagem original.
+
+For example:
+
+Test Result
+
+estilo("!", 10, "Fofocas quentes") tilitiiilirofocas quentes! IIttItIH
+estilo("-", 3, "Alguém tem o conteúdo da aula de hoje?") | ---Alguém tem o conteúdo da aula de hoje?---
+estilo(" ", 5, "Onde vamos almogar?") Onde vamos almoçar?
+
+Answer: (penalty regime: 0,0, 10, 20, ... %)
+
+1v|def estilo(s,n,m):
+
+2 resposta = s*n + m+ s*n
+3 print(resposta)
+4
+a
+Test Expected Got
+Vv estilo(" 10, "Fofocas III titiFofocas MitiiiitiFofocas A
+quentes") quentes! !IILIIII! quentes! [III
+LA estilo("-", 3, "Alguém tem o ---Alguém tem o conteúdo da ---Alguém tem o conteúdo da LA
+conteúdo da aula de hoje?") aula de hoje?--- aula de hoje?---
+
+A estilo(” ", 5, "Onde vamos Onde vamos almoçar? Onde vamos almoçar? LÁ É 4
+
+almogar?")
+Test
+
+4 lestilo("”, 4, "Bom dia!")
+
+VY lestilo(”|", 2, "Viram o que
+
+fulano fez?")
+
+4 jestilo(".", 0, "Ok")
+
+Passou em todos os teste! 4
+
+Expected
+
+Bom dia!
+
+||Viram o que fulano fez?||
+
+Ok
+
+Got
+
+Bom dia!
+
+| |Viram o que fulano fez?| |
+
+Ok
+
+Para resolver a questão, basta interpretar a questão, seguir os princípios básicos de formatação de string.
+
+» Showhi . «e solution (Python3
+
+Notas para este envio: 1,00/1,00.
+
+Vv
+
+v
+
+v
+Questão 3
+Correto
+Atingiu 1,00 de 1,00
+
+N-ésimo termo da PA
+
+Elabore umafunção n_termo() querecebe como parâmetros: io primeiro termo de uma progressão aritmética, r a razão dessa
+progressão aritmética e n seu número de termos e retorne o n-ésimo termo da PA.
+
+A Entrada consiste de:
+e Não hd entrada para essa questão, apenas os parâmetros da função n termo() ,L ren, três números inteiros.
+
+ASaída deve apresentar:
+e Não hásaída para essa questão, apenas é necessário que a função retorne o n-ésimo da progressão aritmética.
+
+Observações:
+e Não é necessário validar se os valores dos parâmetros são do tipo definido.
+
+Descrição dos Exemplos:
+
+* No primeiro exemplo, a razão 1 é somada a si mesma 98 vezes. Em seguida esse resultado é somado ao termo inicial 1, para obter o
+centésimo termo, resultando em 100.
+
+e Nosegundo exemplo, a razão -1 é somada a si mesma 98 vezes. Em seguida esse resultado é somado ao termo inicial 100, para obter
+o centésimo termo, resultando em 1.
+
+e Noterceiro exemplo, a razão é -5. Essa razão é somada ao termo inicial 5 para obter o segundo termo, resultando em 0.
+
+For example:
+Test Result
+print(n termo(1,1,100)) 100
+
+print (n_termo(100,-1,100)) |1
+
+print (n_termo(5,-5,2)) 0
+
+Answer: (penalty regime: 0,0, 10, 20, ... %)
+
+1v|def n_termo(i,r,n):
+2 return i + r*(n-1)
+3
+
+Test Expected Got
+
+4 | print (n_termo(1,1,100)) 100 100 A
+Test Expected | Got
+4 |print(n termo(100,-1,100)) |1 1 DA
+4 |print(n termo(5,-5,2)) 0 0 wv
+4 | print (n_termo(1,91,399)) 36219 36219 4
+4 | print (n_termo (6,88, 62)) 5374 5374 WA
+VW =| print (n_termo (-5,29,34)) 952 952 É
+
+Passou em todos os teste! 4
+
+Para resolver esta questão é necessário aplicar corretamente a fórmula para o n-ésimo termo de uma progressão aritmética, que pode
+ser obtido somando a razão ao termo inicial n-1 vezes.
+
+» Show/hide question author's solution (Python3)
+
+Notas para este envio: 1,00/1,00.
+Questão 4
+Correto
+Atingiu 1,00 de 1,00
+
+Crítico de Cinema
+
+Fred tem um blog sobre cinema, onde ele faz resenhas e críticas sobre os novos lançamentos das telonas. Ao final de cada post, Fred dá
+uma nota de 0 a 10 para o novo filme, mas cada nota acaba ficando com uma formatação diferente. Por isso, Fred pediu sua ajuda para
+criar uma formatação única para suas notas.
+
+Crie uma função chamada nota(), que recebe um valor de O a 10 e cria um linha formatada com essa nota da seguinte forma:
+
+1. Cada linha inicia com uma barra vertical "|";
+
+2. São repetidas N estrelas cheias "kr", sendo N a nota do filme de O a 10;
+3. São repetidos estrelas vazias "*" até completar 10 caracteres.
+
+4. A linha termina com uma barra vertical "|",
+
+A Entrada consiste de:
+* Chamada da função com um parâmetro N, um número inteiro de O a 10.
+
+A Saída deve apresentar:
+e Umalinha com a nota formatada.
+
+Descrição dos Exemplos:
+
+e No primeiro exemplo, a nota é zero. Portanto, existem 10 estrelas vazias entre as barras verticais.
+e Nosegundo exemplo, com nota 3, existe três estrelas cheias e 7 estrelas vazias, completando os 10 caracteres.
+
+For example:
+Test Result
+nota (0) | [AA ro |
+nota (3) | [idedotriririririra |
+
+nota (7) | Dedeodode odor ir |
+
+Answer: (penalty regime: 0,0, 10, 20, ... %)
+1v|def nota(N):
+
+2 res = "|"+" de" *NE"¢"* (16-N)+" |"
+3 print(res)
+a
+Test Expected Got
+
+4 — nota(0) Detter) | otctottotoitttor| 4
+Test Expected Got
+
+4 | nota(3) Didkdtiotctotctotetk | | totoictoinintctotik| | Ww
+4 | nota(7) Ret ts 46 2:8:4:9 | 26.0 4.4.6. .4/:6:4-4 0 WW
+4 |nota(4) Plele eee eee rã | Doe e eee A
+4 |nota(l) Dessa 6-0 :0-6:6:4-d | e-0:0:0:0-0-0:4 6-4 EA
+VY (nota(10) | [ietetedetoodedodrd | [rt e ooo | | A
+
+Passou em todos os teste! 4
+
+Para resolver a questão, basta interpretar a questão, saber concatenar strings e interpretar que o número de espaços é (10 - N), sendo
+Nanota.
+
+» Show/hide question author's solution (Python3)
+
+[correto |
+
+Notas para este envio: 1,00/1,00.
+Questão 5
+Correto
+Atingiu 1,00 de 1,00
+
+Mestre Yoda
+
+Frances Allen é uma grande fã do Mestre Yoda e está tentando criar uma função para inverter a ordem de algumas sentenças. Frances
+
+quer criar um programa que fornece duas sentenças e depois exibe na tela a mensagem com as sentenças invertidas, assim como o Mestre
+
+Yoda falava na série Star Wars.
+
+Entrada
+
+Não há entrada expficita, o programa de Frances chama a função automaticamente.
+
+Saída
+
+Não há saída explícita, o programa de Frances apresenta o resultado automaticamente.
+
+Observações
+
+Não é necessário validar se os valores de entrada são do tipo definido.
+
+Descrição dos Exemplos:
+
+* OSexemplos receberam palavras e os resultados mostrarão as palavras com a ordem invertida.
+
+For example:
+
+Test
+
+print (trocaOrdem('014', 'Mundo'))
+
+print (trocaOrdem('Vocé ainda tem.', 'Muito a aprender’))
+
+print (trocaOrdem('os alunos de APC.', 'S&o os melhores'))
+
+Answer: (penalty regime: 0,0, 10, 20, ... %)
+
+1v|def trocaOrdem(P,S):
+2 texto = S+","+P
+3 return texto
+
+Test
+
+4 | print (trocaOrdem('014', 'Mundo'))
+
+Vv print (trocaOrdem('Vocé ainda tem.',
+"Muito a aprender'))
+
+oS print (trocaOrdem('os alunos de APC.',
+"São os melhores'))
+
+A print (trocaOrdem('tanto bate até que
+fura.', "Água mole em pedra dura'))
+
+Result
+
+Mundo, Olá
+
+Expected
+
+Mundo, Olá
+
+Muito a aprender, Você
+ainda tem.
+
+São os melhores,os alunos
+de APC.
+
+Água mole em pedra
+dura, tanto bate até que
+fura.
+
+Muito a aprender, Você ainda tem.
+
+São os melhores,os alunos de APC.
+
+Got
+
+Mundo, Olá
+
+Muito a aprender, Você
+ainda tem.
+
+São os melhores,os alunos
+de APC.
+
+Agua mole em pedra
+dura,tanto bate até que
+fura.
+Test Expected Got
+A print (trocaOrdem('eu amo", 'A UnB')) A UnB,eu amo A UnB,eu amo
+
+4 | print (trocaOrdem('Bom ', 'Dia')) Dia, Bom Dia, Bom
+
+Passou em todos os teste! 4
+
+Para resolver esta questão, atente para o uso das diferentes formas de formatação da função print().
+» Show/hide question author's solution (Python3)
+
+Notas para este envio: 1,00/1,00.
+Questão 6
+Correto
+Atingiu 1,00 de 1,00
+
+Áreas
+
+Crie uma função chamada areas() que recebe 3 números inteiros (A, Be C' e calcula, em ordem:
+
+1. Aárea de um retângulo com lados A e B;
+2. Aárea de um triângulo com base B e altura C;
+3. Aárea de um trapézio de altura A, base menor B e base maior C.
+
+Apresente os valores ignorando a parte decimal.
+A Entrada consiste de:
+e Aentrada compreende os parâmetros da função areas(A, B, C) , que são três números inteiros, sendo C' maior que B.
+
+ASaída deve apresentar:
+e Três linhas apresentando os valores solicitados. Para ignorar a parte decimal, pode-se utilizar a função int().
+
+Dica:
+
+e Paraignorar a parte decimal, pode-se utilizar a função int() para mudar o tipo de ponto flutuante para inteiro.
+
+For example:
+Test Result
+areas (1,2,3) 2
+3
+2
+
+areas (7,3,13) 21
+19
+56
+
+areas(0,12,24) 0
+144
+
+Answer: (penalty regime: 0,0, 10, 20, ... %)
+
+1v|def areas(A,B,C):
+ret = A*B
+
+tri = B*C//2
+tra = (C+B)*A//2
+print(ret)
+print(tri)
+print(tra)
+
+wan auhwn
+Test Expected | Got
+4 | areas(1,2,3) 2 2 4
+3 3
+2 2
+4 lareas(7,3,13) 21 21 LA
+19 19
+56 56
+4 l|areas(0,12,24) o) o) 4
+144 144
+0 0
+4 |areas(10,10,20) | 100 100 4
+100 100
+150 150
+SY |areas(33,34,35) | 1122 1122 vo
+595 595
+1138 1138
+Vv areas (100,1,2) 100 100 4
+1 1
+150 150
+
+Passou em todos os teste! 4
+
+Para resolver a questão, basta interpretar a questão, receber os 3 valores e calcular corretamente conforme o enunciado e conforme
+fórmulas de área das respectivas figuras geométricas.
+
+» Show/hide question author's solution (Python3)
+
+Notas para este envio: 1,00/1,00.
+Questão 7
+Correto
+Atingiu 1,00 de 1,00
+
+Distância entre Pontos
+
+Elabore uma função chamada distancia() quetem como parâmetros as coordenadas x1, y 1, x2, y2, representando dois pontos
+no plano cartesiano. A função deve retornar a distância entre esses dois pontos como um número de ponto flutuante.
+
+A Entrada consiste de:
+e Não hd entrada para essa questão, só é necessário definir a função distancia() com parâmetros x1,y1, xZey2.
+
+ASaída deve apresentar:
+e Não hásaída para essa questão, só é necessário que a função retorne a distância entre os dois pontos.
+
+Observações:
+
+e Egarantido que os parâmetros serão sempre números inteiros, positivos, no intervalo [0;20]
+
+e Umaforma de realizar a operação de radiciação em Python é utilizar o operador de potenciação ** com indice fracionário, como por
+exemplo 1/2 para a raiz quadrada.
+
+Descrição dos Exemplos:
+
+e No primeiro exemplo, os pontos dados são (2,0) e (2,0). Considerando a fórmula para a distância entre dois pontos: Distância = ((2 -
+2)? + (0- 0)?)41/2 = 0.0
+
+e Nosegundo exemplo, os pontos dados são (0,0) e (10,10). Considerando a fórmula para a distância entre dois pontos: Distância =
+((10 - 0)? + (10 - 0)?}41/2 = 14.142135623730951
+
+s Noterceiro exemplo, os pontos dados são (1,5) e (1,10). Considerando a fórmula para a distância entre dois pontos: Distância = ((1 -
+1)? + (10 - 5)?)41/2 = 5.0
+
+For example:
+Test Result
+print (distancia(2,0,2,0)) 0.0
+print (distancia(0,0,10,10)) | 14.142135623730951
+
+print (distancia(1,5,1,10)) 5.0
+
+Answer: (penalty regime: 0,0, 10, 20, ... %)
+1v|def distancia(x1,y1,x2,y2):
+
+2 D = ((x1-x2)**2 +(y1-y2)**2)**(@.5)
+3 return D
+4
+Test Expected Got
+
+4 | print (distancia (2,0,2,0)) 0.0 0.0 4
+4 |print (distancia(0,0,10,10)) 14,142135623730951 | 14.142135623730951 | AW
+4 | print (distancia(1,5,1,10))} 5.0 5.0 Vv
+VY |print (distancia (4,6,20,9)) 16.278820596099706 | 16.278820596099706 | 4
+4 |print(distancia(4,15,17,15)) | 13.0 13.0 Vv
+4 |print (distancia(8,4,18,2)) 10.198039027185569 | 10.198039027185569 | W
+
+Passou em todos os teste! 4
+Para resolver esta questão, é necessário aplicar corretamente a fórmula da distância entre dois pontos dada por: ((x2-x1)* + (y2-
+y1))"1/2
+
+» Show/hide question author's solution (Python3)
+
+Notas para este envio: 1,00/1,00.
+Questão 8
+Correto
+Atingiu 1,00 de 1,00
+
+5 patinhos? E se forem mais?
+
+Gael, um garotinho muito a frente de seu tempo, está aprendendo a programar. Ele fez um programa para imprimir a música dos 5
+patinhos que foram passear. Um clássico infantil! O programa de Gael imprime todas as frases da música e ele sabe que um clássico
+devemos respeitar. Neste caso, a música tradicional conta 5 patinhos. Veja abaixo:
+
+print (£'5 patinhos')
+
+print (£f'Foram passear")
+
+print (f'Além das montanhas")
+print (f'Para brincar")
+
+print (f'A mamãe gritou")
+print (f'Qua, quá, qué, qua!')
+print (f'Mas só 4 patinhos')
+print (f'Voltaram de lá")
+print (£'4 patinhos')
+
+print (£f'Foram passear")
+
+print (f'Além das montanhas")
+print (f'Para brincar")
+
+print (f'A mamãe gritou")
+print (f'Quá, quá, quá, qua!')
+print (f'Mas só 3 patinhos')
+print (f'Voltaram de lá!)
+print (£f'3 patinhos')
+
+print (£f'Foram passear")
+
+print (f'Além das montanhas")
+print (£f'Para brincar")
+
+print (f'A mamãe gritou")
+print (f'Quá, quá, qua, qua!')
+print (f'Mas só 2 patinhos')
+print (£'Voltaram de lá")
+print (£f'2 patinhos')
+
+print (f'Foram passear!)
+
+print (f'Além das montanhas")
+print (f'Para brincar")
+
+print (f'A mamãe gritou")
+print (f'Quá, quá, quá, qua!')
+print (f'Mas só 1 patinhos')
+print (f'Voltaram de lá!)
+print (f'l patinhos')
+
+print (f{'Foram passear")
+
+print (f'Além das montanhas")
+print (f'Para brincar")
+
+print (f'A mamãe gritou")
+print (f'Qua, qua, qua, qua!')
+print (f'Mas só 0 patinhos’)
+print (£'Voltaram de lá")
+
+Mas e se fossem mais? Gael percebeu então que repetiu demais as frases e que dava pra fazer um código muito mais limpo e
+inteligente. Imagina 20 patinhos? Seria uma loucura esse código! Ele está ciente que você sabe modularizar um programa e pediu para
+que criasse duas funções de nome estrofe e refrao, onde cada uma deve receber um dos dois blocos de repetição que são possíveis
+observar nessa música. Ambas as funções devem receber como argumento um número n de patinhos que irá aparece na letra da
+música. A função estrofe deve chamar a execução da função refrao.
+
+A Entrada consiste de:
+* No se aplica. O CodeRunner irá aplicar os valores para realizar os testes.
+
+A Saida deve apresentar:
+e As saídas exatamente como no código original, para cada bloco.
+Observações:
+
+e Não é necessário validar se os valores de entrada estão dentro dos intervalos definidos.
+
+e Atenção, a criação de uma função com o nome determinado pelo enunciado é fundamental para a prática do aluno e o Moodle irá
+descontar pontos caso a criação não tenha sido feita corretamente (sendo case-sensitive o nome da função).
+
+* Submeta SOMENTE o que foi solicitado
+
+e Oobjetivo da questão é identificar os blocos e modularizá-los. Não se preocupe em apresentar a música por completo.
+
+Descrição dos Exemplos:
+* Osexemplos são auto-explicativos. Veja que o CodeRunner vai testar ambas as funções.
+For example:
+
+Test Result
+
+estrofe (5) | 5 patinhos
+Foram passear
+Além das montanhas
+Para brincar
+A mamãe gritou
+Quá, qué, qua, qua!
+Mas só 4 patinhos
+Voltaram de 14
+Agora só falta aprender a fazer loop!
+
+estrofe(4) | 4 patinhos
+Foram passear
+Além das montanhas
+Para brincar
+A mamãe gritou
+Quá, quá, quá, quá!
+Mas só 3 patinhos
+Voltaram de lá
+Agora só falta aprender a fazer loop!
+
+estrofe(9) | 9 patinhos
+Foram passear
+Além das montanhas
+Para brincar
+A mamãe gritou
+Qua, qua, qua, qua!
+Mas só 8 patinhos
+Voltaram de 14
+
+Agora só falta aprender a fazer loop!
+
+Answer: (penalty regime: 0,0, 10, 20, ... %)
+
+1v| def estrofe(n):
+res = f'"'(n) patinhos
+Foram passear
+Além das montanhas
+Para brincar
+A mamãe gritou
+Quá, quá, quá, quá!
+Mas só {n-1} patinhos
+Voltaram de lá
+Agora só falta aprender a fazer loop!'''
+11 print(res)
+
+Swan aunbhwn
+
+Test Expected Got
+4 |estrofe(5) |5 patinhos 5 patinhos av
+Foram passear Foram passear
+Além das montanhas Além das montanhas
+Para brincar Para brincar
+A mamãe gritou A mamãe gritou
+Quá, quá, quá, quá! Quá, quá, quá, quá!
+Mas só 4 patinhos Mas só 4 patinhos
+Voltaram de lá Voltaram de lá
+Agora só falta aprender a fazer loop! | Agora só falta aprender a fazer loop!
+4 (estrofe(4) 4 patinhos 4 patinhos LA
+Foram passear Foram passear
+Além das montanhas Além das montanhas
+Para brincar Para brincar
+A mamãe gritou A mamãe gritou
+Quá, quá, quá, quá! Quá, quá, quá, quá!
+Mas só 3 patinhos Mas só 3 patinhos
+Voltaram de lá Voltaram de lá
+Agora só falta aprender a fazer loop! | Agora só falta aprender a fazer loop!
+A estrofe (9) 9 patinhos 9 patinhos LA
+Foram passear Foram passear
+Além das montanhas Além das montanhas
+Para brincar Para brincar
+A mamãe gritou A mamãe gritou
+Quá, quá, quá, quá! Qua, qua, quá, qua!
+Mas só 8 patinhos Mas só 8 patinhos
+Voltaram de 14 Voltaram de 14
+Agora só falta aprender a fazer loop! | Agora só falta aprender a fazer loop!
+4 |estrofe (3) 3 patinhos 3 patinhos vo
+Foram passear Foram passear
+Além das montanhas Além das montanhas
+Para brincar Para brincar
+A mamãe gritou A mamãe gritou
+Quá, quá, quá, quá! Qua, quá, qua, qua!
+Mas s6 2 patinhos Mas s6 2 patinhos
+Voltaram de 14 Voltaram de 14
+Agora só falta aprender a fazer loop! Agora só falta aprender a fazer loop!
+4 |(estrofe(l) 1 patinhos 1 patinhos ao
+Foram passear Foram passear
+Além das montanhas Além das montanhas
+Para brincar Para brincar
+A mamãe gritou A mamãe gritou
+Quá, quá, quá, quá! Qua, qua, qua, qua!
+Mas só 0 patinhos Mas s6 0 patinhos
+Voltaram de 14 Voltaram de 14
+Agora só falta aprender a fazer loop! Agora só falta aprender a fazer loop!
+4 | estrofe(56) | 56 patinhos 56 patinhos OY
+
+Foram passear
+
+Além das montanhas
+
+Para brincar
+
+A mamãe gritou
+
+Quá, quá, quá, quá!
+
+Mas só 55 patinhos
+
+Voltaram de 1a
+
+Agora só falta aprender a fazer loop!
+
+Foram passear
+
+Além das montanhas
+
+Para brincar
+
+A mamãe gritou
+
+Quá, qua, qua, qua!
+
+Mas só 55 patinhos
+
+Voltaram de lá
+
+Agora só falta aprender a fazer loop!
+
+Passou em todos os teste! W
+
+Para resolver essa questão você precisa criar as duas funções definidas no enunciado. Elas devem realizar a operação e mostrar o
+resultado. Não se esqueça dos parâmetros.
+
+» Show/hide question author's solution (Python3)
+
+Notas para este envio: 1,00/1,00.
+Questão 9
+Correto
+Atingiu 1,00 de 1,00
+
+Padrão triângular?
+
+O programa a seguir deveria imprimir 8 linhas exibindo um padrão visualmente triângular usando-se apenas as instruções e
+outros recursos que aprendemos até agora. Corrija os erros de sintaxe e de lógica para que ele imprima o padrão 16 vezes como em
+uma tabela 4x4.
+
+sl, s2, s3 = input ().split()
+
+def duplica(f):
+fo
+fo
+£0)
+
+def duplica_o_duplicado(f):
+duplica(f)
+duplica (£)
+
+def imprime parte linhal():
+
+print(” "+sl+s2+" "+, end="")
+
+def imprime parte linhal fim():
+
+print ("")
+
+def imprime_parte_linha2():
+print (sl+2*s3+s2, end=
+
+def imprime parte linha2 fim():
+
+print(" ")
+
+def imprime linhal():
+duplica o duplicado (imprime parte linhal)
+
+imprime parte linhal fim()
+
+def imprime linha2():
+duplica o duplicado (imprime parte linha2)
+
+imprime parte linha2 fim()
+
+def imprime parte padrão ():
+imprime linhal()
+
+imprime-linha2 ()
+
+def imprime padrão():
+
+duplica o duplicado (imprime parte padrão)
+
+imprime padrão ()
+
+A Entrada consiste de:
+e 3caracteres em uma linha, separados por espaços em branco.Cada caracter representa um lado do triângulo.
+
+A Saída deve apresentar:
+* Oresultado deve ser um padrão triangular 4x4
+
+Observações:
+e Não é necessário validar se os valores de entrada estão dentro dos intervalos definidos.
+* Relembre as funções apresentadas no Capítulo 3.
+Descrição dos Exemplos:
+e Paraaentrada '/ \ "asaída deve ter o seguinte aspecto visual:
+
+NAN AA
+2 NM MON
+NAN AA
+/_\/_\/_\I_N
+NAN ANA
+PM MON
+NAN AA
+LM OM OMN
+
+For example:
+
+Input | Result
+
+[NOTA AA A
+/_\/_\/_\/_\
+NAN ANA
+/_\/_\/_\/_\
+NINA IN
+/_\/_\/_\/_N
+IN IN AA
+/_\/_\/_\I_N
+
+“NN =] AN AN ANON
+ALa\ AnH \ Aa HARA \
+NV AN ANON
+Ana\ Ann \ Annee
+AV AN AN AN
+A--\A--\*--\4--\
+“AV AN AN AN
+Ann\ Ann Ane AnH
+
+\/- MN NAM
+N/A == /N==/N-=/
+MONDO
+\--/\--/\--/\--/
+MN MM
+N==/N== == [N==/
+MONDO
+\=-/\--/\--/\--/
+
+Answer: (penalty regime: 0,0, 10, 20, ... %)
+
+RESET ANSWER
+
+#Realize as alterações necessárias no código apresentado.
+si, s2, s3 = input().split()
+
+def duplica(f):
+return f+f
+
+def duplica o duplicado(f):
+print(duplica(f)+duplica(f))
+
+a
+
+def imprime parte linhal(s1,s2):
+return (" "+s1+s2+" ")
+
+“a
+
+SBwWwanaubWne
+a
+
+1
+
+12 v|def imprime parte linhaí fim():
+13 return "\n"
+
+15 v| def imprime parte linha2(s1,s2,53):
+16 return sl+2*s3+s2
+
+18 v| def imprime parte linha2 fim():
+19 return " An"
+
+21v
+
+def imprime linhal(sl,s2,53):
+
+22 duplica o duplicado((imprime parte linha1(s1,s2)))
+
+23 duplica o duplicado((imprime parte linha2(s1,s2,53)))
+
+24
+
+25 v|def imprime linha2(s1,s2,53):
+
+26 duplica o duplicado((imprime parte linhal(s1,s2)))
+
+27 duplica o duplicado((imprime parte linha2(s1,s2,53)))
+
+28
+
+29 «| def imprime parte padrão(s1,5s2,53):
+
+30 imprime linhal(s1,s2,53)
+
+31 imprime linha2(s1,s2,53)
+
+32
+
+33 v|def imprime padrão(s1,s2,53):
+
+34 imprime parte padrão(s1,s2,53)
+
+35 imprime parte padrão(s1,s2,53)
+
+36
+
+37 |imprime padrão(s1,s2,53)
+
+38
+
+Input | Expected Got
+
+Y i/\_ | IN IN IN IN IN IN IN IN |G
+/_\/_\/_\/_\ | /_\/__\/_\/__\
+NON IN IN /\ IN AN IN
+/_\/_\/_\/_\ | /_\/__\/_\/_\
+/\ IX IN IN 4\ IN) AN IN
+/_\/_\/_\/_\ | ¢_\/__\/_\/_\
+NON IN IN NON IN IN
+LM MM NEN ASAIN
+
+v aN =) AN AN AN AN VN AN AN AN A
+Ha a VV a Solan) hannah
+NANA AN “VAN AN AN
+ta Selene Vo VOA O O Va Selec Siete |
+AV AL AL AN | AN AN AN AN 4
+ta a Va Va O a Va A VA
+AV AN AN AN AV AN AN AN
+A--\A--\4--\4--\ An-\4--\4--\4--\
+
+SY \/- VA NA NA OM MM WN A
+N/A == /A==/N==/ | == /N == [== A==/
+AV ARRAY ARA VARA VÁ VF VN OM
+N==/5 == /A==/N==/ A==[N==/==[A=—/
+Vi WNL OM MN NMA NM
+\--/\--/\--/\--7 | \--/\--/\--/\--7
+VW NM VF VN NM
+N/A == /A==/N==/ | == /N == [== A==/
+
+4 * eK * ** ** KK ** ** ** ** ** +
+ee de e kkk e kkk kk kkk ee e de e e e e KR E E kK
+kk x nk wk kk Ed kk x
+e de de e e E E E E E E E E E SR
+ak kk Rk KK ak wk Kk wk
+RR A RA A CRER ARMA A
+Kk ** wk KK Kk XX Kk **
+kkk kk kkk kkk eK ke kkk KKK KKK KKK KK
+
+¥ [1_ Do (1 1 1 11 [1 (1 tl |v
+[_Jf_)]€_]f€_] ) (_]¢€_]f_][__]
+1] nm nl Do nl 1) id
+LILILILIILILILILI
+1) o Oil 1 o dl
+LILalaIlaI LL aIlaIlaILaI
+1] ml 1 1 Do nl lol
+[_Jf_]f_]f€_] Cl aIlaIlaLaI
+
+Input | Expected Got
+
+Passou em todos os teste! 7
+
+Para resolver essa questão, se atente ao que deve ser feito para corrigir o erro que o programa apresenta ao ser executado.
+Observe que a solução utiliza a composição de funções para gerar um padrão que pode ser retido indefinidamente.
+» Show/hide question author's solution (Python3)
+
+Notas para este envio: 1,00/1,00.
+Questão 10
+Correto
+Atingiu 1,00 de 1,00
+
+Troco em Moedas
+
+O caixa de um supermercado precisa dar o troco de x centavos. Sabendo que as moedas disponíveis no caixa são de R$ 0,50, R$ 0,25,
+RS 0,10, R$ 0,05 e R$ 0,001, elabore uma função chamada troco que receba o valor inteiros x, do troco em centavos, como parâmetro
+e imprima a quantidade de moedas de 50, 25, 10, 5 e 1 centavos que deve dar, de forma a minimizar a quantidade de moedas do troco.
+
+A Entrada consiste de:
+* Afunção troco deve ser chamada para qualquer valor arbitrário de troco definidos nos casos de teste, que é um número inteiros z,
+o valor do troco em centavos.
+
+ASaída deve apresentar:
+
+e Afunção troco deve imprimir a quantidade de moedas de cada valor em centavos que serão entregues como troco, sempre com o
+menor número de moedas possíveis.
+
+e Por exemplo, para umtroco de R$ 0,79 deve imprimir:
+
+1 moedas de R$ 0,50
+1 moedas de R$0,25
+O moedas de R$ 0,10
+O moedas de R$ 0,05
+4 moedas de R$ 0,01
+
+Observações:
+
+e Não é necessário validar se os valores de entrada estão dentro dos intervalos definidos.
+
+s Atenção, a criação de uma função com o nome determinado pelo enunciado é fundamental para a prática do aluno e o Moodle irá
+descontar pontos caso a criação não tenha sido feita corretamente (sendo case-sensitive o nome da função).
+
+* Submeta SOMENTE o que foi solicitado.
+
+e Faça um algoritmo que funcione apenas para os valores de moedas do problema, assim a função que você irá implementar precisará
+usar apenas o conhecimento que você aprendeu até o presente momento na disciplina. Não use comandos e instruções que ainda
+serão ensinados em lições futuras.
+
+Descrição dos Exemplos:
+* Os exemplos do Moodle são autoexplicativos.
+
+For example:
+Test Result
+troco(79) 1 moedas de 50 centavos
+1 moedas de 25 centavos
+O moedas de 10 centavos
+O moedas de cinco centavos
+4 moedas de 1 centavo
+troco (27) moedas de 50 centavos
+
+moedas de 25 centavos
+
+0
+
+1
+
+O moedas de 10 centavos
+
+O moedas de cinco centavos
+2
+
+moedas de 1 centavo
+
+troco(567) | 11 moedas de 50 centavos
+0 moedas de 25 centavos
+1 moedas de 10 centavos
+1 moedas de cinco centavos
+2 moedas de 1 centavo
+
+Answer: (penalty regime: 0, 0, 10, 20, ... %)
+
+1v|def troco(x):
+2 div5@ = x//50
+3 resto5@ = x%(5@)
+
+4 print(f"{div50} moedas de 50 centavos")
+5 div25 = resto50//25
+
+6 resto25 = resto50%(25)
+
+7 print(f"{div25} moedas de 25 centavos")
+8 div1@ = resto25//10
+
+9 resto1@ = resto25%(10)
+
+10 print(f"(divio) moedas de 10 centavos")
+11 div5 = restol0//5
+
+12 resto5 = resto10%(5)
+
+13 print(f"{div5} moedas de cinco centavos")
+14 div1 = resto5//1
+
+15 print(f"{div1} moedas de 1 centavo")
+
+16
+
+Test Expected Got
+
+É troco (79) moedas de 50 centavos moedas de 50 centavos LA
+
+moedas de 25 centavos moedas de 25 centavos
+moedas de 10 centavos moedas de 10 centavos
+
+moedas de cinco centavos moedas de cinco centavos
+
+»ooHH
+BoOoOrRH
+
+moedas de 1 centavo moedas de 1 centavo
+
+vo troco (27) O moedas de 50 centavos O moedas de 50 centavos ao
+1 moedas de 25 centavos 1 moedas de 25 centavos
+O moedas de 10 centavos O moedas de 10 centavos
+O moedas de cinco centavos | 0 moedas de cinco centavos
+2 moedas de 1 centavo 2 moedas de 1 centavo
+
+WY |troco(567) |11 moedas de 50 centavos 11 moedas de 50 centavos vo
+O moedas de 25 centavos O moedas de 25 centavos
+
+1 moedas de 10 centavos 1 moedas de 10 centavos
+1 moedas de cinco centavos | 1 moedas de cinco centavos
+2 2
+
+moedas de 1 centavo moedas de 1 centavo
+
+WY |troco(529) 10 moedas de 50 centavos 10 moedas de 50 centavos 4
+1 moedas de 25 centavos 1 moedas de 25 centavos
+O moedas de 10 centavos O moedas de 10 centavos
+O moedas de cinco centavos | O moedas de cinco centavos
+4 4
+
+moedas de 1 centavo moedas de 1 centavo
+
+VY |troco(98) 1 moedas de 50 centavos 1 moedas de 50 centavos É
+1 moedas de 25 centavos 1 moedas de 25 centavos
+2 moedas de 10 centavos 2 moedas de 10 centavos
+O moedas de cinco centavos | O moedas de cinco centavos
+3 moedas de 1 centavo 3 moedas de 1 centavo
+
+SC troco (987) | 19 moedas de 50 centavos 19 moedas de 50 centavos Vv
+1 moedas de 25 centavos 1 moedas de 25 centavos
+
+moedas de 10 centavos moedas de 10 centavos
+
+1 1
+0 moedas de cinco centavos | O moedas de cinco centavos
+2 2
+
+moedas de 1 centavo moedas de 1 centavo
+
+Passou em todos os teste! 4
+
+Para resolver esta questão, você deve determinar a quantidade máximo de moedas de maior valor que cabem no troco.
+À medida que você vai calculando esta quantidade vai imprimindo ela.
+
+Faça um algoritmo que funcione apenas para os valores de moedas do problema, assim a função que você irá implementar precisará
+usar apenas o conhecimento que você aprendeu até o presente momento na disciplina. Não use comandos e instruções que ainda
+serão ensinados em lições futuras.
+
+» Show/hide question author's solution (Python3)
+
+Notas para este envio: 1,00/1,00.
+

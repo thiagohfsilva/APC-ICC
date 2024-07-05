@@ -1,0 +1,29 @@
+Questão 2
+Correto
+Atingiu 1,25 de 1,25
+
+Ordenando pelo n-ésimo termo
+
+Considere uma lista composta por 7 listas de inteiros de mesmo tamanho. Dado um indice ¢ que representa a posição de um elemento
+da lista de inteiros, ordene os elementos da lista com base no valor do elemento de índice £ da lista de inteiros. Caso os elementos de
+duas listas de inteiros na mesma posição tenham o mesmo valor, a lista de inteiros com a maior soma de todos os seus elementos deve
+ser considerada maior. É garantido que duas listas de inteiros não terão somas iguais.
+
+A Entrada consiste de:
+* Emuma linha, um número inteiro n que representa a quantidade total de listas de inteiros a serem ordenados.
+e Nalinha seguinte, um número inteiro t indicando o índice que deverá ser comparado para a ordenação das listas de inteiros.
+
+A Saída deve apresentar:
+e Asn linhas de inteiros ordenados pelo elemento de índice £ ou pela soma dos elementos da linha quando dois elementos
+comparados forem iguais.
+
+Observações:
+
+e Não é necessário validar se os valores de entrada são do tipo definido.
+
+e Agrdenação diz respeito à posição das listas de inteiros, e não aos inteiros dentro de cada lista. Não é necesário ordenar os
+elementos de cada linha mas sim reordenar as linhas para que fiquem em ordem crescente com base em seu elemento de índice É.
+
+Descrição dos Exemplos:
+* Os exemplos são autoexplicativos.
+

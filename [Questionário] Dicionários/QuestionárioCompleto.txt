@@ -1,0 +1,775 @@
+Iniciado em
+Estado
+
+Concluída em
+Tempo empregado
+Avaliar
+
+domingo, 2 jul. 2023, 18:18
+Finalizada
+
+domingo, 2 jul. 2023, 21:07
+
+2 horas 49 minutos
+
+10,00 de um máximo de 10,00(100%)
+Questão 1
+Correto
+Atingiu 2,00 de 2,00
+
+Contando as letras
+
+Escreva um programa que recebe como entrada uma frase e retorne em ordem alfabética a recorrência das letras d, vet na frase da
+seguinte forma:
+
+wn
+
+Onde ww é a letra e n é o número de vezes que ela aparece na frase.
+
+A Entrada consiste de:
+e Uma string de tamanho variado.
+
+ASaída deve apresentar:
+e Várias strings no formato w n, onde w é a letra (d, v ou t) en sua recorrência na frase, cada contagem deve ser mostrada em uma
+linha diferente.
+
+Observações:
+e Não é necessário validar se os valores de entrada são do tipo definido.
+
+Descrição dos Exemplos:
+* Osexemplos são auto explicativos.
+
+For example:
+Input Result
+Há diversos tipos de crônicas que exploram outros gêneros textuais |d2
+t 4
+1
+Pelo menos minha autoestima não eh sazonal t 2
+
+Como eu disse antes acho bem dificil sentir saudade de coisas ruins |d 5
+
+Answer: (penalty regime: 0,0, 10, 20, ... %)
+
+1 |dic =()
+
+2 |texto = input()
+
+3v|for letra in texto:
+
+4y if letra in ["d","t","v"]:
+5y if letra in dic.keys():
+6 dic[letra] += 1
+7v else:
+
+8 dic[letra] = 1
+9v/if "d" in dic.keys():
+
+10 print("d",dic["d"])
+
+11 v/if "t" in dic.keys():
+
+12 print("t",dic["t"])
+
+13 v/if "v" in dic.keys():
+
+14 print("v",dic["v"])
+Input
+
+| Há diversos tipos de crônicas que exploram outros gêneros textuais
+
+| Pelo menos minha autoestima não eh sazonal
+
+WY | Como eu disse antes acho bem difícil sentir saudade de coisas ruins
+
+4 | Eh um assunto muito complexo mas muito instigante
+
+« | Acordei cedinho busquei o pagamento de alguns convites comprei gelo tirei xerox
+do mapa do local para deixar para quem nunca tinha ido lá e fui para o sitio
+
+4 |E se for para praticar festejando com amigos certamente estarei na primeira fila
+dessa escola
+
+Passou em todos os teste! 4
+
+Para resolver esta questão, atente para o uso de dicionários.
+
+Notas para este envio: 2,00/2,00.
+
+Expected | Got
+2 d2
+ta ta
+vi 1
+t 2 t 2
+5 5
+t 2 t 2
+t 5 t 5
+7 7
+t 5 t 5
+1 1
+2 d 2
+t 5 t 5
+Questão 2
+Correto
+Atingiu 2,00 de 2,00
+
+Procura Reversa
+
+Um dos alunos de APC quer saber quais outros alunos tiveram a mesma nota do que ele. Por isso, pediu a sua ajuda para elaborar um
+programa que receba um inteiro “n” que é a quantidade de alunos na turma e das “n” linhas seguintes receba o nome do aluno com a
+sua nota separados por ”,“. O dicionário da turma é organizado da seguinte forma: a chave é o nome único do aluno e o valor
+correspondente é a nota. Caso existam alunos com a mesma nota do aluno, mostre o nome dos alunos separados por barra em ordem
+alfabética. Se não, apresente a seguinte mensagem: “Você foi o único aluno com essa nota”.
+
+Aentrada consiste de:
+
+e Uminteiron.
+
+* nstrings, contendo o nome e a nota dos receptivos alunos, separados por ".
+e Anotadoaluno.
+
+Asaída deve apresentar:
+* “Você foi o único aluno com essa nota? Se não houver ninguém com a mesma nota.
+* Caso contrário, os nomes dos alunos com a mesma nota serão separados por barra em ordem alfabética.
+
+Observações:
+e Você pode usar usar o método sorted.
+e Trate as notas como números reais.
+
+Descrição do exemplo 1:
+e No primeiro exemplo, o programa recebe a nota de dois alunos cujo somente o primeiro recebido possui a mesma nota presente na
+última linha da entrada. Nesse aspecto, o programa deve apresentar o nome do primeiro aluno.
+
+For example:
+
+Input Result
+
+2 rafael
+rafael, 7.7
+
+helena, 3.4
+
+7.7
+
+3 Leandro Kornelius/Vitoria Amorim
+Leandro Kornelius, 9.2
+
+Pedro Silva, 6.7
+
+Vitoria Amorim, 9.2
+
+9.2
+
+5 Você foi o único aluno com essa nota.
+Bernardo, 3.4
+
+Alice, 5.667
+
+Guilherme, 8.765
+
+Yasmin, 10
+
+Henrique, 9.6
+
+5
+
+Answer: (penalty regime: 0,0, 10, 20, ... %)
+
+1 |n = int(input())
+
+2 |dic_alunos ={}
+
+3v|for i in range(n):
+
+4 nome,nota = input().split(", ")
+
+5 nota = float(nota)
+
+6 dic_alunos[nome] = nota
+
+7
+
+8 |my_nota =float(input())
+
+9 |retorno = ""
+
+10 v|for nome in sorted(dic alunos.keys()):
+liv if dic_alunos[nome]
+12 retorno += nome+"
+
+my_nota:
+
+13 v/if retorno =="":
+14 print("Vocé foi o único aluno com essa nota.")
+15 vjelse:
+16 print(retorno[:-1])
+17
+18
+Input Expected
+[2 rafael
+
+rafael, 7.7
+helena, 3.4
+7.7
+
+913 Leandro Kornelius/Vitoria Amorim
+Leandro
+Kornelius,
+9.2
+Pedro Silva,
+6.7
+Vitoria
+Amorim, 9.2
+9.2
+
+5 Você foi o único aluno com essa nota.
+Bernardo, 3.4
+Alice, 5.667
+Guilherme,
+8.765
+Yasmin, 10
+Henrique, 9.6
+5
+
+8 Carla/Leandro/Maristela
+Bernardo, 3.4
+Alice, 5.667
+Guilherme,
+8.765
+Yasmin, 10
+Henrique, 9.6
+Maristela,
+8.23
+Carla, 8.23
+Leandro, 8.23
+8.23
+
+¥ 0 Vocé foi o tnico aluno com essa nota.
+
+Got
+
+rafael
+
+Leandro Kornelius/Vitoria Amorim
+
+Você foi o único aluno com essa nota.
+
+Carla/Leandro/Maristela
+
+Você foi o único aluno com essa nota.
+Input Expected Got
+
+/ |7 Helena Ribeiro/Juliana Helena Ribeiro/Juliana
+Yasmin Souza, | Meneguin/Roberto Leal/Wellington Meneguin/Roberto Leal/Wellington
+8.7 Silva/Yasmin Souza Silva/Yasmin Souza
+Roberto Leal,
+8.7
+Bernardo
+
+Heringer, 0
+Gustavo
+Maguino, 8.76
+Wellington
+Silva, 8.7
+Helena
+Ribeiro, 8.7
+Juliana
+Meneguin, 8.7
+8.7
+
+Passou em todos os teste! 4
+
+Para resolver esta questão, você deve usar dicionários e o método sorted.
+
+[correto |
+
+Notas para este envio: 2,00/2,00.
+Questão 3
+Correto
+Atingiu 2,00 de 2,00
+
+Catálogo
+
+Uma loja online te contratou para cuidar da organização do catálogo de forma que fique mais fácil calcular o valor total dos pedidos.
+Eles gostariam que você fizesse um programa que dado os produtos, seus respectivos preços e um pedido identificado pelo nome dos
+produtos e a quantidade de cada um, retorne o valor total do pedido com R$ antes do valor e duas casas decimais de precisão.
+
+A Entrada consiste de:
+e Aprimeira linha consiste nos produtos e seus preços na forma: produtol precol .. produton precon
+e Asegunda linha informa o pedido de um cliente, que é composto pelo(s) nome(s) do(s) produtos(s) e a quantidade de cada item.
+
+ASaída deve apresentar:
+e Opreco total do pedido do cliente no formato R$ xx.xx.
+
+Observações:
+e Não é necessário validar se os valores de entrada são do tipo definido.
+
+Descrição dos Exemplos:
+e No primeiro exemplo, o cliente levou duas brumas e três esmaltes, como cada bruma custa R$ 27.70 e cada esmalte R$ 4.49, o valor
+
+total é R$ 68.87.
+For example:
+
+Input Result
+
+bruma 27.70 lápis 14.99 rimel 30.15 esmalte 4.49 | R$ 68.87
+bruma 2 esmalte 3
+
+cardigan 90.00 saia 56.94 bota 150.00 R$ 386.94
+
+saia 1 cardigan 2 bota 1
+
+mochila 99.90 pochete 35.50 bolsa-armani 3000 R$ 35.50
+pochete 1
+
+Answer: (penalty regime: 0,0, 10, 20, ... %)
+
+lista = input().split()
+
+dic =()
+
+for i in range(1,len(lista),2):
+dic[lista[i-1]] = float(lista[i])
+
+saldo = 0
+
+compras = input().split()
+
+a
+
+a
+
+for i in range(1,len(compras),2):
+saldo += float(compras[i])* dic[compras[i-1]]
+print(f"R$ {saldo: .2f}")
+
+H
+Swan anaunhwner
+
+H
+ey
+
+Input Expected | Got
+
+4 |bruma 27.70 lápis 14.99 rimel 30.15 esmalte 4.49 R$ 68.87 R$ 68.87
+bruma 2 esmalte 3
+
+¥ cardigan 90.00 saia 56.94 bota 150.00 R$ 386.94 RS 386.94
+saia 1 cardigan 2 bota 1
+
+WY |mochila 99.90 pochete 35.50 bolsa-armani 3000 R$ 35.50 |R$ 35.50
+pochete 1
+
+4 | case 49.50 película 100.00 R$ 500.00 |R$ 500.00
+película 5
+
+WY abajur 70.00 lamparina 8.90 pisca-pisca 30.90 led 22.90 RS 324.10 R$ 324.10
+led 3 abajur 1 pisca-pisca 6
+
+4 (t-shirt 39.90 meia 9.99 R$ 99.78 RS 99.78
+t-shirt 2 meia 2
+
+Passou em todos os teste! 4
+
+Para resolver esta questão, atente para o uso de dicionários e tuplas.
+
+[correto |
+
+Notas para este envio: 2,00/2,00.
+Questão 4
+Correto
+Atingiu 2,00 de 2,00
+
+Notas APC
+
+Os professores de APC querem informar a situação de um aluno ao receber o seu nome pelo email. Na UnB, a situação de um aluno é
+determinada pela sua média final em que se o aluno obtiver média inferior a 5 ele é reprovado. Caso contrário, o aluno é aprovado.
+Para isso, a opção mais interessante é montar um dicionário da matéria usando o nome dos alunos como chave associada a um outro
+dicionário que mapeará as informações de cada aluno. Apesar de terem a ideia pronta, os professores estão com um pouco de
+dificuldade na implementação e, por consequência, pediram a sua ajuda. Para cada aluno, apresente a sua média e situação na matéria
+conforme o padrão de saída.
+
+A Entrada consiste de:
+
+* Uminteiron > O com o número de alunos da turma.
+
+e 9 linhas, cada uma com o nome email e quatro notas, separadas por espaço
+* Onome do aluno para qual o email será enviado.
+
+A Saída deve apresentar:
+
+e Seoaluno estiver na turma: "Destinatário: <emailAluno>\nO aluno <nomeAluno> foi aprovado/reprovado com média
+<mediaAluno>."
+Caso o aluno não exista na turma: "O aluno <nomeAluno> não está na turma”
+
+Observações:
+e Não énecessário validar se os valores de entrada são do tipo definido.
+¢ Façasomente o que foi solicitado.
+
+Descrição dos Exemplos:
+* Como na Ultima linha o professor busca informar a situação do Bernardo na matéria, o programa deve compor um email cujo e-mail
+do Bernardo, a média na matéria dele e a sua situação na disciplina são apresentados.
+
+For example:
+Input Result
+3 Destinatário: be@gmail.com
+Leandro le@gmail.com 9.7 10 8.2 9.6 O aluno Bernardo foi aprovado com média 7.43.
+
+Lucas lu@gmail.com 10 10 10 6
+Bernardo be@gmail.com 2.2 7.7 9.8 10
+
+Bernardo
+
+4 O aluno Maristela não está na turma.
+Leandro le@gmail.com 9.7 10 8.2 9.6
+
+Lucas lu@gmail.com 10 10 10 6
+
+Bernardo be@gmail.com 2.2 7.7 9.8 10
+
+Caio ca@gmail.com 9.3 1.2 0 0
+
+Maristela
+
+7 Destinatário: tobi@hotmail.com
+
+Guilherme gui@yahoo.com.br 1.2 3.4 7.1 0 | O aluno Tobias foi reprovado com média 4.75.
+Leandro leo@gmail.com 8.1 3.4 5.6 10
+
+Heitor heitor@hotmail.com 10 9.8 6.4 0
+
+Tobias tobi@hotmail.com 0 0 10 9
+
+Maristela mari@gmail.com 10 10 10 10
+
+Lucas lucas@yahoo.com.br 10 10 10 10
+
+Breno be@hotmail.com 1.2 9.6 8.1 5
+
+Tobias
+
+Answer: (penalty regime: 0,0, 10, 20, ... %)
+
+1 |n = int(input())
+2 |dic =()
+3v|for i in range(n):
+1
+1
+13v
+14
+15 v
+16
+17,
+18
+19v
+28
+21
+22
+
+NrPOwWaN HAUS
+
+dados =
+
+input().split()
+
+email = dados[1]
+media = (float(dados[2])+
+float (dados[3])+
+float (dados[4])+
+float (dados[5]))/4
+dic[dados[@]] = email,media
+Nome = input()
+
+if Nome not in dic.keys():
+
+print(f"O aluno {Nome} não está na turma.")
+
+else:
+
+print(f"Destinatário: (dic[Nome][0])")
+
+if dic[Nome][1] < 5:
+
+print(F"O aluno {Nome} foi reprovado com média {dic[Nome][1]:.2F}.")
+
+else:
+
+print(f"O aluno {Nome} foi aprovado com média {dic[Nome][1]:.2f}.")
+
+Input
+
+3
+
+Leandro le@gmail.com 9.7 10 8.2 9.6
+Lucas lu@gmail.com 10 10 10 6
+Bernardo be@gmail.com 2.2 7.7 9.8
+10
+
+Bernardo
+
+4
+
+Leandro le@gmail.com 9.7 10 8.2 9.6
+Lucas lu@gmail.com 10 10 10 6
+Bernardo be@gmail.com 2.2 7.7 9.8
+10
+
+Caio ca@gmail.com 9.3 1.2 0 0
+Maristela
+
+7
+
+Guilherme guifêyahoo. com.br 1.2 3.4
+7.10
+
+Leandro leo@gmail.com 8.1 3.4 5.6
+10
+
+Heitor heitor@hotmail.com 10 9.8
+6.4 0
+
+Tobias tobi@hotmail.com 0 0 10 9
+Maristela mari@gmail.com 10 10 10
+10
+
+Lucas lucas@yahoo.com.br 10 10 10
+10
+
+Breno be@hotmail.com 1.2 9.6 8.1 5
+Tobias
+
+9
+
+Leandro leo@hotmail.com 9.2 2.3 3.5
+5
+
+Lucas lu@gmail.com 10 10 8 8
+Maristela mari@hotmail.com 5.4 6.7
+9.1 10
+
+Yasmin ya@yahoo.com.br 10 0 0 9
+Gustavo guga@outlock.com 1 1 10 10
+Beatriz bia@iCloud.com 2.2 3.2 5.6
+7.6
+
+Helena hehe@gmail.com 10 9 7.7 3
+Leticia le@gmail.com 2.3 7.7 8.2
+6.7
+
+Vitoria vi@outlook.com 10 9.8 7.7
+8.6
+
+Leandro
+
+Expected
+
+Destinatário: be@gmail.com
+O aluno Bernardo foi
+aprovado com média 7.43.
+
+O aluno Maristela não está
+na turma.
+
+Destinatário:
+tobithotmail.com
+
+O aluno Tobias foi reprovado
+com média 4.75.
+
+Destinatário:
+leo@hotmail.com
+
+O aluno Leandro foi aprovado
+com média 5.00.
+
+4
+Got
+Destinatário: be@gmail.com aS
+O aluno Bernardo foi
+aprovado com média 7.43.
+O aluno Maristela não está va
+na turma.
+Destinatário: ae
+tobi@hotmail.com
+O aluno Tobias foi reprovado
+com média 4.75.
+Destinatário: LÁ
+
+leo@hotmail.com
+O aluno Leandro foi aprovado
+com média 5.00.
+Input
+¥ |0
+Wellington
+So \2
+
+Flash fastestmanalive@hotmail.com
+10 9.5 0.25 10
+
+Katy kat@outlook.com 10 10 10 10
+Harry
+
+Passou em todos os teste! 4
+
+Expected
+
+O aluno Wellington não está
+na turma.
+
+O aluno Harry não está na
+turma.
+
+Para resolver esta questão, use dicionários com valores que terão outro dicionário.
+
+[Correto |
+
+Notas para este envio: 2,00/2,00.
+
+Got
+
+O aluno Wellington não está
+na turma.
+
+O aluno Harry não está na
+turma.
+Questão 5
+Correto
+Atingiu 2,00 de 2,00
+
+Mercado
+
+Um analista de um mercado quer levantar algumas informações para o seu chefe para impressioná-lo. No mercado onde trabalha, os
+produtos são organizados em corredores numerados, possuindo diversos produtos dentro com o respectivo custo. Buscando
+implementar um sistema que leve em consideração possíveis mudanças na estrutura dos corredores, produtos e valores, o analista te
+contratou. O analista quer que o programa seja capaz de informar os produtos e o valor médio do custo dos produtos ao receber o
+número de um corredor. Para isso, monte o programa exigido que recebe um número inteiro maior do que zero n que serão os
+corredores do mercado e nas 7 linhas seguintes teremos os nomes únicos e de uma palavra dos produtos e seus custos daquele
+corredor. Com isso, na última linha será recebido o número do corredor, que pode ou não existir no mercado, o qual se busca saber os
+produtos e o valor médio desses produtos.
+
+A Entrada consiste de:
+
+e Uminteiron com o numero de corredores do Mercado.
+
+e Adescrição do corredor, uma linha com o nome do produto (uma palavra) e seu valor, separados por espaço, podendo se repetir
+e Uminteiro com o número do corredor n > O
+
+A Saída deve apresentar:
+e Caso o número do corredor fornecido não exista no mercado: “Esse corredor não existe no mercado.’ Caso contrário, imprima o
+corredor, os produtos e o valor médio conforme os exemplos abaixo.
+
+Observações:
+* Osnome dos produtos sempre será uma palavra
+e Alinha que descreve o corredor, poderá conter vários produtos, sempre será <nome do produto> <valor do produto>
+
+Descrição do Exemplo 1:
+¢ Como as informações solicitadas são do primeiro corredor temos que maçã, banana, morango e abacate são impressos junto ao
+valor médio desses produtos.
+
+For example:
+Input Result
+2 No corredor 1 encontramos:
+
+Maca 1.75 Banana 1.50 Morango 3.50 Abacate 6 |Maca, Banana, Morango, Abacate
+
+Detergente 3.25 E o preço médio é 3.19.
+
+1
+
+4 No corredor 4 encontramos:
+Tomate 1.25 Alface 0.5 Detergente, Amaciante
+Biscoito 4.75 E o preço médio é 6.00.
+Coca 3.25
+
+Detergente 3.25 Amaciante 8.75
+4
+
+1 Esse corredor não existe no mercado.
+Suco 2.75
+3
+
+Answer: (penalty regime: 0,0, 10, 20, ... %)
+
+n = int(input())
+dic cor = {}
+vlfor i in range(n):
+valor = 6
+nomes = ""
+dados = input().split()
+for j in range(len(dados)):
+if jx2 ==0:
+nomes += dados[j] +",
+169 else:
+
+aa
+
+WAN aAUARWNHR
+
+chocolate 2.23 biscoito 4.46 toddy
+9.35 nutella 24.89 castanha 21.00
+leite 7.78
+
+whiskey 140.99
+
+1
+
+chocolate, biscoito,
+nutella,
+
+toddy,
+castanha
+E o preço médio é 12.39.
+
+11 valor += float(dados[j])
+12 dic cor[i+1] = nomes[:-2],valor/(len(dados)//2)
+13 |v =int(input())
+14 v|if v not in dic cor.keys():
+15 print("Esse corredor não existe no mercado.")
+16 vjelse:
+17 print(f'No corredor {v} encontramos:\n{dic_cor[v][@]}\nE o preço médio é (dic cor[v][1]:.2f).')
+18
+19
+28
+Input Expected Got
+oS (2 No corredor 1 encontramos: No corredor 1 encontramos: v
+Maca 1.75 Banana 1.50 Morango 3.50 Maca, Banana, Morango, Maca, Banana, Morango,
+Abacate 6 Abacate Abacate
+Detergente 3.25 E o preço médio é 3.19. E o preço médio é 3.19, 4%
+1
+4 No corredor 4 encontramos: No corredor 4 encontramos: v
+Tomate 1.25 Alface 0.5 Detergente, Amaciante Detergente, Amaciante
+Biscoito 4.75 E o preço médio é 6.00. E o preço médio é 6.00.
+Coca 3.25
+Detergente 3.25 Amaciante 8.75
+4
+ia Esse corredor não existe no | Esse corredor não existe no W
+Suco 2.75 mercado. mercado.
+3
+viii No corredor 1 encontramos: No corredor 1 encontramos: a
+Brécolis 2.25 Alface 0.25 Cenoura Brécolis, Alface, Cenoura, Brécolis, Alface, Cenoura,
+2.10 Beringela 1.10 Cebola 0.75 Alho | Beringela, Cebola, Alho Beringela, Cebola, Alho
+0.65 E o preço médio é 1.18. E o preço médio é 1.18.
+1
+16 No corredor 3 encontramos: No corredor 3 encontramos: a
+rodo 3.50 vassoura 4 pano 1.75 toddy, biscoito toddy, biscoito
+refri 2.60 suco 3 vinho 55 E o preço médio é 6.50. E o preço médio é 6.50.
+toddy 8 biscoito 5
+chocolate 4
+alface 1
+castanha 13 granola 22
+3
+413 No corredor 1 encontramos: No corredor 1 encontramos: É
+
+chocolate, biscoito,
+nutella,
+
+toddy,
+castanha
+E o preço médio é 12.39.
+
+Passou em todos os teste! 4
+
+Para resolver esta questão, use dicionários.
+
+[correto]
+
+Notas para este envio: 2,00/2,00.

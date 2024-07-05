@@ -1,0 +1,57 @@
+Questão 6
+
+Não respondido
+
+Atingiu 0,00 de 1,25
+
+Redução de Dimensionalidade 1
+
+Uma maneira de se reduzir a dimensionalidade de matrizes preservando-se a informação existente consiste em uma subamostragem
+
+de seus elementos. Uma abordagem é o Max Pooling 2D, que recebe uma matriz Ayx m de entrada e um fator de redução f e gera uma
+
+nova matriz B de dimensões À x E. Nesse processo, a matriz 4 pode ser vista como diversas regiões disjuntas (que não se
+
+sobrepõem) f x f, em que em cada uma seleciona-se o maior elemento que será colocado em uma posição correspondente na matriz
+B.
+
+Por exemplo, a figura abaixo ilustra o processo de subamostragem Max Pooling 2D para f = 2, em que as diversas regiões 2 x 2 são
+
+demarcadas pelos quadrados pontilhados e a cor desse quadrado está associada com o respectivo elemento que é colocado na matriz
+B:
+
+y
+
+O|tm
+
+€o | 00
+
+bo]
+
+Sua tarefa consiste em desenvolver a subamostragem por Max Pooling 2D. Dada uma matriz N x M, deve-se gerar uma nova matriz
+
++ x * em que f é o fator de redução. Para propósitos de simplicidade, os casos de teste apenas consideram entradas em que Ne M
+
+são divisíveis por f.
+
+A Entrada consiste de:
+
+* Aprimeira linha da entrada contém três números inteiros separados por espaço NV, Me f(1menor que N,M menor que100,1menor quefmenor queN,M).É
+garantido que N e M sejam divisíveis por f.
+
+* Emseguida, existem N linhas descrevendo a matriz de entrada. Cada linha contém M inteiros separados por espaço em branco, em
+que o elemento na i-ésima linha e j-ésima coluna é denotado por a; J (0 menor que a; is 10°).
+
+A Safda deve apresentar:
+
+e Amatriz + x © resultante do processo de redução de dimensionalidade. Os números inteiros devem estar separados por espaço
+
+f
+em branco e não deve-se colocar um espaço em branco após o elemento da última coluna.
+
+Observações:
+e Não é necessário validar se os valores de entrada são do tipo definido.
+
+Descrição dos Exemplos:
+e A figura no enunciado corresponde ao segundo exemplo de teste.
+

@@ -1,0 +1,66 @@
+Questão 9
+Correto
+Atingiu 1,00 de 1,00
+
+Padrão triângular?
+
+O programa a seguir deveria imprimir 8 linhas exibindo um padrão visualmente triângular usando-se apenas as instruções e
+outros recursos que aprendemos até agora. Corrija os erros de sintaxe e de lógica para que ele imprima o padrão 16 vezes como em
+uma tabela 4x4.
+
+sl, s2, s3 = input ().split()
+
+def duplica(f):
+fo
+fo
+£0)
+
+def duplica_o_duplicado(f):
+duplica(f)
+duplica (£)
+
+def imprime parte linhal():
+
+print(” "+sl+s2+" "+, end="")
+
+def imprime parte linhal fim():
+
+print ("")
+
+def imprime_parte_linha2():
+print (sl+2*s3+s2, end=
+
+def imprime parte linha2 fim():
+
+print(" ")
+
+def imprime linhal():
+duplica o duplicado (imprime parte linhal)
+
+imprime parte linhal fim()
+
+def imprime linha2():
+duplica o duplicado (imprime parte linha2)
+
+imprime parte linha2 fim()
+
+def imprime parte padrão ():
+imprime linhal()
+
+imprime-linha2 ()
+
+def imprime padrão():
+
+duplica o duplicado (imprime parte padrão)
+
+imprime padrão ()
+
+A Entrada consiste de:
+e 3caracteres em uma linha, separados por espaços em branco.Cada caracter representa um lado do triângulo.
+
+A Saída deve apresentar:
+* Oresultado deve ser um padrão triangular 4x4
+
+Observações:
+e Não é necessário validar se os valores de entrada estão dentro dos intervalos definidos.
+* Relembre as funções apresentadas no Capítulo 3.

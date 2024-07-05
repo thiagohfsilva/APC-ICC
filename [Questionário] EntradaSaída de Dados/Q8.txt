@@ -1,0 +1,39 @@
+Questão 8
+Correto
+Atingiu 1,00 de 1,00
+
+Vossa Majestade, o Número Real!
+Em terra de inteiros, quem é fracionário é Rei!
+Dados números reais, apresente-os conforme o formato definido abaixo.
+
+Entrada
+A entrada consiste de 2 linhas, a primeira contendo 2 números reais de precisão simples separados por um espaço (f1 e f2), e a segunda
+contendo 2 números reais de precisão dupla separados por um espaço.
+
+Saída
+A saída deve ser composta de 20 linhas, cada uma como apresentada a seguir. Atenção às quantidades de dígitos!
+
+1.amensagem:"F1 = f1, F2 = f2" ondefi e f2 devem ser substituídos por seus repectivos valores;
+2.amensagem:"D1 = d1, D2 = d2", onde d1 e d2 devem ser substituídos por seus repectivos valores;
+3. uma linha vazia;
+4. a mensagem do item 1, mas com os valores armazenados apresentados com precisão de 2 casas decimais;
+5. a mensagem do item 2, mas com os valores armazenados apresentados com precisão de 2 casas decimais;
+6. uma linha vazia;
+7. a mensagem do item 1, mas com os valores armazenados apresentados com precisão de 5 casas decimais;
+8. a mensagem do item 2, mas com os valores armazenados apresentados com precisão de 5 casas decimais;
+9. uma linha vazia;
+10. a mensagem do item 1, mas com os valores armazenados apresentados com precisão de 10 casas decimais;
+11. a mensagem do item 2, mas com os valores armazenados apresentados com precisão de 10 casas decimais;
+12. uma linha vazia;
+13. a mensagem do item 1, mas com os valores armazenados apresentados com precisão de 28 casas decimais;
+14. a mensagem do item 2, mas com os valores armazenados apresentados com precisão de 28 casas decimais;
+15. uma linha vazia;
+16. a mensagem do item 1, mas com os valores armazenados apresentados na notação científica e com precisão de 3 casas decimais;
+17. a mensagem do item 2, mas com os valores armazenados apresentados na notação científica e com precisão de 3 casas decimais;
+18. uma linha vazia;
+19. a mensagem do item 1, mas apresentando apenas a parte inteira dos valores armazenados; e
+20. a mensagem do item 2, mas apresentando apenas a parte inteira dos valores armazenados;
+
+Observações
+Aformatação da saída é importante, saiba usar f-string. Para saber como formatar números, leia isto.
+

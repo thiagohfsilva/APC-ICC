@@ -1,0 +1,24 @@
+Questão 5
+Correto
+Atingiu 1,00 de 1,00
+
+Escrevendo Datas
+Dada a descrição de uma data, apresente-a conforme os formatos definidos abaixo.
+
+Entrada
+A entrada consiste de uma linha, composta por três números inteiros positivos representando uma data no formato DD/MM/AA
+
+(dia/mês/ano). É garantido que as datas são válidas.
+
+Saída
+
+A saída deve ser composta de 3 linhas, cada uma como apresentada a seguir. Atenção à quantidade de dígitos!
+1.a data no formato "DD-MM-AA";
+
+2.a data no formato "MM-DD-AA"; e
+3. a data no formato "AA/MM/DD”.
+
+Observações
+A leitura de dados é simples, o importante é saber separar as partes relevantes da informação fornecida (saiba usar split). A formatação
+da saída é importante, saiba usar f-string.
+

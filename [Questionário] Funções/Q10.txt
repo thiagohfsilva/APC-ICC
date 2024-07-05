@@ -1,0 +1,43 @@
+Questão 10
+Correto
+Atingiu 1,00 de 1,00
+
+Troco em Moedas
+
+O caixa de um supermercado precisa dar o troco de x centavos. Sabendo que as moedas disponíveis no caixa são de R$ 0,50, R$ 0,25,
+RS 0,10, R$ 0,05 e R$ 0,001, elabore uma função chamada troco que receba o valor inteiros x, do troco em centavos, como parâmetro
+e imprima a quantidade de moedas de 50, 25, 10, 5 e 1 centavos que deve dar, de forma a minimizar a quantidade de moedas do troco.
+
+A Entrada consiste de:
+* Afunção troco deve ser chamada para qualquer valor arbitrário de troco definidos nos casos de teste, que é um número inteiros z,
+o valor do troco em centavos.
+
+ASaída deve apresentar:
+
+e Afunção troco deve imprimir a quantidade de moedas de cada valor em centavos que serão entregues como troco, sempre com o
+menor número de moedas possíveis.
+
+e Por exemplo, para umtroco de R$ 0,79 deve imprimir:
+
+1 moedas de R$ 0,50
+1 moedas de R$0,25
+O moedas de R$ 0,10
+O moedas de R$ 0,05
+4 moedas de R$ 0,01
+
+Observações:
+
+e Não é necessário validar se os valores de entrada estão dentro dos intervalos definidos.
+
+s Atenção, a criação de uma função com o nome determinado pelo enunciado é fundamental para a prática do aluno e o Moodle irá
+descontar pontos caso a criação não tenha sido feita corretamente (sendo case-sensitive o nome da função).
+
+* Submeta SOMENTE o que foi solicitado.
+
+e Faça um algoritmo que funcione apenas para os valores de moedas do problema, assim a função que você irá implementar precisará
+usar apenas o conhecimento que você aprendeu até o presente momento na disciplina. Não use comandos e instruções que ainda
+serão ensinados em lições futuras.
+
+Descrição dos Exemplos:
+* Os exemplos do Moodle são autoexplicativos.
+

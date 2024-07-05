@@ -1,0 +1,34 @@
+Questão 5
+Correto
+Atingiu 2,00 de 2,00
+
+Mercado
+
+Um analista de um mercado quer levantar algumas informações para o seu chefe para impressioná-lo. No mercado onde trabalha, os
+produtos são organizados em corredores numerados, possuindo diversos produtos dentro com o respectivo custo. Buscando
+implementar um sistema que leve em consideração possíveis mudanças na estrutura dos corredores, produtos e valores, o analista te
+contratou. O analista quer que o programa seja capaz de informar os produtos e o valor médio do custo dos produtos ao receber o
+número de um corredor. Para isso, monte o programa exigido que recebe um número inteiro maior do que zero n que serão os
+corredores do mercado e nas 7 linhas seguintes teremos os nomes únicos e de uma palavra dos produtos e seus custos daquele
+corredor. Com isso, na última linha será recebido o número do corredor, que pode ou não existir no mercado, o qual se busca saber os
+produtos e o valor médio desses produtos.
+
+A Entrada consiste de:
+
+e Uminteiron com o numero de corredores do Mercado.
+
+e Adescrição do corredor, uma linha com o nome do produto (uma palavra) e seu valor, separados por espaço, podendo se repetir
+e Uminteiro com o número do corredor n maior que O
+
+A Saída deve apresentar:
+e Caso o número do corredor fornecido não exista no mercado: “Esse corredor não existe no mercado.’ Caso contrário, imprima o
+corredor, os produtos e o valor médio conforme os exemplos abaixo.
+
+Observações:
+* Osnome dos produtos sempre será uma palavra
+e Alinha que descreve o corredor, poderá conter vários produtos, sempre será menor quenome do produtomaior que menor quevalor do produtomaior que
+
+Descrição do Exemplo 1:
+¢ Como as informações solicitadas são do primeiro corredor temos que maçã, banana, morango e abacate são impressos junto ao
+valor médio desses produtos.
+

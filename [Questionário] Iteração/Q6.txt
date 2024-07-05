@@ -1,0 +1,40 @@
+Questão 6
+Correto
+Atingiu 1,00 de 1,00
+
+Dêivis no show de rock
+
+Dêivis e seus amigos estão se preparando para o próximo show de rock: Black Sabbath. A banda virá pela segunda e última vez ao
+Brasil, em dezembro de 2016. A situação é a seguinte: nem todos os amigos possuem dinheiro o suficiente para comprar o ingresso,
+mas alguns amigos possuem mais dinheiro do que o necessário. Como Dêivis e seus amigos são muito unidos e acreditam que a coisa
+mais importante da vida é não perder um show de rock com a galera, eles decidiram juntar todo o dinheiro que têm para tentarem
+comprar ingressos para todos. Dêivis se encarregou de fazer as contas. Mas o Dêivis é o Dêivis... É claro que sobrou para você.
+
+Dada a quantidade de dinheiro de cada amigo e o valor i do ingresso, Déivis pediu a sua ajuda para calcular a parte inteira do dinheiro
+médio e determinar se todos poderão ir ao show.
+
+A Entrada consiste de:
+
+e Aprimeira linha da entrada contém dois inteiros: quantidade de amigos 1 menor que n menor que 10º e preço do ingresso 1 menor que à menor que 10º separados
+por espaço.
+
+e Cada uma das próximas n linhas contém um inteiro O menor que a; menor que 10º onde 1 menor que4 « n representa dinheiro do i-ésimo amigo.
+
+ASaída deve apresentar:
+
+e Aprimeira linha da saída deve conter a parte inteira do dinheiro médio para cada amigo, conforme os exemplos.
+
+* Asegunda linha deve conter a mensagem "o rock reinara mais uma vez" se houver dinheiro o suficiente para todos, ou a mensagem
+"rockeiros trabalhando ja" em caso contrário.
+
+Observações:
+e Não é necessário validar se os valores de entrada estão dentro dos intervalos e tipos definidos.
+
+Descrição dos Exemplos:
+
+* No primeiro exemplo, existem 6 amigos e o preço do ingresso é de 300 dinheiros. A média de dinheiro que eles possuem é 313
+dinheiros e este valor é suficiente para comprar 6 ingressos de 300 dinheiros cada.
+
+e Nosegundo exemplo, existem 3 amigos e o preço do ingresso é de 150 dinheiros. A média de dinheiro que eles possuem é 149
+dinheiros e este valor não é suficiente para comprar 3 ingressos de 150 dinheiros cada.
+

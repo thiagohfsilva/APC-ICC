@@ -1,0 +1,25 @@
+Questão 5
+Correto
+Atingiu 1,00 de 1,00
+
+O escritor Parôn
+
+O escritor Parôn detesta escrever com palavras que não tenham um número de vogais pares. Quando Parôn está buscando palavras de
+inspiração para escrever ele também se irrita lendo palavras com número ímpar de vogais. Para evitar o estresse, Parôn te convocou
+para retirar todas as palavras que o deixam bravo enquanto busca por inspiração (remover palavras com quantidade de vogais
+ímpares). Para isso, elabore uma função chamada paron que recebe uma lista de palavras e retorna uma lista com somente as palavras
+com a quantidade de vogais pares.
+
+A Entrada consiste de:
+e Não hd leitura de dados. A função é chamada pelo sistema automaticamente, passando como parâmetro uma lista de strings.
+
+ASaída deve apresentar:
+e Alista de palavras com vogais pares.
+
+Observações:
+* Considere que a lista de palavras de entrada não contém acentos nas vogais.
+
+Descrição do Exemplo 1:
+e Aoreceber alista = [“palavra’, “escrever”, “detesta”, “lista” “todas”] a função paron deve retornar uma lista contendo as palavras
+“lista” e “todas”, pois somente estes elementos da lista atendem ao critério estabelecido.
+

@@ -1,0 +1,32 @@
+Questão 1
+Correto
+
+Atingiu 1,00 de 1,00
+
+Termémetro
+
+Pedrinho está estudando sobre temperatura e precisa converter vários valores de temperatura entre as diversas unidades. Para
+facilitar, Pedrinho pediu ajuda para você, de forma a pular todo esse trabalho chato e extenso de conversão.
+
+Dada uma temperatura T, em graus Celsius, crie uma função fahrenheit querecebe uma temperatura em Celsius, calcula e
+apresenta a temperatura correspondente em graus Fahrenheit; e uma função kelvin |, que faz o mesmo para escala Kelvin.
+
+Entrada
+Não há entrada de dados explícita. As funções são chamadas automaticamente pelo sistema.
+Saída
+
+Cada função deve apresentar o valor da temperatura, em uma linha, com precisão de 2 casas decimais.
+Observações:
+
+e Atente para tipo de variável utilizado. Cálculos devem ser feitos com variáveis int ou float, já a impressão por meio do print, deve
+ser feito com string.
+e Paracorreção correta, devem ser definidas duas funções, uma para cada conversão.
+
+Descrição dos Exemplos:
+
+e No primeiro exemplo, a temperatura é de 32°C, que representa 89,6°F ou 305,15 K. O cálculo foi feito utilizando a conversão
+padrão entre temperaturas:
+
+1. fahrenheit = 1,8 * celsius + 32
+2. kelvin = celsius + 273,15
+

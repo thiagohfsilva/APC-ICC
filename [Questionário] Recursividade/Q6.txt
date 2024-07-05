@@ -1,0 +1,24 @@
+Questão 6
+Correto
+Atingiu 1,00 de 1,00
+
+Recursão e Condição Simples 1
+Crie um programa que chama uma função de nome simples, que lê uma string a digitada pelo usuário.
+
+Se a string a for "repete", é impressa a mensagem "Olá! Vamos repetir!" e é feita uma chamada recursiva para a função simples.
+
+A Entrada consiste de:
+* aque é umastring
+
+ASaída deve apresentar:
+e Amensagem "Olá! Vamos repetir!" que é repetida a cada vez que é digitado "repete.
+
+Observações:
+e Não é necessário validar se os valores de entrada estão dentro dos intervalos e tipos definidos.
+
+Descrição dos Exemplos:
+¢ No primeiro exemplo, foi digitado "rep", resultando em nenhuma impressão.
+
+e Nosegundo exemplo, foi digitado "repete" "repete" e "acabou", resultando em duas impressões.
+e Noterceiro exemplo, foi digitado "repete" e "fim", resultando em uma impressão.
+

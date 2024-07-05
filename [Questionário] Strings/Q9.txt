@@ -1,0 +1,34 @@
+Questão 9
+Correto
+Atingiu 1,00 de 1,00
+
+Depurando strings 5
+
+Allen B. Downey em seu livro Pense em Python: Pense como um cientista da computação, fala da dificuldade em se testar programas.
+Em particular, sobre strings ele diz que:
+
+"As funções no Capitulo de Strings e Estudo de caso: jogos de palavras são relativamente fáceis para testar porque é possível verificar os
+resultados à mão. Ainda assim, pode ser difícil ou até impossível escolher um grupo de palavras que teste todos os erros possíveis."
+
+Dito isto, corrija o código da seguinte função que dado uma palavra retorna Verdadeiro se ela não possui a letra u e Falso se possuir a
+letra w.
+
+def não possui a letra ufpalavra):
+for letra in palavra:
+if not letra == u:
+return False
+
+return True
+
+Entrada:
+
+e Afunção não possui a letra u cujo parâmetro de entrada é uma string qualquer.
+
+Saída:
+
+e Asaída é True ou False.
+
+Descrição dos Exemplos:
+
+* Os exemplos são autoexplicativos.
+

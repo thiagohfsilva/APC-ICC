@@ -1,0 +1,21 @@
+Questão 3
+Correto
+Atingiu 1,00 de 1,00
+
+Banana-split
+
+Um algoritmo pode ser visto como algo que transforma uma entrada numa saída, então é essencial saber obter a entrada e formatar a
+saída. Dadas sequências de ingredientes, apresente a receita de uma deliciosa sobremesa conforme os exemplos:
+
+Entrada
+A entrada consiste de três linhas, a primeira contendo três sabores de sorvete, separados por espaço, a segunda com dois tipos de
+cobertura, separadas por vírgula e a terceira o sabor da calda.
+
+Saída
+A saída deve ser composta de uma linha com a descrição da sobremesa, seguida de outra linha reforçando a qualidade do produto,
+conforme os exemplos.
+
+Observações
+A leitura de dados é simples, o importante é saber separar as partes relevantes da informação fornecida (saiba usar split). A formatação
+da saída é importante, saiba usar f-string.
+

@@ -1,0 +1,35 @@
+Questão 2
+
+Parcialmente correto
+
+Atingiu 0,43 de 1,00
+
+Jogo Amongus
+
+No jogo Amongus os jogadores tem como objetivo remover os impostores da partida. A sua missão é implementar um programa que
+receberá um inteiro ‘n’ que será a quantidade de jogadores na partida e nas ‘n’ linhas seguintes tem-se os nome de usuários (username)
+dos jogadores. Na última linha de entrada, tem-se os usernames dos impostores separados por um espaço. Dessa forma, deve-se exibir
+na tela a lista composta pelos crewmates, ou seja, os participantes que não são impostores.
+
+A Entrada consiste de:
+
+e Onúmero de jogadores.
+e Ousername de cada jogador (separados por linha).
+
+A Saída deve apresentar:
+
+* Os usernames do jogadores que não são impostores na ordem que são fornecidos em uma mesma linha separados por espaço.
+
+Observações:
+
+e Os usernames não contém espaços e não são únicos.
+e Para exibir uma lista na tela sem colchetes você pode utilizar o seguinte comando:
+
+print (*lista)
+
+Descrição do Exemplo 1:
+
+e Observa-se que na última linha recebemos os nomes dos impostores (aluno2 e aluno4). Como a saída são somente os jogadores que
+não são impostores é necessário remover os impostores da lista, por isso na saída tem-se aluno1, aluno3 e aluno5, o aluno2 e aluno4
+não aparece no resultado final.
+

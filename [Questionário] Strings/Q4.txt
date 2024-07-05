@@ -1,0 +1,22 @@
+Questão 4
+Correto
+Atingiu 1,00 de 1,00
+
+Strlilng
+
+Elabore um programa que recebe uma string e retorna os caracteres contidos nos índices ímpares dessa string, ignorando os espaços
+em branco. Mostre os caracteres um ao lado do outro numa mesma linha, sem espaços.
+
+A Entrada consiste de:
+e Uma string de tamanho variável.
+
+A Saida deve apresentar:
+e Uma string composta pelos caracteres contidos nos índices ímpares da string de entrada.
+
+Observações:
+e Não é necessário validar se os valores de entrada são do tipo definido.
+
+Descrição dos Exemplos:
+* No primeiro exemplo, os caracteres que se encontram nos índices ímpares são a, n, 0, c, d,u,c,e,0,1,a,s, t, r, e. Sendo assim a saída é
+"anocduceolastre”.
+

@@ -1,0 +1,27 @@
+Questão 1
+Correto
+Atingiu 1,00 de 1,00
+
+Um Caractere
+Escreva um programa que leia um caractere do teclado e o apresente de diversas formas diferentes.
+
+Entrada
+À entrada consiste de um único caractere que é garantidamente alfanumérico (uma letra alfabeto latino, maiúscula ou minúscula, ou
+
+um dígito).
+
+Saída
+A saída deve ser composta de 5 linhas, cada uma como apresentada a seguir.
+
+1. somente o caractere lido;
+
+2. duas vezes o caractere lido;
+
+3. duas vezes o caractere lido, separados por um espaço;
+
+4. a mensagem "2x" (onde z deve ser substituído pelo caractere lido);
+5.0 caractere lido, envolto em colchetes.
+
+Observações
+Aformatação da saída é importante, saiba usar f-string.
+

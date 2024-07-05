@@ -1,0 +1,26 @@
+Questão 1
+Correto
+Atingiu 2,00 de 2,00
+
+Contando as letras
+
+Escreva um programa que recebe como entrada uma frase e retorne em ordem alfabética a recorrência das letras d, vet na frase da
+seguinte forma:
+
+wn
+
+Onde ww é a letra e n é o número de vezes que ela aparece na frase.
+
+A Entrada consiste de:
+e Uma string de tamanho variado.
+
+ASaída deve apresentar:
+e Várias strings no formato w n, onde w é a letra (d, v ou t) en sua recorrência na frase, cada contagem deve ser mostrada em uma
+linha diferente.
+
+Observações:
+e Não é necessário validar se os valores de entrada são do tipo definido.
+
+Descrição dos Exemplos:
+* Osexemplos são auto explicativos.
+

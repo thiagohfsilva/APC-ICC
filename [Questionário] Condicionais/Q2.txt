@@ -1,0 +1,55 @@
+Questão 2
+
+Correto
+
+Atingiu 2,00 de 2,00
+
+Filtro de Códigos
+
+Para programar existem alguns requisitos que nossos códigos devem atender independente do problema. Para isso, algumas perguntas
+podem ser feitas durante a implementação de um programa, conforme demonstra o guia abaixo. Sua tarefa é implementar um
+programa que ajude os programadores a avaliarem seus códigos da mesma forma que o guia. A figura apresenta a ordem das perguntas
+que deverão ser feitas.
+
+O programa
+
+funciona?
+
+Ótimo. Então não
+Y
+Do aim mexe!
+
+Você entende o
+
+se que fez?
+4 Choremos!
+o,
+ão mã a”
+ves —3) Então mão na E
+massa!
+
+Acha que pode
+
+Se Temos um time a
+sozinho? disposição!
+Já pesquisou no A
+Google? no
+
+Você sabe onde =,
+
+está o erro?
+
+Corre lá então!
+
+A Entrada consiste de:
+* Após cada pergunta é lida uma String que pode ser do tipo 'SIM' ou 'NÃO!
+
+ASaída deve apresentar:
+* Todas as perguntas de acordo com as respostas do usuário e por fim uma das cinco possíveis respostas finais.
+
+Observações:
+e Não é necessário validar se os valores de entrada são do tipo definido.
+
+Descrição dos Exemplos:
+* Osexemplo são auto explicativos.
+

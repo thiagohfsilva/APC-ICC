@@ -1,0 +1,26 @@
+Questão 7
+Correto
+Atingiu 1,00 de 1,00
+
+Pode ocupar o espaço inteiro...
+Todo inteiro é politizado, muitos preferem a esquerda, outros à direita...
+Dados números inteiros, apresente-os conforme o formato definido abaixo.
+
+Entrada
+A entrada consiste de 2 linhas, cada uma contendo 1 número inteiro 7, e io, respectivamente. É garantido que O menor que i, menor que 100.000 e
+que O menor que zg menor que 1.000.
+
+Saída
+A saída deve ser composta de 5 linhas, cada uma como apresentada a seguir. Atenção às quantidades de dígitos!
+
+1.amensagem:"I1 = il, I2 = i2" ondeiy eta devem ser substituídos por seus respectivos valores;
+2.a mensagem do item 1, mas com o valor 7; com espaçamento de 10 dígitos, justificado à esquerda;
+
+3.a mensagem do item 1, mas com o valor iz com espaçamento de 5 dígitos, justificado à direita;
+
+4. a mensagem do item 2, mas com o valor 72 com espaçamento de 4 dígitos, e preenchimento de zeros; e
+5.a mensagem do item 4, mas com o valor 7, com espaçamento de 6 dígitos, e preenchimento de zeros.
+
+Observações
+A formatação da saída é importante, saiba usar f-string. Para saber como formatar números, leia isto.
+

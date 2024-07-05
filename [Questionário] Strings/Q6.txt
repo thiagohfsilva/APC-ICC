@@ -1,0 +1,29 @@
+Questão 6
+Correto
+Atingiu 1,00 de 1,00
+
+Stop word
+
+Mei é viciada em twitter e de vez em quando gosta de fazer uns mistérios nas mensagens que deixa por lá, ela faz isso censurando uma
+palavra do texto utilizando um asterisco "*". Elabore um programa que recebe como entrada um tweet de Mei e a palavra a ser
+censurada, caso a palavra a ser censurada esteja no tweet, imprima-o com a censura, caso contrário imprima "tudo certo :)".
+
+A Entrada consiste de:
+* Uma string de tamanho variado representando um tweet de Mei e uma string sem espaços representando a palavra a ser censurada
+
+do tweet.
+
+ASaída deve apresentar:
+* Uma string de tamanho variado como especificado no enunciado.
+
+Observações:
+e Não é necessário validar se os valores de entrada são do tipo definido.
+
+Descrição dos Exemplos:
+
+e No primeiro exemplo, o tweet é "faz minha make" e a palavra a ser censurada é "minha", como ela consta no tweet a saída é "faz *
+make”,
+
+* Nosegundo exemplo, o tweet é "o céu ensolarado fará chover" e a palavra a ser censurada é "chuva", como ela não consta no tweet a
+saída é "tudo certo :)".
+

@@ -1,0 +1,33 @@
+Questão 7
+Correto
+Atingiu 1,00 de 1,00
+
+Palíndromo
+
+lanerisson tem uma string s com apenas letras minúsculas de 'a' a 'z! Ele quer trocar exatamente um caractere de modo que a nova
+string seja um palíndromo.
+
+Um palíndromo é uma string que possui a mesma sequência de caracteres, tanto de frente para trás, como de trás para frente. Por
+n taaalt
+
+exemplo as strings "2", "aaa",
+palíndromos.
+
+aba" e "abccba" são palindromos, enquanto que as strings "codeforces", "realidade" e "ab" não são
+
+Entrada
+A primeira linha contém uma string s de até 100 caracteres.
+
+Saída
+Imprima "ON" (sem as aspas duplas) se lanerisson puder trocar exatamente um caractere para que a string resultante seja um
+palíndromo e "OFF" (sem as aspas duplas) caso contrário.
+
+Observações
+
+e No primeiro exemplo de teste, podemos trocar o segundo caractere 'b' por 'a' ou o quinto caractere 'a' por 'b';
+
+e Nosegundo exemplo de teste, seriam necessárias, no mínimo, duas trocas de caractere para obtermos um palíndromo;
+
+* Noterceiro exemplo de teste, apesar da string "glxlg" ser palindrome, podemos trocar o caractere do meio 'x' por qualquer outro,
+que assim podemos obter outra string palindrome.
+

@@ -1,0 +1,36 @@
+Questão 3
+Correto
+Atingiu 1,00 de 1,00
+
+Complexo B
+
+Julie gosta de registrar seus hábitos, e agora ela tem um novo: seguindo a orientação de sua nutricionista, ela precisa tomar um
+pequeno comprimido de vitamina b todos os dias. Como ela quer acompanhar esse hábito e ver todos os dias quantos comprimidos
+restam no pote e quantos ela já consumiu, escreva uma função recursiva controle(n, c), que a cada dia mostra um aviso "Voce ja
+tomou c comprimidos, restam." e no caso de ser o último exiba a mensagem "Parabens Julie! Voce tomou todos os n comprimidos!"
+onde n é o número de comprimidos que tem em um pote cheio e c é a quantidade já consumida por Julie (na primeira chamada da
+função, c é necessariamente 0).
+
+A Entrada consiste de:
+e Nãoseaplica.
+
+A Saída deve apresentar:
+* nstrings, uma em cada linha, onde n é o número total de comprimidos.
+
+Observações:
+
+e Não é necessário validar se os valores de entrada estão dentro dos intervalos e tipos definidos.
+
+e Atenção, a criação de uma função com o nome determinado pelo enunciado é fundamental para a prática do aluno e o Moodle irá
+descontar pontos caso a criação não tenha sido feita corretamente (sendo case-sensitive o nome da função).
+
+* Submeta SOMENTE o que foi solicitado.
+
+e Afunção necessariamente recebe dois argumentos (número de comprimidos que tem em um pote e a quantidade de comprimidos
+que Julie já tomou), repare nos exemplos que a primeira chamada da função sempre passa O como o número de comprimidos que
+Julie já consumiu.
+
+Descrição dos Exemplos:
+¢ No primeiro exemplo, a quantidade total é 18 comprimidos, a string "Voce ja tomou c comprimidos, restam "aparece 17 vezes e
+por último, a string "Parabens Julie! Voce tomou todos os 18 comprimidos!" uma vez.
+

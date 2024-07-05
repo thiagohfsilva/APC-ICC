@@ -1,0 +1,27 @@
+Questão 4
+Correto
+Atingiu 1,00 de 1,00
+
+A Soma de Adinilson
+
+O Adinilson gosta de brincar de fazer adições peculiares. Buscando fazer uma soma diferente, Adinilson irá percorrer os números de
+uma lista e somar o acumulativo ao número seguinte. Acreditando que a soma ainda está muito comum, ele decide que o primeiro
+elemento da soma deve sempre ser multiplicado por 2 e o segundo multiplicado por 1/2. Sob essa lógica, ao receber uma lista de
+inteiros, soma-se o primeiro elemento multiplicado por 2 ao segundo elemento multiplicado por 1/2. Com este resultado, multiplica-se
+por 2 e faz a soma com o terceiro elemento da lista multiplicado por 1/2. Com este novo resultado, multiplica-se por 2 e faz a soma com
+o quarto elemento da lista multiplicado por 1/2. E assim, sucessivamente até o final da lista. Ao percorrer toda a lista, exibe-se o
+resultado obtido pela soma do Adinilson.
+
+A Entrada consiste de:
+e Conjunto de inteiros separados por espaço.
+
+ASaída deve apresentar:
+* Soma do Adinilson com duas casas decimais de precisão.
+
+Descrição do Exemplo 1:
+
+e Aoreceber 12340 primeiro número é multiplicado por 2 e somado com o segundo vezes 1/2 obtém-se 3. Ao continuar o processo,
+ou seja, multiplicamos 3 por 2 e soma-se com 3 (terceiro elemento) vezes 1/2, obtém-se como resultado 7,5. Por fim, 7,5 será
+multiplicado por 2 e somado com 4 (quarto elemento) vezes 1/2. Ao final, obteve-se 17.00 como resultado da soma de Adinilson
+com duas casas decimais.
+

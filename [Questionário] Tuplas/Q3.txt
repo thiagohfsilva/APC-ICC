@@ -1,0 +1,21 @@
+Questão 3
+Correto
+Atingiu 2,00 de 2,00
+
+Aprendendo Zip 2
+
+Crie um programa que lê 5 números inteiros e armazena na lista lista 1 e depois Iê mais 5 número inteiros e armazena na lista2.
+Em seguida, crie e imprima a lista de tuplas list. tuple formada a partir dos elementos da lista 1 e lista2. (Dica: utilize a função zip.)
+
+Por fim, imprima uma lista medias cujos elementos são as médias das tuplas.
+
+Entrada
+À entrada consiste em 10 números inteiros.
+
+Saída
+A saída consiste na lista de tuplas formada pelos elementos de [istal e lista2, e na lista das médias das tuplas.
+
+Observações
+e No primeiro exemplo de teste, foram digitados os elementos da lista 1, 14, 23, 0, 4. 5,e os elementos da lista2, 93, 84,5,43€ 1.
+Retornando as listas de tuplas [(14, 93), (23, 84), (0, 5), (4, 43), (5, 1)] e de médias de cada tupla [53.5, 53.5, 2.5, 23.5, 3.0].
+

@@ -1,0 +1,56 @@
+Questão 8
+Correto
+Atingiu 1,00 de 1,00
+
+Debuggando Listas 1
+
+O uso de listas sem os devidos cuidados (e de outros objetos mutáveis) pode levar a longas horas de depuração. Abaixo uma função em
+Python que usa listas de forma errada. A função deveria receber como parâmetro uma lista com números reais e retornar como
+resultado uma lista contendo o valor da mediana, do elemento da lista que é o mais próximo da média aritmética, e a posição desse
+elemento na lista (seu índice) - nesta ordem. Depure a função para fazê-la funcionar corretamente.
+
+def mediana e mais proximo media e pos (lista):
+lista = lista.sort()
+tam = len(lista)
+
+if tam maior que 0:
+if tam % 2 ==
+mediana = (lista[int(tam/2)] + lista[int(tam/2-1)])/2
+else:
+mediana = (lista[int(tam/2)])
+
+somador = 0
+for i in lista:
+somador += i
+media = somador/tam
+delta = lista2[tam-1] - lista2[0]
+prox_media = lista[0]
+index=0
+for i in lista:
+if abs (media-i) menor que delta:
+prox_media = i
+index = i
+delta = media - i
+else:
+prox_media = None
+mediana = None
+index = None
+
+return mediana, prox media, index
+
+Entrada
+
+e Afunção mediana e mais proximo media e pos(x), onde x é uma lista de números reais
+
+Saída
+
+e Ovalor da mediana, o número real da lista mais próxima da média aritmética, a sua posição na lista.
+
+Observação
+e Comose calcula a Mediana:
+© Para calcular a mediana organizam-se os dados de forma crescente ou decrescente, Esta lista é o ROL de dados. Após,
+verificamos se a quantidade de dados no ROL é par ou ímpar.
+= Sea quantidade de dados no ROL é ímpar, a mediana é o valor do meio, da posição central.
+= Se a quantidade de dados no ROL é par, a mediana é a média aritmética dos valores centrais.
+e Nocaso de haver mais de um valor mais próximo à média, selecione o primeiro deles.
+

@@ -1,0 +1,21 @@
+Questão 3
+Correto
+Atingiu 1,00 de 1,00
+
+Números
+
+Elabore um programa que recebe uma string e retorna a quantidade de dígitos numéricos contidas nela.
+
+A Entrada consiste de:
+e Umastring de tamanho variável.
+
+A Saída deve apresentar:
+* Uminteiro, representando a quantidade de dígitos numéricos contidos na string.
+
+Observações:
+e Não é necessário validar se os valores de entrada são do tipo definido.
+
+Descrição dos Exemplos:
+e No primeiro exemplo, a string de entrada é "a promoção fez com que abaixasse de 19.90 para 6.99" e ela contém sete dígitos
+numéricos: 1,9,9,0,6,9e9.
+

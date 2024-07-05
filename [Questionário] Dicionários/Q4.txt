@@ -1,0 +1,34 @@
+Questão 4
+Correto
+Atingiu 2,00 de 2,00
+
+Notas APC
+
+Os professores de APC querem informar a situação de um aluno ao receber o seu nome pelo email. Na UnB, a situação de um aluno é
+determinada pela sua média final em que se o aluno obtiver média inferior a 5 ele é reprovado. Caso contrário, o aluno é aprovado.
+Para isso, a opção mais interessante é montar um dicionário da matéria usando o nome dos alunos como chave associada a um outro
+dicionário que mapeará as informações de cada aluno. Apesar de terem a ideia pronta, os professores estão com um pouco de
+dificuldade na implementação e, por consequência, pediram a sua ajuda. Para cada aluno, apresente a sua média e situação na matéria
+conforme o padrão de saída.
+
+A Entrada consiste de:
+
+* Uminteiron maior que O com o número de alunos da turma.
+
+e 9 linhas, cada uma com o nome email e quatro notas, separadas por espaço
+* Onome do aluno para qual o email será enviado.
+
+A Saída deve apresentar:
+
+e Seoaluno estiver na turma: "Destinatário: menor queemailAlunomaior que\nO aluno menor quenomeAlunomaior que foi aprovado/reprovado com média
+menor quemediaAlunomaior que."
+Caso o aluno não exista na turma: "O aluno menor quenomeAlunomaior que não está na turma”
+
+Observações:
+e Não énecessário validar se os valores de entrada são do tipo definido.
+¢ Façasomente o que foi solicitado.
+
+Descrição dos Exemplos:
+* Como na Ultima linha o professor busca informar a situação do Bernardo na matéria, o programa deve compor um email cujo e-mail
+do Bernardo, a média na matéria dele e a sua situação na disciplina são apresentados.
+

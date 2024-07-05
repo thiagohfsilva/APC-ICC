@@ -1,0 +1,27 @@
+Questão 3
+Correto
+Atingiu 1,00 de 1,00
+
+Escolinha do Professor Raimundo (Matemática)
+
+Os alunos da Escolinha do Professor Raimundo estão perdidos nas aulas de matemática. O professor Raimundo passou como tarefa,
+uma sequência de números e um número n e deseja saber qual desses números são múltiplos de n. Devido a dificuldade dos alunos,
+eles pediram sua ajuda para fazer um programa que ajude-os a verificar os resultados obtidos. Por isso, elabore um código que
+determine quais dos números são múltiplos de n.
+
+A Entrada consiste de:
+e Sequência de inteiros (separados por espaço).
+e Númeron.
+
+A Saída deve apresentar:
+e Números da entrada que são múltiplos de n (na mesma linha separados por espaço).
+
+Observações:
+¢ Para exibir uma lista na tela sem colchetes você pode utilizar o seguinte comando:
+
+print (*lista)
+Descrição do Exemplo 1:
+
+e Dentre os número fornecidos (1 45 78 10 2 5 40), somente os números 45, 10, 5,0 são múltiplos de 5, pois podem ser obtidos como
+5 vezes algum outro número inteiro e, por isso, foram apresentados na saída.
+

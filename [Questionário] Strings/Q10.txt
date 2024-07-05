@@ -1,0 +1,14 @@
+Questão 10
+Correto
+Atingiu 1,00 de 1,00
+
+Decifrando código alien
+
+Segundo o lendário cientista da computação Edsger W. Dijkstra:
+
+"Testar programas pode ser usado para mostrar a presença de bugs, mas nunca para mostrar a ausência deles! "
+
+Dito isto, deixe o código mais correto possível no seguinte programa que dado um código binário alien e o seu respectivo código unário
+
+alien o decifre para o código binário usando O's e 1's . Este programa em seguida lê n linhas ou com um número em decimal ou com o
+código binário alien. A cada entrada, o programa ou converte para o código binário alien ou converte para o decimal, respectivamente.

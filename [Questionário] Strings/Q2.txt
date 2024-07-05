@@ -1,0 +1,22 @@
+Questão 2
+Correto
+Atingiu 1,00 de 1,00
+
+Palavra nova
+
+Elabore um programa que recebe uma palavra e imprime uma palavra nova derivada desta, que é composta pelos dois primeiros
+caracteres da palavra de entrada com os dois últimos.
+
+A Entrada consiste de:
+e Uma string que contém quatro ou mais caracteres.
+
+A Saida deve apresentar:
+e Umastring representando a palavra nova.
+
+Observações:
+e Não é necessário validar se os valores de entrada são do tipo definido.
+
+Descrição dos Exemplos:
+e No primeiro exemplo, a palavra de entrada é "candy", utilizando os dois primeiros caracteres e os dois últimos a palavra formada é
+"cady”.
+

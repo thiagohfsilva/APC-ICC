@@ -1,0 +1,1696 @@
+Iniciadoem domingo, 14 mai. 2023, 18:31
+Estado Finalizada
+Concluidaem domingo, 14 mai. 2023, 21:31
+Tempo empregado 2 horas 59 minutos
+Notas 8,00/8,00
+Avaliar 10,00 de um máximo de 10,00(100%)
+
+o
+
+Para o CBM, a nota acima é calculada em relação ao máximo de todas as corretas em C=1.
+
+Resultados para todo o quiz (O questões)
+Nota média CBM nan
+Precisão nan%
+Bônus CBM nan%
+Precisão + Bônus nan%
+Distribuição por certeza
+C=3 Semrespostas
+C=2 Semrespostas
+C=1 Semrespostas
+Questão 1
+Correto
+Atingiu 1,00 de 1,00
+
+Um Caractere
+Escreva um programa que leia um caractere do teclado e o apresente de diversas formas diferentes.
+
+Entrada
+À entrada consiste de um único caractere que é garantidamente alfanumérico (uma letra alfabeto latino, maiúscula ou minúscula, ou
+
+um dígito).
+
+Saída
+A saída deve ser composta de 5 linhas, cada uma como apresentada a seguir.
+
+1. somente o caractere lido;
+
+2. duas vezes o caractere lido;
+
+3. duas vezes o caractere lido, separados por um espaço;
+
+4. a mensagem "2x" (onde z deve ser substituído pelo caractere lido);
+5.0 caractere lido, envolto em colchetes.
+
+Observações
+Aformatação da saída é importante, saiba usar f-string.
+
+For example:
+
+Input | Result
+
+a a
+aa
+
+[5]
+
+Answer: (penalty regime: 0,0, 10, 20, ... %)
+
+1 |c = input()
+
+2 |print(c)
+
+3 |print(c*2)
+
+4 |print(c+" "+c)
+
+5 |print("2"+c)
+
+6 |print("["+c+"]")
+Input Expected | Got
+
+ja a a É
+aa aa
+aa aa
+2a 2a
+[a] [a]
+Y |B B B 4
+BB BB
+BB BB
+2B 2B
+[B] [B]
+v7 {5 5 5 4
+55 55
+55 5 5
+25 25
+[5] [5]
+Vv iis s s LA
+ss ss
+ss ss
+2s 2s
+[s] [s]
+LA R R R LA
+RR RR
+RR RR
+2R 2R
+[R] [R]
+LA 8 8 8 LA
+88 88
+88 8 8
+28 28
+[8] [8]
+
+Passou em todos os teste! W
+
+Atenção para o uso das funções de entrada e saída.
+
+Notas para este envio: 1,00/1,00.
+Questão 2
+Correto
+Atingiu 1,00 de 1,00
+
+Três Caracteres
+Escreva um programa que leia três caracteres e os apresente de diversas formas diferentes.
+
+Entrada
+A entrada consiste de três caracteres alfanuméricos (uma letra alfabeto latino, maiúscula ou minúscula, ou um dígito), um por linha.
+
+Saída
+A saída deve ser composta de 6 linhas, cada uma como apresentada a seguir.
+
+1. os caracteres lidos, juntos;
+
+2.somente o primeiro caractere lido;
+
+3. duas vezes o segundo caractere lido;
+
+4. três vezes o terceiro caractere, separados por um espaço;
+
+5.amensagem"X == x, Y == y, Z == 2" (onde x,y e z devem ser substituídos pelos caracteres lidos, na mesma ordem);
+6.amensagem"X != y, Y != x, Z == z" (onde x,y e z devem ser substituídos pelos caracteres lidos, na mesma ordem).
+
+Observações
+A formatação da saída é importante, saiba usar f-string.
+
+For example:
+
+Input Result
+
+a abc
+a
+c bb
+ccc
+X= a, Y==b, 2 == c
+X !=b, Yl=a, Z ==
+ie) oMO
+M o
+ie) MM
+000
+
+X==0, Y==M, Z == 0
+Xx!I-=M Y !=0, 2 ==0
+
+5 528
+2 5
+22
+8 8 8
+X == 5, Y == 2, 2 == 8
+
+X !=2, ¥ !=5, 2 == 8
+
+Answer: (penalty regime: 0, 0, 10, 20, ... %)
+
+x = input()
+
+y = input()
+
+z = input()
+
+print(x+y+z)
+
+print(x)
+
+print(y*2)
+
+print(f"{z} {z} {z}")
+
+print(f"X == {x}, Y == fy}, Z =
+print(f"X != {y}, Y l= {x}, Z =
+
+{z}")
+{z}")
+
+WON ADU RWHP
+
+Input | Expected
+
+ia
+
+[ra
+
+abc
+
+a
+
+bb
+ccc
+X == a,
+xX !=b,
+
+OMO
+
+000
+X == 0,
+xX I= M,
+
+528
+
+22
+888
+
+X = 5,
+xX I= 2,
+
+Sei
+
+ee
+iii
+
+X == 5,
+X I=e,
+
+L31
+
+L
+
+33
+111
+xX == L,
+x != 3,
+
+444
+4
+44
+444
+X== 4,
+xXx != 4,
+
+Passou em todos os teste! 4
+
+=0,
+
+Got
+
+abc
+
+888
+X == 5,
+X != 2,
+
+Sei
+ee
+
+iii
+
+X == 5,
+
+X l= e,
+
+Atenção para o uso das funções de entrada e saída.
+
+[correto |
+
+Notas para este envio: 1,00/1,00.
+
+=0,
+Questão 3
+Correto
+Atingiu 1,00 de 1,00
+
+Banana-split
+
+Um algoritmo pode ser visto como algo que transforma uma entrada numa saída, então é essencial saber obter a entrada e formatar a
+saída. Dadas sequências de ingredientes, apresente a receita de uma deliciosa sobremesa conforme os exemplos:
+
+Entrada
+A entrada consiste de três linhas, a primeira contendo três sabores de sorvete, separados por espaço, a segunda com dois tipos de
+cobertura, separadas por vírgula e a terceira o sabor da calda.
+
+Saída
+A saída deve ser composta de uma linha com a descrição da sobremesa, seguida de outra linha reforçando a qualidade do produto,
+conforme os exemplos.
+
+Observações
+A leitura de dados é simples, o importante é saber separar as partes relevantes da informação fornecida (saiba usar split). A formatação
+da saída é importante, saiba usar f-string.
+
+For example:
+
+Input Result
+
+morango creme chocolate Sorvete de morango, creme e chocolate com coberturas de amendoim e castanha e
+amendoim, castanha calda de chocolate!
+
+chocolate Não esqueça a banana!
+
+chocolate chocolate Sorvete de chocolate, chocolate e chocolate com coberturas de granulado e
+chocolate granulado e calda de morango!
+
+granulado, granulado Não esqueça a banana!
+
+morango
+
+flocos menta paçoca Sorvete de flocos, menta e paçoca com coberturas de castanha e amendoim e
+castanha, amendoim calda de leite condensado!
+
+leite condensado Não esqueça a banana!
+
+Answer: (penalty regime: 0,0, 10, 20, ... %)
+
+saborA, saborB,saborC = input().split(" ")
+
+coberturaA, coberturaB = input().split(",")
+
+calda = input()
+
+print(f"Sorvete de {saborA}, {saborB} e {saborC} com coberturas de {coberturaA} e {cob
+print("Não esqueça a banana!")
+
+AwWhWNR
+Input Expected Got
+
+4 | morango creme Sorvete de morango, creme e Sorvete de morango, creme e
+chocolate chocolate com coberturas de chocolate com coberturas de
+amendoim, castanha amendoim e castanha e calda de amendoim e castanha e calda de
+chocolate chocolate! chocolate!
+
+Não esqueça a banana! Não esqueça a banana!
+
+4 | chocolate chocolate Sorvete de chocolate, chocolate e Sorvete de chocolate, chocolate e
+chocolate chocolate com coberturas de chocolate com coberturas de
+granulado, granulado granulado e granulado e calda de granulado e granulado e calda de
+morango morango! morango!
+
+Não esqueça a banana! Não esqueça a banana!
+
+LÁ flocos menta paçoca Sorvete de flocos, menta e paçoca Sorvete de flocos, menta e paçoca
+castanha, amendoim com coberturas de castanha e com coberturas de castanha e
+leite condensado amendoim e calda de leite amendoim e calda de leite
+
+condensado! condensado!
+Não esqueça a banana! Não esqueça a banana!
+
+v flocos creme flocos Sorvete de flocos, creme e flocos Sorvete de flocos, creme e flocos
+castanha, coco com coberturas de castanha e coco e | com coberturas de castanha e coco
+caramelo calda de caramelo! calda de caramelo!
+
+Não esqueça a banana! Não esqueça a banana!
+
+VW | flocos morango Sorvete de flocos, morango e Sorvete de flocos, morango e
+chocolate chocolate com coberturas de chocolate com coberturas de
+castanha, brigadeiro castanha e brigadeiro e calda de castanha e brigadeiro e calda de
+chocolate chocolate! chocolate!
+
+Não esqueça a banana! Não esqueça a banana!
+
+4 | brigadeiro creme Sorvete de brigadeiro, creme e Sorvete de brigadeiro, creme e
+morango morango com coberturas de paçoca e | morango com coberturas de paçoca e
+paçoca, amendoim amendoim e calda de chocolate! amendoim e calda de chocolate!
+chocolate Não esqueça a banana! Não esqueça a banana!
+
+Passou em todos os teste! 4
+
+Atenção para o uso das funções de entrada e saída.
+
+[correto |
+
+Notas para este envio: 1,00/1,00.
+Questão 4
+Correto
+Atingiu 1,00 de 1,00
+
+Lendo as horas
+
+Dada a descrição de um horário, diga quantos segundos já se passaram no dia conforme o formato definido abaixo.
+
+Entrada
+
+A entrada consiste de uma linha, composta por três números inteiros representando um horário no dia, apresentados no formato
+
+“hh:mm:ss" (hora:minutos:segundo). É garantido que O < hh < 23e0 < mm, ss < 59.
+
+Saída
+
+A saída deve ser composta de uma linha apresentando a mensagem: "La se foram X segundos que nao voltam mais...",onde
+
+X é a quantidade total de segundos decorridos desde o início do dia.
+
+Observações
+
+A leitura de dados é simples, o importante é saber separar as partes relevantes da informação fornecida (saiba usar split). A formatação
+da saída é importante, saiba usar f-string.
+
+For example:
+
+Input Result
+
+00:00:01 | La se foram 1 segundos que nao voltam mais...
+
+00:01:01 | La se foram 61 segundos que nao voltam mais...
+
+01:01:01 La se foram 3661 segundos que nao voltam mais...
+
+Answer: (penalty regime: 0,0, 10, 20, ... %)
+
+SOU PWN
+
+Input
+
+4 | 00:00:01
+
+4 (00:01:01
+
+4 | 01:01:01
+
+4 | 00:00:00
+
+h = int(h)
+m = int(m)
+s = int(s)
+
+Expected
+
+La se foram
+
+mais...
+
+La se foram
+
+mais...
+
+La se foram
+
+mais...
+
+La se foram
+
+mais...
+
+h,m,s =input().split(":")
+
+seg total = h*3600 + m*60 + s
+print(f"La se foram {seg_total} segundos que nao voltam mais...")
+
+1 segundos que nao voltam
+
+61 segundos que nao voltam
+
+3661 segundos que nao voltam
+
+0 segundos que nao voltam
+
+Got
+
+La se foram 1 segundos que nao voltam
+
+mais...
+
+La se foram 61 segundos que nao voltam
+
+mais...
+
+La se foram 3661 segundos que nao voltam
+
+mais...
+
+La se foram 0 segundos que nao voltam
+
+mais...
+Input
+
+4 =| 23:59:59
+
+VS =| 22:33:44
+
+4 | 01:02:03
+
+4 =| 22:22:22
+
+Expected
+
+La se foram
+
+mais...
+
+La se foram
+
+mais...
+
+La se foram
+mais...
+
+La se foram
+
+mais...
+
+Passou em todos os teste! 4
+
+86399 segundos que nao voltam
+
+81224 segundos que nao voltam
+
+3723 segundos que nao voltam
+
+80542 segundos que nao voltam
+
+Got
+
+La se foram
+
+mais...
+
+La se foram
+
+mais...
+
+La se foram
+
+mais...
+
+La se foram
+
+mais...
+
+86399 segundos que nao voltam
+
+81224 segundos que nao voltam
+
+3723 segundos que nao voltam
+
+80542 segundos que nao voltam
+
+Quantos segundos há em um minuto? E em uma hora? Basta calcular isso e juntar com os segundos.
+
+[correto |
+
+Notas para este envio: 1,00/1,00.
+Questão 5
+Correto
+Atingiu 1,00 de 1,00
+
+Escrevendo Datas
+Dada a descrição de uma data, apresente-a conforme os formatos definidos abaixo.
+
+Entrada
+A entrada consiste de uma linha, composta por três números inteiros positivos representando uma data no formato DD/MM/AA
+
+(dia/mês/ano). É garantido que as datas são válidas.
+
+Saída
+
+A saída deve ser composta de 3 linhas, cada uma como apresentada a seguir. Atenção à quantidade de dígitos!
+1.a data no formato "DD-MM-AA";
+
+2.a data no formato "MM-DD-AA"; e
+3. a data no formato "AA/MM/DD”.
+
+Observações
+A leitura de dados é simples, o importante é saber separar as partes relevantes da informação fornecida (saiba usar split). A formatação
+da saída é importante, saiba usar f-string.
+
+For example:
+
+Input Result
+
+01/08/19 | 01-08-19
+08-01-19
+19/08/01
+
+01/02/03 | 01-02-03
+02-01-03
+03/02/01
+
+31/12/00 | 31-12-00
+12-31-00
+00/12/31
+
+Answer: (penalty regime: 0,0, 10, 20, ... %)
+
+dia,mes,ano =input().split("/")
+print(f"{dia}-{mes}-{ano}")
+print(f"{mes}-{dia}-{ano}")
+print(f"{ano}/{mes}/{dia}")
+
+Bb wmnH
+
+Input Expected Got
+
+VY | 01/08/19 | 01-08-19 | 01-08-19 | 4
+
+08-01-19 08-01-19
+19/08/01 | 19/08/01
+Input Expected | Got
+
+¥Y (01/02/03 | 01-02-03 01-02-03 | 4
+02-01-03 02-01-03
+03/02/01 | 03/02/01
+
+4 = | 31/12/00 | 31-12-00 | 31-12-00 | 4
+12-31-00 | 12-31-00
+00/12/31 | 00/12/31
+
+4 (01/08/19 | 01-08-19 | 01-08-19 VW
+08-01-19 08-01-19
+19/08/01 | 19/08/01
+
+4 | 01/01/01 | 01-01-01 | 01-01-01 ¥v
+
+01-01-01 | 01-01-01
+01/01/01 | 01/01/01
+
+4 | 29/02/00 | 29-02-00 | 29-02-00 W
+02-29-00 02-29-00
+00/02/29 | 00/02/29
+
+Passou em todos os teste! 4
+
+Atenção para o uso das funções de entrada e saída.
+
+[correto |
+
+Notas para este envio: 1,00/1,00.
+Questão 6
+Correto
+Atingiu 1,00 de 1,00
+
+Ponto flutuante
+Escreva um programa que receba um valor do tipo float e imprima três informações.
+
+Entrada
+Um valor do tipo float.
+
+Saída
+O número com 4 casas decimais, o número com 2 casas decimais e o número com O casas decimais. Cada uma dessas informações de
+saída deverá ser impressa em uma linha diferente.
+
+Observações
+Aformatação da saída é importante, saiba usar f-string. Para saber como formatar números, leia isto.
+
+For example:
+Input Result
+0 0.0000
+0.00
+0
+2.276 2.2760
+2.28
+2
+
+1,1111111 | 1.1111
+1.11
+
+Answer: (penalty regime: 0,0, 10, 20, ... %)
+
+1 |dado = float(input())
+
+2 |print(f"{dado: .4f}")
+
+3 |print(f"{dado: .2f}")
+
+4 |print(f"{dado: .0f)")
+
+Input Expected | Got
+
+¥ 0 0.0000 0.0000 | 4
+0.00 0.00
+0 0
+
+SY | 2.276 2.2760 2.2760 GW
+2.28 2.28
+Input Expected Got
+
+4 (1,1111111 1.
+.11
+
+4 |1.23456789 1.
+.23
+
+VY | 1.5555555555555 | 1.
+.56
+
+4 | 0.00000000 0.
++00
+
+o
+
+Passou em todos os teste! 7
+
+Notas para este envio: 1,00/1,00.
+
+1111
+
+2346
+
+5556
+
+0000
+
+1.1111
+1.11
+1
+
+1.2346
+1.23
+1
+
+1.5556
+1.56
+2
+
+0.0000
+0.00
+0
+Questão 7
+Correto
+Atingiu 1,00 de 1,00
+
+Pode ocupar o espaço inteiro...
+Todo inteiro é politizado, muitos preferem a esquerda, outros à direita...
+Dados números inteiros, apresente-os conforme o formato definido abaixo.
+
+Entrada
+A entrada consiste de 2 linhas, cada uma contendo 1 número inteiro 7, e io, respectivamente. É garantido que O < i, < 100.000 e
+que O < zg < 1.000.
+
+Saída
+A saída deve ser composta de 5 linhas, cada uma como apresentada a seguir. Atenção às quantidades de dígitos!
+
+1.amensagem:"I1 = il, I2 = i2" ondeiy eta devem ser substituídos por seus respectivos valores;
+2.a mensagem do item 1, mas com o valor 7; com espaçamento de 10 dígitos, justificado à esquerda;
+
+3.a mensagem do item 1, mas com o valor iz com espaçamento de 5 dígitos, justificado à direita;
+
+4. a mensagem do item 2, mas com o valor 72 com espaçamento de 4 dígitos, e preenchimento de zeros; e
+5.a mensagem do item 4, mas com o valor 7, com espaçamento de 6 dígitos, e preenchimento de zeros.
+
+Observações
+A formatação da saída é importante, saiba usar f-string. Para saber como formatar números, leia isto.
+
+For example:
+
+Input | Result
+
+3536 Il = 3536, I2 = 64
+
+64 T1 = 3536 , I2 = 64
+Il = 3536, I2 = 64
+11 = 3536 , I2 = 0064
+
+I1 = 003536, I2 = 0064
+
+56789 Il = 56789, I2=1
+
+1 T1 = 56789 , 12 =1
+Il = 56789, I2 = 1
+11 = 56789 , I2 = 0001
+
+I1 = 056789, I2 = 0001
+
+7 Il = 7, I2 = 123
+
+123 11 =7 , I2 = 123
+Tl = 7, 12 = 123
+Il=7 , I2 = 0123
+
+I1 = 000007, I2 = 0123
+
+Answer: (penalty regime: 0,0, 10, 20, ... %)
+
+p = int(input())
+
+s = int(input())
+
+print(f"I1 = {p}, I2 = {s}")
+print(f"I1 = {p:<10d}, 12 = {s}")
+
+Nau PWN PB
+
+print(f"I1 = {p}, I2 = {s:>5d}")
+print(f"I1 = {p:<1@d}, I2 = {s:@4d}")
+print(f"I1 = (p:06d), I2 = {s:04d}")
+Input
+
+3536
+64
+
+56789
+
+123
+
+456
+456
+
+100000
+1000
+
+100000
+1
+
+Expected
+
+Il = 3536,
+Il = 3536
+
+Il = 3536,
+Il = 3536
+
+Il = 003536,
+11 = 56789,
+Il = 56789
+Il = 56789,
+Il = 56789
+Il = 056789,
+Il =7, I2 =
+Il=7
+
+Il = 7, 12 =
+Il =7
+
+11 = 000007,
+I11=1, I2=
+11=1
+
+Il =1, I2=
+11=1
+
+11 = 000001,
+Il = 456, 12
+Il = 456
+
+Il = 456, 12
+Il = 456
+
+Il = 000456,
+Il = 100000,
+11 = 100000
+11 = 100000,
+11 = 100000
+Il = 100000,
+11 = 100000,
+11 = 100000
+11 = 100000,
+11 = 100000
+IL = 100000,
+
+Passou em todos os teste! 4
+
+À apresentação do número é algo relativamente simples, desde que você entenda como definir o formato adequadamente.
+
+[Correto |
+
+Notas para este envio: 1,00/1,00.
+
+12
+
+12
+
+12
+
+12 =
+
+r
+
+r
+
+I2
+
+,
+
+I2
+
+123
+
+r
+
+1
+
+,
+
+12
+
+=4
+
+12
+
+12
+
+12
+
+12
+
+64
+I2 = 64
+64
+
+I2 = 0064
+= 0064
+
+1
+
+I2=1
+
+1
+
+I2 = 0001
+= 0001
+
+I2 = 123
+23
+
+I2 = 0123
+= 0123
+
+I2=1
+
+1
+
+I2 = 0001
+= 0001
+56
+
+I2 = 456
+
+456
+
+I2 = 0456
+= 0456
+= 1000
+
+I2 = 1000
+= 1000
+
+I2 = 1000
+= 1000
+=1
+
+I2=1
+= 1
+
+I2 = 0001
+= 0001
+
+Got
+
+Il =
+Ii =
+Il =
+Il =
+I1 =
+
+Il =
+I1 =
+Il =
+Il =
+Il =
+
+Til =
+I1 =
+Il =
+Il =
+Il =
+
+Il =
+I1 =
+Il =
+Il =
+Tl =
+
+Il =
+I1 =
+Il =
+Il =
+Tl =
+
+Il =
+Il =
+Il =
+Il =
+Tl =
+
+Il =
+Il =
+Il =
+Tl =
+Il =
+
+3536, 12 = 64
+
+3536 , I2 = 64
+3536, I2 = 64
+
+3536 , I2 = 0064
+003536, I2 = 0064
+56789, 12 =1
+
+56789 , 12 =1
+56789, I2 = 1
+56789 , I2 = 0001
+056789, I2 = 0001
+
+7, I2 = 123
+
+7 , I2 = 123
+7, I2= 123
+
+7 , I2 = 0123
+000007, I2 = 0123
+
+1, I2=1
+
+1 , 12=1
+
+1, I2 = 1
+
+1 , 12 = 0001
+000001, I2 = 0001
+456, I2 = 456
+
+456 , I2 = 456
+456, 12 = 456
+
+456 , I2 = 0456
+000456, I2 = 0456
+100000, I2 = 1000
+100000 , I2 = 1000
+100000, I2 = 1000
+100000 , I2 = 1000
+100000, I2 = 1000
+100000, I2 = 1
+
+100000 , 122 =1
+100000, I2 = 1
+100000 , I2 = 0001
+100000, I2 = 0001
+Questão 8
+Correto
+Atingiu 1,00 de 1,00
+
+Vossa Majestade, o Número Real!
+Em terra de inteiros, quem é fracionário é Rei!
+Dados números reais, apresente-os conforme o formato definido abaixo.
+
+Entrada
+A entrada consiste de 2 linhas, a primeira contendo 2 números reais de precisão simples separados por um espaço (f1 e f2), e a segunda
+contendo 2 números reais de precisão dupla separados por um espaço.
+
+Saída
+A saída deve ser composta de 20 linhas, cada uma como apresentada a seguir. Atenção às quantidades de dígitos!
+
+1.amensagem:"F1 = f1, F2 = f2" ondefi e f2 devem ser substituídos por seus repectivos valores;
+2.amensagem:"D1 = d1, D2 = d2", onde d1 e d2 devem ser substituídos por seus repectivos valores;
+3. uma linha vazia;
+4. a mensagem do item 1, mas com os valores armazenados apresentados com precisão de 2 casas decimais;
+5. a mensagem do item 2, mas com os valores armazenados apresentados com precisão de 2 casas decimais;
+6. uma linha vazia;
+7. a mensagem do item 1, mas com os valores armazenados apresentados com precisão de 5 casas decimais;
+8. a mensagem do item 2, mas com os valores armazenados apresentados com precisão de 5 casas decimais;
+9. uma linha vazia;
+10. a mensagem do item 1, mas com os valores armazenados apresentados com precisão de 10 casas decimais;
+11. a mensagem do item 2, mas com os valores armazenados apresentados com precisão de 10 casas decimais;
+12. uma linha vazia;
+13. a mensagem do item 1, mas com os valores armazenados apresentados com precisão de 28 casas decimais;
+14. a mensagem do item 2, mas com os valores armazenados apresentados com precisão de 28 casas decimais;
+15. uma linha vazia;
+16. a mensagem do item 1, mas com os valores armazenados apresentados na notação científica e com precisão de 3 casas decimais;
+17. a mensagem do item 2, mas com os valores armazenados apresentados na notação científica e com precisão de 3 casas decimais;
+18. uma linha vazia;
+19. a mensagem do item 1, mas apresentando apenas a parte inteira dos valores armazenados; e
+20. a mensagem do item 2, mas apresentando apenas a parte inteira dos valores armazenados;
+
+Observações
+Aformatação da saída é importante, saiba usar f-string. Para saber como formatar números, leia isto.
+
+For example:
+
+Input Result
+
+7.2 42.45 Fl = 7.2, F2 = 42.45
+42.451 42,4516 Dl = 42,451, D2 = 42.4516
+
+Fl = 7.20, F2 = 42.45
+Dl = 42.45, D2 = 42.45
+
+Fl = 7.20000, F2 = 42.45000
+D1 = 42.45100, D2 = 42,45160
+
+Fl = 7.2000000000, F2 = 42.4500000000
+D1 = 42.4510000000, D2 = 42.4516000000
+
+Fl = 7.2000000000000001776356839400, F2 = 42.4500000000000028421709430404
+Di = 42.4510000000000005115907697473, D2 = 42.4515999999999991132426657714
+
+Fl = 7.200E+00, F2 = 4.245E+01
+Dl = 4.245E+01, D2 = 4.245E+01
+
+Fl = 7, F2 = 42
+Dl = 42, D2 = 42
+Input
+
+0.1 1.23
+1.1 0.23
+
+5.9 -111.45
+-120.456 1352.4548
+
+Result
+
+FL
+D1
+
+Fl
+DL
+
+Fl =
+D1 =
+
+Fl =
+D1 =
+
+Fl =
+Dl =
+
+Fl
+
+D1 =
+
+Fl =
+D1 =
+
+Fl =
+= -120.456, D2 = 1352.4548
+
+Fl
+D1
+
+Fl =
+D1 =
+
+Fl =
+D1 =
+
+F1
+
+Di =
+
+Fi
+
+D1 =
+
+Fl =
+D1 =
+
+o
+
+«1, F2 = 1.23
+-1, D2 = 0.23
+
+H
+
+o
+
+-10, F2 = 1.23
+.10, D2 = 0.23
+
+H
+
+0.10000, F2 = 1.23000
+1.10000, D2 = 0.23000
+0.1000000000, F2 = 1.2300000000
+
+H
+
+«1000000000, D2 = 0.2300000000
+
+o
+
+-1000000000000000055511151231, F2 = 1.2299999999999999822364316060
+-«1000000000000000888178419700, D2 0.2300000000000000099920072216
+
+H
+
+1.000E-01, F2 = 1.230E+00
+1.100E+00, D2 = 2.300E-01
+
+0, F2=1
+1, D2
+
+i}
+o
+
+5.9, F2 = -111.45
+
+5.90, F2 = -111.45
+
+-120.46, D2 = 1352.45
+
+5.90000, F2 = -111.45000
+-120.45600, D2 = 1352.45480
+
+5.9000000000, F2 = -111.4500000000
+-120.4560000000, D2 = 1352.4548000000
+
+5.9000000000000003552713678801, F2 = -111.4500000000000028421709430404
+-120.4560000000000030695446184836, D2 = 1352.4547999999999774445313960314
+
+5.900E+00, F2 = -1.115E+02
+-1.205E+02, D2 = 1.352E+03
+
+6, F2 = -111
+-120, D2 = 1352
+
+Answer: (penalty regime: 0,0, 10, 20, ... %)
+
+f1,f2 = input().split()
+
+d1,d2 = input().split()
+
+f1,f2,d1,d2 = float(f1),float(2), float(d1), float (d2)
+{f1}, F2 = {f2}")
+
+{d1}, D2 = {d2}")
+
+print (#"F1
+print (f"D1
+print("")
+
+print(f"F1
+
+print(f"D1 =
+
+print("")
+print (f"F1
+
+print(f"D1 =
+
+print("")
+print(f"F1
+
+print(f"D1 =
+
+print("")
+print (f"F1
+
+print(f"D1 =
+
+print("")
+print(f"F1
+print (f"D1
+print("")
+print (f"F1
+print(f"D1
+print("")
+
+{f1:
+(di:
+
+tri:
+(di:
+
+{f1:
+(di:
+
+{f1:
+(di:
+
+{f1:
+(di:
+
+{f1:
+(di:
+
+.2f), F2 = (f2:.28)")
+.2f), D2 = {d2:.2F}")
+.5f), F2 = (f2:.5€)")
+.5f), D2 = {d2:.5}")
+
+.10f), F2 = {f2:.10F}")
+.1@f}, D2 = {d2:.10F}")
+
+.28f}, F2 = (F2:.28F)")
+.28f), D2 = {d2:.28f}")
+
+.3E), F2 = (f2:.3E)")
+.3E), D2 = {d2:.3E}")
+Of}, F2 = (f2:.0f}")
+Of}, D2 = {d2:.0f}")
+v
+
+Input
+
+7.2 42.45
+42.451
+42.4516
+
+0.1 1.23
+1.1 0.23
+
+Expected
+
+Fl = 7.2, F2 = 42.45
+D1 = 42.451, D2 = 42.4516
+
+Fl = 7.20, F2 = 42,45
+Dl = 42.45, D2 = 42.45
+
+Fl = 7.20000, F2 = 42.45000
+
+D1 = 42.45100, D2 = 42.45160
+Fl = 7.2000000000, F2 = 42.4500000000
+D1 = 42.4510000000, D2 = 42.4516000000
+
+Fl = 7.2000000000000001776356839400, F2
+= 42.4500000000000028421709430404
+D1 = 42.4510000000000005115907697473, D2
+= 42,4515999999999991132426657714
+
+Fl = 7.200E+00, F2 = 4.245E+01
+Dl = 4.245E+01, D2 = 4.245E+01
+
+Fl = 7, F2 = 42
+D1 = 42, D2 = 42
+
+Fl = 0.1, F2 = 1.23
+Dl = 1.1, D2 = 0.23
+
+Fl = 0.10, F2 = 1.23
+Di = 1.10, D2 = 0.23
+
+Fl = 0.10000, F2 = 1.23000
+D1 = 1.10000, D2 = 0.23000
+
+F1 = 0.1000000000, F2
+D1 = 1.1000000000, D2
+
+1.2300000000
+0.2300000000
+
+F1 = 0.1000000000000000055511151231, F2
+= 1.2299999999999999822364316060
+D1 = 1.1000000000000000888178419700, D2
+= 0.2300000000000000099920072216
+
+Fl = 1.000E-01, F2 = 1.230E+00
+D1 = 1.100E+00, D2 = 2.300E-01
+
+Fl = 0, F2
+D1 = 1, D2
+
+no
+on
+
+Got
+Fl = 7.2, F2 = 42.45
+D1 = 42.451, D2 = 42.4516
+
+Fl = 7.20, F2 = 42,45
+
+Dl = 42.45, D2 = 42,45
+
+Fl = 7.20000, F2 = 42.45000
+
+Dl = 42.45100, D2 = 42.45160
+
+Fl = 7.2000000000, F2 = 42.4500000000
+
+D1 = 42.4510000000, D2 = 42.4516000000
+
+Fl = 7.2000000000000001776356839400, F2
+= 42.4500000000000028421709430404
+D1 = 42.4510000000000005115907697473, D2
+= 42,4515999999999991132426657714
+
+Fi
+D1
+
+7.200E+00, F2 = 4.245E+01
+4.245E+01, D2 = 4.245E+01
+
+Fl = 7, F2 = 42
+D1 = 42, D2 = 42
+
+Fl = 0.1, F2 1.23
+Dl = 1.1, D2 = 0.23
+
+Fl = 0.10, F2 1.23
+Di = 1.10, D2 = 0.23
+
+Fl = 0.10000, F2 = 1.23000
+D1 = 1.10000, D2 = 0.23000
+
+Fl = 0.1000000000, F2 1.2300000000
+D1 = 1.1000000000, D2 = 0.2300000000
+
+F1 = 0.1000000000000000055511151231, F2
+= 1.2299999999999999822364316060
+D1 = 1.1000000000000000888178419700, D2
+= 0.2300000000000000099920072216
+
+Fl = 1.000E-01, F2 = 1.230E+00
+Di = 1.100E+00, D2 = 2.300E-01
+
+Fl = 0, F2
+D1 = 1, D2
+
+no
+on
+v
+
+Input
+
+1.1 0.23
+0.1 1.23
+
+Fl = 1.1, F2 = 0.23
+Di = 0.1, D2 = 1.23
+
+Fl = 1.10, F2 = 0.23
+D1 = 0.10, D2 = 1.23
+
+Fl = 1.10000, F2 = 0.23000
+D1 = 0.10000, D2 1.23000
+
+F1 = 1.1000000000, F2 0.2300000000
+D1 = 0.1000000000, D2 = 1.2300000000
+
+Fl = 1.1000000000000000888178419700, F2
+= 0.2300000000000000099920072216
+D1 = 0.1000000000000000055511151231, D2
+= 1.2299999999999999822364316060
+
+F1 = 1.100E+00, F2 = 2.300E-01
+D1 = 1.000E-01, D2 = 1.230E+00
+Fl = 1, F2=0
+
+D1 = 0, D2=1
+
+Fl = 0.0, F2 = 0.0
+
+DI = 0.0, D2 = 0.0
+
+Fl = 0.00, F2 = 0.00
+
+D1 = 0.00, D2 = 0.00
+
+Fl = 0.00000, F2 = 0.00000
+
+D1 = 0.00000, D2 = 0.00000
+
+F1 = 0.0000000000, F2
+D1 = 0.0000000000, D2
+
+0.0000000000
+0.0000000000
+
+Fi = 0.0000000000000000000000000000, F2
+= 0.0000000000000000000000000000
+D1 = 0.0000000000000000000000000000, D2
+= 0.0000000000000000000000000000
+
+F1 = 0.000E+00, F2 = 0.000E+00
+D1 = 0.000E+00, D2 = 0.000E+00
+
+Fl = 0, F2
+Di = 0, D2 =0
+
+I
+o
+
+Got
+
+Fl = 1.1, F2 = 0.23
+Di = 0.1, D2 = 1.23
+
+Fl = 1.10, F2 = 0.23
+D1 = 0.10, D2 = 1.23
+
+Fl = 1.10000, F2 = 0.23000
+D1 = 0.10000, D2 1.23000
+
+F1 = 1.1000000000, F2 = 0.2300000000
+D1 = 0.1000000000, D2 = 1.2300000000
+
+Fl = 1.1000000000000000888178419700, F2
+= 0.2300000000000000099920072216
+D1 = 0.1000000000000000055511151231, D2
+= 1.2299999999999999822364316060
+
+Fl = 1.100E+00, F2 = 2.300E-01
+
+D1 = 1.000E-01, D2 = 1.230E+00
+Fl =1, F2 =0
+
+D1 = 0, D2=1
+
+Fl = 0.0, F2 = 0.0
+
+DI = 0.0, D2 = 0.0
+
+Fl = 0.00, F2 = 0.00
+
+D1 = 0.00, D2 = 0.00
+
+F1 = 0.00000, F2 = 0.00000
+
+D1 = 0.00000, D2 = 0.00000
+
+F1 = 0.0000000000, F2
+D1 = 0.0000000000, D2
+
+0.0000000000
+0.0000000000
+
+Fl = 0.0000000000000000000000000000, F2
+= 0.0000000000000000000000000000
+D1 = 0.0000000000000000000000000000, D2
+= 0.0000000000000000000000000000
+
+F1 = 0.000E+00, F2 = 0.000E+00
+D1 = 0.000E+00, D2 = 0.000E+00
+
+Fl = 0, F2
+Di = 0, D2
+
+ot
+oo
+v
+
+Input
+
+5.9
+-111.45
+-120.456
+1352.4548
+
+-12
+3 -4
+
+Expected
+
+Fl = 5.9, F2 = -111.45
+Di = -120.456, D2 = 1352.4548
+
+Fl = 5.90, F2 = -111.45
+D1 = -120.46, D2 = 1352.45
+
+Fl = 5.90000, F2 = -111.45000
+D1 -120.45600, D2 = 1352.45480
+
+F1 5.9000000000, F2 = -111.4500000000
+D1 = -120.4560000000, D2 =
+1352 .4548000000
+
+Fl = 5.9000000000000003552713678801, F2
+= -111.4500000000000028421709430404
+
+D1 = -120.4560000000000030695446184836,
+D2 = 1352.4547999999999774445313960314
+
+Fl = 5.900E+00, F2 = -1.115E+02
+D1 = -1.205E+02, D2 = 1.352E+03
+Fl = 6, F2 = -111
+
+Di = -120, D2 = 1352
+
+Fl = -1.0, F2 = 2.0
+D1 = 3.0, D2 = -4.0
+
+Fl = -1.00, F2 = 2.00
+Di = 3.00, D2 = -4.00
+
+Fl = -1.00000, F2 = 2.00000
+D1 = 3.00000, D2 = -4.00000
+
+F1 = -1.0000000000, F2 = 2.0000000000
+D1 3.0000000000, D2 = -4.0000000000
+
+F1 = -1.0000000000000000000000000000, F2
+= 2.0000000000000000000000000000
+D1 = 3.0000000000000000000000000000, D2
+= -4.0000000000000000000000000000
+
+Fl = -1.000E+00, F2 = 2.000E+00
+D1 = 3.000E+00, D2 = -4.000E+00
+
+Fl = -1, F2=2
+Di = 3, D2 = -4
+
+Got
+
+Fl = 5.9, F2 = -111.45
+Di = -120.456, D2 = 1352.4548
+
+Fl = 5.90, F2 = -111.45
+
+Di = -120.46, D2 = 1352.45
+
+Fl = 5.90000, F2 = -111.45000
+
+D1 = -120.45600, D2 = 1352.45480
+
+F1 = 5.9000000000, F2 = -111.4500000000
+
+D1 = -120.4560000000,
+1352.4548000000
+
+D2 =
+
+Fl = 5.9000000000000003552713678801, F2
+= -111.4500000000000028421709430404
+
+D1 = -120.4560000000000030695446184836,
+D2 = 1352.4547999999999774445313960314
+
+Fl = 5.900E+00, F2 = -1.115E+02
+D1 = -1.205E+02, D2 = 1.352E+03
+Fl = 6, F2 = -111
+
+Di = -120, D2 = 1352
+
+Fl = -1.0, F2 = 2.0
+D1 = 3.0, D2 = -4.0
+
+Fl = -1.00, F2 = 2.00
+Di = 3.00, D2 = -4.00
+
+Fl = -1.00000, F2 = 2.00000
+
+D1 = 3.00000, D2 = -4.00000
+Fi = -1.0000000000, F2 = 2.0000000000
+D1 = 3.0000000000, D2 = -4.0000000000
+
+F1 = -1.0000000000000000000000000000, F2
+= 2.0000000000000000000000000000
+D1 = 3.0000000000000000000000000000, D2
+= -4.0000000000000000000000000000
+
+Fl = -1.000E+00, F2 = 2.000E+00
+D1 = 3.000E+00, D2 = -4.000E+00
+
+Fl =-1, F2=2
+D1 = 3, D2 = -4
+Input Expected
+4 (0.1 -0.02 | Fl = 0.1, F2 = -0.02
+
+-0.003 D1 = -0.003, D2 = 0.0004
+
+0.0004
+Fl = 0.10, F2 = -0.02
+D1 = -0.00, D2 = 0.00
+Fl = 0.10000, F2 = -0.02000
+D1 = -0.00300, D2 = 0.00040
+F1 = 0.1000000000, F2 = -0.0200000000
+D1 = -0.0030000000, D2 = 0.0004000000
+F1 = 0.1000000000000000055511151231, F2
+= -0.0200000000000000004163336342
+D1 = -0.0030000000000000000624500451, D2
+= 0.0004000000000000000191686944
+Fl = 1.000E-01, F2 = -2.000E-02
+D1 = -3.000E-03, D2 = 4.000E-04
+Fl = 0, F2 = -0
+D1 = -0, D2 =0
+
+Passou em todos os teste! 7
+
+Got
+
+Fl = 0.1, F2 = -0.02
+
+D1 = -0.003, D2 = 0.0004
+
+Fl = 0.10, F2 = -0.02
+
+D1 = -0.00, D2 = 0.00
+
+Fl = 0.10000, F2 = -0.02000
+
+D1 = -0.00300, D2 = 0.00040
+
+F1 = 0.1000000000, F2 = -0.0200000000
+D1 = -0.0030000000, D2 = 0.0004000000
+F1 = 0.1000000000000000055511151231, F2
+
+= -0.0200000000000000004163336342
+-0.0030000000000000000624500451,
+= 0.0004000000000000000191686944
+
+D2
+
+Fl = 1.000E-01, F2 = -2.000E-02
+D1 = -3.000E-03, D2 = 4.000E-04
+Fl = 0, F2 = -0
+Dl = -0, D2 = 0
+
+A apresentação do número é algo relativamente simples, desde que você entenda como definir o formato adequadamente.
+
+[correto |
+
+Notas para este envio: 1,00/1,00.

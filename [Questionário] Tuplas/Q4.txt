@@ -1,0 +1,16 @@
+Questão 4
+Correto
+Atingiu 2,00 de 2,00
+
+Apagar tuplas
+Escreva uma função chamada "erase" que receberá uma lista de tuplas, possivelmente tuplas vazias, e retornará uma lista de tuplas
+
+sem nenhuma tupla vazia.
+
+Entrada
+
+Essa função recebe como entrada uma lista de tuplas.
+Saída
+
+A função deverá retornar a lista atualizada.
+

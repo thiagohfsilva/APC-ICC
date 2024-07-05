@@ -1,0 +1,28 @@
+Questão 7
+Correto
+Atingiu 2,00 de 2,00
+
+Triângulo Recursivo v1
+
+Implemente uma função chamada triangulo que recebe dois parâmetros \(x\) e \(size\). A função deve imprimir um triângulo,
+composto por caracteres '+' (sem aspas simples), com base de tamanho size) e deslocado de \(x\) espaços para a direita.
+
+A Entrada consiste de:
+e Afunção possui dois parâmetros \{x\) e \(size\). \(x\) é um valor inteiro e \(size\) é um inteiro ímpar VAgeg 34.
+
+ASaída deve apresentar:
+e Otriângulo deve ser impresso utilizando o caractere '+' (sem aspas simples), conforme os exemplos.
+
+Observações:
+
+¢ Não é necessário validar se os valores de entrada estão dentro dos intervalos e tipos definidos.
+
+e Atenção, a criação de uma função com o nome determinado pelo enunciado é fundamental para a prática do aluno e o Moodle irá
+descontar pontos caso a criação não tenha sido feita corretamente (sendo case-sensitive o nome da função).
+
+* Submeta SOMENTE o que foi solicitado.
+
+Descrição dos Exemplos:
+e No primeiro exemplo, o deslocamento é O e a base do triângulo é 5. Portando basta iniciar a base na posição O.
+* Nosegundo exemplo, o deslocamento é 3 e a base do triângulo é 7. Portando a impressão da base começa deslocado de 3 posições.
+

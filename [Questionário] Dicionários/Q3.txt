@@ -1,0 +1,24 @@
+Questão 3
+Correto
+Atingiu 2,00 de 2,00
+
+Catálogo
+
+Uma loja online te contratou para cuidar da organização do catálogo de forma que fique mais fácil calcular o valor total dos pedidos.
+Eles gostariam que você fizesse um programa que dado os produtos, seus respectivos preços e um pedido identificado pelo nome dos
+produtos e a quantidade de cada um, retorne o valor total do pedido com R$ antes do valor e duas casas decimais de precisão.
+
+A Entrada consiste de:
+e Aprimeira linha consiste nos produtos e seus preços na forma: produtol precol .. produton precon
+e Asegunda linha informa o pedido de um cliente, que é composto pelo(s) nome(s) do(s) produtos(s) e a quantidade de cada item.
+
+ASaída deve apresentar:
+e Opreco total do pedido do cliente no formato R$ xx.xx.
+
+Observações:
+e Não é necessário validar se os valores de entrada são do tipo definido.
+
+Descrição dos Exemplos:
+e No primeiro exemplo, o cliente levou duas brumas e três esmaltes, como cada bruma custa R$ 27.70 e cada esmalte R$ 4.49, o valor
+
+total é R$ 68.87.

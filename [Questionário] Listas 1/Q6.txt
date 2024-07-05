@@ -1,0 +1,24 @@
+Questão 6
+Correto
+Atingiu 1,00 de 1,00
+
+Fatiando Listas
+
+Escreva um programa que recebe uma quantidade de inteiros separados por um espaço em uma linha. Na outra linha, dois inteiros que
+representam o índice inicial e final do fatiamento, respectivamente. Como saída o programa deve apresentar a lista fatiada conforme
+os índices recebidos.
+
+A Entrada consiste de:
+e Linha com os inteiros, separados por um espaço.
+e Linha com dois inteiros, separados por um espaço, que representam o início e fim do fatiamento.
+
+ASaída deve apresentar:
+e Lista após o fatiamento.
+
+Observações:
+e Listas no python iniciam-se com o indice O.
+
+Descrição do Exemplo 1:
+e Conforme os índices recebidos, o fatiamento inclui o primeiro índice e exclui o último. Por isso, a saída apresenta os elementos
+presentes do segundo índice até o quarto, pois o quinto não é incluído.
+

@@ -1,0 +1,21 @@
+Questão 1
+Correto
+
+Atingiu 2,00 de 2,00
+
+Dupla
+
+Faça a função tupla Dupla que recebe duas variáveis como argumento e retorne uma tupla dessas duas variáveis. As variáveis podem
+
+ser de qualquer tipo.
+
+Entrada
+
+A entrada consiste nos parâmetros da função tuplaDupla, que são duas variáveis de qualquer tipo.
+
+Saída
+
+Sua função deve retornar a tupla.
+
+Observações
+

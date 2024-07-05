@@ -1,0 +1,844 @@
+Iniciado em
+Estado
+
+Concluída em
+Tempo empregado
+Avaliar
+
+domingo, 21 mai. 2023, 19:26
+Finalizada
+
+domingo, 21 mai. 2023, 21:52
+
+2 horas 26 minutos
+
+10,00 de um máximo de 10,00(100%)
+Questão 1
+Correto
+Atingiu 1,00 de 1,00
+
+Gémeos Pita e Goras
+
+Pita e Goras são irmãos gêmeos que amam matemática e gostam de aplicá-la em tudo o que vão fazer. Até mesmo na hora de comer
+eles utilizam números para definir o que vão jantar. Sua tarefa é ajudar os irmãos a implementarem um programa que os ajude a tomar
+a decisão do que irão jantar conforme o critério que eles estabeleceram. Para isso, os gêmeos decidiram que se a quantidade de
+minutos do relógio for um número par na hora que eles forem comer, então eles irão jantar arroz e feijão, mas se for um número ímpar
+eles irão fazer apenas um lanche.
+
+A Entrada consiste de:
+e Uma variavel M do tipo inteiro representando os minutos do relógio.
+
+A Saída deve apresentar:
+
+e linha contendo a frase “Fome de comida! Queremos arroz e feijão” para casos com números pares ou a frase "Só um lanchinho
+cai bem!" para os casos ímpares, sem as aspas conforme apresentado nos exemplos.
+
+Observações:
+e Paraavariável Mserão considerados apenas valores entre O e 60 inclusive.
+
+Descrição dos Exemplos:
+* No primeiro exemplo, a saída corresponde ao caso da entrada par conforme solicitado no enunciado.
+
+For example:
+
+Input | Result
+
+0 Fome de comida! Queremos arroz e feijão
+2 Fome de comida! Queremos arroz e feijão
+15 Só um lanchinho cai bem!
+
+Answer: (penalty regime: 0,0, 10, 20, ... %)
+
+1 |num = int(input())
+2 |res = num%2
+
+3vlif res == 0:
+
+4 print("Fome de comida! Queremos arroz e feijão")
+5 vjelse:
+
+6 print("só um lanchinho cai bem!")
+
+7
+Input Expected
+
+io Fome de comida!
+[2 Fome de comida!
+v7 (15 S6 um lanchinho
+25 S6 um lanchinho
+wv | 40 Fome de comida!
+Y (59 sé um lanchinho
+
+Passou em todos os teste! 4
+
+Queremos
+
+Queremos
+
+cai bem!
+
+cai bem!
+
+Queremos
+
+cai bem!
+
+arroz e feijão
+
+arroz e feijão
+
+arroz e feijão
+
+Got
+
+Fome de comida!
+Fome de comida!
+Só um lanchinho
+$6 um lanchinho
+Fome de comida!
+
+Só um lanchinho
+
+Para resolver essa questão atente para o uso da divisão pelo módulo.
+
+[correto |
+
+Notas para este envio: 1,00/1,00.
+
+Queremos
+
+Queremos
+
+cai bem!
+
+cai bem!
+
+Queremos
+
+cai bem!
+
+arroz e feijão
+
+arroz e feijão
+
+arroz e feijão
+
+Se Se ee Sk SS
+Questão 2
+
+Correto
+
+Atingiu 2,00 de 2,00
+
+Filtro de Códigos
+
+Para programar existem alguns requisitos que nossos códigos devem atender independente do problema. Para isso, algumas perguntas
+podem ser feitas durante a implementação de um programa, conforme demonstra o guia abaixo. Sua tarefa é implementar um
+programa que ajude os programadores a avaliarem seus códigos da mesma forma que o guia. A figura apresenta a ordem das perguntas
+que deverão ser feitas.
+
+O programa
+
+funciona?
+
+Ótimo. Então não
+Y
+Do aim mexe!
+
+Você entende o
+
+se que fez?
+4 Choremos!
+o,
+ão mã a”
+ves —3) Então mão na E
+massa!
+
+Acha que pode
+
+Se Temos um time a
+sozinho? disposição!
+Já pesquisou no A
+Google? no
+
+Você sabe onde =,
+
+está o erro?
+
+Corre lá então!
+
+A Entrada consiste de:
+* Após cada pergunta é lida uma String que pode ser do tipo 'SIM' ou 'NÃO!
+
+ASaída deve apresentar:
+* Todas as perguntas de acordo com as respostas do usuário e por fim uma das cinco possíveis respostas finais.
+
+Observações:
+e Não é necessário validar se os valores de entrada são do tipo definido.
+
+Descrição dos Exemplos:
+* Osexemplo são auto explicativos.
+
+For example:
+
+Input | Result
+
+SIM O programa funciona?
+
+SIM Você entende o que fez?
+Ótimo. Então não mexe!
+
+SIM O programa funciona?
+
+NÃO Você entende o que fez?
+
+SIM Já foi na tutoria?
+Choremos!
+
+SIM O programa funciona?
+
+NÃO Você entende o que fez?
+
+NÃO Já foi na tutoria?
+
+Temos um time a disposição!
+Answer: (penalty regime: 0,0, 10, 20, ... %)
+
+1
+2v
+3
+4y
+5
+6r
+7
+8v
+9
+10 v
+11
+12
+13v
+14
+15 v
+16
+17 vw
+18
+19v
+28
+21v
+22
+23v
+24
+25 v
+26
+27 w
+28
+29
+30
+31y
+32
+33v
+34
+35
+36
+37
+38
+
+resp1 = input("O programa funciona?\n")
+
+if resp1 == "SIM":
+resp2 = input("Você entende o que fez?\n")
+
+if resp2 =="SIM":
+
+print("Ótimo. Então não mexe! in")
+
+else:# resp2 != SIM
+
+resp6 = input("Ja foi na tutoria?\n")
+
+if resp6 == "SIM":
+print ("Choremos! \n")
+else: #resp 6 != "SIM"
+
+print("Temos um time a disposic¢cdo!\n")
+
+else:#resp1 != SIM
+resp3 = input("Você sabe onde está o erro?\n")
+
+Input Expected
+
+SIM O programa funciona?
+
+SIM Você entende o que fez?
+Ótimo. Então não mexe!
+
+SIM O programa funciona?
+
+NÃO Você entende o que fez?
+
+SIM Já foi na tutoria?
+Choremos!
+
+SIM O programa funciona?
+
+NÃO | Você entende o que fez?
+
+NÃO Já foi na tutoria?
+Temos um time a disposição!
+
+NÃO O programa funciona?
+
+NÃO Você sabe onde está o erro?
+
+SIM Já foi na tutoria?
+Choremos!
+
+NÃO O programa funciona?
+
+NÃO Você sabe onde está o erro?
+
+NÃO Já foi na tutoria?
+Temos um time a disposição!
+
+NÃO O programa funciona?
+
+SIM Você sabe onde está o erro?
+
+SIM Acha que pode solucionar sozinho?
+
+if resp3 == "SIM":
+
+resp4 = input("Acha que pode solucionar sozinho? An")
+
+if resp4 == "SIM":
+
+print("Então mão na massa! \n")
+
+resp5 = input("Já pesquisou no Google?\n")
+
+resp6 = input("Já foi na tutoria?\n")
+
+print("Temos um time a disposição! in")
+
+else:#resp4 != "SIM"
+if resp5 == "SIM":
+if resp6 == "SIM":
+print ("Choremos!\n")
+else: #resp 6 != "SIM"
+else: #resp5 != "SIM"
+print("Corre lá ent&o!\n")
+else: #resp3 == "SIM"
+resp6 = input("Já foi na tutoria?\n")
+if resp6 == "SIM":
+print("Choremos!\n")
+else: #resp 6 |= "SIM"
+
+print("Temos um time a disposic¢cdo! \n")
+
+Então mão na massa!
+
+Got
+
+O programa funciona?
+Você entende o que fez?
+Ótimo. Então não mexe!
+
+O programa funciona?
+Você entende o que fez?
+Já foi na tutoria?
+
+Choremos!
+
+O programa funciona?
+Você entende o que fez?
+Já foi na tutoria?
+
+Temos um time a disposição!
+
+O programa funciona?
+Você sabe onde está o erro?
+Já foi na tutoria?
+
+Choremos!
+
+O programa funciona?
+Você sabe onde está o erro?
+Já foi na tutoria?
+
+Temos um time a disposição!
+
+O programa funciona?
+
+Você sabe onde está o erro?
+
+Acha que pode solucionar sozinho?
+
+Então mão na massa!
+Passou em todos os teste! 4
+
+[correto |
+
+Notas para este envio: 2,00/2,00.
+Questão 3
+Correto
+Atingiu 1,00 de 1,00
+
+Carêncio está carente
+
+Nem sempre é fácil encontrar o amor da sua vida. Para Carêncio, um jovem solteiro que está se sentindo sozinho, aparentemente o mar
+não está para peixe. Como ele não possui uma vida movimentada o suficiente para encontrar alguém facilmente, seu amigo lhe indicou
+um aplicativo de namoro, o revolucionário "LovePertin”. O aplicativo mostra sua localização e a de pessoas em uma raio de 1 km que
+podem se interessar pelo seu perfil. Porém, Carêncio acredita que o amor deve ser algo fácil e não tem tanta paciência para lutar por
+uma paixão, então decidiu que, a depender da distância que a pessoa estiver, não valeria a pena investir em um encontro. Sendo D a
+distância entre ele e a pessoa, ele determinou os seguintes critérios:
+
+e Ds100 : "É o amor da minha vida!"
+e 100< Ds 200: "Talvez dé certo"
+e D> 200: "Nao vale a pena investir”
+
+Como Carêncio tem feito sucesso no aplicativo, ele pediu sua ajuda na classificação de cada match que recebeu. Para isso implemente
+um programa que de acordo com a distância entre eles determina se vale ou não a pena investir no encontro respeitando os critérios
+estabelecidos por Carêncio.
+
+A Entrada consiste de:
+e 4 linhas, todas com variáveis do tipo inteiro, sendo as duas primeiras (x4,y4) a localização de Carêncio e as duas últimas (x,y) a
+localização de sua mais nova paquera.
+
+ASaída deve apresentar:
+e Umas das três frases ("É o amor da minha vida!", "Talvez dê certo", "Não vale a pena investir") de acordo com a distância.
+
+Observações:
+
+e Não é necessário validar se os valores de entrada são do tipo definido.
+
+e Parasolucionar a questão atente para o uso da fórmula da distância entre dois pontos
+e Em python você pode utilizar a função math.sqrt(x) para retirar raiz quadrada
+
+Descrição dos Exemplos:
+* No primeiro exemplo, a distância entre Carêncio e sua paquera é de aproximadamente 145m, por ser um valor entre 100 e 200 a
+saída é a segunda frase.
+
+For example:
+
+Input | Result
+
+10 Talvez dê certo
+5
+
+15
+
+150
+
+3 É o amor da minha vida!
+7
+15
+20
+
+0 Talvez dê certo
+0
+
+100
+
+15
+
+Answer: (penalty regime: 0,0, 10, 20, ... %)
+
+1v|def distancia(x1,y1,x2,y2):
+D = ((x1-x2)**2 +(y1-y2)**2)**(@.5)
+return D
+
+#inicio do programa
+
+x1 =int(input())
+
+yl =int(input())
+
+x2 =int(input())
+
+Su BW Nh
+8 |y2 =int(input())
+1@ |d = distancia(x1,y1,x2,y2)
+11 vjif d <= 100:
+
+13 vlelif (100 < d) and (d <= 200):
+14 print("Talvez dê certo")
+15 vjelse:
+
+12 print("É o amor da minha vida!")
+
+16 print("Não vale a pena investir")
+
+Input | Expected
+
+Got
+
+9 (10 Talvez dê certo
+
+15
+150
+
+Talvez dê certo
+
+13 É o amor da minha vida!
+
+15
+20
+
+É o amor da minha vida!
+
+¥ \0 Talvez dé certo
+
+100
+15
+
+Talvez dé certo
+
+0 É o amor da minha vida!
+
+10
+
+É o amor da minha vida!
+
+4 |200 | Não vale a pena investir
+
+1000
+
+Não vale a pena investir
+
+4 | 185 Talvez dê certo
+
+385
+
+Talvez dê certo
+
+Passou em todos os teste! 4
+
+Notas para este envio: 1,00/1,00.
+
+Questão 4
+Correto
+Atingiu 3,00 de 3,00
+
+Média Aritmética, Ponderada e Harmônica
+
+Escreva um programa que leia 3 números inteiros positivos e efetue o cálculo das médias Aritmética (A), Ponderada (P) e Harmônica
+(H) dependendo da letra dada pelo usuário, mostre qual o tipo de média e qual o valor da média. No caso do usuário digitar qualquer
+outro caractere, apresente a mensagem 'Operacao inexistente!
+
+A Entrada consiste de:
+
+* Linha contendo as três notas que são três números reais positivos.
+
+e Linha contendo um caractere (para determinar qual a média), sendo (P) Ponderada, (H) Harmônica e (A) Aritmética
+¢ Casoocaractere seja 'P, deve-se solicitar os três pesos de cada nota enviada, que são números positivos inteiros.
+
+ASaída deve apresentar:
+e Na primeira linha, o tipo de média que ele fez ("Harmonica", "Ponderada’, "Aritmetica" ou "Operacao inexistente")
+e Nasegunda linha, caso tenha sido digito um caractere válido, o resultado da média com precisão de 2 casas decimais.
+
+Observações:
+e Não é necessário validar se os valores de entrada estão dentro dos intervalos e tipos definidos.
+
+Descrição dos Exemplos:
+e Os exemplos são autoexplicativos.
+
+For example:
+
+Input | Result
+
+1 2 3) Ponderada
+2.11
+
+1 4 3 |Operacao inexistente
+
+5 3 8 | Harmonica
+4.56
+
+Answer: (penalty regime: 0,0, 10, 20, ... %)
+
+1v|def medP(x1,x2,x3,a,b,c):
+
+2 return (x1*a+x2*b+x3*c)/(a+b+c)
+3 v|def medA(x1,x2,x3):
+
+4 return medP(x1,x2,X3,1,1,1)
+
+5 v|def medH(x1,x2,x3):
+
+6 return 3/(1/x1 +1/x2 +1/x3)
+
+7
+
+8 |x1,x2,x3 = input().split()
+
+9 |x1,x2,x3 = float(x1),float(x2), float(x3)
+18 |opcao = input()
+
+11
+
+12 v|if opcao == "A":
+
+13 print("Aritmetica")
+
+14 print("{medA(x1,x2,x3):.2F}")
+15 vlelif opcao == "P":
+
+16 a,b,c = input().split()
+
+17 a,b,c = int(a),int(b),int(c)
+18 print ("Ponderada” )
+
+19 print (#"{medP(x1,x2,x3,a,b,c):.2F}")
+20 v|elif opcao == "H":
+
+21 print("Harmonica”)
+
+22 print(f"(medH(x1,x2,x3):.2F)")
+23 vjelse:
+
+24 print("Operacao inexistente")
+25
+Input Expected Got
+¥ (123 Ponderada Ponderada
+2.11 2.11
+567
+/ (143 Operacao inexistente Operacao inexistente
+G
+/ 538 Harmonica Harmonica
+H 4.56 4.56
+4 567 Aritmetica Aritmetica
+A 6.00 6.00
+¥Y | 10 15 20 | Operacao inexistente | Operacao inexistente
+Cc
+VY | 80 38 54| Ponderada Ponderada
+P 53.38 53.38
+472
+
+Passou em todos os teste! 4
+
+Para resolver esta questão implemente as condicionais e as equações que realizam os tipos de médias solicitados no enunciado.
+
+Notas para este envio: 3,00/3,00.
+Questão 5
+Correto
+Atingiu 3,00 de 3,00
+
+Debugando estruturas de decisão
+
+Inácio, dono de uma empresa de eletrodomésticos, estava preocupado com a quantidade de reclamações que seus produtos e serviços
+tinham na Internet. Por isso, resolveu criar um indicador para melhor acompanhar estas reclamações, o índice de insatisfação (ii) do
+cliente.
+
+O índice de insatisfação, chamado de ii, é composto por vários outros índices, tais como, o indice de reclamação, o índice de
+indisponibilidade, além do número de cancelamentos, de acordo com a descrição a seguir.
+
+Ele definiu que o índice de reclamações seria uma escala de O a 100. Se o cliente é atendido imediatamente após ligar ao call center
+zero é adicionado ao ii e 100 se esperam em média mais de 100 minutos para serem atendidos. Se 60% ou mais das reclamações são
+resolvidas na primeira ligação, o ii baixa 5 pontos. Caso contrário aumenta 15 pontos.
+
+Sobre o ii, é feita a seguinte alteração:
+
+a) se o número de cancelamentos do serviços é maior ou igual a 10% do total dos clientes, o ii aumenta 80 pontos se o cancelamento foi
+por problemas nos serviços prestados ou diminui 30 pontos caso contrário.
+
+b) se o número de cancelamentos dos serviços é menor do que 10% do total dos clientes, o ii aumenta 50 pontos se o cancelamento foi
+por problemas nos serviços prestados ou diminui 10 pontos caso contrário.
+
+Depois disso, é computado o índice de indisponibilidade do serviço que varia de O a 100. Se os seus serviços ficaram fora do ar 10% ou
+mais do tempo em um mês, seu ii total será aumentado de 70 pontos, caso contrário, seu ii será rebaixado de 20 pontos.
+
+Para isto, Inácio, que está aprendendo a programação, escreveu o seguinte programa em Python:
+
+indiceReclamacao = int (input())
+percentReclamResolPrim = int (input ()
+percentCliCancel = int (input ())
+indiceIndisponibilidade = int (input ())
+canceladoPorProblema = int (input ())
+
+if (percentReclamResolPrim > 60):
+indice = indiceReclamacao - 5
+else:
+indice = indiceReclamacao + 15
+
+print(f'{indice}')
+
+if ( percentCliCancel <= 10):
+if (canceladoPorProblema==0) :
+indice = indice + 80
+else:
+indice = indice - 30
+else:
+if (canceladoPorProblema==0) :
+indice = indice + 50
+else:
+indice = indice - 10
+
+print (f' {index}'
+
+7
+
+if (indiceIndisponibilidade> 10):
+indice = indice - 70
+
+else:
+indice = indice + 20
+
+print (f' (indice)');
+
+Corrija os erros do programa sabendo que:
+
+A Entrada consiste de 5 valores Inteiros, um por linha:
+
+* oindice de reclamações;
+
+e aporcentagem das reclamações resolvidas na primeira ligação;
+e a porcentagem dos clientes que solicitaram o cancelamento;
+* oíndice de disponibilidade; e
+
+* um número inteiro que pode ser O ou 1, conforme se segue:
+© 1-cancelamento por problemas no serviço;
+o O-casocontrário.
+
+A Saída deve apresenta três valores inteiros, um por linha:
+
+e oindice de insatisfação da empresa levando-se em conta o índice de reclamações e a porcentagem de reclamações resolvidas na
+primeira ligação
+
+e oiifinal, depois de computado o índice de disponibilidade
+
+« ovalor da ii computando os cancelamentos e seus motivos.
+
+Observações:
+e Teste todos os intervalos possíveis para ver se o programa está certo, principalmente os casos que estão no limite dos intervalos.
+
+Descrição dos Exemplos:
+* Oscasos de testes são autoexplicativos.
+
+For example:
+
+Input Result
+
+100 95
+60 65
+15 45
+5
+0
+100 95
+70 175
+10 155
+5
+1
+100 115
+45 85
+20 155
+10
+0
+
+Answer: (penalty regime: 0,0, 10, 20, ... %)
+
+RESET ANSWER
+
+1 |indiceReclamacao = int(input())
+
+2 |percentReclamResolPrim = int(input())
+3 |percentClicancel = int(input())
+
+4 |indiceIndisponibilidade = int(input())
+5 |canceladoPorProblema = int(input())
+6
+
+7 v/if (percentReclamResolPrim >= 60):
+8 indice = indiceReclamacao - 5
+9vjelse:
+
+18 indice = indiceReclamacao + 15
+11 |print(f'(indice)')
+
+12
+
+13 v/if ( percentCliCancel >= 10):
+
+149 if (canceladoPorProblema==1) :
+15 indice = indice + 80
+
+16 v else:
+
+17 indice = indice - 30
+
+18 vjelse:
+
+19¥ if (canceladoPorProblema==1) :
+20 indice = indice + 50
+
+21v else:
+
+22 indice = indice - 10
+
+23 |print(f'(indice)');
+
+24
+
+25 (if (indiceIndisponibilidade >= 10):
+26 indice = indice + 70
+
+27 v else:
+28 indice = indice - 20
+29 |print(f'(indice)');
+
+Input | Expected | Got
+
+4 (100 95 95 A
+60 65 65
+15 45 45
+5
+o
+
+wv (100 95 95 |W
+70 175 175
+10 155 155
+5
+1
+
+4 (100 | 115 115 Vv
+45 85 85
+20 155 155
+10
+o
+
+4 (100 95 95 |W
+
+a
+
+80 175 175
+30 245 245
+10
+1
+
+4 |50 45 45 |v
+60 15 15
+20 85 85
+30
+0
+
+¥ |70 65 6 4
+70 145 145
+20 215 215
+15
+1
+
+Passou em todos os teste! 4
+
+Para resolver esta questão copie o código Python no IDE e tente executar.
+
+Ele vai dar um erro de sintaxe. Leia o erro de sintaxe e corrija-o.
+
+Faça isto até o código não ter mais erros de sintaxe.
+
+Não tendo mais erros de sintaxe, o código será executado pelo interpretador Python até o fim e apresentará a saída.
+
+Verifique se a saida está correta. Se a saída estiver errada, leia atentamente o programa procurando por erros semânticos. Para
+verificar o bom funcionamento do programa, o aluno deve testar o programa com varias entradas diferentes, simulando todas as
+possibilidades que podem ocorrer. Em particular, verificar se o programa passa por todos os trechos de códigos que estão aninhados
+nas estruturas condicionais verificando se as condições para executar este código estão corretas.
+
+Notas para este envio: 3,00/3,00.

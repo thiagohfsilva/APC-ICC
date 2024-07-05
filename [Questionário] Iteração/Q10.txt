@@ -1,0 +1,37 @@
+Questão 10
+Correto
+Atingiu 1,00 de 1,00
+
+Funções de Primos
+
+Um número primo é um número inteiro maior que 1 que é divisível apenas por 1 e por ele mesmo. Um número a é divisível por bse o
+resto da divisão de a por b é zero. Dessa forma implemente as funções chamadas (1) ehPrimo, que recebe um inteiro 1 menor que 2 menor que 10%e
+retorna se o valor é ou não primo, e (2) divisoresPrimos que recebe uminteirol menor que x menor que 10º eretornaa quantidade de divisores
+primos.
+
+A Entrada consiste de:
+e Afunção ehPrimo recebe como parâmetro um único inteiro 1 menor que x menor que 10º.
+* Afunção divisoresPrimos recebe como parâmetro um único inteiro 1 menor que a menor que 10º.
+
+ASaída deve apresentar:
+* Afunção ehPrimo retorna 1 caso x seja primo e O caso contrário.
+e Afunção divisoresPrimos retorna a quantidade de divisores primos do inteiro x recebido.
+
+Observações:
+
+« Não é necessário validar se os valores de entrada estão dentro dos intervalos e tipos definidos.
+
+e Atenção, a criação de uma função com o nome determinado pelo enunciado é fundamental para a prática do aluno e o Moodle irá
+descontar pontos caso a criação não tenha sido feita corretamente (sendo case-sensitive o nome da função).
+
+e Submeta SOMENTE o que foi solicitado.
+
+Descrição dos Exemplos:
+
+e No primeiro exemplo, a função ehprimo() é chamada diversas vezes. No caso do argumento 6 por exemplo, o retorno é O pois 6 não é
+primo. No caso do argumento 11 o retorno é 1 pois 11 é um número primo.
+
+e Nosegundo exemplo, a função divisoresPrimos() é chamada diversas vezes. No caso do argumento 6 por exemplo, o retorno é 2 pois
+os divisores de 6 que são primos são 2 e 3. No caso do argumento 30 o retorno é 3 pois os divisores de 30 que são primos são 2, 3,e
+5.
+

@@ -1,0 +1,25 @@
+Questão 1
+Correto
+Atingiu 1,00 de 1,00
+
+A Chamada Invertida
+
+Os professores de APC comumente realizam a chamada em ordem alfabética, entretanto, os alunos que ficam no final da chamada
+gostariam de ser os primeiros a serem chamados de vez em quando. Nesse sentido, os professores pediram a sua ajuda para elaborar
+
+um programa que recebe os nomes dos alunos de uma turma e os organiza em ordem alfabética inversa.
+
+A Entrada consiste de:
+
+* Um número contendo a quantidade de alunos na lista.
+* Sequência de nomes separados por linha em ordem alfabética.
+
+A Saída deve apresentar:
+e Nomes fornecidos, separados por espaço, em ordem alfabética invertida.
+
+Observações:
+
+e O método sort é útil para a solução deste exercício. Para ordenar uma lista de forma decrescente faça:
+
+lista.sort (reverse=True)
+

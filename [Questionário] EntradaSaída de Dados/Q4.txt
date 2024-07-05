@@ -1,0 +1,25 @@
+Questão 4
+Correto
+Atingiu 1,00 de 1,00
+
+Lendo as horas
+
+Dada a descrição de um horário, diga quantos segundos já se passaram no dia conforme o formato definido abaixo.
+
+Entrada
+
+A entrada consiste de uma linha, composta por três números inteiros representando um horário no dia, apresentados no formato
+
+“hh:mm:ss" (hora:minutos:segundo). É garantido que O menor que hh menor que 23e0 menor que mm, ss menor que 59.
+
+Saída
+
+A saída deve ser composta de uma linha apresentando a mensagem: "La se foram X segundos que nao voltam mais...",onde
+
+X é a quantidade total de segundos decorridos desde o início do dia.
+
+Observações
+
+A leitura de dados é simples, o importante é saber separar as partes relevantes da informação fornecida (saiba usar split). A formatação
+da saída é importante, saiba usar f-string.
+

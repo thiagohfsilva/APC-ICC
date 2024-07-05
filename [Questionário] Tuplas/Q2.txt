@@ -1,0 +1,27 @@
+Questão 2
+Correto
+Atingiu 2,00 de 2,00
+
+Converter tuplas
+
+Escreva uma função chamada convert que receberá uma lista de tuplas com dois valores, chave e valor, e retornará um dicionário,
+acumulando todos os valores de chaves iguais em uma lista, como nos exemplos.
+
+Entrada
+Não há entrada de dados, o teste chama a função convert para uma lista de tuplas.
+Saída
+
+Não há saída explícita e a função deverá retornar a lista atualizada. Não imprima nada, apenas retorne a resposta.
+Observação
+
+© Observando as entradas do testes, implemente somente a função convert(I).
+
+* No primeiro caso de teste, a lista inicial tem um tupla com chave igual a 3, duas tuplas com chave igual a 4 e três tuplas com chave
+igual a 1. Portanto o resultado é um dicionário com três pares chave-valor.
+
+* Submeta somente o que foi solicitado.
+
+Particularidade do Tópico
+Atenção, a criação de uma função com o nome determinado pelo enunciado é fundamental para a prática do aluno e o Moodle irá
+descontar pontos, caso a criação não tenha sido feita corretamente (sendo case-sensitive o nome da função).
+

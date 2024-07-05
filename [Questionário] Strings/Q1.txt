@@ -1,0 +1,22 @@
+Questão 1
+Correto
+Atingiu 1,00 de 1,00
+
+Verificando
+
+Escreva um programa que recebe uma string e verifica se ela contém uma vírgula. Caso tenha, imprima "passed", caso contrário
+imprima "failed",
+
+A Entrada consiste de:
+e Uma string de tamanho variável.
+
+A Saida deve apresentar:
+e Uma string como especificado no enunciado.
+
+Observações:
+e Não é necessário validar se os valores de entrada são do tipo definido.
+
+Descrição dos Exemplos:
+* No primeiro exemplo, como a string não possui vírgula a saída é "failed".
+¢ Nosegundo exemplo, como a string possui vírgula a saída é "passed".
+
